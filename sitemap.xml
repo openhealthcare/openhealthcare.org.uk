@@ -4,19 +4,68 @@
   
   
   <url>
+    <loc>http://openhealthcare.github.io/openhealthcare/contact.html</loc>
+    <lastmod>2014-10-02T14:22:37+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
     <loc>http://openhealthcare.github.io/openhealthcare/blog/archives/</loc>
-    <lastmod>2014-10-02T11:48:27+00:00</lastmod>
+    <lastmod>2014-10-02T14:22:37+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://openhealthcare.github.io/openhealthcare/</loc>
-    <lastmod>2014-10-02T11:48:27+00:00</lastmod>
+    <lastmod>2014-10-02T14:22:37+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   
+  
+  <url>
+    <loc>http://openhealthcare.github.io/openhealthcare/assets/plugins/FitVids/tests.html</loc>
+    <lastmod>2014-10-02T12:16:51Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://openhealthcare.github.io/openhealthcare/assets/plugins/jquery-inview/example/advanced.html</loc>
+    <lastmod>2014-10-02T12:16:51Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://openhealthcare.github.io/openhealthcare/assets/plugins/jquery-inview/example/live_event.html</loc>
+    <lastmod>2014-10-02T12:16:51Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://openhealthcare.github.io/openhealthcare/assets/plugins/jquery-inview/example/simple_example.html</loc>
+    <lastmod>2014-10-02T12:16:51Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://openhealthcare.github.io/openhealthcare/assets/plugins/jquery-inview/test/index.html</loc>
+    <lastmod>2014-10-02T12:16:51Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://openhealthcare.github.io/openhealthcare/assets/plugins/jquery-placeholder/demo.html</loc>
+    <lastmod>2014-10-02T12:16:51Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://openhealthcare.github.io/openhealthcare/assets/plugins/jquery-placeholder/tests/index.html</loc>
+    <lastmod>2014-10-02T12:16:51Z</lastmod>
+    <priority>0.6</priority>
+  </url>
   
 </urlset>
