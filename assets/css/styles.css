@@ -810,7 +810,7 @@ blockquote {
 .hireus .summary {
   color: #fff;
   font-size: 18px;
-  max-width: 360px;
+  max-width: 660px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   margin-bottom: 15px;
 }
@@ -913,7 +913,7 @@ blockquote {
 /* ======= Feature Promo Section ======= */
 .features-promo {
   position: relative;
-  background: #6dbd63 url('../images/background/lemon-bg.jpeg') no-repeat center bottom;
+  background: #6dbd63 url('../images/background/lemon-bg.jpeg') no-repeat center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
