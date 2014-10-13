@@ -545,7 +545,8 @@ blockquote {
 .promo {
   position: relative;
   /* background: #6dbd63 url('../images/background/promo-bg.jpg') no-repeat center center; */
-  background: #6dbd63 url('../images/background/wood2.bg.jpeg') no-repeat center center;
+  background: #6dbd63 url('../images/background/wood-snake.jpeg') 
+  no-repeat center -260px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -580,6 +581,8 @@ blockquote {
   max-width: 680px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   margin-bottom: 66px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 6px 6px;
 }
 .promo .fixed-container {
   position: absolute;
@@ -632,7 +635,7 @@ blockquote {
 /* ======= Press Section ======= */
 .press {
   background: #f5f5f5;
-  padding: 30px 0;
+  padding: 10px 0;
 }
 .press ul {
   margin: 0 auto;
@@ -1685,3 +1688,4 @@ blockquote {
   line-height: 180px;
   color: #6dbd63;
 }
+
