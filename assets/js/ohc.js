@@ -1,4 +1,4 @@
-function hello(what){
+function hello(event, what){
     event.preventDefault();
     email = $('#'+what).val()
     $.post('http://ohcucontakt.deadpansincerity.com/former.php', {
@@ -10,7 +10,7 @@ function hello(what){
     return false;
 }
 
-function contactform(){
+function contactform(event){
     event.preventDefault();
     
     $.post('http://ohcucontakt.deadpansincerity.com/former.php', {
