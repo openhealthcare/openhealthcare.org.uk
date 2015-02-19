@@ -1,43 +1,54 @@
 ---
+body_class: blog-single-page
 layout: default
 single: true
 ---
 
-<div>
-<article class="hentry" role="article">
-  {% include article.html %}
-  <footer>
-    <p class="meta">
-      {% include post/author.html %}
-      {% include post/date.html %}{{ time }}{% if updated %} {{ updated }}{% endif %}
-      {% include post/categories.html %}
-    </p>
-    {% unless page.sharing == false %}
-      {% include post/sharing.html %}
-    {% endunless %}
-    <p class="meta">
-      {% if page.previous.url %}
-        <a class="basic-alignment left" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; {{page.previous.title}}</a>
-      {% endif %}
-      {% if page.next.url %}
-        <a class="basic-alignment right" href="{{page.next.url}}" title="Next Post: {{page.next.title}}">{{page.next.title}} &raquo;</a>
-      {% endif %}
-    </p>
-  </footer>
-</article>
-{% if site.disqus_short_name and page.comments == true %}
-  <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
-  </section>
-{% endif %}
-</div>
-{% unless page.sidebar == false %}
-<aside class="sidebar">
-  {% if site.post_asides.size %}
-    {% include_array post_asides %}
-  {% else %}
-    {% include_array default_asides %}
-  {% endif %}
-</aside>
-{% endunless %}
+<!-- ******BLOG LIST****** --> 
+<div class="blog container">            
+  <div class="row">
+    <div id="blog-entry" class="blog-entry section col-md-8 col-sm-8 col-xs-12">                 
+      <article class="post">
+        <h2 class="title">{{ page.title }}</h2>
+        <div class="meta">
+          <ul class="meta-list list-inline">                                       
+            <li class="post-time post_date date updated">{{ page.date | date: '%B %d %Y' }}</li>
+            <li class="post-author"> by <a href="#">{{ page.author }}</a></li>
+            <!-- <li class="post-comments-link"> -->
+            <!--   <a href="#comment-area"><i class="fa fa-comments"></i>8 Comments</a> -->
+            <!-- </li> -->
+          </ul><!--//meta-list-->                           	
+        </div><!--meta-->
+        <div class="post-thumb">
+          <img class="img-responsive" src="/{{ page.image }}" alt="" />
+        </div><!--//post-thumb-->
+        <div class="content">
+          {{ content }}
+        </div>
+        <nav class="post-nav">
+        {% if page.previous.url %}
+        <span class="nav-previous"><a href="{{ page.previous.url}}" rel="prev"><i class="fa fa-long-arrow-left"></i>{{ page.previous.title }}</a></span>
+        <span class="nav-next"><a href="{{ page.next.url}}" rel="prev"><i class="fa fa-long-arrow-left"></i>{{ page.next.title }}</a></span>
+        {% endif %}
+        {% if page.next.url %}
+          <span class="nav-next"><a href="#" rel="next">Next<i class="fa fa-long-arrow-right"></i></a></span>
+          {% endif %}
+        </nav><!--//post-nav-->
+                
+      </article><!--//post-->                                      
+    </div><!--//blog-entry-->
+    
+    <aside id="blog-sidebar" class="blog-sidebar col-md-3 col-sm-3 col-xs-12 col-md-offset-1 col-sm-offset-1 col-xs-offset-0">
+      <section class="widget recent-posts">
+        <h3 class="title">Recent Posts</h3>
+        <ul class="list-unstyled">
+          {% for post in site.posts limit: site.recent_posts %}
+          <li><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a><br /><span class="date">
+              {{ post.date | date: '%B %d, %Y' }}
+          </span></li>
+          {% endfor %}
+        </ul>
+      </section><!--//widget-->
+    </aside><!--//blog-side-bar-->               
+  </div><!--//row-->
+</div><!--//blog-->

@@ -1,0 +1,23 @@
+---
+layout: post
+title: "2014 - Annual review"
+date: 2015-02-19 15:00:29 +0000
+comments: false
+categories: 
+author: David
+image: assets/images/posts/nhshd7.jpg
+---
+
+### OPAL at UCLH
+
+Early in the year we deployed [elCID](https://github.com/openhealthcare/elcid) - our custom built digital service for 
+infection doctors to University College London Hospital.
+
+Despite our early plans for a cautious, staggered rollout, demand from end users to transition to the system meant
+that we accellerated rapidly, spreading throughout the division of infection at UCLH within the first quarter.
+
+
+
+### Hackdays 
+
+2014 saw three more [NHS Hack Days](http:/nhshackday.com) - Cardiff, London and Leeds. 
