@@ -47,7 +47,8 @@ name: about
     </div><!--//blog-list-->
     
     <aside id="blog-sidebar" class="blog-sidebar col-md-3 col-sm-3 col-xs-12 col-md-offset-1 col-sm-offset-1 col-xs-offset-0">
-      <section class="widget recent-posts">
+
+      <section class="widget recent-posts">                  
         <h3 class="title">Recent Posts</h3>
         <ul class="list-unstyled">
           {% for post in site.posts limit: site.recent_posts %}
@@ -55,6 +56,7 @@ name: about
               {{ post.date | date: '%B %d, %Y' }}
           </span></li>
           {% endfor %}
+          <li><a href="/atom.xml"><i class="fa fa-rss-square"></i> RSS</a></li>
         </ul>
       </section><!--//widget-->
     </aside><!--//blog-side-bar-->               
