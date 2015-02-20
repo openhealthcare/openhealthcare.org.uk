@@ -8,7 +8,7 @@ This is the website at http://openhealthcare.org.uk
 
 Broadly works as per their  [deploy to github](http://octopress.org/docs/deploying/github) instructions.
 
-The [OHC Developer box](https://waffle.io/openhealthcare/developer) will set you up with everything you
+The [OHC Developer box](https://github.com/openhealthcare/developer) will set you up with everything you
 need to start editing / adding blog posts.
 
 ### Adding a blog post Quick version 
