@@ -5,7 +5,6 @@ date: 2015-01-19 15:00:29 +0000
 comments: false
 categories: 
 author: David
-author_link: thatdavidmiller
 image: assets/images/posts/nhshd7.jpg
 ---
 
@@ -15,11 +14,11 @@ Early in the year we deployed [elCID](http://elcid.openhealthcare.org.uk) - our 
 infection doctors to University College London Hospital.
 
 Despite our early plans for a cautious, staggered rollout, demand from end users to transition to the system meant
-that we accelerated rapidly, spreading throughout the division of infection at UCLH and racing through the 1000 patient 
+that we accellerated rapidly, spreading throughout the division of infection at UCLH and racing through the 1000 patient 
 mark within the few months.
 
 Not content to sit on our laurels, we've been further developing the platform, with a specialist OPAT (Outpatients 
-Parenteral Antimicrobial Therapy) service developed and launched early 2015, and a walk-in clinic service scheduled for 
+Antimicrobial Therapy) service developed and launched early 2015, and a walk-in clinic service scheduled for 
 deployment in spring.
 
 ### OPAL for research
@@ -61,7 +60,3 @@ project that managed to take the rule of "As simple as it can possibly be" to ne
 
 With new product launches, lots of exciting projects in the pipeline, as well as the relentless programme of running 
 events up & down the country, we'll be busy!
-
-<small>
-Photo credits: [Paul Clarke](https://secure.flickr.com/photos/paul_clarke/) && [Gabriel Pollara](https://www.flickr.com/photos/gpollara)
-</small>

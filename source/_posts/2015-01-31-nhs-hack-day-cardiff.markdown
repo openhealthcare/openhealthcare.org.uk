@@ -5,6 +5,7 @@ date: 2015-01-31 20:02:19 +0000
 comments: false
 categories: 
 author: David
+author_link: thatdavidmiller
 image: assets/images/posts/nhshd9.jpg
 ---
 Last weekend saw us return to Cardiff for the 9th NHS Hack Day - once again, with organisation 
@@ -41,3 +42,7 @@ In addition, we were delighted to see our youngest ever attendee to an NHS Hack 
 
 Next time looks like being London in May 2015 - although the venue & exact date are yet to be confirmed. We'd love it
 if you joined us though - so do [sign up to the mailing list](http://nhshackday.com) to be kept in the loop !
+
+<small>
+Photo credits: [Paul Clarke](https://secure.flickr.com/photos/paul_clarke/)
+</small>

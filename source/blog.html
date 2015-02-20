@@ -6,26 +6,26 @@ name: about
 
 <!-- ******BLOG LIST****** --> 
 <div class="blog container">
-  <h2 class="title">Blog</h2>
   <div class="row">
     <div id="blog-list" class="blog-list section col-md-8 col-sm-8 col-xs-12">
 
       {% for post in site.posts %}
-      <article class="post">
-        <div class="post-thumb">
-          <img class="img-responsive" src="/{{ post.image }}" alt="" />
-        </div><!--//post-thumb-->
+      <article class="post blog-entry">
         <div class="content">
-          <h3 class="post-title"><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h3>
+          <h2 class="post-title"><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h2>
           <div class="meta">
             <ul class="meta-list list-inline">                                       
               <li class="post-time post_date date updated">{{ post.date | date: '%B %d, %Y' }}</li>
-              <li class="post-author"> by <a href="#">{{ post.author }}</a></li>
+              <li class="post-author"> by <a href="http://twitter.com/{{ post.author_link }}">{{ post.author }}</a></li>
               <!-- <li class="post-comments-link"> -->
               <!--   <a href="blog-single.html#comment-area"><i class="fa fa-comments"></i>8 Comments</a> -->
               <!-- </li> -->
             </ul><!--//meta-list-->                           	
           </div><!--meta-->
+        <div class="post-thumb">
+          <img class="img-responsive" src="/{{ post.image }}" alt="" />
+        </div><!--//post-thumb-->
+
           <div class="post-entry">
             {{ post.excerpt }}
             <a class="read-more" href="{{ root_url }}{{ post.url }}">
@@ -45,43 +45,8 @@ name: about
         {% endif %}
       </ul><!--//pagination-->
     </div><!--//blog-list-->
-
-    <aside id="blog-sidebar" class="blog-sidebar col-md-3 col-sm-4 col-xs-12 col-md-offset-1 col-sm-offset-0 col-xs-offset-0">
-      <!-- <section class="widget search"> -->
-      <!--     <form class="search-blog-form"> -->
-      <!--         <div class="form-group"> -->
-      <!--             <input type="text" class="form-control" placeholder="Search blog..."> -->
-      <!--         </div> -->
-      <!--         <button type="submit" class="btn btn-cta btn-cta-primary"><i class="fa fa-search"></i></button> -->
-      <!--     </form> -->
-      <!-- </section><\!--//search-\-> -->
-      <section class="widget social">
-        <h3 class="title">Get Connected</h3>
-        <ul class="list-inline">
-          <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-          <li><a href="#"><i class="fa fa-envelope-square"></i></a></li>
-          <li><a href="#"><i class="fa fa-rss-square"></i></a></li>
-        </ul>
-      </section><!--//widget-->
-      <!-- <section class="widget categories"> -->
-      <!--   <h3 class="title">Categories</h3> -->
-      <!--   <ul class="list-unstyled"> -->
-      <!--     <li><a href="#">News</a></li> -->
-      <!--     <li><a href="#">Stories</a></li> -->
-      <!--     <li><a href="#">Technology</a></li> -->
-      <!--     <li><a href="#">Business</a></li> -->
-      <!--   </ul> -->
-      <!-- </section><\!--//widget-\-> -->
-      <!-- <section class="widget archives"> -->
-      <!--   <h3 class="title">Archives</h3> -->
-      <!--   <ul class="list-unstyled"> -->
-      <!--     <li><a href="#">June 2014 <span class="count">(3)</span></a></li> -->
-      <!--     <li><a href="#">May 2014 <span class="count">(5)</span></a></li> -->
-      <!--     <li><a href="#">April 2014 <span class="count">(4)</span></a></li> -->
-      <!--     <li><a href="#">March 2014 <span class="count">(2)</span></a></li> -->
-      <!--   </ul> -->
-      <!-- </section><\!--//widget-\-> -->
+    
+    <aside id="blog-sidebar" class="blog-sidebar col-md-3 col-sm-3 col-xs-12 col-md-offset-1 col-sm-offset-1 col-xs-offset-0">
       <section class="widget recent-posts">
         <h3 class="title">Recent Posts</h3>
         <ul class="list-unstyled">
@@ -93,6 +58,7 @@ name: about
         </ul>
       </section><!--//widget-->
     </aside><!--//blog-side-bar-->               
+
   </div>  <!-- Row -->
 </div>      <!-- Blog container -->
 
