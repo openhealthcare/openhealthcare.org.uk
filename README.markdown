@@ -25,7 +25,7 @@ Go edit that.
 
 You can preview with
 
-    rake preview
+    jekyll serve
 
 Go to http://localhost:4000
 

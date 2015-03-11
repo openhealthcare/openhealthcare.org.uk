@@ -1192,6 +1192,10 @@ blockquote {
   margin-bottom: 30px;
   line-height: 1.5;
 }
+.blog-entry p,
+.blog-entry ol,
+.blog-entry ul { font-size: 20px; }
+.blog-entry ul.meta-list { font-size: 14px; }
 .blog-entry .post-nav {
   margin-bottom: 30px;
 }
