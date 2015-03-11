@@ -12,7 +12,7 @@ image: assets/images/posts/userstories.jpg
 At Open Health Care, we believe in
 [User-centered design](https://www.gov.uk/service-manual/user-centred-design).
 
-Which means that we focus on meeting the needs of our users, and why we
+Which means that we focus on meeting the needs of our users, and is why we
 always work in close collaboration with them. Whether that comes in the 
 form of making sure that our clinical champions are present at every sprint 
 meeting, or working hard to get clinical staff and patients along to
@@ -46,7 +46,7 @@ alternatives to the proprietary default incumbents.
 
 Not only does this help us all understand one another better, which is so vital to delivering 
 high quality digital services, but it also often introduces clinicians to tools that reward 
-superusers with advanced functionality. Once you've learnt
+power users with advanced functionality. Once you've learnt
 [markdown](https://help.github.com/articles/github-flavored-markdown/) once, typing information
 into text boxes that will get rendered in a web browser is never quite the same again. You start 
 *expecting* that the web based [clinical digital services](http://opal.openhealthcare.org.uk) 
