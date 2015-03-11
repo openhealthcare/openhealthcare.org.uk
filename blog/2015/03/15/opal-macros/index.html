@@ -68,10 +68,10 @@
   <div class="row">
     <div id="blog-entry" class="blog-entry section col-md-8 col-sm-8 col-xs-12">                 
       <article class="post">
-        <h2 class="title">2014 - Annual review</h2>
+        <h2 class="title">How Doctors get digital services they love</h2>
         <div class="meta">
           <ul class="meta-list list-inline">                                       
-            <li class="post-time post_date date updated">January 19 2015</li>
+            <li class="post-time post_date date updated">March 15 2015</li>
             <li class="post-author"> by <a href="http://twitter.com/thatdavidmiller">David</a></li>
             <!-- <li class="post-comments-link"> &#8211;>
             <!--   <a href="#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
@@ -79,78 +79,104 @@
           </ul><!--//meta-list-->                           	
         </div><!--meta-->
         <div class="post-thumb">
-          <img class="img-responsive" src="/assets/images/posts/nhshd7.jpg" alt="" />
+          <img class="img-responsive" src="/assets/images/posts/userstories.jpg" alt="" />
         </div><!--//post-thumb-->
         <div class="content">
-          <h3>OPAL at UCLH</h3>
+          <p>At Open Health Care, we believe in
+<a href="https://www.gov.uk/service-manual/user-centred-design">User-centered design</a>.</p>
 
-<p>Early in the year we deployed <a href="http://elcid.openhealthcare.org.uk">elCID</a> - our custom built digital service for
-infection doctors to University College London Hospital.</p>
+<p>Which means that we focus on meeting the needs of our users, and is why we
+always work in close collaboration with them. Whether that comes in the
+form of making sure that our clinical champions are present at every sprint
+meeting, or working hard to get clinical staff and patients along to
+<a href="http://nhshackday.com">NHS Hack Day</a> we work by putting users first, building
+and testing in small chunks.</p>
 
-<p>Despite our early plans for a cautious, staggered rollout, demand from end users to transition to the system meant
-that we accelerated rapidly, spreading throughout the division of infection at UCLH and racing through the 1000 patient
-mark within the few months.</p>
+<p>Working this way means that generally when we work on a project, we identify
+clinical champion(s) for that project. These are the kind of people who will use the service
+we end up building in their day-to-day work. In order to get them as involved as
+possible, we introduce them to <a href="https://www.gov.uk/service-manual/agile">Agile</a>,
+and we often find ourselves teaching <a href="https://github.com/GabPoll">doctors</a> to
+<a href="https://github.com/michaeledwardmarks">github</a>. (Yes, that&rsquo;s a verb now).</p>
 
-<p>Not content to sit on our laurels, we&rsquo;ve been further developing the platform, with a specialist OPAT (Outpatients
-Parenteral Antimicrobial Therapy) service developed and launched early 2015, and a walk-in clinic service scheduled for
-deployment in spring.</p>
+<p>The great thing about working in multidisciplinary teams, is that <em>everyone</em> learns
+new things, all the time. For every medical three letter acronym like say,
+<a href="http://en.wikipedia.org/wiki/Community-acquired_pneumonia">CAP</a> that gets explained
+to a developer, there&rsquo;s an explanation of what
+<a href="http://en.wikipedia.org/wiki/Application_programming_interface">API</a> stands for that goes the
+other way.</p>
 
-<h3>OPAL for research</h3>
+<p>But it&rsquo;s not just terminology that gets shared - often we try to share our tools. We
+promote online
+<a href="http://www.google.co.uk/docs/about/">collaborative</a>
+<a href="http://hackpad.com/">document</a> editing above email attachments and
+<a href="http://thedoghousediaries.com/5964">naming conventions</a>. We encourage users to take
+up better web browsers. We get them to try out modern
+<a href="https://slack.com/">team communication</a> <a href="http://appear.in">tools</a>, and recommend <a href="http://www.rstudio.com/">Open Source</a>
+alternatives to the proprietary default incumbents.</p>
 
-<div class="post-thumb">
-  <img class="img-responsive" src="/assets/images/posts/elcid.outputs.png" alt="" />
-</div>
+<h3>But wait - it gets better</h3>
+
+<p>Not only does this help us all understand one another better, which is so vital to delivering
+high quality digital services, but it also often introduces clinicians to tools that reward
+power users with advanced functionality. Once you&rsquo;ve learnt
+<a href="https://help.github.com/articles/github-flavored-markdown/">markdown</a> once, typing information
+into text boxes that will get rendered in a web browser is never quite the same again. You start
+<em>expecting</em> that the web based <a href="http://opal.openhealthcare.org.uk">clinical digital services</a>
+you use in your day job let you <a href="https://github.com/openhealthcare/opal/blob/823de649ddee6c13803264d929ece3ae171104c5/opal/static/js/opal/opaldown.js">use markdown</a>
+there too.</p>
+
+<p>Possibly the best feature we&rsquo;ve implemented that came about this way is the
+<a href="http://opal.openhealthcare.org.uk">OPAL </a>
+Macros from
+late last year. Directly inspired by <a href="https://github.com/blog/957-introducing-issue-mentions">Github issue mentions</a>,
+OPAL Macros let the user define blocks of commonly used text, and then insert them with shortcut Macros -
+(names preceded by the # symbol).</p>
+
+<p>For instance, for <a href="http://en.wikipedia.org/wiki/Staphylococcus_aureus">Staph</a> advice, the user enters #st:</p>
+
+<p><img class="img-responsive" src="/assets/images/features/macro.pre.png" alt="" /></p>
+
+<p>&hellip; which then expands to the (institutionally defined) standard advice for this case:</p>
+
+<p><img class="img-responsive" src="/assets/images/features/macro.post.png" alt="" /></p>
+
+<p>This is the kind of user need that only even comes up when users are digitally literate enough to
+be able to express it - something along the lines of:</p>
+
+<blockquote class="custom-quote"><p><i class="fa fa-user-md fa-3x"></i>
+As a Doctor <br />
+I want to avoid repeatedly typing out standard advice <br />
+So that I can spend more time with my patients
+</p></blockquote>
 
 
-<!--//post-thumb-->
+<p>The existence of this kind of power-user functionality encourages users to master their tools, by
+offering them time savings and efficiencies but crucially, doesn&rsquo;t interfere with the user experience at all if you
+don&rsquo;t know it&rsquo;s there. As
+<a href="https://github.com/michaeledwardmarks">Dr Marks</a>, who had originally explained the need on
+Github said:</p>
+
+<blockquote class="custom-quote"><p><i class="fa fa-quote-left"></i>
+Absolutely stunning.<br/>
+I would say this is one of the most incredible things I have seen on a piece of NHS software ever.
+</p></blockquote>
 
 
-<p>2014 saw the first academic outputs from the OPAL project, with two posters presented at the
-<a href="http://www.fis-infection.org.uk/">Federation of Infection Societies</a> conference.</p>
-
-<p>Demonstrating the new capabilities for conducting clinical audits and exploring hypotheses about the patient
-population treated by UCLH, concluding that:</p>
-
-<pre><code>The electronic prospective data capture benefits of elCID have facilitated organisation
-and interrogation of our own clinical practice to greater levels than before, describing 
-many hitherto uncaptured elements of clinical activity.
-</code></pre>
-
-<h3>Hackdays</h3>
-
-<div class="post-thumb">
-  <img class="img-responsive" src="/assets/images/posts/nhshd6.jpg" alt="" />
-</div>
-
-
-<!--//post-thumb-->
-
-
-<p>2014 saw the <a href="http:/nhshackday.com">NHS Hack Day</a> train roll in to Cardiff, London and Leeds. As ever
-the events saw us take multidisciplinary groups of Doctors, Technologists &amp; Patients for a weekend of
-furious hacking, resulting not only in some great new projects, but in hundreds of individual opportunities
-for people to connect &amp; learn from each other.</p>
-
-<p>Particularly exciting were <a href="https://github.com/huwlynes/tb_care_plan">TB Care Plan</a> - a single page TB guideline
-project that managed to take the rule of &ldquo;As simple as it can possibly be&rdquo; to new heights, and a
-<a href="https://github.com/openhealthcare/opal-renal">Renal focussed</a> OPAL implementation for handover and patient management.</p>
-
-<h3>The Future</h3>
-
-<p>2014 has been a great year for Open Health Care, &amp; We&rsquo;re excited looking forward to the year to come !</p>
-
-<p>With new product launches, lots of exciting projects in the pipeline, as well as the relentless programme of running
-events up &amp; down the country, we&rsquo;ll be busy!</p>
+<p>If you&rsquo;re interested in starting an OPAL project at your institution to take advantage of this kind
+of feature, or in seeing how we can can help you by providing clinical facing digital services,
+don&rsquo;t hesitate to <a href="/contact.html">Get in touch</a>!</p>
 
 <p><small>
-Photo credits: <a href="https://secure.flickr.com/photos/paul_clarke/">Paul Clarke</a> &amp;&amp; <a href="https://www.flickr.com/photos/gpollara">Gabriel Pollara</a>
+Photo credits: <br />
+<a href="http://www.flickr.com/photos/jakuza/">Jacopo Romei</a><br />
 </small></p>
 
         </div>
         <nav class="post-nav">
         
+        <span class="nav-previous"><a href="/blog/2015/02/05/elcid-opat-launch/" rel="prev"><i class="fa fa-long-arrow-left"></i> elCID OPAT launched at UCLH</a></span>
         
-        <span class="nav-next"><a href="/blog/2015/01/31/nhs-hack-day-cardiff/" rel="prev">NHS Hack Day 9 - Cardiff  <i class="fa fa-long-arrow-right"></i></a></span>
         
         </nav><!--//post-nav-->
                 
