@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How Doctors get digital services they love"
-date: 2015-03-15 21:12:19 +0000
+date: 2015-03-11 21:12:19 +0000
 comments: false
 categories: 
 author: David

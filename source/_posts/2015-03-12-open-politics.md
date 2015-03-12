@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "On Openness in Government Technology"
-date: 2015-03-11 15:42:20 +0000
+title: "Open Politics"
+date: 2015-03-12 15:42:20 +0000
 comments: true
 categories:
 author: Nick
 author_link: ntoll
 image: assets/images/posts/open.jpg
 ---
-<i>This is a guest post by [Nicholas H.Tollervey](http://ntoll.org)</i>
+<i>This is a guest post by [Nicholas Tollervey](http://ntoll.org)</i>
 
 The purpose of this post is to explore openness in government
 technology. I've been asked to advise on this subject for 
@@ -128,7 +128,7 @@ if there's a problem.
 
 <img src="/assets/images/posts/hope.jpg" />
 
-Happily, there is hope.
+Happily, there are signs of hope.
 
 In the first instance civil servants should be following the 
 [Open Standards Principles](https://www.gov.uk/government/publications/open-standards-principles/open-standards-principles)
@@ -138,16 +138,16 @@ It is a simple and easy to understand guide for using open
 standards in government. If you're a civil servant working with data
 you should be following this checklist:
 
-### 1) We place the needs of our users at the heart of our standards choices
-### 2) Our selected open standards will enable suppliers to compete on alevel playing field
-### 3) Our standards choices support flexibility and change
-### 4) We adopt open standards that support sustainable cost
-### 5) Our decisions about standards selection are well informed
-### 6) We select open standards using fair and transparent processes
-### 7) We are fair and transparent in the specification and implementation of open standards
+ 1. We place the needs of our users at the heart of our standards choices
+ 2. Our selected open standards will enable suppliers to compete on alevel playing field
+ 3. Our standards choices support flexibility and change
+ 4. We adopt open standards that support sustainable cost
+ 5. Our decisions about standards selection are well informed
+ 6. We select open standards using fair and transparent processes
+ 7. We are fair and transparent in the specification and implementation of open standards
 
 It is no longer acceptable to say things like, "but the needs of our
-legacy system mean you should use <closed technology X>". If you hear
+legacy system mean you should use &lt;closed technology X&gt;". If you hear
 such a remark, point the perpetrator at the checklist above. If they
 claim it would be too expensive to migrate, explain that it's because it
 is so expensive to migrate that such a system needs changing (such
@@ -155,7 +155,15 @@ expense only ever grows over time, change things sooner rather than
 later). If they assert that it's not organisational policy to use
 open process Y ask them to justify themselves within the framework
 described in the policy document above (that became active on 1st
-November 2012).
+November 2012). Cabinet Office advice when 
+[choosing technologies](https://www.gov.uk/service-manual/making-software/choosing-technology.html)
+is that one should express requirements in terms of user needs and capabilities
+not incumbent institutional needs. Furthermore, when considering the choice
+of technology, they state,
+
+<blockquote class="custom-quote"><p><i class="fa fa-quote-left"></i>
+All things being equal, picking technologies that developers and operations staff like will typically result in improved productivity.
+</blockquote>
 
 A second positive is that there appear to be politicians of all
 affiliations who understand and have the political will to promote open
@@ -165,17 +173,37 @@ Consider the following exchange between myself and Meg Hillier MP:
 
 <blockquote class="twitter-tweet" lang="en"><p>.<a href="https://twitter.com/Meg_HillierMP">@Meg_HillierMP</a>, given ubiquity of closed formats (MS Office etc), will Parliament switch to publish w/open data formats? <a href="https://twitter.com/hashtag/digitaldemocracy?src=hash">#digitaldemocracy</a></p>&mdash; Nicholas Tollervey (@ntoll) <a href="https://twitter.com/ntoll/status/575253094663122944">March 10, 2015</a></blockquote>
 
-<blockquote class="twitter-tweet" lang="en"><p>.<a href="https://twitter.com/ntoll">@ntoll</a> yes..that&#39;s the plan. New head of Parliament Digital Service <a href="https://twitter.com/Rob_Greig">@Rob_Greig</a> is already working on this</p>&mdash; MegHillierMP (@Meg_HillierMP) <a href="https://twitter.com/Meg_HillierMP/status/575258270706892800">March 10, 2015</a></blockquote>
+<blockquote class="twitter-tweet" data-conversation="none" lang="en"><p>.<a href="https://twitter.com/ntoll">@ntoll</a> yes..that&#39;s the plan. New head of Parliament Digital Service <a href="https://twitter.com/Rob_Greig">@Rob_Greig</a> is already working on this</p>&mdash; MegHillierMP (@Meg_HillierMP) <a href="https://twitter.com/Meg_HillierMP/status/575258270706892800">March 10, 2015</a></blockquote>
+
+<blockquote class="twitter-tweet" lang="en"><p>.<a href="https://twitter.com/Meg_HillierMP">@Meg_HillierMP</a> motivation for my q is current work w/<a href="https://twitter.com/NHSEngland">@NHSEngland</a> stats / data in messy, non-machine readable Excel spreadsheets &amp; PDFs. :-(</p>&mdash; Nicholas Tollervey (@ntoll) <a href="https://twitter.com/ntoll/status/575257864454995969">March 10, 2015</a></blockquote>
+
+<blockquote class="twitter-tweet" data-conversation="none" lang="en"><p><a href="https://twitter.com/ntoll">@ntoll</a> <a href="https://twitter.com/Meg_HillierMP">@Meg_HillierMP</a> <a href="https://twitter.com/NHSEngland">@NHSEngland</a> &quot;non-machine readable Excel spreadsheets&quot; --&gt; cold shiver in my spine</p>&mdash; Giovanni Idili (@John_Idol) <a href="https://twitter.com/John_Idol/status/575261025395720192">March 10, 2015</a></blockquote>
+
+<blockquote class="twitter-tweet" data-conversation="none" lang="en"><p>.<a href="https://twitter.com/John_Idol">@John_Idol</a> <a href="https://twitter.com/ntoll">@ntoll</a> <a href="https://twitter.com/NHSEngland">@NHSEngland</a> and that&#39;s not the worst of it! sometimes they are not even readable in paper form</p>&mdash; MegHillierMP (@Meg_HillierMP) <a href="https://twitter.com/Meg_HillierMP/status/575261373304803330">March 10, 2015</a></blockquote>
+
+<blockquote class="twitter-tweet" data-conversation="none" lang="en"><p><a href="https://twitter.com/Meg_HillierMP">@Meg_HillierMP</a> <a href="https://twitter.com/John_Idol">@John_Idol</a> <a href="https://twitter.com/NHSEngland">@NHSEngland</a> good point - demonstrates accountability/evidence: confusing data=confused understanding perhaps?</p>&mdash; Nicholas Tollervey (@ntoll) <a href="https://twitter.com/ntoll/status/575261775446306817">March 10, 2015</a></blockquote>
+
+<blockquote class="twitter-tweet" data-conversation="none" lang="en"><p>.<a href="https://twitter.com/ntoll">@ntoll</a> <a href="https://twitter.com/John_Idol">@John_Idol</a> <a href="https://twitter.com/NHSEngland">@NHSEngland</a> yes. We are coming from same place on this issue. Open Up! <a href="https://twitter.com/hashtag/digitaldemocracy?src=hash">#digitaldemocracy</a></p>&mdash; MegHillierMP (@Meg_HillierMP) <a href="https://twitter.com/Meg_HillierMP/status/575262116405460992">March 10, 2015</a></blockquote>
+
+<blockquote class="twitter-tweet" data-conversation="none" lang="en"><p><a href="https://twitter.com/Meg_HillierMP">@Meg_HillierMP</a> <a href="https://twitter.com/John_Idol">@John_Idol</a> <a href="https://twitter.com/NHSEngland">@NHSEngland</a> quite... so having evidence is one thing - but how does a citizen hold publisher accountable?</p>&mdash; Nicholas Tollervey (@ntoll) <a href="https://twitter.com/ntoll/status/575272422582132736">March 10, 2015</a></blockquote>
+
+<blockquote class="twitter-tweet" data-conversation="none" lang="en"><p>.<a href="https://twitter.com/ntoll">@ntoll</a> <a href="https://twitter.com/John_Idol">@John_Idol</a> <a href="https://twitter.com/NHSEngland">@NHSEngland</a> we need to make it either embarrassing for them or in case of Govt manke it mandatory</p>&mdash; MegHillierMP (@Meg_HillierMP) <a href="https://twitter.com/Meg_HillierMP/status/575301644272996352">March 10, 2015</a></blockquote>
+
+
+
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
 Here's hoping NHS England leads the way in open standards. After all,
-NHS England was born from a nebulous network of
-previous organisations each of whom did things differently. Openness is
-a way for NHS England to integrate, collaborate and become more
-effective.
+they were born from a disparate collection of
+existing governmental organisations, each of whom did things differently. Openness is
+a way for NHS England to integrate, collaborate and work more effectively towards making
+the NHS the world class healthcare system it needs to be.
 
-This is an opportunity (not to be missed).
+This is an opportunity that applies to the whole public sector. The cost of inaction would
+be to deny the government tools and processes essential for working effectively in a world
+in constant flux.
+
+Panta rhei!
 
 <small>
 Photo credits: <br />
