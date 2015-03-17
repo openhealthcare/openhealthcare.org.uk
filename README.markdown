@@ -25,7 +25,7 @@ Go edit that.
 
 You can preview with
 
-    jekyll serve
+    jekyll serve -H 0.0.0.0
 
 Go to http://localhost:4000
 
