@@ -4,7 +4,7 @@
   <title><![CDATA[Open Health Care UK - Blog]]></title>
   <link href="http://openhealthcare.org.uk/blog/atom.xml" rel="self"/>
   <link href="http://openhealthcare.org.uk/blog/"/>
-  <updated>2015-03-12T13:53:39+00:00</updated>
+  <updated>2015-03-17T21:12:56+00:00</updated>
   <id>http://openhealthcare.org.uk/blog/</id>
   <author>
     <name><![CDATA[Open Health Care UK]]></name>
@@ -12,6 +12,46 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[It's Time for NHS Hack Day 10]]></title>
+    <link href="http://openhealthcare.org.uk/blog/blog/2015/03/17/nhs-hack-day-10/"/>
+    <updated>2015-03-17T20:42:20+00:00</updated>
+    <id>http://openhealthcare.org.uk/blog/blog/2015/03/17/nhs-hack-day-10</id>
+    <content type="html"><![CDATA[<p>NHS Hack Days are weekend events that bring together &ldquo;geeks who love the NHS&rdquo; to have fun, build community, and work on digital projects that promote health.</p>
+
+<p>NHS Hack Day began in 2012 when Carl (a doctor) complained to his friend Tom (a developer) that things were really very broken in NHS IT. Tom who’d recently had a good experience at a Cabinet Office GDS Hack Day said the NHS should have a hack day. So we did.</p>
+
+<p>The format is that we begin on a saturday morning with people pitching real-world problems they’ve encountered in the NHS or in health care generally. Anyone can pitch. We end on Sunday afternoon with a competition for the best solutions made over the weekend. In between people pick projects to work on, work on them, and have lunch (provided).</p>
+
+<p>Previous NHS Hack Days have looked something like this:</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3NnfMmKKvBk" frameborder="0" allowfullscreen></iframe>
+
+
+<p>Do check out some of the <a href="http://nhshackday.com/previous/projects/">projects that have come fom the event</a> and
+read our summary of the <a href="http://openhealthcare.org.uk/blog/2015/01/31/nhs-hack-day-cardiff/">previous NHS Hack Day</a></p>
+
+<h3>Why should I come to NHS Hack Day?</h3>
+
+<p>You’ll meet bright people from different disciplines you wouldn’t usually meet
+You’ll play a part in making NHS IT less bad
+You’ll have fun</p>
+
+<p>We especially want people who aren’t sure if this is for them to come, a lot of the value of the event comes from the diversity of the participants, we need you!
+<a href="http://nhshackday.com/faqs/#inclusivity">Imposters are welcome</a></p>
+
+<h3>How do I get involved?</h3>
+
+<ul>
+<li>By attending the event, tickets will be released this evening from <a href="http://nhshackday.com">www.nhshackday.com</a></li>
+<li>By sponsoring the event - email <a href="&#109;&#x61;&#105;&#x6c;&#x74;&#111;&#x3a;&#x68;&#101;&#108;&#108;&#x6f;&#x40;&#x6f;&#x70;&#x65;&#110;&#104;&#101;&#x61;&#x6c;&#x74;&#104;&#99;&#97;&#114;&#x65;&#x2e;&#x6f;&#x72;&#103;&#x2e;&#117;&#107;">&#104;&#101;&#x6c;&#x6c;&#x6f;&#x40;&#111;&#x70;&#x65;&#x6e;&#x68;&#101;&#97;&#x6c;&#116;&#104;&#99;&#97;&#114;&#101;&#46;&#111;&#114;&#103;&#46;&#x75;&#x6b;</a></li>
+<li>By becoming part of our community - joining the <a href="https://groups.google.com/forum/#!forum/nhshackday">mailing list</a>, coming to pre event meet ups or talking to us on <a href="http://twitter.com/nhshackday">Twitter</a></li>
+<li>By spreading the word, tell your friends!</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Open Politics]]></title>
