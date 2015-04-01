@@ -26,6 +26,7 @@ themes_dir      = ".themes"   # directory for blog files
 new_post_ext    = "markdown"  # default new post file extension when using the new_post task
 new_page_ext    = "markdown"  # default new page file extension when using the new_page task
 server_host     = ENV['IP'] ||= '0.0.0.0'     # server bind address for preview server
+server_host     = '0.0.0.0'
 server_port     = ENV['PORT'] ||= "4000"      # port for preview server eg. localhost:4000
 
 
