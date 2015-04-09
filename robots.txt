@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://openhealthcare.org.uk/blog/sitemap.xml 
+Sitemap: http://openhealthcare.org.uk/openhealthcare/sitemap.xml 
