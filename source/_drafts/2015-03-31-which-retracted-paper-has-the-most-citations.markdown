@@ -1,5 +1,5 @@
----
 layout: post
+---
 title: "Which retracted paper has the most citations?"
 date: 2015-03-31 15:11:56 +0000
 comments: true
@@ -27,4 +27,4 @@ Finally, we used wget to download all of the google scholar search results.  Thi
 
 If we could get a feed of, say every paper cited in a cochane review, we could then build a service to detect retractions cited in [cohrane reviews](http://www.cochranelibrary.com/) and respond to them appropriately. 
 
-In fact we've already built most of this and it would be nice to improve evidence based medicine infrastructure in this way :-)    
+In fact we've already built most of this and it would be nice to improve evidence based medicine infrastructure in this way.
