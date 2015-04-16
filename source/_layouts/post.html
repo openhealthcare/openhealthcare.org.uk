@@ -3,7 +3,7 @@ body_class: blog-single-page
 layout: default
 single: true
 ---
-
+{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
 <!-- ******BLOG LIST****** --> 
 <div class="blog container">            
   <div class="row">
@@ -20,7 +20,7 @@ single: true
           </ul><!--//meta-list-->                           	
         </div><!--meta-->
         <div class="post-thumb">
-          <img class="img-responsive" src="/{{ page.image }}" alt="" />
+          <img class="img-responsive" src="{{ root_url }}/{{ page.image }}" alt="" />
         </div><!--//post-thumb-->
         <div class="content">
           {{ content }}
