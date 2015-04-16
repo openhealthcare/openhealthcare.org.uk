@@ -69,60 +69,193 @@
   <div class="row">
     <div id="blog-entry" class="blog-entry section col-md-8 col-sm-8 col-xs-12">                 
       <article class="post">
-        <h2 class="title">It&#8217;s time for NHS Hack Day 10</h2>
+        <h2 class="title">What is the most cited retracted paper?</h2>
         <div class="meta">
           <ul class="meta-list list-inline">                                       
-            <li class="post-time post_date date updated">March 17 2015</li>
-            <li class="post-author"> by <a href="http://twitter.com/thatdavidmiller">David</a></li>
+            <li class="post-time post_date date updated">April 16 2015</li>
+            <li class="post-author"> by <a href="http://twitter.com/drcjar">Carl</a></li>
             <!-- <li class="post-comments-link"> &#8211;>
             <!--   <a href="#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
             <!-- </li> &#8211;>
           </ul><!--//meta-list-->                           	
         </div><!--meta-->
         <div class="post-thumb">
-          <img class="img-responsive" src="/assets/images/posts/nhshd1.jpg" alt="" />
+          <img class="img-responsive" src="/assets/images/posts/retraction.jpg" alt="" />
         </div><!--//post-thumb-->
         <div class="content">
-          <p><a href="http://nhshackday.com">NHS Hack Days</a> are weekend events that bring together &ldquo;geeks who love the NHS&rdquo; to have fun, build community, and work on digital projects that promote health.</p>
+          <p>At Open Health Care we believe in
+<a href="http://en.wikipedia.org/wiki/Evidence-based_medicine">Evidence Based Medicine</a>.</p>
 
-<p>NHS Hack Day began in 2012 when Carl (a doctor) complained to his friend Tom (a developer) that things were really very broken in NHS IT. Tom who’d recently had a good experience at a Cabinet Office GDS Hack Day said the NHS should have a hack day. So we did.</p>
+<p>Which is why we create digital health <a href="https://github.com/openhealthcare/opal-research">services that support research</a>.</p>
 
-<p>The format is that we begin on a saturday morning with people pitching real-world problems they’ve encountered in the NHS or in health care generally. Anyone can pitch. We end on Sunday afternoon with a competition for the best solutions made over the weekend. In between people pick projects to work on, work on them, and have lunch (provided).</p>
+<p>Unfortunately the current infrastructure supporting evidence based medicine has some shortcomings. One of these is that
+when a research paper is retracted because, for example, <a href="http://en.wikipedia.org/wiki/Hwang_Woo-suk">the author</a>
+<a href="http://en.wikipedia.org/wiki/Scientific_misconduct">made up the results</a>, there is little or no means
+to propogate this update in the wider medical literature.</p>
 
-<p>Previous NHS Hack Days have looked something like this:</p>
+<p>Supposing, as a doctor, I look to a systematic review on the management of heart attacks to inform how I treat my patient,
+I sadly have no assurance that the systematic review does not rely on research papers that have been retracted. This is suboptimal.</p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3NnfMmKKvBk" frameborder="0" allowfullscreen></iframe>
+<p>Open access, post-publication peer review, and better version control would be three useful features that a modern scientific
+publishing model optimized to enable good science should support.</p>
+
+<p>In the meantime, we pondered the question:</p>
+
+<blockquote class="custom-quote"><p><i class="fa fa-question fa-3x"></i>
+What is the most cited retracted paper?
+</p></blockquote>
 
 
-<p>Do check out some of the <a href="http://nhshackday.com/previous/projects/">projects that have come fom the event</a> and
-read our summary of the <a href="http://openhealthcare.org.uk/blog/2015/01/31/nhs-hack-day-cardiff/">previous NHS Hack Day</a></p>
+<p>It turns out <a href="http://www.pubmed.gov">PubMed</a> already has a nice API that can return a
+<a href="http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&amp;retmode=json&amp;retmax=10000&amp;term=%22retracted%20publication%22">list</a>
+of PubMed ids for papers that have been retracted. Next we needed a means of knowing how many times each retracted paper was cited.
+There are a few ways of doing this but we went with using google scholar after Alf Eaton told us about it on
+<a href="https://twitter.com/invisiblecomma/status/582904870644113408">twitter</a>. It&rsquo;s possible to search google scholar for the articles
+citing a particular pubmed id, here&rsquo;s an <a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/19336536">example</a>.</p>
 
-<h3>Why should I come to NHS Hack Day?</h3>
+<p>Finally, we used wget to download all of the google scholar search results.  This infamous
+<a href="http://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2897%2911096-0/abstract">paper</a> &lsquo;Ileal-lymphoid-nodular hyperplasia,
+non-specific colitis, and pervasive developmental disorder in children.&rsquo; was the winner with
+2070 <a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/9500320">citations</a>!</p>
 
-<p>You’ll meet bright people from different disciplines you wouldn’t usually meet
-You’ll play a part in making NHS IT less bad
-You’ll have fun</p>
+<p>Here&rsquo;s the top ten:</p>
 
-<p>We especially want people who aren’t sure if this is for them to come, a lot of the value of the event comes from the diversity of the participants, we need you!
-<a href="http://nhshackday.com/faqs/#inclusivity">Imposters are welcome</a></p>
+<table class="table table-striped">
+<tbody><tr><td>Citations</td>
+<td colspan="2">Title</td>
+<td>Author</td>
+<td>Journal</td>
+<td>Pubdate</td>
+</tr>
+<tr><td>2070</td>
+<td colspan="2"><a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/9500320">
+Ileal-lymphoid-nodular hyperplasia, non-specific colitis, and pervasive developmental disorder in children.
+</a>
+</td>
+<td>Wakefield AJ</td>
+<td>Lancet</td>
+<td>28/02/1998</td>
+</tr>
+<tr><td>2050</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/15604363">
+Visfatin: a protein secreted by visceral fat that mimics the effects of insulin.
+</a>
+</td>
+<td>Fukuhara A</td>
+<td>Science (New York, N.Y.)</td>
+<td>21/01/2005</td>
+</tr>
+<tr><td>1550</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/11675329">
+Purification and ex vivo expansion of postnatal human marrow mesodermal progenitor cells.
+</a>
+</td>
+<td>Reyes M</td>
+<td>Blood</td>
+<td>01/11/2001</td>
+</tr>
+<tr><td>1250</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/12531578">
+Combination treatment of angiotensin-II receptor blocker and angiotensin-converting-enzyme inhibitor in non-diabetic renal disease (COOPERATE): a randomised controlled trial.
+</a>
+</td>
+<td>Nakao N</td>
+<td>Lancet</td>
+<td>11/01/2003</td>
+</tr>
+<tr><td>1040</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/15833829">
+Spontaneous human adult stem cell transformation.
+</a>
+</td>
+<td>Rubio D</td>
+<td>Cancer research</td>
+<td>15/04/2005</td>
+</tr>
+<tr><td>825</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/10700237">
+Regression of human metastatic renal cell carcinoma after vaccination with tumor cell-dendritic cell hybrids.
+</a>
+</td>
+<td>Kugler A</td>
+<td>Nature medicine</td>
+<td>01/03/2000</td>
+</tr>
+<tr><td>805</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/14963337">
+Evidence of a pluripotent human embryonic stem cell line derived from a cloned blastocyst.
+</a>
+</td>
+<td>Hwang WS</td>
+<td>Science (New York, N.Y.)</td>
+<td>12/03/2004</td>
+</tr>
+<tr><td>755</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/12176951">
+Multiple atherosclerotic plaque rupture in acute coronary syndrome: a three-vessel intravascular ultrasound study.
+</a>
+</td>
+<td>Rioufol G</td>
+<td>Circulation</td>
+<td>13/08/2002</td>
+</tr>
+<tr><td>732</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/11546864">
+Structure of MsbA from E. coli: a homolog of the multidrug resistance ATP binding cassette (ABC) transporters.
+<a/>
+</td>
+<td>Chang G</td>
+<td>Science (New York, N.Y.)</td>
+<td>07/09/2001</td>
+</tr>
+<tr><td>616</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/8633243">
+Synergistic activation of estrogen receptor with combinations of environmental chemicals.
+</a>
+</td>
+<td>Arnold SF</td>
+<td>Science (New York, N.Y.)</td>
+<td>07/06/1996</td>
+</tr>
+<tr><td>607</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/12351674">
+Contribution of human alpha-defensin 1, 2, and 3 to the anti-HIV-1 activity of CD8 antiviral factor.
+</a>
+</td>
+<td>Zhang L</td>
+<td>Science (New York, N.Y.)</td>
+<td>01/11/2002</td>
+</tr>
+</tbody></table>
 
-<h3>How do I get involved?</h3>
 
-<ul>
-<li>By attending the event, tickets will be released this evening from <a href="http://nhshackday.com">www.nhshackday.com</a></li>
-<li>By sponsoring the event - email <a href="&#109;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#x68;&#x65;&#x6c;&#x6c;&#x6f;&#x40;&#111;&#x70;&#x65;&#110;&#x68;&#101;&#97;&#x6c;&#116;&#104;&#x63;&#x61;&#114;&#x65;&#x2e;&#111;&#114;&#103;&#46;&#x75;&#107;">&#104;&#101;&#108;&#108;&#111;&#64;&#x6f;&#x70;&#x65;&#110;&#104;&#x65;&#97;&#108;&#116;&#104;&#x63;&#97;&#114;&#x65;&#x2e;&#x6f;&#x72;&#103;&#46;&#x75;&#107;</a></li>
-<li>By becoming part of our community - joining the <a href="https://groups.google.com/forum/#!forum/nhshackday">mailing list</a>, coming to pre event meet ups or talking to us on <a href="http://twitter.com/nhshackday">Twitter</a></li>
-<li>By spreading the word, tell your friends!</li>
-</ul>
+<p>You can reproduce our results or view our workings <a href="https://github.com/davidmiller/retractions">over on Github</a>.</p>
 
+<p>There are of course many reasons other than the author making up the results for a paper to be retracted. There are also many circumstances
+in which citing a retracted paper is legitimate. For a more nuanced discussion of retractions there&rsquo;s a nice <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0044118">Comprehensive Survey of
+Retracted Articles from the Scholarly Literature</a> in PLOS and the
+excellent <a href="http://retractionwatch.com/">Retraction Watch</a> covers the details of individual retractions as they happen.</p>
+
+<p>If we could get a feed of, say every paper cited in a cochane review, we could then build a service to detect retractions cited
+in <a href="http://www.cochranelibrary.com/">cohrane reviews</a> and respond to them appropriately.</p>
+
+<p>Perhaps a project for <a href="http://www.nhshackday.com">NHS Hack Day</a>?</p>
 
         </div>
         <nav class="post-nav">
         
-        <span class="nav-previous"><a href="/blog/2015/03/12/open-politics/" rel="prev"><i class="fa fa-long-arrow-left"></i> Open Politics</a></span>
+        <span class="nav-previous"><a href="/blog/2015/04/01/london-nhs-hack-day-meet-up/" rel="prev"><i class="fa fa-long-arrow-left"></i> London NHS Hack Day Meet Up</a></span>
         
-        
-        <span class="nav-next"><a href="/blog/2015/04/01/london-nhs-hack-day-meet-up/" rel="prev">London NHS Hack Day Meet Up <i class="fa fa-long-arrow-right"></i></a></span>
         
         </nav><!--//post-nav-->
                 
