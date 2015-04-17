@@ -164,7 +164,7 @@ Contribution of human alpha-defensin 1, 2, and 3 to the anti-HIV-1 activity of C
 </tr>
 </tbody></table>
 
-You can reproduce our results or view our workings [over on Github](https://github.com/davidmiller/retractions).
+You can reproduce our results or view our workings [over on Github](https://github.com/drcjar/retractshons).
 
 There are of course many reasons other than the author making up the results for a paper to be retracted. There are also many circumstances 
 in which citing a retracted paper is legitimate. For a more nuanced discussion of retractions there's a nice [Comprehensive Survey of 
