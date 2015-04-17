@@ -25,7 +25,8 @@ I sadly have no assurance that the systematic review does not rely on research p
 Open access, post-publication peer review, and better version control would be three useful features that a modern scientific 
 publishing model optimized to enable good science should support.
 
-In the meantime, we pondered the question: 
+In the meantime, inspired by a lunchtime conversation with our friend and director Ben Goldacre (it was all his idea),
+we pondered the question:
 
 <blockquote class="custom-quote"><p><i class="fa fa-question fa-3x"></i>
 What is the most cited retracted paper?
@@ -170,7 +171,6 @@ in which citing a retracted paper is legitimate. For a more nuanced discussion o
 Retracted Articles from the Scholarly Literature](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0044118) in PLOS and the 
 excellent [Retraction Watch](http://retractionwatch.com/) covers the details of individual retractions as they happen.
 
-If we could get a feed of, say every paper cited in a cochane review, we could then build a service to detect retractions cited 
-in [cohrane reviews](http://www.cochranelibrary.com/) and respond to them appropriately. 
+Anyway, it was fun to examine retractions. We'd love to explore this further so if we can be of service to you do get in touch.
 
 Perhaps a project for [NHS Hack Day](http://www.nhshackday.com)?
