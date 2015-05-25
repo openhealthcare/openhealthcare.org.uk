@@ -4,7 +4,7 @@ title: "NHS Hack Day 9 - Cardiff "
 date: 2015-01-31 20:02:19 +0000
 comments: false
 categories: 
-author: David
+author: David Miller
 author_link: thatdavidmiller
 image: assets/images/posts/nhshd9.jpg
 ---

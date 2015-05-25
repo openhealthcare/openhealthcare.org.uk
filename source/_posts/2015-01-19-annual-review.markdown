@@ -4,7 +4,7 @@ title: "2014 - Annual review"
 date: 2015-01-19 15:00:29 +0000
 comments: false
 categories: 
-author: David
+author: David Miller
 author_link: thatdavidmiller
 image: assets/images/posts/nhshd7.jpg
 ---

@@ -4,7 +4,7 @@ title: "London NHS Hack Day Meet Up"
 date: 2015-04-01 10:39:55 +0000
 comments: true
 categories:
-author: David
+author: David Miller
 author_link: thatdavidmiller
 image: assets/images/posts/london.bridge.jpg
 ---
