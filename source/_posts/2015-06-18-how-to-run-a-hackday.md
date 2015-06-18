@@ -48,7 +48,7 @@ reasons. We're aiming to:
 That's reasons 1, 2 and a little bit of 4.
 
 You might be looking to build the cross-disciplinary skills of your teams, introducing people to Digital ways of working, thinking and approaching 
-problems, you might be looking to provide concrete examples of products and services alligned with your policy goals - understanding that showing is more
+problems, you might be looking to provide concrete examples of products and services aligned with your policy goals - understanding that showing is more
 powerful than telling. Whatever your reason is, make sure you can explain it clearly so that you remain focussed on that throughout.
 
 ### What do you need to do? 
