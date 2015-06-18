@@ -69,195 +69,137 @@
   <div class="row">
     <div id="blog-entry" class="blog-entry section col-md-8 col-sm-8 col-xs-12">                 
       <article class="post">
-        <h2 class="title">What is the most cited retracted paper?</h2>
+        <h2 class="title">How to Run a Hack Day</h2>
         <div class="meta">
           <ul class="meta-list list-inline">                                       
-            <li class="post-time post_date date updated">April 16 2015</li>
-            <li class="post-author"> by <a href="http://twitter.com/drcjar">Carl</a></li>
+            <li class="post-time post_date date updated">June 18 2015</li>
+            <li class="post-author"> by <a href="http://twitter.com/thatdavidmiller">David Miller</a></li>
             <!-- <li class="post-comments-link"> &#8211;>
             <!--   <a href="#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
             <!-- </li> &#8211;>
           </ul><!--//meta-list-->                           	
         </div><!--meta-->
         <div class="post-thumb">
-          <img class="img-responsive" src="/assets/images/posts/retraction.jpg" alt="" />
+          <img class="img-responsive" src="/assets/images/posts/nhshd1.jpg" alt="" />
         </div><!--//post-thumb-->
         <div class="content">
-          <p>At Open Health Care we believe in
-<a href="http://en.wikipedia.org/wiki/Evidence-based_medicine">Evidence Based Medicine</a>.</p>
+          <p><i>This post is the prose form of a workshop we recently ran at the <a href="https://twitter.com/bisgovuk">Department for Business, Innovation and Skills</a>
+about hack days.</i></p>
 
-<p>Which is why we create digital health <a href="https://github.com/openhealthcare/opal-research">services that support research</a>.</p>
+<p>So, you want to run a hack day?</p>
 
-<p>Unfortunately the current infrastructure supporting evidence based medicine has some shortcomings. One of these is that
-when a research paper is retracted because, for example, <a href="http://en.wikipedia.org/wiki/Hwang_Woo-suk">the author</a>
-<a href="http://en.wikipedia.org/wiki/Scientific_misconduct">made up the results</a>, there is little or no means
-to propogate this update in the wider medical literature.</p>
-
-<p>Supposing, as a doctor, I look to a systematic review on the management of heart attacks to inform how I treat my patient,
-I sadly have no assurance that the systematic review does not rely on research papers that have been retracted. This is suboptimal.</p>
-
-<p>Open access, post-publication peer review, and better version control would be three useful features that a modern scientific
-publishing model optimized to enable good science should support.</p>
-
-<p>In the meantime, inspired by a lunchtime conversation with our friend and director Ben Goldacre (it was all his idea),
-we pondered the question:</p>
-
-<blockquote class="custom-quote"><p><i class="fa fa-question fa-3x"></i>
-What is the most cited retracted paper?
+<blockquote class="custom-quote"><p><i class="fa fa-quote-left"></i>
+A hack day is an event in which domain experts with user needs collaborate with people who have skills in delivering digital 
+products and services including developers, designers, user researchers product specialists et cetera, collaborate intensively on 
+projects. Hack days typically last between a day and a week. Some hack days are intended simply for educational or social purposes, 
+although in many cases the goal is to create usable software.
 </p></blockquote>
 
 
-<p>It turns out <a href="http://www.pubmed.gov">PubMed</a> already has a nice API that can return a
-<a href="http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&amp;retmode=json&amp;retmax=10000&amp;term=%22retracted%20publication%22">list</a>
-of PubMed ids for papers that have been retracted. Next we needed a means of knowing how many times each retracted paper was cited.
-There are a few ways of doing this but we went with using google scholar after Alf Eaton told us about it on
-<a href="https://twitter.com/invisiblecomma/status/582904870644113408">twitter</a>. It&rsquo;s possible to search google scholar for the articles
-citing a particular pubmed id, here&rsquo;s an <a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/19336536">example</a>.</p>
+<p>Hack days are a great way to get multidisciplinary teams working together to create creative tangible solutions to real
+world problems.</p>
 
-<p>Finally, we used wget to download all of the google scholar search results.  This infamous
-<a href="http://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2897%2911096-0/abstract">paper</a> &lsquo;Ileal-lymphoid-nodular hyperplasia,
-non-specific colitis, and pervasive developmental disorder in children.&rsquo; was the winner with
-2070 <a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/9500320">citations</a>!</p>
+<h3>Why are you doing this?</h3>
 
-<p>Here&rsquo;s the top ten:</p>
+<p>The first thing you&rsquo;ll need to figure out is <em>why</em> you&rsquo;re running a hack day.</p>
 
-<table class="table table-striped">
-<tbody><tr><td>Citations</td>
-<td colspan="2">Title</td>
-<td>Author</td>
-<td>Journal</td>
-<td>Pubdate</td>
-</tr>
-<tr><td>2070</td>
-<td colspan="2"><a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/9500320">
-Ileal-lymphoid-nodular hyperplasia, non-specific colitis, and pervasive developmental disorder in children.
-</a>
-</td>
-<td>Wakefield AJ</td>
-<td>Lancet</td>
-<td>28/02/1998</td>
-</tr>
-<tr><td>2050</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/15604363">
-Visfatin: a protein secreted by visceral fat that mimics the effects of insulin.
-</a>
-</td>
-<td>Fukuhara A</td>
-<td>Science (New York, N.Y.)</td>
-<td>21/01/2005</td>
-</tr>
-<tr><td>1550</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/11675329">
-Purification and ex vivo expansion of postnatal human marrow mesodermal progenitor cells.
-</a>
-</td>
-<td>Reyes M</td>
-<td>Blood</td>
-<td>01/11/2001</td>
-</tr>
-<tr><td>1250</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/12531578">
-Combination treatment of angiotensin-II receptor blocker and angiotensin-converting-enzyme inhibitor in non-diabetic renal disease (COOPERATE): a randomised controlled trial.
-</a>
-</td>
-<td>Nakao N</td>
-<td>Lancet</td>
-<td>11/01/2003</td>
-</tr>
-<tr><td>1040</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/15833829">
-Spontaneous human adult stem cell transformation.
-</a>
-</td>
-<td>Rubio D</td>
-<td>Cancer research</td>
-<td>15/04/2005</td>
-</tr>
-<tr><td>825</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/10700237">
-Regression of human metastatic renal cell carcinoma after vaccination with tumor cell-dendritic cell hybrids.
-</a>
-</td>
-<td>Kugler A</td>
-<td>Nature medicine</td>
-<td>01/03/2000</td>
-</tr>
-<tr><td>805</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/14963337">
-Evidence of a pluripotent human embryonic stem cell line derived from a cloned blastocyst.
-</a>
-</td>
-<td>Hwang WS</td>
-<td>Science (New York, N.Y.)</td>
-<td>12/03/2004</td>
-</tr>
-<tr><td>755</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/12176951">
-Multiple atherosclerotic plaque rupture in acute coronary syndrome: a three-vessel intravascular ultrasound study.
-</a>
-</td>
-<td>Rioufol G</td>
-<td>Circulation</td>
-<td>13/08/2002</td>
-</tr>
-<tr><td>732</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/11546864">
-Structure of MsbA from E. coli: a homolog of the multidrug resistance ATP binding cassette (ABC) transporters.
-<a/>
-</td>
-<td>Chang G</td>
-<td>Science (New York, N.Y.)</td>
-<td>07/09/2001</td>
-</tr>
-<tr><td>616</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/8633243">
-Synergistic activation of estrogen receptor with combinations of environmental chemicals.
-</a>
-</td>
-<td>Arnold SF</td>
-<td>Science (New York, N.Y.)</td>
-<td>07/06/1996</td>
-</tr>
-<tr><td>607</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/12351674">
-Contribution of human alpha-defensin 1, 2, and 3 to the anti-HIV-1 activity of CD8 antiviral factor.
-</a>
-</td>
-<td>Zhang L</td>
-<td>Science (New York, N.Y.)</td>
-<td>01/11/2002</td>
-</tr>
-</tbody></table>
+<p>There are broadly five reasons people run hack days.</p>
+
+<ol>
+<li>To build community</li>
+<li>To educate people</li>
+<li>To get focussed fast paced R&amp;D</li>
+<li>For PR</li>
+<li>er hack days are cool, what do you mean why?</li>
+</ol>
 
 
-<p>You can reproduce our results or view our workings <a href="https://github.com/drcjar/retractshons">over on Github</a>.</p>
+<p>You should make sure you have a clear answer to <em>why</em> you&rsquo;re doing this before you start running a hack day - because this maximises the likelihood
+that you and your attendees will have a great time and get lots of value from the event.</p>
 
-<p>There are of course many reasons other than the author making up the results for a paper to be retracted. There are also many circumstances
-in which citing a retracted paper is legitimate. For a more nuanced discussion of retractions there&rsquo;s a nice <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0044118">Comprehensive Survey of
-Retracted Articles from the Scholarly Literature</a> in PLOS and the
-excellent <a href="http://retractionwatch.com/">Retraction Watch</a> covers the details of individual retractions as they happen.</p>
+<p>For instance, with <a href="http://nhshackday.com">NHS Hack Day</a> - the events that we run around the country for &ldquo;Geeks who love the NHS&rdquo; - we have a few
+reasons. We&rsquo;re aiming to:</p>
 
-<p>Anyway, it was fun to examine retractions. We&rsquo;d love to explore this further so if we can be of service to you do get in touch.</p>
+<ol>
+<li>Build community and friendships between members of the clinical and technology sectors</li>
+<li>Show front line clinical staff just how good Digital Services can be, empowering them to demand better from their institutions when they go back to work</li>
+<li>Showcase Open Source, Open Governance, and the power of collaborating in small heterogeneous teams of domain experts.</li>
+</ol>
 
-<p>Perhaps a project for <a href="http://www.nhshackday.com">NHS Hack Day</a>?</p>
+
+<p>That&rsquo;s reasons 1, 2 and a little bit of 4.</p>
+
+<p>You might be looking to build the cross-disciplinary skills of your teams, introducing people to Digital ways of working, thinking and approaching
+problems, you might be looking to provide concrete examples of products and services alligned with your policy goals - understanding that showing is more
+powerful than telling. Whatever your reason is, make sure you can explain it clearly so that you remain focussed on that throughout.</p>
+
+<h3>What do you need to do?</h3>
+
+<p>So, you want to run a hack day ?</p>
+
+<p>Great!</p>
+
+<p>There are <a href="http://hackdaymanifesto.com/">lots</a> <a href="https://hackathon.guide/">of</a> <a href="http://nhshackday.com/tools/organiser-notes/">documents</a> out there that
+will take you through the low level details, we&rsquo;re not going to go through those again in detail, but you basically need to put five things in a room:</p>
+
+<ol>
+<li>User needs</li>
+<li>Wifi</li>
+<li>Power</li>
+<li>Coffee</li>
+<li>Technologists who know how to deliver Digital</li>
+</ol>
+
+
+<h3>Start with needs</h3>
+
+<p>The value that comes from the event is directly related to the quality of the ideas for projects that are in the room. The <em>best</em> hack day projects
+address specific real world user needs. It&rsquo;s well worth thinking about these before the event, and seeking feedback from others - particularly from
+people who&rsquo;ve attended hack days before.</p>
+
+<p>With NHS Hack Day, we encourage people to discuss their ideas on our mailing list, on Twitter, and in person
+at meetups so that we can help people come with well formed ideas that inspire our attendees. For more focussed commercial hack days we work with
+people to frame and present their ideas in such a way that they work well within the context of a hack day.</p>
+
+<h3>Basic logistics</h3>
+
+<p>Hack days have some slightly special logistical requirements of the room that you&rsquo;re going to be in. The most frequent problem is that the Wifi isn&rsquo;t
+good enough. As the <a href="http://hackdaymanifesto.com/">Hack Day Manifesto</a> says:</p>
+
+<blockquote class="custom-quote"><p><i class="fa fa-quote-left"></i>
+Don’t just trust anyone who tells you that “it’ll be fine”. People from the venue or their commercial partner will tell you all sorts of things you 
+want to hear but keep in the back of your mind that they may not have any clue what they are talking about.
+</p></blockquote>
+
+
+<p>In addition to this, you&rsquo;ll also have lots of people wanting to plug in their laptops, so try to make sure that there is good access to power points.
+Providing tea, coffee and other beverages as well as lunch and breakfast is always appreciated by attendees, as are easily accessible whiteboards,
+flip charts, post-its &amp; sharpies.</p>
+
+<h3>Making your ideas a reality</h3>
+
+<p>At the end of your hack day, you&rsquo;ll have a wrap up session where everyone presents what they&rsquo;ve been working on. There will be lots of excitement and
+energy in the room, you may even have judges and prizes! If all has gone well, several prototypes of new Digital products or services will exist that
+didn&rsquo;t at the start of the day.</p>
+
+<p>If your aim was to build community and educate people, then you should already have gone a long way to meeting your goals! Sometimes though, you will
+want to find a way to take promising projects forwards and make them genuine products or services.</p>
+
+<p>If you&rsquo;re looking to do this, then it&rsquo;s worth thinking about that path before the event. This might involve providing investment or support for teams
+who want to go forward with their idea, promising people time to work on their project, or giving projects marketing and promotion. The details are
+often dependent on who you are, and what kinds of user needs you&rsquo;re looking to meet.</p>
+
+<h3>Still want some more help?</h3>
+
+<p>If you&rsquo;re still unsure about how to run your hack day, Open Health Care UK provide strategic and logistical support to organisations in healthcare and
+the wider public sector looking to run great events - so drop us a line at <a href="hello@openhealthcare.org.uk">hello@openhealthcare.org.uk</a> to see how we
+can help.</p>
 
         </div>
         <nav class="post-nav">
         
-        <span class="nav-previous"><a href="/blog/2015/04/01/london-nhs-hack-day-meet-up/" rel="prev"><i class="fa fa-long-arrow-left"></i> London NHS Hack Day Meet Up</a></span>
+        <span class="nav-previous"><a href="/blog/2015/06/10/elcid-journal-of-infectioncontrol/" rel="prev"><i class="fa fa-long-arrow-left"></i> elCID in the Journal of Infection</a></span>
         
-        
-        <span class="nav-next"><a href="/blog/2015/05/25/nhs-hack-day-10/" rel="prev">NHS Hack Day 10 - London <i class="fa fa-long-arrow-right"></i></a></span>
         
         </nav><!--//post-nav-->
                 
