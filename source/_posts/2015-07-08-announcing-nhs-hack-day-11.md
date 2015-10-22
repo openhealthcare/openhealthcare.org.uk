@@ -38,5 +38,3 @@ We especially want people who aren’t sure if this is for them to come, a lot o
 - By sponsoring the event - email hello@openhealthcare.org.uk
 - By becoming part of our community - joining the [mailing list](https://groups.google.com/forum/#!forum/nhshackday), coming to pre event meet ups or talking to us on [Twitter](http://twitter.com/nhshackday)
 - By spreading the word, tell your friends!
-
-
