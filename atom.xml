@@ -4,7 +4,7 @@
   <title><![CDATA[Open Health Care UK - Blog]]></title>
   <link href="http://openhealthcare.org.uk/atom.xml" rel="self"/>
   <link href="http://openhealthcare.org.uk/blog.html"/>
-  <updated>2015-08-10T09:01:54+00:00</updated>
+  <updated>2015-10-23T08:04:14+00:00</updated>
   <id>http://openhealthcare.org.uk/</id>
   <author>
     <name><![CDATA[Open Health Care UK]]></name>
@@ -12,6 +12,90 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Launching a New Clinical Digital Service for Returning Travellers]]></title>
+    <link href="http://openhealthcare.org.uk/blog/2015/10/21/launching-a-new-walk-in-service/"/>
+    <updated>2015-10-21T20:00:29+00:00</updated>
+    <id>http://openhealthcare.org.uk/blog/2015/10/21/launching-a-new-walk-in-service</id>
+    <content type="html"><![CDATA[<p>Just a couple of weeks ago we launched a new service at the <a href="http://www.thehtd.org/home.aspx">Hospital for Tropical Diseases</a>
+in London to help the doctors and nurses who run their <a href="http://www.thehtd.org/emergencies.aspx">Emergency Walk-In Clinic</a>.
+At the clinic,
+travellers who have returned from the tropics and are acutely unwell turn up without requiring an appointment to get treated
+by specialists in tropical diseases. The service tracks patients on their journey through the clinic, from initial triage to
+following up on lab results that arrive after they&rsquo;ve left.</p>
+
+<div class="post-thumb">
+  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/walkin.referral.png" alt="" style="border: 2px solid black;" />
+</div>
+
+
+<!--//post-thumb-->
+
+
+<p>We worked closely with the staff who run the clinic, making sure that we met the different needs of different types of user
+- in this case admin staff, the nursing staff, doctors, as well as the service managers who wanted data on what activity was
+happening. Just like we do with all of our services, we brought them into our agile development process as we iteratively
+developed the service based on research and their feedback.</p>
+
+<p>Clinical digital services too often fail to take into account the experiences of the people on the ground who have to use
+them in practice. At Open Health Care we don&rsquo;t think that&rsquo;s acceptable for something as important as delivering health care.</p>
+
+<p>Because of that we will continue to regularly meet with users of the service to conduct usability testing and actively seek
+feedback so that we can continuously improve the service. That feedback loop needs to be a part of the ongoing operation of
+digital products and services in hospitals - not just something that happens as part of an initial design phase - and we&rsquo;ve
+seen before just how useful it can be as we&rsquo;ve been able to respond to changing user needs and changes to the context and
+processes that surround users experiences of our services.</p>
+
+<div class="post-thumb">
+  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/walkin.nurseledcare.png" alt="" style="border: 2px solid black;" />
+</div>
+
+
+<!--//post-thumb-->
+
+
+
+
+<h2>Use data to design services.<br>It makes things better</h2>
+
+
+<p>One of the key goals of the project was to allow the team at HTD to gather high quality data about the cohort of patients
+that they treat. This data is hugely valuable, both academically for research purposes, and because it enables the team
+to understand their workload.</p>
+
+<p>When the tools that are used for routine day-to-day clinical care don&rsquo;t collect usable data, the cost of analysing what you&rsquo;ve
+been doing become huge. With the new Walk-in service however, all of the information that the institution knows about a patient,
+from demographics to observations, travel history to treatment, gets stored as high quality structured data.</p>
+
+<p>That means that anyone can get an accurate answer to a question like &ldquo;How many patients did we see with Dengue fever in the last
+year&rdquo; in seconds, rather than it taking hours or days of painstaking work reviewing case notes, or manually curating and maintaining
+their own databases.</p>
+
+<p>We&rsquo;re excited about the possibilities for service redesign and research that this new capability has opened up for the team, and
+we&rsquo;ve already been brainstorming ideas - so watch this space!</p>
+
+<h2>How it all came together</h2>
+
+<p>The service was built as a <a href="https://github.com/openhealthcare/opal-walk-in">plugin</a> for <a href="http://opal.openhealthcare.org.uk">OPAL</a> -
+our open source framework for building high quality digital services in a clinical setting, and is deployed as part of
+<a href="http://elcid.openhealthcare.org.uk">elCID - an existing service that we run for UCLH</a> to manage patients with infection.</p>
+
+<p>We love delivering high quality digital services for doctors.
+If you&rsquo;d like to explore how we might be able to help you out at your
+institution, <a href="http://openhealthcare.org.uk/contact.html">get in touch</a> - we&rsquo;re always keen to meet people with interesting problems
+to solve as we try and make sure that the digital services that clinical staff in the NHS use in their day jobs is as good as the
+services they use in their personal lives.</p>
+
+<div class="post-thumb">
+  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/walkin.advice.png" alt="" style="border: 2px solid black;" />
+</div>
+
+
+<!--//post-thumb-->
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Come Join Us at UK Health Camp !]]></title>
@@ -90,7 +174,7 @@ You’ll have fun</p>
 
 <ul>
 <li>By attending the event, tickets will be released this evening from <a href="http://nhshackday.com">www.nhshackday.com</a></li>
-<li>By sponsoring the event - email <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#104;&#101;&#108;&#x6c;&#111;&#x40;&#x6f;&#112;&#x65;&#x6e;&#104;&#x65;&#x61;&#108;&#x74;&#x68;&#99;&#x61;&#x72;&#x65;&#46;&#111;&#114;&#103;&#46;&#117;&#x6b;">&#x68;&#101;&#x6c;&#108;&#111;&#64;&#x6f;&#x70;&#101;&#110;&#104;&#101;&#x61;&#x6c;&#116;&#x68;&#99;&#x61;&#114;&#x65;&#x2e;&#x6f;&#114;&#103;&#x2e;&#x75;&#x6b;</a></li>
+<li>By sponsoring the event - email <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#x65;&#x6c;&#x6c;&#111;&#64;&#111;&#112;&#x65;&#110;&#104;&#101;&#x61;&#x6c;&#x74;&#104;&#x63;&#97;&#x72;&#101;&#x2e;&#x6f;&#114;&#x67;&#46;&#x75;&#x6b;">&#104;&#x65;&#x6c;&#x6c;&#x6f;&#x40;&#111;&#112;&#x65;&#110;&#x68;&#x65;&#x61;&#x6c;&#x74;&#x68;&#x63;&#97;&#114;&#x65;&#46;&#x6f;&#114;&#103;&#46;&#117;&#x6b;</a></li>
 <li>By becoming part of our community - joining the <a href="https://groups.google.com/forum/#!forum/nhshackday">mailing list</a>, coming to pre event meet ups or talking to us on <a href="http://twitter.com/nhshackday">Twitter</a></li>
 <li>By spreading the word, tell your friends!</li>
 </ul>
@@ -566,7 +650,7 @@ You’ll have fun</p>
 
 <ul>
 <li>By attending the event, tickets will be released this evening from <a href="http://nhshackday.com">www.nhshackday.com</a></li>
-<li>By sponsoring the event - email <a href="&#x6d;&#97;&#x69;&#108;&#116;&#x6f;&#58;&#104;&#x65;&#x6c;&#x6c;&#x6f;&#64;&#x6f;&#x70;&#101;&#x6e;&#x68;&#101;&#97;&#x6c;&#116;&#x68;&#99;&#x61;&#x72;&#101;&#46;&#x6f;&#x72;&#103;&#46;&#x75;&#x6b;">&#104;&#x65;&#108;&#108;&#x6f;&#x40;&#x6f;&#x70;&#101;&#x6e;&#104;&#x65;&#97;&#x6c;&#116;&#104;&#99;&#x61;&#114;&#x65;&#x2e;&#x6f;&#x72;&#x67;&#x2e;&#117;&#107;</a></li>
+<li>By sponsoring the event - email <a href="&#109;&#x61;&#105;&#x6c;&#x74;&#111;&#58;&#104;&#x65;&#x6c;&#x6c;&#x6f;&#x40;&#x6f;&#x70;&#101;&#110;&#104;&#x65;&#97;&#108;&#x74;&#104;&#x63;&#x61;&#x72;&#101;&#x2e;&#111;&#114;&#x67;&#46;&#x75;&#x6b;">&#104;&#101;&#x6c;&#108;&#111;&#x40;&#x6f;&#112;&#101;&#110;&#x68;&#x65;&#97;&#108;&#116;&#x68;&#99;&#97;&#x72;&#x65;&#x2e;&#111;&#114;&#x67;&#46;&#117;&#107;</a></li>
 <li>By becoming part of our community - joining the <a href="https://groups.google.com/forum/#!forum/nhshackday">mailing list</a>, coming to pre event meet ups or talking to us on <a href="http://twitter.com/nhshackday">Twitter</a></li>
 <li>By spreading the word, tell your friends!</li>
 </ul>
