@@ -27,7 +27,7 @@ new_post_ext    = "markdown"  # default new post file extension when using the n
 new_page_ext    = "markdown"  # default new page file extension when using the new_page task
 server_host     = ENV['IP'] ||= '0.0.0.0'     # server bind address for preview server
 server_host     = '0.0.0.0'
-server_port     = ENV['PORT'] ||= "4000"      # port for preview server eg. localhost:4000
+server_port     = ENV['PORT'] ||= "7000"      # port for preview server eg. localhost:4000
 
 
 if (/cygwin|mswin|mingw|bccwin|wince|emx/ =~ RUBY_PLATFORM) != nil

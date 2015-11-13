@@ -19,9 +19,11 @@ single: true
             <!-- </li> -->
           </ul><!--//meta-list-->                           	
         </div><!--meta-->
+        {% if page.image %}
         <div class="post-thumb">
           <img class="img-responsive" src="{{ root_url }}/{{ page.image }}" alt="" />
         </div><!--//post-thumb-->
+        {% endif %}
         <div class="content">
           {{ content }}
         </div>
