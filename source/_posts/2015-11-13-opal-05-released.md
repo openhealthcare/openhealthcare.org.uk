@@ -69,7 +69,7 @@ We also plan to refactor some of the core data models back into OPAL to provide
 them there by default rather than implemented over and over again in
 individual applications.
 
-As ever, because OPAL is an Open Governance Open Source project, you can
+As ever, because OPAL is an Open Governance [Open Source](http://github.com/openhealthcare/opal) project, you can
 follow our progress over on
 [our public Waffle board](https://waffle.io/openhealthcare/opal-ideas) where we'll be
 organising our work.
