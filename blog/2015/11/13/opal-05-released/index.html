@@ -69,197 +69,95 @@
   <div class="row">
     <div id="blog-entry" class="blog-entry section col-md-8 col-sm-8 col-xs-12">                 
       <article class="post">
-        <h2 class="title">What is the most cited retracted paper?</h2>
+        <h2 class="title">OPAL 0.5 released</h2>
         <div class="meta">
           <ul class="meta-list list-inline">                                       
-            <li class="post-time post_date date updated">April 16 2015</li>
-            <li class="post-author"> by <a href="http://twitter.com/drcjar">Carl</a></li>
+            <li class="post-time post_date date updated">November 13 2015</li>
+            <li class="post-author"> by <a href="http://twitter.com/thatdavidmiller">David Miller</a></li>
             <!-- <li class="post-comments-link"> &#8211;>
             <!--   <a href="#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
             <!-- </li> &#8211;>
           </ul><!--//meta-list-->                           	
         </div><!--meta-->
         
-        <div class="post-thumb">
-          <img class="img-responsive" src="/assets/images/posts/retraction.jpg" alt="" />
-        </div><!--//post-thumb-->
-        
         <div class="content">
-          <p>At Open Health Care we believe in
-<a href="http://en.wikipedia.org/wiki/Evidence-based_medicine">Evidence Based Medicine</a>.</p>
+          <p>We&rsquo;re happy to announce that we&rsquo;ve just released a new version of <a href="http://opal.openhealthcare.org.uk/docs/">OPAL</a> -
+our framework for building clinical facing digital services.</p>
 
-<p>Which is why we create digital health <a href="https://github.com/openhealthcare/opal-research">services that support research</a>.</p>
+<p>So - what&rsquo;s new in this release?</p>
 
-<p>Unfortunately the current infrastructure supporting evidence based medicine has some shortcomings. One of these is that
-when a research paper is retracted because, for example, <a href="http://en.wikipedia.org/wiki/Hwang_Woo-suk">the author</a>
-<a href="http://en.wikipedia.org/wiki/Scientific_misconduct">made up the results</a>, there is little or no means
-to propogate this update in the wider medical literature.</p>
+<h2>Search</h2>
 
-<p>Supposing, as a doctor, I look to a systematic review on the management of heart attacks to inform how I treat my patient,
-I sadly have no assurance that the systematic review does not rely on research papers that have been retracted. This is suboptimal.</p>
+<p>We&rsquo;ve completely re-designed our search pages to help clinicians find
+the patients they&rsquo;re interested in more easily. We also default to
+having a search box in the navigation of every page.</p>
 
-<p>Open access, post-publication peer review, and better version control would be three useful features that a modern scientific
-publishing model optimized to enable good science should support.</p>
+<p><img src="https://raw.githubusercontent.com/openhealthcare/openhealthcare.org.uk/master/source/assets/images/posts/search.results.png" alt="" /></p>
 
-<p>In the meantime, inspired by a lunchtime conversation with our friend and director Ben Goldacre (it was all his idea),
-we pondered the question:</p>
+<p>In addition, we&rsquo;ve been working hard to make search backends pluggable,
+so that in the future you&rsquo;ll be able to drop in alternative backends of
+your choice as your application scales.</p>
 
-<blockquote class="custom-quote"><p><i class="fa fa-question fa-3x"></i>
-What is the most cited retracted paper?
-</p></blockquote>
+<h2>Patient List view</h2>
 
+<p>We spent a lot of time over the past few months collating feedback from users and
+doing research to understand how we could improve the core Patient List
+views. As a response to that we&rsquo;ve updated the list interface - making it clearer
+which patient is currently active, and removing some of the features that weren&rsquo;t
+actually helping our users to care for patients.</p>
 
-<p>It turns out <a href="http://www.pubmed.gov">PubMed</a> already has a nice API that can return a
-<a href="http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&amp;retmode=json&amp;retmax=10000&amp;term=%22retracted%20publication%22">list</a>
-of PubMed ids for papers that have been retracted. Next we needed a means of knowing how many times each retracted paper was cited.
-There are a few ways of doing this but we went with using google scholar after Alf Eaton told us about it on
-<a href="https://twitter.com/invisiblecomma/status/582904870644113408">twitter</a>. It&rsquo;s possible to search google scholar for the articles
-citing a particular pubmed id, here&rsquo;s an <a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/19336536">example</a>.</p>
+<p><img src="https://raw.githubusercontent.com/openhealthcare/openhealthcare.org.uk/master/source/assets/images/posts/list.view.png" alt="" /></p>
 
-<p>Finally, we used wget to download all of the google scholar search results.  This infamous
-<a href="http://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2897%2911096-0/abstract">paper</a> &lsquo;Ileal-lymphoid-nodular hyperplasia,
-non-specific colitis, and pervasive developmental disorder in children.&rsquo; was the winner with
-2070 <a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/9500320">citations</a>!</p>
+<h2>Subrecord metadata</h2>
 
-<p>Here&rsquo;s the top ten:</p>
+<p>We added four new utility fields to
+<a href="http://opal.openhealthcare.org.uk/docs/guides/datamodel/">Patient and Episode subrecords</a>
+ - created_by, updated_by, created, updated. This gives developers easier
+programatic access to high level audit trail information, without having
+to navigate the <a href="https://github.com/etianen/django-reversion/blob/master/docs/api.rst">low level Django Reversion
+API</a>
+- which is still there for when you need more detailed audit trail
+information.</p>
 
-<table class="table table-striped">
-<tbody><tr><td>Citations</td>
-<td colspan="2">Title</td>
-<td>Author</td>
-<td>Journal</td>
-<td>Pubdate</td>
-</tr>
-<tr><td>2070</td>
-<td colspan="2"><a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/9500320">
-Ileal-lymphoid-nodular hyperplasia, non-specific colitis, and pervasive developmental disorder in children.
-</a>
-</td>
-<td>Wakefield AJ</td>
-<td>Lancet</td>
-<td>28/02/1998</td>
-</tr>
-<tr><td>2050</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/15604363">
-Visfatin: a protein secreted by visceral fat that mimics the effects of insulin.
-</a>
-</td>
-<td>Fukuhara A</td>
-<td>Science (New York, N.Y.)</td>
-<td>21/01/2005</td>
-</tr>
-<tr><td>1550</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/11675329">
-Purification and ex vivo expansion of postnatal human marrow mesodermal progenitor cells.
-</a>
-</td>
-<td>Reyes M</td>
-<td>Blood</td>
-<td>01/11/2001</td>
-</tr>
-<tr><td>1250</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/12531578">
-Combination treatment of angiotensin-II receptor blocker and angiotensin-converting-enzyme inhibitor in non-diabetic renal disease (COOPERATE): a randomised controlled trial.
-</a>
-</td>
-<td>Nakao N</td>
-<td>Lancet</td>
-<td>11/01/2003</td>
-</tr>
-<tr><td>1040</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/15833829">
-Spontaneous human adult stem cell transformation.
-</a>
-</td>
-<td>Rubio D</td>
-<td>Cancer research</td>
-<td>15/04/2005</td>
-</tr>
-<tr><td>825</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/10700237">
-Regression of human metastatic renal cell carcinoma after vaccination with tumor cell-dendritic cell hybrids.
-</a>
-</td>
-<td>Kugler A</td>
-<td>Nature medicine</td>
-<td>01/03/2000</td>
-</tr>
-<tr><td>805</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/14963337">
-Evidence of a pluripotent human embryonic stem cell line derived from a cloned blastocyst.
-</a>
-</td>
-<td>Hwang WS</td>
-<td>Science (New York, N.Y.)</td>
-<td>12/03/2004</td>
-</tr>
-<tr><td>755</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/12176951">
-Multiple atherosclerotic plaque rupture in acute coronary syndrome: a three-vessel intravascular ultrasound study.
-</a>
-</td>
-<td>Rioufol G</td>
-<td>Circulation</td>
-<td>13/08/2002</td>
-</tr>
-<tr><td>732</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/11546864">
-Structure of MsbA from E. coli: a homolog of the multidrug resistance ATP binding cassette (ABC) transporters.
-<a/>
-</td>
-<td>Chang G</td>
-<td>Science (New York, N.Y.)</td>
-<td>07/09/2001</td>
-</tr>
-<tr><td>616</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/8633243">
-Synergistic activation of estrogen receptor with combinations of environmental chemicals.
-</a>
-</td>
-<td>Arnold SF</td>
-<td>Science (New York, N.Y.)</td>
-<td>07/06/1996</td>
-</tr>
-<tr><td>607</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/12351674">
-Contribution of human alpha-defensin 1, 2, and 3 to the anti-HIV-1 activity of CD8 antiviral factor.
-</a>
-</td>
-<td>Zhang L</td>
-<td>Science (New York, N.Y.)</td>
-<td>01/11/2002</td>
-</tr>
-</tbody></table>
+<h2>Select2 and List fields</h2>
 
+<p>This release introduces
+<a href="https://github.com/angular-ui/ui-select">Select2</a> to OPAL - which
+provides us some nicer widgets - particularly for fields associated with
+<a href="http://opal.openhealthcare.org.uk/docs/guides/lookup_lists/">lookuplists</a>,
+and has also enabled the development of list types as
+Subrecord fields. For example this means that your travel can be to a
+list of countries when you take a backpacking trip through Southeast
+Asia!</p>
 
-<p>You can reproduce our results or view our workings <a href="https://github.com/drcjar/retractshons">over on Github</a>.</p>
+<h2>What&rsquo;s Next?</h2>
 
-<p>There are of course many reasons other than the author making up the results for a paper to be retracted. There are also many circumstances
-in which citing a retracted paper is legitimate. For a more nuanced discussion of retractions there&rsquo;s a nice <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0044118">Comprehensive Survey of
-Retracted Articles from the Scholarly Literature</a> in PLOS and the
-excellent <a href="http://retractionwatch.com/">Retraction Watch</a> covers the details of individual retractions as they happen.</p>
+<p>Just because this release is out, we&rsquo;re not resting on our laurels - in
+fact we&rsquo;re already gearing up for the next releases. We&rsquo;re planning to
+look at the information architecture of Episode detail views, including
+a new Notes view that&rsquo;s currently being tested by some users of the
+<a href="http://elcid.openhealthcare.org.uk">elCID</a> project.</p>
 
-<p>Anyway, it was fun to examine retractions. We&rsquo;d love to explore this further so if we can be of service to you do get in touch.</p>
+<p>We also plan to refactor some of the core data models back into OPAL to provide
+them there by default rather than implemented over and over again in
+individual applications.</p>
 
-<p>Perhaps a project for <a href="http://www.nhshackday.com">NHS Hack Day</a>?</p>
+<p>As ever, because OPAL is an Open Governance <a href="http://github.com/openhealthcare/opal">Open Source</a> project, you can
+follow our progress over on
+<a href="https://waffle.io/openhealthcare/opal-ideas">our public Waffle board</a> where we&rsquo;ll be
+organising our work.</p>
+
+<h2>More about OPAL</h2>
+
+<p>If you want to find out more about OPAL or how Open Health Care can help
+you to run high quality digital services for doctors in your institution
+then do get in touch!</p>
 
         </div>
         <nav class="post-nav">
         
-        <span class="nav-previous"><a href="/blog/2015/04/01/london-nhs-hack-day-meet-up/" rel="prev"><i class="fa fa-long-arrow-left"></i> London NHS Hack Day Meet Up</a></span>
+        <span class="nav-previous"><a href="/blog/2015/10/21/launching-a-new-walk-in-service/" rel="prev"><i class="fa fa-long-arrow-left"></i> Launching a new Clinical Digital Service for returning travellers</a></span>
         
-        
-        <span class="nav-next"><a href="/blog/2015/05/25/nhs-hack-day-10/" rel="prev">NHS Hack Day 10 - London <i class="fa fa-long-arrow-right"></i></a></span>
         
         </nav><!--//post-nav-->
                 

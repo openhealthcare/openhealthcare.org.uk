@@ -71,6 +71,99 @@
       
       <article class="post blog-entry">
         <div class="content">
+          <h2 class="post-title"><a href="/blog/2015/11/13/opal-05-released/">OPAL 0.5 released</a></h2>
+          <div class="meta">
+            <ul class="meta-list list-inline">                                       
+              <li class="post-time post_date date updated">November 13, 2015</li>
+              <li class="post-author"> by <a href="http://twitter.com/thatdavidmiller">David Miller</a></li>
+              <!-- <li class="post-comments-link"> &#8211;>
+              <!--   <a href="blog-single.html#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
+              <!-- </li> &#8211;>
+            </ul><!--//meta-list-->                           	
+          </div><!--meta-->
+          
+          <div class="post-entry">
+            <p>We&rsquo;re happy to announce that we&rsquo;ve just released a new version of <a href="http://opal.openhealthcare.org.uk/docs/">OPAL</a> -
+our framework for building clinical facing digital services.</p>
+
+<p>So - what&rsquo;s new in this release?</p>
+
+<h2>Search</h2>
+
+<p>We&rsquo;ve completely re-designed our search pages to help clinicians find
+the patients they&rsquo;re interested in more easily. We also default to
+having a search box in the navigation of every page.</p>
+
+<p><img src="https://raw.githubusercontent.com/openhealthcare/openhealthcare.org.uk/master/source/assets/images/posts/search.results.png" alt="" /></p>
+
+<p>In addition, we&rsquo;ve been working hard to make search backends pluggable,
+so that in the future you&rsquo;ll be able to drop in alternative backends of
+your choice as your application scales.</p>
+
+<h2>Patient List view</h2>
+
+<p>We spent a lot of time over the past few months collating feedback from users and
+doing research to understand how we could improve the core Patient List
+views. As a response to that we&rsquo;ve updated the list interface - making it clearer
+which patient is currently active, and removing some of the features that weren&rsquo;t
+actually helping our users to care for patients.</p>
+
+<p><img src="https://raw.githubusercontent.com/openhealthcare/openhealthcare.org.uk/master/source/assets/images/posts/list.view.png" alt="" /></p>
+
+<h2>Subrecord metadata</h2>
+
+<p>We added four new utility fields to
+<a href="http://opal.openhealthcare.org.uk/docs/guides/datamodel/">Patient and Episode subrecords</a>
+ - created_by, updated_by, created, updated. This gives developers easier
+programatic access to high level audit trail information, without having
+to navigate the <a href="https://github.com/etianen/django-reversion/blob/master/docs/api.rst">low level Django Reversion
+API</a>
+- which is still there for when you need more detailed audit trail
+information.</p>
+
+<h2>Select2 and List fields</h2>
+
+<p>This release introduces
+<a href="https://github.com/angular-ui/ui-select">Select2</a> to OPAL - which
+provides us some nicer widgets - particularly for fields associated with
+<a href="http://opal.openhealthcare.org.uk/docs/guides/lookup_lists/">lookuplists</a>,
+and has also enabled the development of list types as
+Subrecord fields. For example this means that your travel can be to a
+list of countries when you take a backpacking trip through Southeast
+Asia!</p>
+
+<h2>What&rsquo;s Next?</h2>
+
+<p>Just because this release is out, we&rsquo;re not resting on our laurels - in
+fact we&rsquo;re already gearing up for the next releases. We&rsquo;re planning to
+look at the information architecture of Episode detail views, including
+a new Notes view that&rsquo;s currently being tested by some users of the
+<a href="http://elcid.openhealthcare.org.uk">elCID</a> project.</p>
+
+<p>We also plan to refactor some of the core data models back into OPAL to provide
+them there by default rather than implemented over and over again in
+individual applications.</p>
+
+<p>As ever, because OPAL is an Open Governance <a href="http://github.com/openhealthcare/opal">Open Source</a> project, you can
+follow our progress over on
+<a href="https://waffle.io/openhealthcare/opal-ideas">our public Waffle board</a> where we&rsquo;ll be
+organising our work.</p>
+
+<h2>More about OPAL</h2>
+
+<p>If you want to find out more about OPAL or how Open Health Care can help
+you to run high quality digital services for doctors in your institution
+then do get in touch!</p>
+
+            <a class="read-more" href="/blog/2015/11/13/opal-05-released/">
+              Read more <i class="fa fa-long-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </article><!--//post-->
+      
+      <article class="post blog-entry">
+        <div class="content">
           <h2 class="post-title"><a href="/blog/2015/10/21/launching-a-new-walk-in-service/">Launching a new Clinical Digital Service for returning travellers</a></h2>
           <div class="meta">
             <ul class="meta-list list-inline">                                       
@@ -81,10 +174,11 @@
               <!-- </li> &#8211;>
             </ul><!--//meta-list-->                           	
           </div><!--meta-->
+          
         <div class="post-thumb">
           <img class="img-responsive" src="/assets/images/posts/htd.jpg" alt="" />
         </div><!--//post-thumb-->
-
+        
           <div class="post-entry">
             <p>Just a couple of weeks ago we launched a new service at the <a href="http://www.thehtd.org/home.aspx">Hospital for Tropical Diseases</a>
 in London to help the doctors and nurses who run their <a href="http://www.thehtd.org/emergencies.aspx">Emergency Walk-In Clinic</a>.
@@ -184,10 +278,11 @@ services they use in their personal lives.</p>
               <!-- </li> &#8211;>
             </ul><!--//meta-list-->                           	
           </div><!--meta-->
+          
         <div class="post-thumb">
           <img class="img-responsive" src="/assets/images/posts/ukhealthcamp.png" alt="" />
         </div><!--//post-thumb-->
-
+        
           <div class="post-entry">
             <p><a href="http://ukhealthcamp.com/">UK Health Camp</a> - it&rsquo;s happening.</p>
 
@@ -245,10 +340,11 @@ list to get notified when they do become available.</p>
               <!-- </li> &#8211;>
             </ul><!--//meta-list-->                           	
           </div><!--meta-->
+          
         <div class="post-thumb">
           <img class="img-responsive" src="/assets/images/posts/nhshd6.jpg" alt="" />
         </div><!--//post-thumb-->
-
+        
           <div class="post-entry">
             <p>We&rsquo;re delighted to announce that NHS Hack Day is coming to Manchester on the 12-13 September. This is the first time we&rsquo;ve taken the event
 to Manchester, and we&rsquo;re all very excited to be doing so with the help of the super <a href="http://twitter.com/marcus_baw">Marcus Baw</a>!</p>
@@ -278,7 +374,7 @@ You’ll have fun</p>
 
 <ul>
 <li>By attending the event, tickets will be released this evening from <a href="http://nhshackday.com">www.nhshackday.com</a></li>
-<li>By sponsoring the event - email <a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#111;&#58;&#104;&#101;&#x6c;&#x6c;&#111;&#x40;&#x6f;&#112;&#x65;&#110;&#104;&#x65;&#x61;&#108;&#x74;&#104;&#x63;&#x61;&#x72;&#x65;&#46;&#x6f;&#x72;&#103;&#46;&#117;&#107;">&#x68;&#101;&#108;&#108;&#x6f;&#64;&#x6f;&#112;&#x65;&#x6e;&#104;&#x65;&#97;&#108;&#x74;&#x68;&#x63;&#x61;&#114;&#101;&#x2e;&#x6f;&#x72;&#103;&#46;&#117;&#107;</a></li>
+<li>By sponsoring the event - email <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#x6f;&#58;&#104;&#x65;&#x6c;&#108;&#111;&#64;&#x6f;&#x70;&#101;&#110;&#104;&#101;&#97;&#108;&#x74;&#104;&#x63;&#x61;&#114;&#101;&#46;&#111;&#x72;&#103;&#46;&#x75;&#x6b;">&#104;&#101;&#108;&#108;&#111;&#x40;&#x6f;&#112;&#101;&#110;&#x68;&#x65;&#97;&#x6c;&#116;&#x68;&#99;&#97;&#114;&#101;&#x2e;&#111;&#114;&#x67;&#46;&#x75;&#x6b;</a></li>
 <li>By becoming part of our community - joining the <a href="https://groups.google.com/forum/#!forum/nhshackday">mailing list</a>, coming to pre event meet ups or talking to us on <a href="http://twitter.com/nhshackday">Twitter</a></li>
 <li>By spreading the word, tell your friends!</li>
 </ul>
@@ -303,10 +399,11 @@ You’ll have fun</p>
               <!-- </li> &#8211;>
             </ul><!--//meta-list-->                           	
           </div><!--meta-->
+          
         <div class="post-thumb">
           <img class="img-responsive" src="/assets/images/posts/nhshd1.jpg" alt="" />
         </div><!--//post-thumb-->
-
+        
           <div class="post-entry">
             <p><i>This post is the prose form of a workshop we recently ran at the <a href="https://twitter.com/bisgovuk">Department for Business, Innovation and Skills</a>
 about hack days.</i></p>
@@ -439,10 +536,11 @@ can help.</p>
               <!-- </li> &#8211;>
             </ul><!--//meta-list-->                           	
           </div><!--meta-->
+          
         <div class="post-thumb">
           <img class="img-responsive" src="/assets/images/posts/elcid-tagnetwork.png" alt="" />
         </div><!--//post-thumb-->
-
+        
           <div class="post-entry">
             <p>For the past couple of years, Open Health Care has been working in collaboration
 with <a href="https://www.uclh.nhs.uk/Pages/home.aspx">UCLH</a> and the <a href="http://www.thehtd.org/">Hospital for Tropical Diseases</a>
@@ -498,10 +596,11 @@ like a copy of the full paper, don&rsquo;t hesitate to drop us a line at <a href
               <!-- </li> &#8211;>
             </ul><!--//meta-list-->                           	
           </div><!--meta-->
+          
         <div class="post-thumb">
           <img class="img-responsive" src="/assets/images/posts/nhshd.10.jpg" alt="" />
         </div><!--//post-thumb-->
-
+        
           <div class="post-entry">
             <p>Last weekend saw us reach a milestone as we brought
 <a href="http://nhshackday.com/">NHS Hack Day back to London</a> in our tenth event in just three years!</p>
@@ -581,10 +680,11 @@ Photo credits: <a href="https://www.flickr.com/photos/133318877@N06/">Cléon Dan
               <!-- </li> &#8211;>
             </ul><!--//meta-list-->                           	
           </div><!--meta-->
+          
         <div class="post-thumb">
           <img class="img-responsive" src="/assets/images/posts/retraction.jpg" alt="" />
         </div><!--//post-thumb-->
-
+        
           <div class="post-entry">
             <p>At Open Health Care we believe in
 <a href="http://en.wikipedia.org/wiki/Evidence-based_medicine">Evidence Based Medicine</a>.</p>
@@ -773,10 +873,11 @@ excellent <a href="http://retractionwatch.com/">Retraction Watch</a> covers the 
               <!-- </li> &#8211;>
             </ul><!--//meta-list-->                           	
           </div><!--meta-->
+          
         <div class="post-thumb">
           <img class="img-responsive" src="/assets/images/posts/london.bridge.jpg" alt="" />
         </div><!--//post-thumb-->
-
+        
           <div class="post-entry">
             <p>Calling all friends of <a href="http://nhshackday.com">NHS Hack Day</a>:</p>
 
@@ -824,10 +925,11 @@ Photo credits: <a href="https://www.flickr.com/photos/andrewasmith/">Andrew Smit
               <!-- </li> &#8211;>
             </ul><!--//meta-list-->                           	
           </div><!--meta-->
+          
         <div class="post-thumb">
           <img class="img-responsive" src="/assets/images/posts/nhshd1.jpg" alt="" />
         </div><!--//post-thumb-->
-
+        
           <div class="post-entry">
             <p><a href="http://nhshackday.com">NHS Hack Days</a> are weekend events that bring together &ldquo;geeks who love the NHS&rdquo; to have fun, build community, and work on digital projects that promote health.</p>
 
@@ -856,7 +958,7 @@ You’ll have fun</p>
 
 <ul>
 <li>By attending the event, tickets will be released this evening from <a href="http://nhshackday.com">www.nhshackday.com</a></li>
-<li>By sponsoring the event - email <a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x68;&#101;&#108;&#108;&#x6f;&#64;&#x6f;&#x70;&#x65;&#110;&#x68;&#x65;&#x61;&#108;&#116;&#104;&#x63;&#97;&#114;&#101;&#46;&#x6f;&#114;&#x67;&#46;&#117;&#x6b;">&#104;&#101;&#108;&#x6c;&#x6f;&#x40;&#x6f;&#x70;&#101;&#110;&#104;&#x65;&#x61;&#x6c;&#116;&#104;&#99;&#97;&#114;&#101;&#46;&#111;&#x72;&#103;&#x2e;&#117;&#107;</a></li>
+<li>By sponsoring the event - email <a href="&#x6d;&#x61;&#x69;&#108;&#116;&#x6f;&#x3a;&#104;&#x65;&#x6c;&#108;&#111;&#64;&#x6f;&#x70;&#101;&#x6e;&#104;&#101;&#97;&#x6c;&#x74;&#x68;&#99;&#x61;&#x72;&#101;&#x2e;&#111;&#114;&#x67;&#x2e;&#x75;&#107;">&#x68;&#101;&#108;&#108;&#111;&#x40;&#x6f;&#112;&#101;&#110;&#x68;&#x65;&#97;&#x6c;&#116;&#104;&#x63;&#x61;&#x72;&#101;&#x2e;&#x6f;&#x72;&#x67;&#46;&#x75;&#107;</a></li>
 <li>By becoming part of our community - joining the <a href="https://groups.google.com/forum/#!forum/nhshackday">mailing list</a>, coming to pre event meet ups or talking to us on <a href="http://twitter.com/nhshackday">Twitter</a></li>
 <li>By spreading the word, tell your friends!</li>
 </ul>
@@ -881,10 +983,11 @@ You’ll have fun</p>
               <!-- </li> &#8211;>
             </ul><!--//meta-list-->                           	
           </div><!--meta-->
+          
         <div class="post-thumb">
           <img class="img-responsive" src="/assets/images/posts/open.jpg" alt="" />
         </div><!--//post-thumb-->
-
+        
           <div class="post-entry">
             <p><i>This is a guest post by <a href="http://ntoll.org">Nicholas Tollervey</a></i></p>
 
@@ -1142,10 +1245,11 @@ Photo credits: <br />
               <!-- </li> &#8211;>
             </ul><!--//meta-list-->                           	
           </div><!--meta-->
+          
         <div class="post-thumb">
           <img class="img-responsive" src="/assets/images/posts/userstories.jpg" alt="" />
         </div><!--//post-thumb-->
-
+        
           <div class="post-entry">
             <p>At Open Health Care, we believe in
 <a href="https://www.gov.uk/service-manual/user-centred-design">User-centered design</a>.</p>
@@ -1256,10 +1360,11 @@ Photo credits: <br />
               <!-- </li> &#8211;>
             </ul><!--//meta-list-->                           	
           </div><!--meta-->
+          
         <div class="post-thumb">
           <img class="img-responsive" src="/assets/images/posts/outpatients.jpg" alt="" />
         </div><!--//post-thumb-->
-
+        
           <div class="post-entry">
             <p>Last week saw us excited to launch our new <a href="http://e-opat.com/">OPAT</a> (Outpatients
 Parenteral Antimicrobial Therapy) service delivered via the <a href="http://elcid.openhealthcare.org.uk">elCID</a>
@@ -1319,10 +1424,11 @@ Photo Credits: <a href="https://www.flickr.com/photos/lydiashiningbrightly/59228
               <!-- </li> &#8211;>
             </ul><!--//meta-list-->                           	
           </div><!--meta-->
+          
         <div class="post-thumb">
           <img class="img-responsive" src="/assets/images/posts/nhshd9.jpg" alt="" />
         </div><!--//post-thumb-->
-
+        
           <div class="post-entry">
             <p>Last weekend saw us return to Cardiff for the 9th NHS Hack Day - once again, with organisation
 headed up by the life affirming <a href="https://twitter.com/amcunningham">Anne Marie Cunningham</a>.</p>
@@ -1386,10 +1492,11 @@ Photo credits: <a href="https://secure.flickr.com/photos/paul_clarke/">Paul Clar
               <!-- </li> &#8211;>
             </ul><!--//meta-list-->                           	
           </div><!--meta-->
+          
         <div class="post-thumb">
           <img class="img-responsive" src="/assets/images/posts/nhshd7.jpg" alt="" />
         </div><!--//post-thumb-->
-
+        
           <div class="post-entry">
             <h3>OPAL at UCLH</h3>
 
@@ -1475,6 +1582,10 @@ Photo credits: <a href="https://secure.flickr.com/photos/paul_clarke/">Paul Clar
         <h3 class="title">Recent Posts</h3>
         <ul class="list-unstyled">
           
+          <li><a href="/blog/2015/11/13/opal-05-released/">OPAL 0.5 released</a><br /><span class="date">
+              November 13, 2015
+          </span></li>
+          
           <li><a href="/blog/2015/10/21/launching-a-new-walk-in-service/">Launching a new Clinical Digital Service for returning travellers</a><br /><span class="date">
               October 21, 2015
           </span></li>
@@ -1489,10 +1600,6 @@ Photo credits: <a href="https://secure.flickr.com/photos/paul_clarke/">Paul Clar
           
           <li><a href="/blog/2015/06/18/how-to-run-a-hackday/">How to Run a Hack Day</a><br /><span class="date">
               June 18, 2015
-          </span></li>
-          
-          <li><a href="/blog/2015/06/10/elcid-journal-of-infectioncontrol/">elCID in the Journal of Infection</a><br /><span class="date">
-              June 10, 2015
           </span></li>
           
           <li><a href="/atom.xml"><i class="fa fa-rss-square"></i> RSS</a></li>
@@ -1545,7 +1652,7 @@ Photo credits: <a href="https://secure.flickr.com/photos/paul_clarke/">Paul Clar
   <div class="bottom-bar">
     <div class="container">
       <div class="row">
-        <small class="copyright col-md-6 col-sm-6 col-xs-12">Copyright @ 2014 Open Health Care UK Ltd</small>
+        <small class="copyright col-md-6 col-sm-6 col-xs-12">Copyright @ 2015 Open Health Care UK Ltd</small>
         <ul class="social col-md-6 col-sm-6 col-xs-12 list-inline">
           <li><a href="http://twitter.com/ohcuk" class="last" ><i class="fa fa-twitter"></i></a></li>
 

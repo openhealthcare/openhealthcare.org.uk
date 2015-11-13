@@ -4,7 +4,7 @@
   <title><![CDATA[Open Health Care UK - Blog]]></title>
   <link href="http://openhealthcare.org.uk/atom.xml" rel="self"/>
   <link href="http://openhealthcare.org.uk/blog.html"/>
-  <updated>2015-10-23T08:04:14+00:00</updated>
+  <updated>2015-11-13T16:56:43+00:00</updated>
   <id>http://openhealthcare.org.uk/</id>
   <author>
     <name><![CDATA[Open Health Care UK]]></name>
@@ -14,9 +14,88 @@
 
   
   <entry>
+    <title type="html"><![CDATA[OPAL 0.5 Released]]></title>
+    <link href="http://openhealthcare.org.uk/blog/2015/11/13/opal-05-released/"/>
+    <updated>2015-11-13T16:00:55+00:00</updated>
+    <id>http://openhealthcare.org.uk/blog/2015/11/13/opal-05-released</id>
+    <content type="html"><![CDATA[<p>We&rsquo;re happy to announce that we&rsquo;ve just released a new version of <a href="http://opal.openhealthcare.org.uk/docs/">OPAL</a> -
+our framework for building clinical facing digital services.</p>
+
+<p>So - what&rsquo;s new in this release?</p>
+
+<h2>Search</h2>
+
+<p>We&rsquo;ve completely re-designed our search pages to help clinicians find
+the patients they&rsquo;re interested in more easily. We also default to
+having a search box in the navigation of every page.</p>
+
+<p><img src="https://raw.githubusercontent.com/openhealthcare/openhealthcare.org.uk/master/source/assets/images/posts/search.results.png" alt="" /></p>
+
+<p>In addition, we&rsquo;ve been working hard to make search backends pluggable,
+so that in the future you&rsquo;ll be able to drop in alternative backends of
+your choice as your application scales.</p>
+
+<h2>Patient List view</h2>
+
+<p>We spent a lot of time over the past few months collating feedback from users and
+doing research to understand how we could improve the core Patient List
+views. As a response to that we&rsquo;ve updated the list interface - making it clearer
+which patient is currently active, and removing some of the features that weren&rsquo;t
+actually helping our users to care for patients.</p>
+
+<p><img src="https://raw.githubusercontent.com/openhealthcare/openhealthcare.org.uk/master/source/assets/images/posts/list.view.png" alt="" /></p>
+
+<h2>Subrecord metadata</h2>
+
+<p>We added four new utility fields to
+<a href="http://opal.openhealthcare.org.uk/docs/guides/datamodel/">Patient and Episode subrecords</a>
+ - created_by, updated_by, created, updated. This gives developers easier
+programatic access to high level audit trail information, without having
+to navigate the <a href="https://github.com/etianen/django-reversion/blob/master/docs/api.rst">low level Django Reversion
+API</a>
+- which is still there for when you need more detailed audit trail
+information.</p>
+
+<h2>Select2 and List fields</h2>
+
+<p>This release introduces
+<a href="https://github.com/angular-ui/ui-select">Select2</a> to OPAL - which
+provides us some nicer widgets - particularly for fields associated with
+<a href="http://opal.openhealthcare.org.uk/docs/guides/lookup_lists/">lookuplists</a>,
+and has also enabled the development of list types as
+Subrecord fields. For example this means that your travel can be to a
+list of countries when you take a backpacking trip through Southeast
+Asia!</p>
+
+<h2>What&rsquo;s Next?</h2>
+
+<p>Just because this release is out, we&rsquo;re not resting on our laurels - in
+fact we&rsquo;re already gearing up for the next releases. We&rsquo;re planning to
+look at the information architecture of Episode detail views, including
+a new Notes view that&rsquo;s currently being tested by some users of the
+<a href="http://elcid.openhealthcare.org.uk">elCID</a> project.</p>
+
+<p>We also plan to refactor some of the core data models back into OPAL to provide
+them there by default rather than implemented over and over again in
+individual applications.</p>
+
+<p>As ever, because OPAL is an Open Governance <a href="http://github.com/openhealthcare/opal">Open Source</a> project, you can
+follow our progress over on
+<a href="https://waffle.io/openhealthcare/opal-ideas">our public Waffle board</a> where we&rsquo;ll be
+organising our work.</p>
+
+<h2>More about OPAL</h2>
+
+<p>If you want to find out more about OPAL or how Open Health Care can help
+you to run high quality digital services for doctors in your institution
+then do get in touch!</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Launching a New Clinical Digital Service for Returning Travellers]]></title>
     <link href="http://openhealthcare.org.uk/blog/2015/10/21/launching-a-new-walk-in-service/"/>
-    <updated>2015-10-21T20:00:29+00:00</updated>
+    <updated>2015-10-21T21:00:29+01:00</updated>
     <id>http://openhealthcare.org.uk/blog/2015/10/21/launching-a-new-walk-in-service</id>
     <content type="html"><![CDATA[<p>Just a couple of weeks ago we launched a new service at the <a href="http://www.thehtd.org/home.aspx">Hospital for Tropical Diseases</a>
 in London to help the doctors and nurses who run their <a href="http://www.thehtd.org/emergencies.aspx">Emergency Walk-In Clinic</a>.
@@ -100,7 +179,7 @@ services they use in their personal lives.</p>
   <entry>
     <title type="html"><![CDATA[Come Join Us at UK Health Camp !]]></title>
     <link href="http://openhealthcare.org.uk/blog/2015/08/10/come-join-us-at-ukhealthcamp/"/>
-    <updated>2015-08-10T09:42:20+00:00</updated>
+    <updated>2015-08-10T10:42:20+01:00</updated>
     <id>http://openhealthcare.org.uk/blog/2015/08/10/come-join-us-at-ukhealthcamp</id>
     <content type="html"><![CDATA[<p><a href="http://ukhealthcamp.com/">UK Health Camp</a> - it&rsquo;s happening.</p>
 
@@ -144,7 +223,7 @@ list to get notified when they do become available.</p>
   <entry>
     <title type="html"><![CDATA[Announcing NHS Hack Day 11 - Manchester!]]></title>
     <link href="http://openhealthcare.org.uk/blog/2015/07/08/announcing-nhs-hack-day-11/"/>
-    <updated>2015-07-08T20:42:20+00:00</updated>
+    <updated>2015-07-08T21:42:20+01:00</updated>
     <id>http://openhealthcare.org.uk/blog/2015/07/08/announcing-nhs-hack-day-11</id>
     <content type="html"><![CDATA[<p>We&rsquo;re delighted to announce that NHS Hack Day is coming to Manchester on the 12-13 September. This is the first time we&rsquo;ve taken the event
 to Manchester, and we&rsquo;re all very excited to be doing so with the help of the super <a href="http://twitter.com/marcus_baw">Marcus Baw</a>!</p>
@@ -174,7 +253,7 @@ You’ll have fun</p>
 
 <ul>
 <li>By attending the event, tickets will be released this evening from <a href="http://nhshackday.com">www.nhshackday.com</a></li>
-<li>By sponsoring the event - email <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#x65;&#x6c;&#x6c;&#111;&#64;&#111;&#112;&#x65;&#110;&#104;&#101;&#x61;&#x6c;&#x74;&#104;&#x63;&#97;&#x72;&#101;&#x2e;&#x6f;&#114;&#x67;&#46;&#x75;&#x6b;">&#104;&#x65;&#x6c;&#x6c;&#x6f;&#x40;&#111;&#112;&#x65;&#110;&#x68;&#x65;&#x61;&#x6c;&#x74;&#x68;&#x63;&#97;&#114;&#x65;&#46;&#x6f;&#114;&#103;&#46;&#117;&#x6b;</a></li>
+<li>By sponsoring the event - email <a href="&#109;&#x61;&#105;&#108;&#x74;&#111;&#58;&#x68;&#101;&#108;&#108;&#111;&#64;&#111;&#x70;&#x65;&#x6e;&#104;&#x65;&#97;&#108;&#x74;&#104;&#x63;&#x61;&#114;&#x65;&#46;&#111;&#114;&#x67;&#x2e;&#x75;&#x6b;">&#x68;&#101;&#x6c;&#x6c;&#x6f;&#x40;&#x6f;&#112;&#x65;&#x6e;&#104;&#101;&#x61;&#x6c;&#x74;&#104;&#x63;&#x61;&#114;&#101;&#46;&#x6f;&#114;&#103;&#x2e;&#x75;&#107;</a></li>
 <li>By becoming part of our community - joining the <a href="https://groups.google.com/forum/#!forum/nhshackday">mailing list</a>, coming to pre event meet ups or talking to us on <a href="http://twitter.com/nhshackday">Twitter</a></li>
 <li>By spreading the word, tell your friends!</li>
 </ul>
@@ -185,7 +264,7 @@ You’ll have fun</p>
   <entry>
     <title type="html"><![CDATA[How to Run a Hack Day]]></title>
     <link href="http://openhealthcare.org.uk/blog/2015/06/18/how-to-run-a-hackday/"/>
-    <updated>2015-06-18T08:00:29+00:00</updated>
+    <updated>2015-06-18T09:00:29+01:00</updated>
     <id>http://openhealthcare.org.uk/blog/2015/06/18/how-to-run-a-hackday</id>
     <content type="html"><![CDATA[<p><i>This post is the prose form of a workshop we recently ran at the <a href="https://twitter.com/bisgovuk">Department for Business, Innovation and Skills</a>
 about hack days.</i></p>
@@ -304,7 +383,7 @@ can help.</p>
   <entry>
     <title type="html"><![CDATA[elCID in the Journal of Infection]]></title>
     <link href="http://openhealthcare.org.uk/blog/2015/06/10/elcid-journal-of-infectioncontrol/"/>
-    <updated>2015-06-10T20:00:29+00:00</updated>
+    <updated>2015-06-10T21:00:29+01:00</updated>
     <id>http://openhealthcare.org.uk/blog/2015/06/10/elcid-journal-of-infectioncontrol</id>
     <content type="html"><![CDATA[<p>For the past couple of years, Open Health Care has been working in collaboration
 with <a href="https://www.uclh.nhs.uk/Pages/home.aspx">UCLH</a> and the <a href="http://www.thehtd.org/">Hospital for Tropical Diseases</a>
@@ -346,7 +425,7 @@ like a copy of the full paper, don&rsquo;t hesitate to drop us a line at <a href
   <entry>
     <title type="html"><![CDATA[NHS Hack Day 10 - London]]></title>
     <link href="http://openhealthcare.org.uk/blog/2015/05/25/nhs-hack-day-10/"/>
-    <updated>2015-05-25T15:00:29+00:00</updated>
+    <updated>2015-05-25T16:00:29+01:00</updated>
     <id>http://openhealthcare.org.uk/blog/2015/05/25/nhs-hack-day-10</id>
     <content type="html"><![CDATA[<p>Last weekend saw us reach a milestone as we brought
 <a href="http://nhshackday.com/">NHS Hack Day back to London</a> in our tenth event in just three years!</p>
@@ -412,7 +491,7 @@ Photo credits: <a href="https://www.flickr.com/photos/133318877@N06/">Cléon Dan
   <entry>
     <title type="html"><![CDATA[What Is the Most Cited Retracted Paper?]]></title>
     <link href="http://openhealthcare.org.uk/blog/2015/04/16/which-retracted-paper-has-the-most-citations/"/>
-    <updated>2015-04-16T15:11:56+00:00</updated>
+    <updated>2015-04-16T16:11:56+01:00</updated>
     <id>http://openhealthcare.org.uk/blog/2015/04/16/which-retracted-paper-has-the-most-citations</id>
     <content type="html"><![CDATA[<p>At Open Health Care we believe in
 <a href="http://en.wikipedia.org/wiki/Evidence-based_medicine">Evidence Based Medicine</a>.</p>
@@ -587,7 +666,7 @@ excellent <a href="http://retractionwatch.com/">Retraction Watch</a> covers the 
   <entry>
     <title type="html"><![CDATA[London NHS Hack Day Meet Up]]></title>
     <link href="http://openhealthcare.org.uk/blog/2015/04/01/london-nhs-hack-day-meet-up/"/>
-    <updated>2015-04-01T10:39:55+00:00</updated>
+    <updated>2015-04-01T11:39:55+01:00</updated>
     <id>http://openhealthcare.org.uk/blog/2015/04/01/london-nhs-hack-day-meet-up</id>
     <content type="html"><![CDATA[<p>Calling all friends of <a href="http://nhshackday.com">NHS Hack Day</a>:</p>
 
@@ -650,7 +729,7 @@ You’ll have fun</p>
 
 <ul>
 <li>By attending the event, tickets will be released this evening from <a href="http://nhshackday.com">www.nhshackday.com</a></li>
-<li>By sponsoring the event - email <a href="&#109;&#x61;&#105;&#x6c;&#x74;&#111;&#58;&#104;&#x65;&#x6c;&#x6c;&#x6f;&#x40;&#x6f;&#x70;&#101;&#110;&#104;&#x65;&#97;&#108;&#x74;&#104;&#x63;&#x61;&#x72;&#101;&#x2e;&#111;&#114;&#x67;&#46;&#x75;&#x6b;">&#104;&#101;&#x6c;&#108;&#111;&#x40;&#x6f;&#112;&#101;&#110;&#x68;&#x65;&#97;&#108;&#116;&#x68;&#99;&#97;&#x72;&#x65;&#x2e;&#111;&#114;&#x67;&#46;&#117;&#107;</a></li>
+<li>By sponsoring the event - email <a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#104;&#x65;&#x6c;&#x6c;&#x6f;&#x40;&#x6f;&#x70;&#101;&#110;&#104;&#101;&#97;&#x6c;&#116;&#104;&#x63;&#x61;&#x72;&#101;&#x2e;&#x6f;&#114;&#x67;&#46;&#117;&#107;">&#x68;&#101;&#108;&#x6c;&#111;&#x40;&#111;&#x70;&#x65;&#x6e;&#x68;&#101;&#x61;&#x6c;&#116;&#104;&#x63;&#x61;&#114;&#x65;&#46;&#x6f;&#114;&#103;&#46;&#x75;&#107;</a></li>
 <li>By becoming part of our community - joining the <a href="https://groups.google.com/forum/#!forum/nhshackday">mailing list</a>, coming to pre event meet ups or talking to us on <a href="http://twitter.com/nhshackday">Twitter</a></li>
 <li>By spreading the word, tell your friends!</li>
 </ul>
