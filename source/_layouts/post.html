@@ -27,6 +27,11 @@ single: true
         <div class="content">
           {{ content }}
         </div>
+        <div class="content">
+          <p>
+            <i><a href="http://twitter.com/{{ page.author_link }}">Follow {{ page.author }} on twitter</a></i>
+          </p>
+        </div>
         <nav class="post-nav">
         {% if page.previous.url %}
         <span class="nav-previous"><a href="{{ page.previous.url}}" rel="prev"><i class="fa fa-long-arrow-left"></i> {{ page.previous.title }}</a></span>
