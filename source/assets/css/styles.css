@@ -52,9 +52,11 @@ a {
     -o-transition: all 0.4s ease-in-out;
 }
 a:hover {
-    text-decoration: none;
+    text-decoration: underline;
     color: #48953f;
 }
+
+/* Buttons */
 .btn,
 a.btn {
     -webkit-transition: all 0.4s ease-in-out;
@@ -103,6 +105,7 @@ a.btn-cta-secondary:hover .fa,
 .btn-cta-secondary:hover .fa {
     color: #51a746;
 }
+/* End buttons */
 .form-control {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -277,6 +280,8 @@ blockquote {
     -moz-transition-delay: 2s;
     -o-transition-delay: 2s;
 }
+
+
 /* ======= Header ======= */
 .header {
     padding: 15px 0;
@@ -383,6 +388,10 @@ blockquote {
 .header .main-nav .nav .nav-item.last {
     margin-right: 0;
 }
+.content{
+    margin-top: 100px;
+}
+
 /* ======= Footer ======= */
 .footer {
     background: #6dbd63;
@@ -447,6 +456,7 @@ blockquote {
 .footer .bottom-bar .social li a:hover .fa {
     color: #6dbd63;
 }
+
 /* ======= Signup Section ======= */
 .signup {
     padding: 80px 0;
@@ -541,13 +551,15 @@ blockquote {
     background-clip: padding-box;
     background: none;
 }
+
+
 /* ======= Promo Section ======= */
 .promo {
     position: relative;
     /* background: #6dbd63 url('../images/background/promo-bg.jpg') no-repeat center center; */
     /* background: #6dbd63 url('../images/background/wood-snake.jpeg')  */
-    no-repeat center -260px;
-    margin-top: 85px;
+    /* no-repeat center -260px; */
+    margin-top: 160px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -555,6 +567,14 @@ blockquote {
     /* min-height: 420px; */
     min-height: 580px;
     max-height: 580px;
+}
+.half.promo {
+    min-height: 290px;
+    max-height: 290px;
+}
+.half.promo .intro h2,
+.half.promo .intro h1{
+    margin-top: 24px;
 }
 .promo#about {
     background: #6dbd63 url('../images/background/david.carl.bg.jpg') no-repeat center center;
@@ -568,17 +588,22 @@ blockquote {
     color: #000;
     padding-top: 30px;
 }
+.promo a {
+    color: #000;
+}
 .red.promo .intro {
     color: #fff;
 }
-.promo .intro h2 {
+.promo .intro h2,
+.promo .intro h1 {
     /* color: #fff; */
     font-size: 66px;
+    line-height: 92px;
     /* text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); */
     /* max-width: 720px; */
     /* font-weight: bold; */
-    /* margin-bottom: 66px; */
-    margin-top: 120px;
+    /* margin-bottom: 60px; */
+    margin-top: 80px;
 }
 .promo#about .intro .title {
     margin-top: 236px;
@@ -649,20 +674,39 @@ blockquote {
     min-height: 300px;
     max-height: 300px;
 }
+.red.explainer a {
+    color: white;
+}
 .explainer h2 {
     margin-top: 100px;
     line-height: 1.2em;
 }
 
+/* Statement section */
+
+.statement{
+    padding-top: 24px;
+    margin-bottom: 120px;
+}
+.statement-image {
+    margin-top: 28px;
+    max-height: 360px;
+}
 /* ======= Press Section ======= */
 .press {
     color: #f5f5f5;
     background: #424242;
-    padding: 40px 0;
+    padding-top: 30px;
+}
+
+.press .row{
+    margin-bottom: 80px;
 }
 .press h2 {
-    margin: 60px auto;
+    margin-top: 20px;
+    margin-bottom: 160px;
 }
+
 .press ul {
     margin: 0 auto;
     margin-bottom: 0;
@@ -1713,11 +1757,27 @@ img#uclh {
 
 
 .green {
-    /* color: #6dbd63; */
+    color: #6dbd63;
 }
-
+span.red {
+    color: #f06060;
+}
+.red.row,
+.red.item,
 .section.red {
     background-color:  #f06060;
+    color: white;
+}
+.red.row p {
+    color: white;
+}
+.blue.item,
+.blue.row{
+    background-color: #0e83cd;
+    color: white;
+}
+.blue.row p {
+    color: white;
 }
 .white.section {
     background-color: #fff;
@@ -1732,4 +1792,62 @@ img.peeking-top {
     margin-top: -100px;
     border: 1px solid black;
     height: 300px;
+}
+
+.underlined.row,
+span.underlined{
+    border-bottom-color: rgb(222,222,222);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+
+}
+
+.serif{
+    font-family: 'Merriweather', Serif;
+}
+
+h2.serif,
+h2 .serif {
+    font-size: 40px;
+    line-height: 76px;
+}
+
+
+h3.serif{
+    font-size: 28px;
+    line-height: 48px;
+}
+
+.alternating.section .row{
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+.alternating.section h2{
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+.alternating.section p{
+    font-size: 24px;
+    line-height: 36px;
+}
+
+
+.casestudies h2 {
+    margin-top: 48px;
+    margin-bottom: 88px;
+}
+.casestudies h3 {
+    margin-bottom: 24px;
+}
+.casestudies a {
+    /* color: white; */
+}
+.casestudies a:hover{
+
+    text-decoration: underline;
+}
+
+.casestudies .col-md-4 {
+    height: 260px;
+    overflow: hidden;
 }

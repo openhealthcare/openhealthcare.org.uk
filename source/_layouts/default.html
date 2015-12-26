@@ -5,10 +5,10 @@
 
     <div class="wrapper">
       {% include header.html %}
-
-      {{ content | expand_urls: root_url }}
-
-    </div><!--//wrapper-->
+      <div class="content">
+        {{ content | expand_urls: root_url }}
+      </div>
+    </div>
 
     {% include footer.html %}
     {% include after_footer.html %}

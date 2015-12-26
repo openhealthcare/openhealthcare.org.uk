@@ -2,32 +2,31 @@
 layout: default
 body_class: home-page
 ---
-<!-- ******PROMO****** -->
 <section id="promo" class="promo section">
-  <div class="container intro">
-
-      <h2 class="title">
-          We make digital tools <br>
-          that <span class="green">help clinicians</span> to<br>
-          deliver better care.
-      </h2>
-  </div><!--//intro-->
-</section><!--//promo-->
+    <div class="container intro">
+        <a href="/direct-care/">
+            <h2 class="title">
+                We make digital tools <br>
+                that help clinicians to<br>
+                deliver better care.
+            </h2>
+        </a>
+    </div>
+</section>
 
 <section class="red explainer section">
     <div class="container">
         <div class="row">
             <div class="col-md-7">
                 <h2>
-                    We design digital services around the
-                    needs of the clinicians who use them.
+                    <a href="/direct-care/">
+                        We design digital services around the
+                        needs of the clinicians who use them.
+                    </a>
                 </h2>
-                <a class="btn btn-cta btn-cta-primary" href="#">Find Out More</a>
             </div>
             <div class="col-md-4 col-md-offset-1">
-                <a href="#">
-                    <img src="/assets/images/posts/haem.trimmed.png" class="peeking pull-right"/>
-                </a>
+
             </div>
         </div>
     </div>
@@ -36,9 +35,11 @@ body_class: home-page
 <section class="white promo section">
     <div class="container intro">
         <h2 class="title">
-            We build communities <br >
-            that beleive digital can<br>
-            make health & care better.<br>
+            <a href="/community/">
+                We build communities <br >
+                that beleive digital can<br>
+                make health & care better.<br>
+            </a>
         </h2>
 
     </div>
@@ -47,8 +48,8 @@ body_class: home-page
 <section id="hackday" class="hackday">
     <div class="container">
         <h2>
-            <a href="#">
-                <img src="/assets/images/posts/nhshd-logo.png"
+            <a href="/community/">
+                <img src="/assets/images/posts/nhshd-logo.png">
             </a>
         </h2>
         <p>
@@ -56,47 +57,55 @@ body_class: home-page
             and researchers at our events around the country in the
             name of getting together to make the NHS just a little better.
         </p>
-        <a class="btn btn-cta btn-cta-primary" href="#">Find Out More</a>
+        <a class="btn btn-cta btn-cta-secondary" href="/community/">Find Out More</a>
     </div>
 </section>
 
 
-<section class="white promo section">
-    <div class="container intro">
-        <h2 class="title">
-            We help health & care<br >
-            Institutions to make <br>
-            better use of their data.<br>
-        </h2>
-    </div>
-</section>
+{% comment %}
+     <div class="container intro">
+     <h2 class="title">
+     We help health & care<br >
+     Institutions to make <br>
+     better use of their data.<br>
+     </h2>
+     </div>
+     </section>
 
-<section class="red explainer section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-7">
-                <h2>
-                    Because "paperless" isn't good enough.<br/>
-                    We can help put your data to work for you.
-                </h2>
-                <a class="btn btn-cta btn-cta-primary" href="#">Find Out More</a>
-            </div>
-            <div class="col-md-4 col-md-offset-1">
-                <a href="#">
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
+     <section class="red explainer section">
+     <div class="container">
+     <div class="row">
+     <div class="col-md-7">
+     <h2>
+     Because "paperless" isn't good enough.<br/>
+     We can help put your data to work for you.
+     </h2>
+     <a class="btn btn-cta btn-cta-secondary" href="/data/">Find Out More</a>
+     </div>
+     <div class="col-md-4 col-md-offset-1">
+     <a href="#">
+     </a>
+     </div>
+     </div>
+     </div>
+     </section>
+{% endcomment %}
 
-
-<!-- ******PRESS****** -->
 <div class="press">
     <div class="container text-center">
         <h2>
             Just some of the people we're glad to have helped
         </h2>
         <div class="row">
+            <div class="col-md-5 col-md-offset-1">
+                <img class="img-responsive wide" src="assets/images/logos/uclh.png" alt="" id="uclh">
+            </div>
+            <div class="col-md-5">
+                <img class="img-responsive wide" src="assets/images/logos/rfh.png" alt="" id="rfh">
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
             <div class="col-md-3">
                 <img class="img-responsive" src="assets/images/logos/DH.png" alt="" id="dh">
             </div>
@@ -109,33 +118,22 @@ body_class: home-page
             <div class="col-md-3">
                 <img class="img-responsive" src="assets/images/logos/odi.png" alt="" id="odi">
             </div>
-
-        </div>
-
-        <div class="row" style="margin-top: 30px;">
-            <div class="col-md-5 col-md-offset-1">
-                <img class="img-responsive wide" src="assets/images/logos/uclh.png" alt="" id="uclh">
-            </div>
-            <div class="col-md-5">
-                <img class="img-responsive wide" src="assets/images/logos/rfh.png" alt="" id="rfh">
-            </div>
         </div>
     </div>
 </div><!--//press-->
 
 
-<!-- ******hireus****** -->
 <section id="hireus" class="hireus section">
-  <div class="container">
-      <h2 class="title">Hire us.</h2>
-      <p>
-          Modern Digital services for your organisation?<br />
-          Services so good that people love to use them?<br />
-          Harnessing data to make better deisions?
-          <br />
-          <br />
-          We share your vision, and we can help you get there.
-      </p>
-      <a class="btn btn-cta btn-cta-secondary" href="services.html">Find Out More</a>
-  </div>
-</section><!--//hireus-->
+    <div class="container">
+        <h2 class="title">Hire us.</h2>
+        <p>
+            Modern Digital services for your organisation?<br />
+            Services so good that people love to use them?<br />
+            Harnessing data to make better decisions?
+            <br />
+            <br />
+            We share your vision, and we can help you get there.
+        </p>
+        <a class="btn btn-cta btn-cta-secondary" href="/services/">Find Out More</a>
+    </div>
+</section>
