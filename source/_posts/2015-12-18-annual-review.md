@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "2015 - Annual review"
-date: 2015-12-18 15:00:29 +0000
+date: 2016-01-18 15:00:29 +0000
 comments: false
-categories: 
+categories:
 author: David Miller
 author_link: thatdavidmiller
 image: assets/images/posts/nhshd9.jpg
 ---
-2015 has been a big year for us - so we thought we'd take a moment and share 
+2015 was a big year for us - so we thought we'd take a moment and share
 some of what we've been up to:
 
 # Delivering Digital Services for direct care
@@ -16,9 +16,9 @@ some of what we've been up to:
 We believe that the digital tools used to deliver patient care should be of the highest
 possible quality. Not only do we believe it, we work hard to deliver them as well!
 
-This year we launched two new services - for [managing OPAT care]({% post_url 2015-02-05-elcid-opat-launch %})
+Last year we launched two new services - for [managing OPAT care]({% post_url 2015-02-05-elcid-opat-launch %})
 at UCLH (patients who need regular IV drugs but aren't so sick that they need to stay in
-hospital all the time), and for the returning traveller 
+hospital all the time), and for the returning traveller
 [walk in clinic]({% post_url 2015-10-21-launching-a-new-walk-in-service %}) at the Hospital for
 Tropical Diseases.
 
@@ -60,9 +60,12 @@ refactoring things to provide better APIs for people to build on.
   <img class="img-responsive" src="/assets/images/posts/nhshd.10.jpg" alt="" />
 </div><!--//post-thumb-->
 
-2015 has been as busy as ever for [NHS Hack Day](http://nhshackday.com), with three
+2015 was as busy as ever for [NHS Hack Day](http://nhshackday.com), with three
 events bringing together hundreds of clinicians, academics, designers, developers, and
-patients to 
+patients to help make the NHS just a little better.
+
+We kicked off the year with another trip to [Cardiff]({% post_url 2015-05-25-nhs-hack-day-10 %}),
+before coming back to London in May, and then heading up to Manchester in the Autumn.
 
 # UK Health Camp
 
@@ -71,16 +74,22 @@ patients to
   <img class="img-responsive" src="/assets/images/posts/healthcamp.foyer.jpg" alt="" />
 </div><!--//post-thumb-->
 
-We made a UK Health Camp.
+2015 also saw the first [UK Health Camp](http://ukhealthcamp.com) - a community unconference
+for people interested in digital and data in health and care. We were proud to sponsor the
+event, and glad to have a community space to discuss the pressing issues of digital transformation
+within the NHS.
 
-# Team
-
-We added a Fred Kingham as Lead Developer.
-We moved office twice
+We're already looking forward to next year, and have started plotting how to make it even more
+of a success with the rest of the team!
 
 # The Future
 
+Looking forward to to this year, we're excited to be working on lots of new projects, with new
+partners, as well as continuing to develop and improve our existing services.
 
+If you've got a project you think we could help with this year, do drop us a line at
+<a href="mailto:hello@openhealthcare.org.uk">hello@openhealthcare.org.uk</a> - we'd love to
+hear all about it!
 
 
 <small>
