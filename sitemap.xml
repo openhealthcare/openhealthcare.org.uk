@@ -3,6 +3,14 @@
   
   
   <url>
+    <loc>http://openhealthcare.org.uk/blog/2016/01/18/annual-review/</loc>
+    
+    <lastmod>2016-01-18T15:00:29+00:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://openhealthcare.org.uk/blog/2015/11/13/opal-05-released/</loc>
     
     <lastmod>2015-11-13T16:00:55+00:00</lastmod>
@@ -125,63 +133,77 @@
   
   <url>
     <loc>http://openhealthcare.org.uk/about.html</loc>
-    <lastmod>2015-11-13T16:56:43+00:00</lastmod>
+    <lastmod>2016-02-08T14:45:46+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://openhealthcare.org.uk/blog.html</loc>
-    <lastmod>2015-11-13T16:56:43+00:00</lastmod>
+    <lastmod>2016-02-08T14:45:46+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://openhealthcare.org.uk/contact.html</loc>
-    <lastmod>2015-11-13T16:56:43+00:00</lastmod>
+    <lastmod>2016-02-08T14:45:46+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://openhealthcare.org.uk/blog/archives/</loc>
-    <lastmod>2015-11-13T16:56:43+00:00</lastmod>
+    <loc>http://openhealthcare.org.uk/blog/</loc>
+    <lastmod>2016-02-08T14:45:46+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://openhealthcare.org.uk/</loc>
-    <lastmod>2015-11-13T16:56:43+00:00</lastmod>
+    <lastmod>2016-02-08T14:45:46+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
+    <loc>http://openhealthcare.org.uk/data/</loc>
+    <lastmod>2016-02-08T14:45:46+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://openhealthcare.org.uk/blog/archives/</loc>
+    <lastmod>2016-02-08T14:45:46+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
     <loc>http://openhealthcare.org.uk/opal.html</loc>
-    <lastmod>2015-11-13T16:56:43+00:00</lastmod>
+    <lastmod>2016-02-08T14:45:46+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://openhealthcare.org.uk/products.html</loc>
-    <lastmod>2015-11-13T16:56:43+00:00</lastmod>
+    <lastmod>2016-02-08T14:45:46+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://openhealthcare.org.uk/services.html</loc>
-    <lastmod>2015-11-13T16:56:43+00:00</lastmod>
+    <lastmod>2016-02-08T14:45:46+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://openhealthcare.org.uk/team.html</loc>
-    <lastmod>2015-11-13T16:56:43+00:00</lastmod>
+    <lastmod>2016-02-08T14:45:46+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -227,6 +249,12 @@
   <url>
     <loc>http://openhealthcare.org.uk/assets/plugins/jquery-placeholder/tests/index.html</loc>
     <lastmod>2014-10-02T13:16:51Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://openhealthcare.org.uk/oldindex.html</loc>
+    <lastmod>2015-12-23T23:33:54Z</lastmod>
     <priority>0.6</priority>
   </url>
   
