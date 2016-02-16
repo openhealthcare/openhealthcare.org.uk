@@ -4,20 +4,20 @@ layout: default
 single: true
 ---
 {% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
-<!-- ******BLOG LIST****** --> 
-<div class="blog container">            
+<!-- ******BLOG LIST****** -->
+<div class="blog container">
   <div class="row">
-    <div id="blog-entry" class="blog-entry section col-md-8 col-sm-8 col-xs-12">                 
+    <div id="blog-entry" class="blog-entry section col-md-8 col-sm-8 col-xs-12">
       <article class="post">
         <h2 class="title">{{ page.title }}</h2>
         <div class="meta">
-          <ul class="meta-list list-inline">                                       
+          <ul class="meta-list list-inline">
             <li class="post-time post_date date updated">{{ page.date | date: '%B %d %Y' }}</li>
             <li class="post-author"> by <a href="http://twitter.com/{{ page.author_link }}">{{ page.author }}</a></li>
             <!-- <li class="post-comments-link"> -->
             <!--   <a href="#comment-area"><i class="fa fa-comments"></i>8 Comments</a> -->
             <!-- </li> -->
-          </ul><!--//meta-list-->                           	
+          </ul><!--//meta-list-->
         </div><!--meta-->
         {% if page.image %}
         <div class="post-thumb">
@@ -29,7 +29,9 @@ single: true
         </div>
         <div class="content">
           <p>
-            <i><a href="http://twitter.com/{{ page.author_link }}">Follow {{ page.author }} on twitter</a></i>
+            <small>
+              <i class="fa fa-twitter"></i><i><a href="http://twitter.com/{{ page.author_link }}">Follow {{ page.author }} on twitter</a></i>
+            </small>
           </p>
         </div>
         <nav class="post-nav">
@@ -40,14 +42,14 @@ single: true
         <span class="nav-next"><a href="{{ page.next.url}}" rel="prev">{{ page.next.title }} <i class="fa fa-long-arrow-right"></i></a></span>
         {% endif %}
         </nav><!--//post-nav-->
-                
-      </article><!--//post-->  
+
+      </article><!--//post-->
 
       <div id="disqus_thread"></div>
       <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES * * */
         var disqus_shortname = 'ohcuk';
-        
+
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -56,9 +58,9 @@ single: true
         })();
       </script>
       <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-                                    
+
     </div><!--//blog-entry-->
-    
+
     <aside id="blog-sidebar" class="blog-sidebar col-md-3 col-sm-3 col-xs-12 col-md-offset-1 col-sm-offset-1 col-xs-offset-0">
       <section class="widget recent-posts">
         <h3 class="title">Recent Posts</h3>
@@ -71,6 +73,6 @@ single: true
           <li><a href="/atom.xml"><i class="fa fa-rss-square"></i> RSS</a></li>
         </ul>
       </section><!--//widget-->
-    </aside><!--//blog-side-bar-->               
+    </aside><!--//blog-side-bar-->
   </div><!--//row-->
 </div><!--//blog-->
