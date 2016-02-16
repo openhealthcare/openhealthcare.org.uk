@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How we're helping responsd to the Zika outbreak"
+title: "How we're helping respond to the Zika outbreak"
 date: 2016-02-16 15:00:29 +0000
 comments: false
 categories:
