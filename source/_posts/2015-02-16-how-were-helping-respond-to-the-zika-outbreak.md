@@ -32,10 +32,10 @@ to changing clinical needs, and we’re on hand to help make those improvements.
 
 Working closely with clinicians from HTD, we quickly developed a prototype Zika “pathway”. This enables users to record extra
 information of particular importance to patients they were treating for Zika, as well as extra quick ways to enter the very
-specific set of tests that are moet relevant to such patients.
+specific set of tests that are most relevant to such patients.
 
 Because we have an electronic clinical pathway specific to the particular condition being treated, we were able to provide
-lots of contextually relevant information and notes for it’s treatment. This guidance was written by the local consultants,
+lots of contextually relevant information and notes for its treatment. This guidance was written by the local consultants,
 and helps to make sure that every patient is given the very best care possible.
 
 <div class="post-thumb">
@@ -44,7 +44,7 @@ and helps to make sure that every patient is given the very best care possible.
 
 All the information about patients that gets entered on [elCID](http://elcid.openhealthcare.org.uk/) is stored as high quality
 structured data. That means that we
-were also able to generate a summary of their interaction with the patient at the click of a button, complete with
+are also able to generate a summary of their interaction with the patient at the click of a button, complete with
 symptoms, travel history, investigations and results, and the specific extra Zika information we are now recording.
 
 Documenting clinical activity in this way - on digital tools that understand the clinical domain -  means that it is also
