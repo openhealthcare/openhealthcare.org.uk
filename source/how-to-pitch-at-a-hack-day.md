@@ -29,7 +29,7 @@ of a life without the thing you're pitching.
 
 Particularly when the person who would benefit is some kind of specialist, most of the people
 listening to the pitch won't understand what what life is like for the people that your pitch
-is about. So help them empathise by telling a story about what life is like for those people.
+is about. So help them empathise by telling a story about their experiences.
 
 ## 2. Explain the change you want to see
 
