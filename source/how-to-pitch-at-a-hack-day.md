@@ -141,7 +141,7 @@ excellent hack day projects. They tend to be the kind of thing that works well i
 where you're trying to ship something in a limited time.
 
 That said, primates are suckers for novelty, so you're likely to score bonus points with the room
-(particularly the grizzled hack day veterans) if you come up with someething that's a little bit new.
+(particularly the grizzled hack day veterans) if you come up with something that's a little bit new.
 Examples of things that have probably been done at least once before are:
 
 * Something that hits the Twillio API and phones the judges
