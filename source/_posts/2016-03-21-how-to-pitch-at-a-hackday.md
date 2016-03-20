@@ -156,3 +156,7 @@ _(Note: Particular thanks to [Alex](https://twitter.com/blangry) and
 
 So, now you know how to pitch, come join us at the next [NHS Hack Day](http://nhshackday.com) and
 try it out.
+
+<small>
+Photo credits: [Paul Clarke](https://secure.flickr.com/photos/paul_clarke/)
+</small>
