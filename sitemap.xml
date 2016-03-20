@@ -3,6 +3,14 @@
   
   
   <url>
+    <loc>http://openhealthcare.org.uk/blog/2016/03/21/how-to-pitch-at-a-hackday/</loc>
+    
+    <lastmod>2016-03-21T15:00:29+00:00</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://openhealthcare.org.uk/blog/2016/02/16/how-were-helping-respond-to-the-zika-outbreak/</loc>
     
     <lastmod>2016-02-16T15:00:29+00:00</lastmod>
@@ -141,84 +149,77 @@
   
   <url>
     <loc>http://openhealthcare.org.uk/about.html</loc>
-    <lastmod>2016-03-19T21:44:47+00:00</lastmod>
+    <lastmod>2016-03-20T22:12:33+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://openhealthcare.org.uk/blog.html</loc>
-    <lastmod>2016-03-19T21:44:47+00:00</lastmod>
+    <lastmod>2016-03-20T22:12:33+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://openhealthcare.org.uk/contact.html</loc>
-    <lastmod>2016-03-19T21:44:47+00:00</lastmod>
+    <lastmod>2016-03-20T22:12:33+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://openhealthcare.org.uk/how-to-pitch-at-a-hack-day.html</loc>
-    <lastmod>2016-03-19T21:44:47+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/archives/</loc>
-    <lastmod>2016-03-19T21:44:47+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/data/</loc>
-    <lastmod>2016-03-19T21:44:47+00:00</lastmod>
+    <loc>http://openhealthcare.org.uk/blog/</loc>
+    <lastmod>2016-03-20T22:12:33+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://openhealthcare.org.uk/</loc>
-    <lastmod>2016-03-19T21:44:47+00:00</lastmod>
+    <lastmod>2016-03-20T22:12:33+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>http://openhealthcare.org.uk/blog/</loc>
-    <lastmod>2016-03-19T21:44:47+00:00</lastmod>
+    <loc>http://openhealthcare.org.uk/data/</loc>
+    <lastmod>2016-03-20T22:12:33+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://openhealthcare.org.uk/blog/archives/</loc>
+    <lastmod>2016-03-20T22:12:33+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://openhealthcare.org.uk/opal.html</loc>
-    <lastmod>2016-03-19T21:44:47+00:00</lastmod>
+    <lastmod>2016-03-20T22:12:33+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://openhealthcare.org.uk/products.html</loc>
-    <lastmod>2016-03-19T21:44:47+00:00</lastmod>
+    <lastmod>2016-03-20T22:12:33+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://openhealthcare.org.uk/services.html</loc>
-    <lastmod>2016-03-19T21:44:47+00:00</lastmod>
+    <lastmod>2016-03-20T22:12:33+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://openhealthcare.org.uk/team.html</loc>
-    <lastmod>2016-03-19T21:44:47+00:00</lastmod>
+    <lastmod>2016-03-20T22:12:33+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
