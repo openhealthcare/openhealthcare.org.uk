@@ -77,7 +77,7 @@ Unsurprisingly this tends not to excite the creative problem-solvers in the room
 _exactly_ the people you want to be working with )
 
 The two _particularly_ common cases of this are "Let me tell you the specific screens my
-app will have" and "I have this library/Rasberry Pi/Google Glass... please make it relevant to
+app will have" and "I have this library/Raspberry Pi/Google Glass... please make it relevant to
 someone."
 
 ## 6. Practice
