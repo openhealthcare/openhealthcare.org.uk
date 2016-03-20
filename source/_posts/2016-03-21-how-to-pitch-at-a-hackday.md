@@ -33,7 +33,7 @@ is about. So help them empathise by telling a story about their experiences.
 
 ## 2. Explain the change you want to see
 
-Hack day projects that capture the immagination are mostly the ones with the potential to make
+Hack day projects that capture the imagination are mostly the ones with the potential to make
 a real impact in the world. That means that when you're pitching, you should make sure to explain
 just how the world will be better once you've made your project.
 
