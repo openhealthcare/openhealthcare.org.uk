@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to win at hack day pitching"
+title: "How to make a great hack day pitch"
 date: 2016-03-21 15:00:29 +0000
 comments: false
 categories:
@@ -8,8 +8,8 @@ author: David Miller
 author_link: thatdavidmiller
 image: assets/images/posts/nhshd.audience.jpg
 ---
-We've been running Hack Days for quite a wile now. [NHS Hack Day](http://nhshackday.com) has
-seen thousands of enthusiastic volunteers through it's doors, and hundreds of project pitches.
+We've been running Hack Days for quite a while now. [NHS Hack Day](http://nhshackday.com) has
+seen thousands of enthusiastic volunteers through our doors, and hundreds of project pitches.
 
 One of the questions that we get asked a lot, particularly by people who are new to hack days
 is
@@ -18,8 +18,8 @@ is
 What makes a good pitch at a hack day?
 </p></blockquote>
 
-... so we thought we'd share a few tips for people coming to hack days on how to win at hack
-day pitching.
+... so we thought we'd share a few tips for people coming to hack days on how to make a great
+hack day pitch
 
 ## 1. Tell a story
 
@@ -64,7 +64,7 @@ You're only going to have a very short time for your pitch. Probably no more tha
 
 Keep it snappy.
 
-_(Note, this section has been heavily edited down in the name brevity and minimal irony.)_
+_(Note, this section has been heavily edited down in the name of brevity and minimal irony.)_
 
 ## 5. Problem first, not solution backwards
 
@@ -87,7 +87,7 @@ Luckily, when you arrive at a hack day, you are often sat around in a big room w
 of other people who you don't know, just waiting for something to happen.
 
 Why not say hello to one of them who you don't know, and ask if you can practice your pitch?
-Ask for feedback - what did they like about it? Was there anything that wasn't clear? it's a
+Ask for feedback - what did they like about it? Was there anything that wasn't clear? It's a
 good way to make friends in the inevitable down time at the start of the day, and you'll end
 up with a better pitch.
 
