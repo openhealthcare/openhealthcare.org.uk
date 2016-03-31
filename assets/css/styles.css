@@ -1505,6 +1505,10 @@ img#uclh {
     }
 }
 
+@media(max-width: 360px){
+   .logo img { width: 260px;}
+}
+
 /*iPhone 6 portrait */
 @media(max-width: 414px){
      .statement-image {width: 345px;}
