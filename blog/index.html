@@ -72,6 +72,120 @@
       
       <article class="post blog-entry">
         <div class="content">
+          <h2 class="post-title"><a href="/blog/2016/04/06/how-we-manage-risk-when-we-use-open-source-in-health/">How we manage risk when we use open source in health</a></h2>
+          <div class="meta">
+            <ul class="meta-list list-inline">                                       
+              <li class="post-time post_date date updated">April 06, 2016</li>
+              <li class="post-author"> by <a href="http://twitter.com/thatdavidmiller">David Miller</a></li>
+              <!-- <li class="post-comments-link"> &#8211;>
+              <!--   <a href="blog-single.html#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
+              <!-- </li> &#8211;>
+            </ul><!--//meta-list-->                           	
+          </div><!--meta-->
+          
+        <div class="post-thumb">
+          <img class="img-responsive" src="/assets/images/posts/some.code.jpg" alt="" />
+        </div><!--//post-thumb-->
+        
+          <div class="post-entry">
+            <p>In the last couple weeks, many thousands of words have been written about a small piece of open source code called left-pad which was suddenly un-published by its author. (If you’re not up to speed on this, then you might like to
+read a <a href="http://www.theregister.co.uk/2016/03/23/npm_left_pad_chaos/">narrative overview</a>, or
+<a href="http://www.haneycodes.net/npm-left-pad-have-we-forgotten-how-to-program/">some</a>
+<a href="http://lucumr.pocoo.org/2016/3/24/open-source-trust-scaling/">interesting</a>
+<a href="http://blog.npmjs.org/post/141577284765/kik-left-pad-and-npm">analysis</a>.)</p>
+
+<p>Perfectly understandably, this has caused lots of people to re-consider the risks of building on open source, and how the actions of unaccountable external developers halfway around the world could have an effect on how your software operates.</p>
+
+<p>When we work with digital tools for health, risk can be particularly profound. The failure mode of a digital service that supports clinicians delivering direct care is the risk of IT failures causing harm to patients, not just a website being unavailable for a while. This means that we need to make sure that our attitude to risk is appropriate to the harm that failures can cause.</p>
+
+<p>Thankfully, there are plenty of people using open source, and lots of them using it for mission critical applications that have exacting uptime expectations. That means that the path to processes and tools to mitigate these risks is well trodden, and we can learn from the wealth of cultural knowledge in the open source movement.</p>
+
+<p>Taking a straw poll of the table I&rsquo;m sat at, there are people who&rsquo;ve written code using open source for investment banks, power stations, government departments, and yes, NHS hospitals.</p>
+
+<p>The story of how all those places avoid their production systems being broken by code that has been altered by unknown open source developers is basically identical.</p>
+
+<h3>Software Dependencies at Open Health Care</h3>
+
+<div class="post-thumb">
+  <img class="img-responsive" src="/assets/images/people/david.ross.jpg" alt="" />
+</div>
+
+
+<!--//post-thumb-->
+
+
+<p>A <a href="https://en.wikipedia.org/wiki/Coupling_(computer_programming)">dependency</a> is a
+broad software engineering term used to explain the relationship when a piece of software relies
+on another one. When programmers install and run software from other sources, they will most often use a
+<a href="https://en.wikipedia.org/wiki/Package_manager">package manager</a> - software that automates the
+process of installing and upgrading code.</p>
+
+<p>Before we install a new package or module of open source code, we carefully evaluate it. We look at the code, we look at its user base, we look at how actively maintained it is by the open source community and we look at the risk that it presents to the rest of our code base. The decision has to be signed off by at least two people in our development team, and it’s not one we take lightly. (Explaining how this review and evaluation process works in detail is probably a whole post in itself.)</p>
+
+<p>Once we’ve taken that decision, we have to update our code to incorporate the new dependency.
+<a href="https://pypi.python.org/pypi/">Every</a>
+<a href="https://www.npmjs.com/">major</a>
+<a href="https://hex.pm/">open</a>
+<a href="https://rubygems.org/">source</a>
+<a href="http://www.cpan.org/">package</a>
+<a href="https://help.ubuntu.com/lts/serverguide/package-management.html">manager</a> includes the concept of
+<a href="https://en.wikipedia.org/wiki/Software_versioning">software versions</a>. When we use external code, we &ldquo;pin&rdquo; that code to
+<a href="https://github.com/openhealthcare/elcid/blob/v0.6.0/requirements.txt">a particular version</a>. The exact mechanism we use to do that varies, but always means that we end up explicitly defining the exact version number of a piece of code in our application.</p>
+
+<p>That means that every time we re-install, we get the exact same software.
+Our <a href="https://travis-ci.org/openhealthcare/">automated test suites</a> are run against the exact same software. When we deploy to a staging environment to do testing and quality control, it&rsquo;s the exact same software. When we deploy to production&hellip; you get the picture I&rsquo;m sure.</p>
+
+<p>If the author of that code releases a new version, we’ll hear about it from the project mailing list, or from blog posts about it, but that code doesn’t automatically find its way into our applications.</p>
+
+<p>When we decide to upgrade a dependency that&rsquo;s a task that&rsquo;s
+<a href="https://waffle.io/openhealthcare/opal-ideas">assigned to a programmer</a> as part of a
+<a href="https://en.wikipedia.org/wiki/Scrum_(software_development)#Sprint">sprint</a>. That task
+will consist of a number of things:</p>
+
+<ul>
+<li>They have to review the changes to the library.</li>
+<li>They have to change several pieces of configuration management code.</li>
+<li>They have to run all of our automated test suites and make sure they pass.</li>
+<li>They have to get the upgrade accepted by a <a href="https://help.github.com/articles/using-pull-requests/">peer review process</a> (another programmer has to OK the decision).</li>
+</ul>
+
+
+<p>And that&rsquo;s just to change the latest version for a fresh install. It is nowhere near production yet. To get there you have full change approval and acceptance testing processes that are in place for
+individual deployments.</p>
+
+<h3>So how did left-pad affect us?</h3>
+
+<p>The short answer is, it didn’t.</p>
+
+<p>By the time the applications we support are deployed, they safely include all of the code that’s required to run them, and that code is carefully managed.</p>
+
+<p>The real disruption caused by left-pad was to the working life of programmers. It would have meant that new installations failed, or
+perhaps <a href="https://en.wikipedia.org/wiki/Continuous_integration">automated test suites</a> didn&rsquo;t pass. If we’d been working at 22:30 PM last tuesday, then during the two and a half hours that the whole affair lasted, it might have made us a little less productive. If we’d been doing a planned upgrade or deployment of one of our applications, we might have had to postpone it. (Although we likely would have been just fine with the specific left-pad issues.)</p>
+
+<p>What it has meant, is that we’ve taken the opportunity to review our processes to make sure that we’re following established best practices for open source development in domains where managing risk is as important as health. And we welcome that opportunity - we’re always striving to make sure that our engineering standards are as high as possible.</p>
+
+<h2>Open Source or just good software engineering?</h2>
+
+<p>One of the great things about the open source movement is that we’re able to have high quality conversations about things like risk and failure in the open. When things go wrong, we’re happy to talk about it. The open movement shares its knowledge from the tough times as well as the good times. The open movement means that the stakeholder involvement and the responsibility is shared. If a solution needs to be found, it can often be found quicker and to a higher standard because it is being required and reviewed by such a large body of individuals.</p>
+
+<p>More broadly, every software vendor, produces applications that depend on code they haven’t written themselves - regardless of licensing. Managing dependencies is a part of all modern software engineering. The most important factor here is not the licence under which that code exists. What does matter, is having an approach to risk that’s appropriate and responsible.</p>
+
+<p>If you’d like to know more about the processes we use to make sure that we deliver the highest quality service to the clinical teams who use our products,
+or if you’d like to know more about how we might be able to help you, then do <a href="mailto:hello@openhealthcare.org.uk">get in touch</a>.</p>
+
+<p><small>
+Photo credits: <a href="flickr.com/photos/paul_clarke/">Paul Clarke</a>
+</small></p>
+
+            <a class="read-more" href="/blog/2016/04/06/how-we-manage-risk-when-we-use-open-source-in-health/">
+              Read more <i class="fa fa-long-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </article><!--//post-->
+      
+      <article class="post blog-entry">
+        <div class="content">
           <h2 class="post-title"><a href="/blog/2016/04/04/why-we-dont-do-product-placement-at-nhshackday/">Why we don’t do product placement at NHS Hack Day</a></h2>
           <div class="meta">
             <ul class="meta-list list-inline">                                       
@@ -390,7 +504,7 @@ of the service so that we can be sure that we’re meeting their needs.</p>
 flexibility and iteration in mind, and be supported by teams who have the capability to iterate them responsively.</p>
 
 <p>If you’d like to know more about how we could help you by delivering services like this, or more about the services we offer,
-do get in touch with us at <a href="mailto:hello@openhealthcare.org.uk"><a href="&#109;&#97;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#104;&#x65;&#108;&#x6c;&#x6f;&#x40;&#x6f;&#x70;&#x65;&#x6e;&#x68;&#101;&#97;&#x6c;&#116;&#x68;&#x63;&#x61;&#114;&#101;&#46;&#111;&#114;&#103;&#46;&#x75;&#107;">&#x68;&#101;&#x6c;&#x6c;&#x6f;&#64;&#x6f;&#112;&#101;&#110;&#x68;&#x65;&#x61;&#108;&#116;&#104;&#x63;&#x61;&#114;&#101;&#46;&#x6f;&#114;&#103;&#x2e;&#117;&#x6b;</a></a>.</p>
+do get in touch with us at <a href="mailto:hello@openhealthcare.org.uk"><a href="&#x6d;&#97;&#105;&#x6c;&#116;&#111;&#x3a;&#x68;&#101;&#108;&#108;&#x6f;&#x40;&#x6f;&#x70;&#x65;&#x6e;&#x68;&#x65;&#x61;&#108;&#116;&#104;&#99;&#97;&#x72;&#101;&#46;&#111;&#x72;&#x67;&#x2e;&#x75;&#107;">&#104;&#x65;&#108;&#x6c;&#111;&#64;&#111;&#x70;&#x65;&#x6e;&#104;&#101;&#x61;&#x6c;&#x74;&#104;&#99;&#x61;&#114;&#101;&#x2e;&#x6f;&#x72;&#103;&#x2e;&#x75;&#x6b;</a></a>.</p>
 
 <p><small>
 Photo credits: <a href="https://www.flickr.com/photos/31031835@N08/">John Tan</a>
@@ -519,7 +633,7 @@ of a success with the rest of the team!</p>
 partners, as well as continuing to develop and improve our existing services.</p>
 
 <p>If you&rsquo;ve got a project you think we could help with this year, do drop us a line at
-<a href="mailto:hello@openhealthcare.org.uk"><a href="&#109;&#97;&#x69;&#108;&#116;&#x6f;&#58;&#x68;&#101;&#x6c;&#108;&#x6f;&#64;&#x6f;&#112;&#x65;&#110;&#104;&#101;&#97;&#108;&#116;&#x68;&#99;&#x61;&#x72;&#x65;&#x2e;&#111;&#x72;&#x67;&#46;&#x75;&#107;">&#104;&#101;&#x6c;&#108;&#x6f;&#x40;&#x6f;&#x70;&#101;&#110;&#104;&#x65;&#x61;&#108;&#x74;&#x68;&#99;&#x61;&#114;&#101;&#x2e;&#x6f;&#x72;&#x67;&#x2e;&#x75;&#107;</a></a> - we&rsquo;d love to
+<a href="mailto:hello@openhealthcare.org.uk"><a href="&#109;&#97;&#x69;&#x6c;&#116;&#111;&#58;&#104;&#x65;&#108;&#108;&#111;&#x40;&#111;&#112;&#x65;&#x6e;&#x68;&#101;&#x61;&#108;&#116;&#x68;&#99;&#x61;&#x72;&#x65;&#46;&#111;&#114;&#103;&#46;&#117;&#x6b;">&#x68;&#101;&#x6c;&#108;&#x6f;&#64;&#111;&#x70;&#101;&#110;&#x68;&#101;&#x61;&#x6c;&#116;&#x68;&#99;&#97;&#x72;&#x65;&#x2e;&#x6f;&#x72;&#103;&#x2e;&#x75;&#107;</a></a> - we&rsquo;d love to
 hear all about it!</p>
 
 <p><small>
@@ -527,99 +641,6 @@ Photo credits: <a href="https://secure.flickr.com/photos/paul_clarke/">Paul Clar
 </small></p>
 
             <a class="read-more" href="/blog/2016/01/18/annual-review/">
-              Read more <i class="fa fa-long-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-      </article><!--//post-->
-      
-      <article class="post blog-entry">
-        <div class="content">
-          <h2 class="post-title"><a href="/blog/2015/11/13/opal-05-released/">OPAL 0.5 released</a></h2>
-          <div class="meta">
-            <ul class="meta-list list-inline">                                       
-              <li class="post-time post_date date updated">November 13, 2015</li>
-              <li class="post-author"> by <a href="http://twitter.com/thatdavidmiller">David Miller</a></li>
-              <!-- <li class="post-comments-link"> &#8211;>
-              <!--   <a href="blog-single.html#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
-              <!-- </li> &#8211;>
-            </ul><!--//meta-list-->                           	
-          </div><!--meta-->
-          
-          <div class="post-entry">
-            <p>We&rsquo;re happy to announce that we&rsquo;ve just released a new version of <a href="http://opal.openhealthcare.org.uk/docs/">OPAL</a> -
-our framework for building clinical facing digital services.</p>
-
-<p>So - what&rsquo;s new in this release?</p>
-
-<h2>Search</h2>
-
-<p>We&rsquo;ve completely re-designed our search pages to help clinicians find
-the patients they&rsquo;re interested in more easily. We also default to
-having a search box in the navigation of every page.</p>
-
-<p><img src="https://raw.githubusercontent.com/openhealthcare/openhealthcare.org.uk/master/source/assets/images/posts/search.results.png" alt="" /></p>
-
-<p>In addition, we&rsquo;ve been working hard to make search backends pluggable,
-so that in the future you&rsquo;ll be able to drop in alternative backends of
-your choice as your application scales.</p>
-
-<h2>Patient List view</h2>
-
-<p>We spent a lot of time over the past few months collating feedback from users and
-doing research to understand how we could improve the core Patient List
-views. As a response to that we&rsquo;ve updated the list interface - making it clearer
-which patient is currently active, and removing some of the features that weren&rsquo;t
-actually helping our users to care for patients.</p>
-
-<p><img src="https://raw.githubusercontent.com/openhealthcare/openhealthcare.org.uk/master/source/assets/images/posts/list.view.png" alt="" /></p>
-
-<h2>Subrecord metadata</h2>
-
-<p>We added four new utility fields to
-<a href="http://opal.openhealthcare.org.uk/docs/guides/datamodel/">Patient and Episode subrecords</a>
- - created_by, updated_by, created, updated. This gives developers easier
-programatic access to high level audit trail information, without having
-to navigate the <a href="https://github.com/etianen/django-reversion/blob/master/docs/api.rst">low level Django Reversion
-API</a>
-- which is still there for when you need more detailed audit trail
-information.</p>
-
-<h2>Select2 and List fields</h2>
-
-<p>This release introduces
-<a href="https://github.com/angular-ui/ui-select">Select2</a> to OPAL - which
-provides us some nicer widgets - particularly for fields associated with
-<a href="http://opal.openhealthcare.org.uk/docs/guides/lookup_lists/">lookuplists</a>,
-and has also enabled the development of list types as
-Subrecord fields. For example this means that your travel can be to a
-list of countries when you take a backpacking trip through Southeast
-Asia!</p>
-
-<h2>What&rsquo;s Next?</h2>
-
-<p>Just because this release is out, we&rsquo;re not resting on our laurels - in
-fact we&rsquo;re already gearing up for the next releases. We&rsquo;re planning to
-look at the information architecture of Episode detail views, including
-a new Notes view that&rsquo;s currently being tested by some users of the
-<a href="http://elcid.openhealthcare.org.uk">elCID</a> project.</p>
-
-<p>We also plan to refactor some of the core data models back into OPAL to provide
-them there by default rather than implemented over and over again in
-individual applications.</p>
-
-<p>As ever, because OPAL is an Open Governance <a href="http://github.com/openhealthcare/opal">Open Source</a> project, you can
-follow our progress over on
-<a href="https://waffle.io/openhealthcare/opal-ideas">our public Waffle board</a> where we&rsquo;ll be
-organising our work.</p>
-
-<h2>More about OPAL</h2>
-
-<p>If you want to find out more about OPAL or how Open Health Care can help
-you to run high quality digital services for doctors in your institution
-then do get in touch!</p>
-
-            <a class="read-more" href="/blog/2015/11/13/opal-05-released/">
               Read more <i class="fa fa-long-arrow-right"></i>
             </a>
           </div>
@@ -643,6 +664,10 @@ then do get in touch!</p>
         <h3 class="title">Recent Posts</h3>
         <ul class="list-unstyled">
           
+          <li><a href="/blog/2016/04/06/how-we-manage-risk-when-we-use-open-source-in-health/">How we manage risk when we use open source in health</a><br /><span class="date">
+              April 06, 2016
+          </span></li>
+          
           <li><a href="/blog/2016/04/04/why-we-dont-do-product-placement-at-nhshackday/">Why we don’t do product placement at NHS Hack Day</a><br /><span class="date">
               April 04, 2016
           </span></li>
@@ -657,10 +682,6 @@ then do get in touch!</p>
           
           <li><a href="/blog/2016/01/18/annual-review/">2015 - Annual review</a><br /><span class="date">
               January 18, 2016
-          </span></li>
-          
-          <li><a href="/blog/2015/11/13/opal-05-released/">OPAL 0.5 released</a><br /><span class="date">
-              November 13, 2015
           </span></li>
           
           <li><a href="/atom.xml"><i class="fa fa-rss-square"></i> RSS</a></li>
