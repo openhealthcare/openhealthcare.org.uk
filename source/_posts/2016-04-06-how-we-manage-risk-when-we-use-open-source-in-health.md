@@ -79,7 +79,7 @@ perhaps [automated test suites](https://en.wikipedia.org/wiki/Continuous_integra
 
 What it has meant, is that we’ve taken the opportunity to review our processes to make sure that we’re following established best practices for open source development in domains where managing risk is as important as health. And we welcome that opportunity - we’re always striving to make sure that our engineering standards are as high as possible.
 
-## Open Source or just good software engineering?
+### Open Source or just good software engineering?
 
 One of the great things about the open source movement is that we’re able to have high quality conversations about things like risk and failure in the open. When things go wrong, we’re happy to talk about it. The open movement shares its knowledge from the tough times as well as the good times. The open movement means that the stakeholder involvement and the responsibility is shared. If a solution needs to be found, it can often be found quicker and to a higher standard because it is being required and reviewed by such a large body of individuals.
 
