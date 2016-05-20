@@ -71,10 +71,10 @@
   <div class="row">
     <div id="blog-entry" class="blog-entry section col-md-8 col-sm-8 col-xs-12">
       <article class="post">
-        <h2 class="title">OPAL 0.5 released</h2>
+        <h2 class="title">NHS Hack Day 13 - London</h2>
         <div class="meta">
           <ul class="meta-list list-inline">
-            <li class="post-time post_date date updated">November 13 2015</li>
+            <li class="post-time post_date date updated">May 20 2016</li>
             <li class="post-author"> by <a href="http://twitter.com/thatdavidmiller">David Miller</a></li>
             <!-- <li class="post-comments-link"> &#8211;>
             <!--   <a href="#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
@@ -82,78 +82,108 @@
           </ul><!--//meta-list-->
         </div><!--meta-->
         
+        <div class="post-thumb">
+          <img class="img-responsive" src="/assets/images/posts/nhshd.13.jpg" alt="" />
+        </div><!--//post-thumb-->
+        
         <div class="content">
-          <p>We&rsquo;re happy to announce that we&rsquo;ve just released a new version of <a href="http://opal.openhealthcare.org.uk/docs/">OPAL</a> -
-our framework for building clinical facing digital services.</p>
+          <p>This weekend saw the thirteenth NHS Hack Day, this time held in London at KCL. At
+<a href="http://nhshackday.com">NHS Hack Day</a>, technologists, medics,
+patients, and anyone else with enthusiasm and curiosity come together for a weekend to build prototypes of things that
+can make the NHS run just a little better. Most often these are digital tools that solve problems that staff or patients
+encounter in their lives.</p>
 
-<p>So - what&rsquo;s new in this release?</p>
+<p>Early on the Saturday morning we saw a huge range of ideas pitched - looking for better ways to understand and visualise
+information, improved systems to manage processes in health and care, and explorative projects trying to look for
+untapped opportunities afforded by new technologies.</p>
 
-<h2>Search</h2>
+<div class="post-thumb">
+     <center>
+  <img class="img-responsive" src="/assets/images/posts/nhshd13.pitches.gif" alt="" />
+</div>
 
-<p>We&rsquo;ve completely re-designed our search pages to help clinicians find
-the patients they&rsquo;re interested in more easily. We also default to
-having a search box in the navigation of every page.</p>
 
-<p><img src="https://raw.githubusercontent.com/openhealthcare/openhealthcare.org.uk/master/source/assets/images/posts/search.results.png" alt="" /></p>
+<!--//post-thumb-->
 
-<p>In addition, we&rsquo;ve been working hard to make search backends pluggable,
-so that in the future you&rsquo;ll be able to drop in alternative backends of
-your choice as your application scales.</p>
 
-<h2>Patient List view</h2>
+<p>One of the interesting dynamics of NHS Hack Day is the fact that most of the projects involve real collaborations between
+domain experts (e.g. Doctors) and digital experts who have to find a way to communicate and work together. At Open Health
+Care we believe that diverse multidisciplinary teams are better teams - and  NHS Hack Day continues to showcase what can be
+achieved by small groups of passionate people given a space to collaborate and experiment.</p>
 
-<p>We spent a lot of time over the past few months collating feedback from users and
-doing research to understand how we could improve the core Patient List
-views. As a response to that we&rsquo;ve updated the list interface - making it clearer
-which patient is currently active, and removing some of the features that weren&rsquo;t
-actually helping our users to care for patients.</p>
+<p>On the Sunday afternoon, we gathered around to see what everyone had achieved over the weekend - you can see details of
+<a href="https://docs.google.com/spreadsheets/d/1WTFFTw7SWAat3M9cdzjv-f0_23aHAIiGErcotDrnJYI/edit#gid=0">the fourteen teams here</a>,
+or <a href="http://www.ustream.tv/recorded/86892842">watch the whole thing</a> (warning - it’s about an hour long).
+Some of our favourites are here:</p>
 
-<p><img src="https://raw.githubusercontent.com/openhealthcare/openhealthcare.org.uk/master/source/assets/images/posts/list.view.png" alt="" /></p>
+<h3>The Daily Pollute</h3>
 
-<h2>Subrecord metadata</h2>
+<div class="post-thumb">
+  <img class="img-responsive" src="/assets/images/posts/daily.pollute.png" alt="" />
+</div>
 
-<p>We added four new utility fields to
-<a href="http://opal.openhealthcare.org.uk/docs/guides/datamodel/">Patient and Episode subrecords</a>
- - created_by, updated_by, created, updated. This gives developers easier
-programatic access to high level audit trail information, without having
-to navigate the <a href="https://github.com/etianen/django-reversion/blob/master/docs/api.rst">low level Django Reversion
-API</a>
-- which is still there for when you need more detailed audit trail
-information.</p>
 
-<h2>Select2 and List fields</h2>
+<!--//post-thumb-->
 
-<p>This release introduces
-<a href="https://github.com/angular-ui/ui-select">Select2</a> to OPAL - which
-provides us some nicer widgets - particularly for fields associated with
-<a href="http://opal.openhealthcare.org.uk/docs/guides/lookup_lists/">lookuplists</a>,
-and has also enabled the development of list types as
-Subrecord fields. For example this means that your travel can be to a
-list of countries when you take a backpacking trip through Southeast
-Asia!</p>
 
-<h2>What&rsquo;s Next?</h2>
+<p>The brilliantly named Daily pollute pulled together live sensor data about air quality in London (via the
+<a href="http://www.londonair.org.uk/LondonAir/API/">London Air API</a> ) with
+location data from your mobile phone - their initial prototype giving you information about pollution levels on your regular routes.</p>
 
-<p>Just because this release is out, we&rsquo;re not resting on our laurels - in
-fact we&rsquo;re already gearing up for the next releases. We&rsquo;re planning to
-look at the information architecture of Episode detail views, including
-a new Notes view that&rsquo;s currently being tested by some users of the
-<a href="http://elcid.openhealthcare.org.uk">elCID</a> project.</p>
+<h3>Digital Anaesthetic Chart</h3>
 
-<p>We also plan to refactor some of the core data models back into OPAL to provide
-them there by default rather than implemented over and over again in
-individual applications.</p>
+<div class="post-thumb">
+  <img class="img-responsive" src="/assets/images/posts/nhshd.13.dac.jpg" alt="" />
+</div>
 
-<p>As ever, because OPAL is an Open Governance <a href="http://github.com/openhealthcare/opal">Open Source</a> project, you can
-follow our progress over on
-<a href="https://waffle.io/openhealthcare/opal-ideas">our public Waffle board</a> where we&rsquo;ll be
-organising our work.</p>
 
-<h2>More about OPAL</h2>
+<!--//post-thumb-->
 
-<p>If you want to find out more about OPAL or how Open Health Care can help
-you to run high quality digital services for doctors in your institution
-then do get in touch!</p>
+
+<p>Anaesthetists agree that the way they are recording information about patients under their care needs to change.</p>
+
+<p>At the moment that often
+consists of taking numbers from a machine, and writing them by hand onto a piece of paper. The team (involving OHC’s own
+<a href="https://twitter.com/fredkingham">@fredkingham</a>) automated the process of extracting numbers from the machine - reducing
+errors and increasing the number of readings you can take, as well as creating a new UX for displaying the information in line
+with the new AAGBI guidance for anaesthetic charts.</p>
+
+<p>The potential benefits in terms of efficiency and error reduction here are huge - this is one of the many routine practices in
+the NHS that can be made dramatically safer, quicker and cheaper with high quality digital tools. In 2016 we shouldn’t have
+humans copying numbers off of a computer screen onto a paper chart.</p>
+
+<h3>Outbreak</h3>
+
+<p>The outbreak team designed a health record system in a box, optimised for resource strapped (no network, no power,
+little infrastructure) environments. With a single crate containing a Raspberry Pi server, Android Tablets for users, and a
+Patient management system, optimised for emergency responses, and ruggedised against failure in a situation where
+IT support could be hundreds of miles away.</p>
+
+<center>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/TYsUf5u9FJs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</center>
+
+
+<p>The Outbreak team (including yours truly <a href="https://twitter.com/thatdavidmiller">@thatdavidmiller</a>) were crowned the eventual winners of
+NHS Hack Day 13, and are excited to find partners who can help take the project forwards.</p>
+
+<center>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/hJWTpSH8Bxc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</center>
+
+
+<h3>Thanks &amp; Looking Forwards</h3>
+
+<p>This was the second time that NHS Hack Day London has been organised by the amazing
+<a href="https://twitter.com/DeckOfPandas">@DeckOfPandas</a>, and we’d like to thank her again for
+all the hard work in the months beforehand and over the weekend in making sure that the event went brilliantly.</p>
+
+<p>NHS Hack Day will be back in another four months in Newcastle, tickets will be released shortly - follow us on twitter and sign up to the
+mailing list to find out when they’re out - we hope to see you there!</p>
+
+<p><small>
+Photo credits: <a href="http://laurademeo.co.uk/">Laura De Meo</a>
+</small></p>
 
         </div>
         <div class="content">
@@ -165,10 +195,8 @@ then do get in touch!</p>
         </div>
         <nav class="post-nav">
         
-        <span class="nav-previous"><a href="/blog/2015/10/21/launching-a-new-walk-in-service/" rel="prev"><i class="fa fa-long-arrow-left"></i> Launching a new Clinical Digital Service for returning travellers</a></span>
+        <span class="nav-previous"><a href="/blog/2016/04/06/how-we-manage-risk-when-we-use-open-source-in-health/" rel="prev"><i class="fa fa-long-arrow-left"></i> How we manage risk when we use open source in health</a></span>
         
-        
-        <span class="nav-next"><a href="/blog/2016/01/18/annual-review/" rel="prev">2015 - Annual review <i class="fa fa-long-arrow-right"></i></a></span>
         
         </nav><!--//post-nav-->
 

@@ -65,133 +65,114 @@
 </header><!--//header-->
 
 
-      
-<!-- ******BLOG LIST****** -->
+      <!-- ******BLOG LIST****** --> 
 <div class="blog container">
   <div class="row">
-    <div id="blog-entry" class="blog-entry section col-md-8 col-sm-8 col-xs-12">
-      <article class="post">
-        <h2 class="title">OPAL 0.5 released</h2>
-        <div class="meta">
-          <ul class="meta-list list-inline">
-            <li class="post-time post_date date updated">November 13 2015</li>
-            <li class="post-author"> by <a href="http://twitter.com/thatdavidmiller">David Miller</a></li>
-            <!-- <li class="post-comments-link"> &#8211;>
-            <!--   <a href="#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
-            <!-- </li> &#8211;>
-          </ul><!--//meta-list-->
-        </div><!--meta-->
-        
+    <div id="blog-list" class="blog-list section col-md-8 col-sm-8 col-xs-12">
+      
+      <article class="post blog-entry">
         <div class="content">
-          <p>We&rsquo;re happy to announce that we&rsquo;ve just released a new version of <a href="http://opal.openhealthcare.org.uk/docs/">OPAL</a> -
-our framework for building clinical facing digital services.</p>
+          <h2 class="post-title"><a href="/blog/2015/01/19/annual-review/">2014 - Annual review</a></h2>
+          <div class="meta">
+            <ul class="meta-list list-inline">                                       
+              <li class="post-time post_date date updated">January 19, 2015</li>
+              <li class="post-author"> by <a href="http://twitter.com/thatdavidmiller">David Miller</a></li>
+              <!-- <li class="post-comments-link"> &#8211;>
+              <!--   <a href="blog-single.html#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
+              <!-- </li> &#8211;>
+            </ul><!--//meta-list-->                           	
+          </div><!--meta-->
+          
+        <div class="post-thumb">
+          <img class="img-responsive" src="/assets/images/posts/nhshd7.jpg" alt="" />
+        </div><!--//post-thumb-->
+        
+          <div class="post-entry">
+            <h3>OPAL at UCLH</h3>
 
-<p>So - what&rsquo;s new in this release?</p>
+<p>Early in the year we deployed <a href="http://elcid.openhealthcare.org.uk">elCID</a> - our custom built digital service for
+infection doctors to University College London Hospital.</p>
 
-<h2>Search</h2>
+<p>Despite our early plans for a cautious, staggered rollout, demand from end users to transition to the system meant
+that we accelerated rapidly, spreading throughout the division of infection at UCLH and racing through the 1000 patient
+mark within the few months.</p>
 
-<p>We&rsquo;ve completely re-designed our search pages to help clinicians find
-the patients they&rsquo;re interested in more easily. We also default to
-having a search box in the navigation of every page.</p>
+<p>Not content to sit on our laurels, we&rsquo;ve been further developing the platform, with a specialist OPAT (Outpatients
+Parenteral Antimicrobial Therapy) service developed and launched early 2015, and a walk-in clinic service scheduled for
+deployment in spring.</p>
 
-<p><img src="https://raw.githubusercontent.com/openhealthcare/openhealthcare.org.uk/master/source/assets/images/posts/search.results.png" alt="" /></p>
+<h3>OPAL for research</h3>
 
-<p>In addition, we&rsquo;ve been working hard to make search backends pluggable,
-so that in the future you&rsquo;ll be able to drop in alternative backends of
-your choice as your application scales.</p>
+<div class="post-thumb">
+  <img class="img-responsive" src="/assets/images/posts/elcid.outputs.png" alt="" />
+</div>
 
-<h2>Patient List view</h2>
 
-<p>We spent a lot of time over the past few months collating feedback from users and
-doing research to understand how we could improve the core Patient List
-views. As a response to that we&rsquo;ve updated the list interface - making it clearer
-which patient is currently active, and removing some of the features that weren&rsquo;t
-actually helping our users to care for patients.</p>
+<!--//post-thumb-->
 
-<p><img src="https://raw.githubusercontent.com/openhealthcare/openhealthcare.org.uk/master/source/assets/images/posts/list.view.png" alt="" /></p>
 
-<h2>Subrecord metadata</h2>
+<p>2014 saw the first academic outputs from the OPAL project, with two posters presented at the
+<a href="http://www.fis-infection.org.uk/">Federation of Infection Societies</a> conference.</p>
 
-<p>We added four new utility fields to
-<a href="http://opal.openhealthcare.org.uk/docs/guides/datamodel/">Patient and Episode subrecords</a>
- - created_by, updated_by, created, updated. This gives developers easier
-programatic access to high level audit trail information, without having
-to navigate the <a href="https://github.com/etianen/django-reversion/blob/master/docs/api.rst">low level Django Reversion
-API</a>
-- which is still there for when you need more detailed audit trail
-information.</p>
+<p>Demonstrating the new capabilities for conducting clinical audits and exploring hypotheses about the patient
+population treated by UCLH, concluding that:</p>
 
-<h2>Select2 and List fields</h2>
+<pre><code>The electronic prospective data capture benefits of elCID have facilitated organisation
+and interrogation of our own clinical practice to greater levels than before, describing 
+many hitherto uncaptured elements of clinical activity.
+</code></pre>
 
-<p>This release introduces
-<a href="https://github.com/angular-ui/ui-select">Select2</a> to OPAL - which
-provides us some nicer widgets - particularly for fields associated with
-<a href="http://opal.openhealthcare.org.uk/docs/guides/lookup_lists/">lookuplists</a>,
-and has also enabled the development of list types as
-Subrecord fields. For example this means that your travel can be to a
-list of countries when you take a backpacking trip through Southeast
-Asia!</p>
+<h3>Hackdays</h3>
 
-<h2>What&rsquo;s Next?</h2>
+<div class="post-thumb">
+  <img class="img-responsive" src="/assets/images/posts/nhshd6.jpg" alt="" />
+</div>
 
-<p>Just because this release is out, we&rsquo;re not resting on our laurels - in
-fact we&rsquo;re already gearing up for the next releases. We&rsquo;re planning to
-look at the information architecture of Episode detail views, including
-a new Notes view that&rsquo;s currently being tested by some users of the
-<a href="http://elcid.openhealthcare.org.uk">elCID</a> project.</p>
 
-<p>We also plan to refactor some of the core data models back into OPAL to provide
-them there by default rather than implemented over and over again in
-individual applications.</p>
+<!--//post-thumb-->
 
-<p>As ever, because OPAL is an Open Governance <a href="http://github.com/openhealthcare/opal">Open Source</a> project, you can
-follow our progress over on
-<a href="https://waffle.io/openhealthcare/opal-ideas">our public Waffle board</a> where we&rsquo;ll be
-organising our work.</p>
 
-<h2>More about OPAL</h2>
+<p>2014 saw the <a href="http:/nhshackday.com">NHS Hack Day</a> train roll in to Cardiff, London and Leeds. As ever
+the events saw us take multidisciplinary groups of Doctors, Technologists &amp; Patients for a weekend of
+furious hacking, resulting not only in some great new projects, but in hundreds of individual opportunities
+for people to connect &amp; learn from each other.</p>
 
-<p>If you want to find out more about OPAL or how Open Health Care can help
-you to run high quality digital services for doctors in your institution
-then do get in touch!</p>
+<p>Particularly exciting were <a href="https://github.com/huwlynes/tb_care_plan">TB Care Plan</a> - a single page TB guideline
+project that managed to take the rule of &ldquo;As simple as it can possibly be&rdquo; to new heights, and a
+<a href="https://github.com/openhealthcare/opal-renal">Renal focussed</a> OPAL implementation for handover and patient management.</p>
 
+<h3>The Future</h3>
+
+<p>2014 has been a great year for Open Health Care, &amp; We&rsquo;re excited looking forward to the year to come !</p>
+
+<p>With new product launches, lots of exciting projects in the pipeline, as well as the relentless programme of running
+events up &amp; down the country, we&rsquo;ll be busy!</p>
+
+<p><small>
+Photo credits: <a href="https://secure.flickr.com/photos/paul_clarke/">Paul Clarke</a> &amp;&amp; <a href="https://www.flickr.com/photos/gpollara">Gabriel Pollara</a>
+</small></p>
+
+            <a class="read-more" href="/blog/2015/01/19/annual-review/">
+              Read more <i class="fa fa-long-arrow-right"></i>
+            </a>
+          </div>
         </div>
-        <div class="content">
-          <p>
-            <small>
-              <i class="fa fa-twitter"></i><i><a href="http://twitter.com/thatdavidmiller">Follow David Miller on twitter</a></i>
-            </small>
-          </p>
-        </div>
-        <nav class="post-nav">
-        
-        <span class="nav-previous"><a href="/blog/2015/10/21/launching-a-new-walk-in-service/" rel="prev"><i class="fa fa-long-arrow-left"></i> Launching a new Clinical Digital Service for returning travellers</a></span>
-        
-        
-        <span class="nav-next"><a href="/blog/2016/01/18/annual-review/" rel="prev">2015 - Annual review <i class="fa fa-long-arrow-right"></i></a></span>
-        
-        </nav><!--//post-nav-->
-
       </article><!--//post-->
+      
 
-      <div id="disqus_thread"></div>
-      <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES * * */
-        var disqus_shortname = 'ohcuk';
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-      </script>
-      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-
-    </div><!--//blog-entry-->
-
+      <h3>More Posts: </h3>
+      
+      <ul class="pagination">
+        
+        <li><a href="/blog/page4/">< Previous Page (4 / 5) </a></li>
+        
+        
+      </ul><!--//pagination-->
+    </div><!--//blog-list-->
+    
     <aside id="blog-sidebar" class="blog-sidebar col-md-3 col-sm-3 col-xs-12 col-md-offset-1 col-sm-offset-1 col-xs-offset-0">
-      <section class="widget recent-posts">
+
+      <section class="widget recent-posts">                  
         <h3 class="title">Recent Posts</h3>
         <ul class="list-unstyled">
           
@@ -218,9 +199,12 @@ then do get in touch!</p>
           <li><a href="/atom.xml"><i class="fa fa-rss-square"></i> RSS</a></li>
         </ul>
       </section><!--//widget-->
-    </aside><!--//blog-side-bar-->
-  </div><!--//row-->
-</div><!--//blog-->
+    </aside><!--//blog-side-bar-->               
+
+  </div>  <!-- Row -->
+</div>      <!-- Blog container -->
+
+
 
             
     </div><!--//wrapper-->
