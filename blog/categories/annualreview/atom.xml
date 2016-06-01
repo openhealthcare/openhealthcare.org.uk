@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Annualreview | Open Health Care UK - Blog]]></title>
+  <link href="http://openhealthcare.org.uk/blog/categories/annualreview/atom.xml" rel="self"/>
+  <link href="http://openhealthcare.org.uk/"/>
+  <updated>2016-06-01T14:57:04+01:00</updated>
+  <id>http://openhealthcare.org.uk/</id>
+  <author>
+    <name><![CDATA[Open Health Care UK]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[2015 - Annual Review]]></title>
+    <link href="http://openhealthcare.org.uk/blog/2016/01/18/annual-review/"/>
+    <updated>2016-01-18T15:00:29+00:00</updated>
+    <id>http://openhealthcare.org.uk/blog/2016/01/18/annual-review</id>
+    <content type="html"><![CDATA[2015 was a big year for us - so we thought we'd take a moment and share
+some of what we've been up to:
+
+# Delivering Digital Services for direct care
+
+We believe that the digital tools used to deliver patient care should be of the highest
+possible quality. Not only do we believe it, we work hard to deliver them as well!
+
+Last year we launched two new services - for [managing OPAT care](/blog/2015/02/05/elcid-opat-launch/)
+at UCLH (patients who need regular IV drugs but aren't so sick that they need to stay in
+hospital all the time), and for the returning traveller
+[walk in clinic](/blog/2015/10/21/launching-a-new-walk-in-service/) at the Hospital for
+Tropical Diseases.
+
+<div class="post-thumb">
+  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/detail.view.png" alt="" style="border: 2px solid black;" />
+</div><!--//post-thumb-->
+
+We&#8217;ve also been working to iteratively improve the services we run - conducting user research
+interviews, observing clinicians using our tools on the wards, and generally trying to establish
+robust feedback loops and processes for users to tell us how we can make things better for them.
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">From the wards yesterday: &#10;&#10;&quot;You&#39;re actually coming and asking doctors how you can make the IT systems they use better? - That&#39;s unheard of&quot;</p>&mdash; David Miller (@thatdavidmiller) <a href="https://twitter.com/thatdavidmiller/status/642247781617397760">September 11, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Based on this research, we&#8217;ve made lots of improvements to the UI of our services, coming up
+with new design patterns for building applications for direct care in the process.
+
+<div class="post-thumb">
+  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/list.view.png" alt="" style="border: 2px solid black;" />
+</div><!--//post-thumb-->
+
+# Code
+
+Lots of this work invovles us writing, maintaining and improving code.
+
+During 2014 We made 3 major [new releases](/blog/2015/11/13/opal-05-released/) of
+[OPAL](http://opal.openhealthcare.org.uk) - our framework
+for building digital services for clnicians, not to mention many other smaller releases,
+making up <b>2,416</b> individual commits across all
+our [Open Source projects](https://github.com/openhealthcare).
+
+Throughout the year we&#8217;ve been focussing on making our projects easier for new developers
+to pick up - improving the [documentation](http://opal.openhealthcare.org.uk/docs) and
+refactoring things to provide better APIs for people to build on.
+
+# Hackdays
+
+<div class="post-thumb">
+  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/nhshd.10.jpg" alt="" />
+</div><!--//post-thumb-->
+
+2015 was as busy as ever for [NHS Hack Day](http://nhshackday.com), with three
+events bringing together hundreds of clinicians, academics, designers, developers, and
+patients to help make the NHS just a little better.
+
+We kicked off the year with another trip to [Cardiff](/blog/2015/05/25/nhs-hack-day-10/),
+before coming back to London in May, and then heading up to Manchester in the Autumn.
+
+# UK Health Camp
+
+
+<div class="post-thumb">
+  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/healthcamp.foyer.jpg" alt="" />
+</div><!--//post-thumb-->
+
+2015 also saw the first [UK Health Camp](http://ukhealthcamp.com) - a community unconference
+for people interested in digital and data in health and care. We were proud to sponsor the
+event, and glad to have a community space to discuss the pressing issues of digital transformation
+within the NHS.
+
+We&#8217;re already looking forward to next year, and have started plotting how to make it even more
+of a success with the rest of the team!
+
+# The Future
+
+Looking forward to to this year, we&#8217;re excited to be working on lots of new projects, with new
+partners, as well as continuing to develop and improve our existing services.
+
+If you&#8217;ve got a project you think we could help with this year, do drop us a line at
+<a href="mailto:hello@openhealthcare.org.uk">hello@openhealthcare.org.uk</a> - we&#8217;d love to
+hear all about it!
+
+
+<small>
+Photo credits: [Paul Clarke](https://secure.flickr.com/photos/paul_clarke/)
+</small>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[2014 - Annual Review]]></title>
+    <link href="http://openhealthcare.org.uk/blog/2015/01/19/annual-review/"/>
+    <updated>2015-01-19T15:00:29+00:00</updated>
+    <id>http://openhealthcare.org.uk/blog/2015/01/19/annual-review</id>
+    <content type="html"><![CDATA[### OPAL at UCLH
+
+Early in the year we deployed [elCID](http://elcid.openhealthcare.org.uk) - our custom built digital service for
+infection doctors to University College London Hospital.
+
+Despite our early plans for a cautious, staggered rollout, demand from end users to transition to the system meant
+that we accelerated rapidly, spreading throughout the division of infection at UCLH and racing through the 1000 patient
+mark within the few months.
+
+Not content to sit on our laurels, we've been further developing the platform, with a specialist OPAT (Outpatients
+Parenteral Antimicrobial Therapy) service developed and launched early 2015, and a walk-in clinic service scheduled for
+deployment in spring.
+
+### OPAL for research
+
+<div class="post-thumb">
+  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/elcid.outputs.png" alt="" />
+</div><!--//post-thumb-->
+
+
+2014 saw the first academic outputs from the OPAL project, with two posters presented at the
+[Federation of Infection Societies](http://www.fis-infection.org.uk/) conference.
+
+Demonstrating the new capabilities for conducting clinical audits and exploring hypotheses about the patient
+population treated by UCLH, concluding that:
+
+    The electronic prospective data capture benefits of elCID have facilitated organisation
+    and interrogation of our own clinical practice to greater levels than before, describing
+    many hitherto uncaptured elements of clinical activity.
+
+
+### Hackdays
+
+<div class="post-thumb">
+  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/nhshd6.jpg" alt="" />
+</div><!--//post-thumb-->
+
+2014 saw the [NHS Hack Day](http:/nhshackday.com) train roll in to Cardiff, London and Leeds. As ever
+the events saw us take multidisciplinary groups of Doctors, Technologists & Patients for a weekend of
+furious hacking, resulting not only in some great new projects, but in hundreds of individual opportunities
+for people to connect & learn from each other.
+
+Particularly exciting were [TB Care Plan](https://github.com/huwlynes/tb_care_plan) - a single page TB guideline
+project that managed to take the rule of &#8220;As simple as it can possibly be&#8221; to new heights, and a
+[Renal focussed](https://github.com/openhealthcare/opal-renal) OPAL implementation for handover and patient management.
+
+### The Future
+
+2014 has been a great year for Open Health Care, & We&#8217;re excited looking forward to the year to come !
+
+With new product launches, lots of exciting projects in the pipeline, as well as the relentless programme of running
+events up & down the country, we&#8217;ll be busy!
+
+<small>
+Photo credits: [Paul Clarke](https://secure.flickr.com/photos/paul_clarke/) && [Gabriel Pollara](https://www.flickr.com/photos/gpollara)
+</small>
+]]></content>
+  </entry>
+  
+</feed>

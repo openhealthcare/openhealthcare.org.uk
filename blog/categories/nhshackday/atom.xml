@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Nhshackday | Open Health Care UK - Blog]]></title>
+  <link href="http://openhealthcare.org.uk/blog/categories/nhshackday/atom.xml" rel="self"/>
+  <link href="http://openhealthcare.org.uk/"/>
+  <updated>2016-06-01T14:57:04+01:00</updated>
+  <id>http://openhealthcare.org.uk/</id>
+  <author>
+    <name><![CDATA[Open Health Care UK]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[NHS Hack Day 13 - London]]></title>
+    <link href="http://openhealthcare.org.uk/blog/2016/05/20/nhs-hack-day-13/"/>
+    <updated>2016-05-20T16:00:29+01:00</updated>
+    <id>http://openhealthcare.org.uk/blog/2016/05/20/nhs-hack-day-13</id>
+    <content type="html"><![CDATA[This weekend saw the thirteenth NHS Hack Day, this time held in London at KCL. At
+[NHS Hack Day](http://nhshackday.com), technologists, medics,
+patients, and anyone else with enthusiasm and curiosity come together for a weekend to build prototypes of things that
+can make the NHS run just a little better. Most often these are digital tools that solve problems that staff or patients
+encounter in their lives.
+
+Early on the Saturday morning we saw a huge range of ideas pitched - looking for better ways to understand and visualise
+information, improved systems to manage processes in health and care, and explorative projects trying to look for
+untapped opportunities afforded by new technologies.
+
+<div class="post-thumb">
+     <center>
+  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/nhshd13.pitches.gif" alt="" />
+</div><!--//post-thumb-->
+
+One of the interesting dynamics of NHS Hack Day is the fact that most of the projects involve real collaborations between
+domain experts (e.g. Doctors) and digital experts who have to find a way to communicate and work together. At Open Health
+Care we believe that diverse multidisciplinary teams are better teams - and  NHS Hack Day continues to showcase what can be
+achieved by small groups of passionate people given a space to collaborate and experiment.
+
+On the Sunday afternoon, we gathered around to see what everyone had achieved over the weekend - you can see details of
+[the fourteen teams here](https://docs.google.com/spreadsheets/d/1WTFFTw7SWAat3M9cdzjv-f0_23aHAIiGErcotDrnJYI/edit#gid=0),
+or [watch the whole thing](http://www.ustream.tv/recorded/86892842) (warning - it’s about an hour long).
+Some of our favourites are here:
+
+### The Daily Pollute
+
+<div class="post-thumb">
+  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/daily.pollute.png" alt="" />
+</div><!--//post-thumb-->
+
+The brilliantly named Daily Pollute pulled together live sensor data about air quality in London (via the
+[London Air API](http://www.londonair.org.uk/LondonAir/API/) ) with
+location data from your mobile phone - their initial prototype giving you information about pollution levels on your regular routes.
+
+### Digital Anaesthetic Chart
+
+<div class="post-thumb">
+  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/nhshd.13.dac.jpg" alt="" />
+</div><!--//post-thumb-->
+
+Anaesthetists agree that the way they are recording information about patients under their care needs to change.
+
+At the moment that often
+consists of taking numbers from a machine, and writing them by hand onto a piece of paper. The team (involving OHC’s own
+[@fredkingham](https://twitter.com/fredkingham)) automated the process of extracting numbers from the machine - reducing
+errors and increasing the number of readings you can take, as well as creating a new UX for displaying the information in line
+with the new AAGBI guidance for anaesthetic charts.
+
+The potential benefits in terms of efficiency and error reduction here are huge - this is one of the many routine practices in
+the NHS that can be made dramatically safer, quicker and cheaper with high quality digital tools. In 2016 we shouldn’t have
+humans copying numbers off of a computer screen onto a paper chart.
+
+### Outbreak
+
+The outbreak team designed a health record system in a box, optimised for resource strapped (no network, no power,
+little infrastructure) environments. With a single crate containing a Raspberry Pi server, Android Tablets for users, and a
+Patient management system, optimised for emergency responses, and ruggedised against failure in a situation where
+IT support could be hundreds of miles away.
+
+<center>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/TYsUf5u9FJs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</center>
+
+The Outbreak team (including yours truly [@thatdavidmiller](https://twitter.com/thatdavidmiller)) were crowned the eventual winners of
+NHS Hack Day 13, and are excited to find partners who can help take the project forwards.
+
+<center>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/hJWTpSH8Bxc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</center>
+
+### Thanks & Looking Forwards
+
+This was the second time that NHS Hack Day London has been organised by the amazing
+[@DeckOfPandas](https://twitter.com/DeckOfPandas), and we’d like to thank her again for
+all the hard work in the months beforehand and over the weekend in making sure that the event went brilliantly.
+
+NHS Hack Day will be back in another four months in Newcastle, tickets will be released shortly -
+[follow us on twitter](https://twitter.com/nhshackday) and [sign up to the
+mailing list](http://nhshackday.com) to find out when they’re out - we hope to see you there!
+
+<small>
+Photo credits: [Paul Clarke Photography](http://paulclarke.com/photography/)
+</small>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Why We Don’t Do Product Placement at NHS Hack Day]]></title>
+    <link href="http://openhealthcare.org.uk/blog/2016/04/04/why-we-dont-do-product-placement-at-nhshackday/"/>
+    <updated>2016-04-04T09:00:29+01:00</updated>
+    <id>http://openhealthcare.org.uk/blog/2016/04/04/why-we-dont-do-product-placement-at-nhshackday</id>
+    <content type="html"><![CDATA[This next [NHS Hack Day](http://nhshackday.com/) in London will be our 13th. We’ve been to London, Cardiff, Leeds, Liverpool, Manchester and Oxford, we’ve seen thousands of people come through the doors to collaborate on projects to help make the NHS just a little better.
+
+Throughout that time, we’ve been approached by a number of projects and institutions who have wanted to come to NHS Hack Day, and pitch their particular programme, platform, car boot sale, et cetera. Or perhaps to ask us to steer the projects on the day down one particular technical route. We’ve always politely turned those offers down. Mostly not because we think that the people approaching us aren’t coming with great projects, but because we think it’s important that NHS Hack Day remains a neutral space that concentrates on making connections and the experience of the people who show up. It’s for the same reason that we don’t let sponsors of NHS Hack Day do product pitches on the day.
+
+Because we get asked about it so often, we thought we’d explain why we do this.
+
+Stepping back from just NHS Hack Day for a second, the real reason that I, and Open Health Care are doing work in this space, is that we’re incredibly excited about the opportunity for digital tools to transform the delivery of health care and deliver better outcomes for patients and society generally.
+
+We can do that by [providing tools](http://opal.openhealthcare.org.uk/) that help people on the front lines to care for patients, and by leveraging high quality data about the way we work. That said, we can’t just build tools and expect the world to change. The **tools are useless without adoption** - and adoption requires a change in the way people think about digital, in the way they understand it, and the expectations it has. And often, the hard work of winning hearts and minds includes advocacy for specific tools, standards and platforms.
+
+Open Health Care, and NHS Hack Day come right out of the wider [Open Movement](http://theconversation.com/explainer-what-is-the-open-movement-10308). That means that we are totally bought into having high quality open standards, and the role that they can play in making people's lives better. But much like for instance, open data - we’re not particularly excited about them in the abstract. They're a
+**means not an end** in and of themselves.
+
+That means that while for instance, "promoting standards for interoperability" is something that we care deeply about, our main focus is always on delivering **services that meet people's needs in the messy, complicated real world**.
+
+In the context of NHS Hack Day, that means that our strategic goals tend to be on building communities of people who are excited about the practical power of digital transformation. About showcasing user centred design and lifting the lid on the applied process of iteratively making inclusive software that doesn't suck.
+
+We also introduce people whenever it's appropriate, to Open All The Things. That means Source, Governance, Data, Science, APIs, Policy and Standards - because they're all crucial tools. But that’s not the main reason we’re here, and it’s not the real value we bring.
+
+Particularly in the context of a Hack Day, we tend not to institutionally advocate particular tools, standards, licences et cetera. It's a time-pressured environment, and people want to use tools they know to build a thing rather than tools with better philosophical justifications to almost build a thing!
+
+(That said - if your tool/standard/platform/et cetera is good enough and useful enough, then people will vote with their keyboards and use it anyway because it **makes their lives easier**.)
+
+We don’t expect people to come out of a NHS Hack Day project and immediately give up their day jobs to start companies. What we do expect is to forge connections between the Open Movement, and the digital world, with people who live at the sharp end of health and care in the NHS. We expect to show people a glimpse of a world in which digital transforms their lives for the better, quickly and humanely.
+
+Sometimes, projects that come out of NHS Hack Day have precisely the right mix of participants with spare time and looking for a challenge, and they really do want to take their projects forwards. We’re always delighted when that happens - and we provide support and advice to those teams wherever we can. That includes introducing them to support and funding programmes, as well as offering practical advice, and sometimes logistical support. We’re not optimising for generating health tech startups though. We’re optimising for building a genuinely sustainable movement of people within the system to demand an NHS that is fit for purpose in the digital age.
+
+If that sounds like something you’d like to experience yourself, you still have time to sign up for [NHS Hack Day 13](http://nhshackday.com/) - which is rapidly approaching, and will happen in London on the 14th and 15th of May 2016.
+
+<small>
+Photo credits: [Cléon Daniel](https://www.flickr.com/photos/133318877@N06/)
+</small>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to Make a Great Hack Day Pitch]]></title>
+    <link href="http://openhealthcare.org.uk/blog/2016/03/21/how-to-pitch-at-a-hackday/"/>
+    <updated>2016-03-21T15:00:29+00:00</updated>
+    <id>http://openhealthcare.org.uk/blog/2016/03/21/how-to-pitch-at-a-hackday</id>
+    <content type="html"><![CDATA[We've been running Hack Days for quite a while now. [NHS Hack Day](http://nhshackday.com) has
+seen thousands of enthusiastic volunteers through our doors, and hundreds of project pitches.
+
+One of the questions that we get asked a lot, particularly by people who are new to hack days
+is
+
+<blockquote class="custom-quote"><p><i class="fa fa-quote-left"></i>
+What makes a good pitch at a hack day?
+</p></blockquote>
+
+&#8230; so we thought we&#8217;d share a few tips for people coming to hack days on how to make a great
+hack day pitch
+
+## 1. Tell a story
+
+People love stories. Pitches with a story in them almost always go down better. So give it
+colour - explain how your life is broken because of this problem, explain the frustrations
+of a life without the thing you&#8217;re pitching.
+
+Particularly when the person who would benefit is some kind of specialist, most of the people
+listening to the pitch won&#8217;t understand what what life is like for the people that your pitch
+is about. So help them empathise by telling a story about their experiences.
+
+## 2. Explain the change you want to see
+
+Hack day projects that capture the imagination are mostly the ones with the potential to make
+a real impact in the world. That means that when you&#8217;re pitching, you should make sure to explain
+just how the world will be better once you&#8217;ve made your project.
+
+Sometimes that&#8217;s a bold vision of the future that brings about the end of global capitalism,
+injustice, hunger, and human suffering generally. More often, it&#8217;s a story about how you can
+help lots of people in a small but meaningful way.
+
+## 3. Make it achievable
+
+While we&#8217;re on the subject of your grand vision for changing the entire world, it&#8217;s important
+to keep in mind that the hack day you&#8217;re at probably only lasts a day or two. Once you&#8217;ve taken
+out time for pitches, presentations and lunch, the time you have available for building things is
+limited.
+
+Because of that, pitches that seem to be too wildly ambitious can be greeted with scepticism -
+a sense that they&#8217;re simply unachievable in the time available. Thankfully, just like the
+journey of a thousand miles, huge projects can always be broken down into a sequence of smaller
+ones.
+
+If your idea seems huge and overwhelming, _you should still talk about it_ - because it probably
+scores big on the &#8220;have an impact&#8221; scale we were just talking about. But you should also make
+sure to break off an achievable chunk of it, and explain that _this_ is what you want to build
+_today_.
+
+## 4. Make it clear
+
+You&#8217;re only going to have a very short time for your pitch. Probably no more than a couple minutes.
+
+Keep it snappy.
+
+_(Note, this section has been heavily edited down in the name of brevity and minimal irony.)_
+
+## 5. Problem first, not solution backwards
+
+The most powerful hack day experiences come from ideas that are genuinely co-created, in response
+to problems or needs that actually exist in the real world. (Hence starting with the story/impact).
+
+A common pitfall of hack day pitches is to skip right over the process of actually problem solving,
+and start pitching the detailed solution that first occurred to the person doing the pitching.
+Unsurprisingly this tends not to excite the creative problem-solvers in the room. (Hint: those are
+_exactly_ the people you want to be working with )
+
+The two _particularly_ common cases of this are &#8220;Let me tell you the specific screens my
+app will have&#8221; and &#8220;I have this library/Raspberry Pi/Google Glass&#8230; please make it relevant to
+someone.&#8221;
+
+## 6. Practice
+
+Just like most things in life, pitching is something you can get better at with practice!
+Luckily, when you arrive at a hack day, you are often sat around in a big room with a bunch
+of other people who you don&#8217;t know, just waiting for something to happen.
+
+Why not say hello to one of them who you don&#8217;t know, and ask if you can practice your pitch?
+Ask for feedback - what did they like about it? Was there anything that wasn&#8217;t clear? It&#8217;s a
+good way to make friends in the inevitable down time at the start of the day, and you&#8217;ll end
+up with a better pitch.
+
+For NHS Hack Day, we organise meetups before the event, and invite attendees to come and meet
+one another. We make sure that we have some hack day veterans on hand, and we give friendly
+constructive feedback to anyone with a project they want to pitch. We also encourage people
+to post their ideas to our mailing list.
+
+## 7. Try to find some collaborators beforehand
+
+We&#8217;ve found that as well as helping to polish ideas, sharing your pitch
+on the mailing list beforehand can result in teams that start to form before the day. It
+gives potential collaborators a chance to mull the project over in the weeks and days running
+up to the event, and come with more fully formed ideas.
+
+These teams often work really well together. They come prepared and already excited, and
+when the time comes to start working, they often have the most structure, and the clearest
+understanding of what needs to happen. The process of discussing your idea with them will give
+you a better idea of what excites people about it and make your pitch better.
+
+## 8. Don&#8217;t make it exploitative
+
+Hack days are often attended by volunteers in their free time. They&#8217;re a great space for
+creative collaboration, idea generation, skill sharing, and building communities.
+
+They are not free labour for your startup/church f&ecirc;te/government department.
+
+Ask yourself if this is something that might be interpreted as asking someone to just do
+free work. If you think it is, consider paying someone to do it instead of pitching at a hack
+day. If you&#8217;re not sure, have a chat with one of the organisers - they&#8217;ll normally be happy
+to give you a steer about what&#8217;s appropriate at their particular event.
+
+## 9. You don&#8217;t need a mobile app
+
+Apps. They&#8217;re great. But&#8230; you almost certainly don&#8217;t need one. Pitching &#8220;An iPhone app&#8221;
+is a special case of &#8220;Don&#8217;t come with a solution&#8221; from above. But this one comes up a _lot_.
+
+The percentage of problems to which the best answer is a native phone app is so close to
+zero as to be indistinguishable. Starting with the problem will make your project better.
+
+
+Related, you might like to read
+[this blog post](https://gds.blog.gov.uk/2013/03/12/were-not-appy-not-appy-at-all/) from
+some nice people at the government about why you don&#8217;t need an App. Even if you&#8217;re not the
+government, most of that probably still applies.
+
+## 10. Bonus points if you avoid Hack Day Bingo.
+
+There are some kinds of things that come up quite a lot at hack days. They&#8217;re perfectly
+excellent hack day projects. They tend to be the kind of thing that works well in an environment
+where you&#8217;re trying to ship something in a limited time.
+
+That said, primates are suckers for novelty, so you&#8217;re likely to score bonus points with the room
+(particularly the grizzled hack day veterans) if you come up with something that&#8217;s a little bit new.
+Examples of things that have probably been done at least once before are:
+
+* Something that hits the Twillio API and phones the judges
+* Taking some data and plotting points on a Google Map
+* Tinder for dogs/asteroids/_____
+* Top Trumps for verses of the bible/DNA/______
+
+_(Note: Particular thanks to [Alex](https://twitter.com/blangry) and
+ [Lilly](https://twitter.com/lily_dart) for their additions to this list.)_
+
+## Enough listing already
+
+So, now you know how to pitch, come join us at the next [NHS Hack Day](http://nhshackday.com) and
+try it out.
+
+<small>
+Photo credits: [Paul Clarke](https://secure.flickr.com/photos/paul_clarke/)
+</small>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to Run a Hack Day]]></title>
+    <link href="http://openhealthcare.org.uk/blog/2015/06/18/how-to-run-a-hackday/"/>
+    <updated>2015-06-18T09:00:29+01:00</updated>
+    <id>http://openhealthcare.org.uk/blog/2015/06/18/how-to-run-a-hackday</id>
+    <content type="html"><![CDATA[<i>This post is the prose form of a workshop we recently ran at the [Department for Business, Innovation and Skills](https://twitter.com/bisgovuk)
+about hack days.</i>
+
+So, you want to run a hack day?
+
+<blockquote class="custom-quote"><p><i class="fa fa-quote-left"></i>
+A hack day is an event in which domain experts with user needs collaborate with people who have skills in delivering digital
+products and services including developers, designers, user researchers and product specialists.
+Hack days typically last between a day and a week. Some hack days are intended simply for educational or social purposes,
+although in many cases the goal is to create usable software.
+</p></blockquote>
+
+Hack days are a great way to get multidisciplinary teams working together to create creative tangible solutions to real
+world problems.
+
+### Why are you doing this?
+
+The first thing you&#8217;ll need to figure out is *why* you&#8217;re running a hack day.
+
+There are broadly five reasons people run hack days.
+
+1. To build community
+2. To educate people
+3. To get focussed fast paced R&D
+4. For PR
+5. er hack days are cool, what do you mean why?
+
+You should make sure you have a clear answer to *why* you&#8217;re doing this before you start running a hack day - because this maximises the likelihood
+that you and your attendees will have a great time and get lots of value from the event.
+
+For instance, with [NHS Hack Day](http://nhshackday.com) - the events that we run around the country for &#8220;Geeks who love the NHS&#8221; - we have a few
+reasons. We&#8217;re aiming to:
+
+1. Build community and friendships between members of the clinical and technology sectors
+2. Show front line clinical staff just how good Digital Services can be, empowering them to demand better from their institutions when they go back to work
+4. Showcase Open Source, Open Governance, and the power of collaborating in small heterogeneous teams of domain experts.
+
+That&#8217;s reasons 1, 2 and a little bit of 4.
+
+You might be looking to build the cross-disciplinary skills of your teams, introducing people to Digital ways of working, thinking and approaching
+problems, you might be looking to provide concrete examples of products and services aligned with your policy goals - understanding that showing is more
+powerful than telling. Whatever your reason is, make sure you can explain it clearly so that you remain focussed on that throughout.
+
+### What do you need to do?
+
+So, you want to run a hack day ?
+
+Great!
+
+There are [lots](http://hackdaymanifesto.com/) [of](https://hackathon.guide/) [documents](http://nhshackday.com/tools/organiser-notes/) out there that
+will take you through the low level details, we&#8217;re not going to go through those again in detail, but you basically need to put five things in a room:
+
+1. User needs
+2. Wifi
+3. Power
+4. Coffee
+5. Technologists who know how to deliver Digital
+
+### Start with needs
+
+The value that comes from the event is directly related to the quality of the ideas for projects that are in the room. The *best* hack day projects
+address specific real world user needs. It&#8217;s well worth thinking about these before the event, and seeking feedback from others - particularly from
+people who&#8217;ve attended hack days before.
+
+With NHS Hack Day, we encourage people to discuss their ideas on our mailing list, on Twitter, and in person
+at meetups so that we can help people come with well formed ideas that inspire our attendees. For more focussed commercial hack days we work with
+people to frame and present their ideas in such a way that they work well within the context of a hack day.
+
+
+### Basic logistics
+
+Hack days have some slightly special logistical requirements of the room that you&#8217;re going to be in. The most frequent problem is that the Wifi isn&#8217;t
+good enough. As the [Hack Day Manifesto](http://hackdaymanifesto.com/) says:
+
+<blockquote class="custom-quote"><p><i class="fa fa-quote-left"></i>
+Don’t just trust anyone who tells you that “it’ll be fine”. People from the venue or their commercial partner will tell you all sorts of things you
+want to hear but keep in the back of your mind that they may not have any clue what they are talking about.
+</p></blockquote>
+
+In addition to this, you&#8217;ll also have lots of people wanting to plug in their laptops, so try to make sure that there is good access to power points.
+Providing tea, coffee and other beverages as well as lunch and breakfast is always appreciated by attendees, as are easily accessible whiteboards,
+flip charts, post-its & sharpies.
+
+
+### Making your ideas a reality
+
+At the end of your hack day, you&#8217;ll have a wrap up session where everyone presents what they&#8217;ve been working on. There will be lots of excitement and
+energy in the room, you may even have judges and prizes! If all has gone well, several prototypes of new Digital products or services will exist that
+didn&#8217;t at the start of the day.
+
+If your aim was to build community and educate people, then you should already have gone a long way to meeting your goals! Sometimes though, you will
+want to find a way to take promising projects forwards and make them genuine products or services.
+
+If you&#8217;re looking to do this, then it&#8217;s worth thinking about that path before the event. This might involve providing investment or support for teams
+who want to go forward with their idea, promising people time to work on their project, or giving projects marketing and promotion. The details are
+often dependent on who you are, and what kinds of user needs you&#8217;re looking to meet.
+
+### Still want some more help?
+
+If you&#8217;re still unsure about how to run your hack day, Open Health Care UK provide strategic and logistical support to organisations in healthcare and
+the wider public sector looking to run great events - so drop us a line at [hello@openhealthcare.org.uk](hello@openhealthcare.org.uk) to see how we
+can help.
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[NHS Hack Day 10 - London]]></title>
+    <link href="http://openhealthcare.org.uk/blog/2015/05/25/nhs-hack-day-10/"/>
+    <updated>2015-05-25T16:00:29+01:00</updated>
+    <id>http://openhealthcare.org.uk/blog/2015/05/25/nhs-hack-day-10</id>
+    <content type="html"><![CDATA[Last weekend saw us reach a milestone as we brought
+[NHS Hack Day back to London](http://nhshackday.com/) in our tenth event in just three years!
+
+NHS Hack Days are weekend events that bring together patients, healthcare and technology
+professionals and other “geeks who love the NHS” under the banner of making NHS IT less bad.
+It's always a pleasure to see so many talented people come together to share their time, skills
+and experience to create something together, and this was no exception.
+
+The event started with clinical staff, patients, and anyone else who felt they had a way to
+make the world a little better pitching ideas that they wanted to work on. Pitches
+[start with a User Need](https://www.gov.uk/service-manual/user-centred-design/user-needs.html)
+- for instance the surgeons who need a way to track their continuing professional development,
+or the doctor who wants quick and easy offline access to formulary information. The attendees
+then pick what project they want to work on, and form teams to try and build a prototype over
+the weekend.
+
+<div class="post-thumb">
+  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/nhshd.10.circle.jpg" alt="" />
+</div><!--//post-thumb-->
+
+At the end of the weekend, we gathered together to share what we&#8217;d learned and what we&#8217;d built
+over the weekend.
+
+Some of the stand-out projects from the weekend were The Locumator - an app which helps hospital schedulers and doctors to fill vacant slots with bank staff, and Take Your Meds - a low-tech phone reminder application that sends a configurable audio message via phone call to a patient, reminding them to use the mouthwash, or take their medication.
+
+<div class="post-thumb">
+  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/nhshd.10.chats.jpg" alt="" />
+</div><!--//post-thumb-->
+
+
+You can see the whole list [here](https://docs.google.com/spreadsheets/d/1-jB5dVPcakZF9HhjXHvqjRtE-vvlkV9NdZ2Qn9II1mc/edit#gid=0).
+
+
+Locumator&#8217;s presentation
+<iframe id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="550" height="400" src="https://prezi.com/embed/2hqtpz0eedmg/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;PARENT_REQUEST_ID=6c9d97d7f3b4b9e3#"></iframe>
+<br /><br />
+More information on Take Your Meds is available from
+[their Github account](https://github.com/open-health-hub/reminder)
+
+This time, our cat-herder in chief was the amazing [@deckofpandas](http://twitter.com/deckofpandas) - and we&#8217;d like to thank her again for all of her hard work in making the event such a great
+experience for everyone involved.
+
+Next time looks like being Manchester in Autumn 2015 - although the venue & exact date are
+yet to be confirmed. We’d love it if you joined us though - so do
+[sign up to the mailing list](http://nhshackday.com/) to be kept in the loop !
+
+<small>
+Photo credits: [Cléon Daniel](https://www.flickr.com/photos/133318877@N06/)
+</small>
+]]></content>
+  </entry>
+  
+</feed>
