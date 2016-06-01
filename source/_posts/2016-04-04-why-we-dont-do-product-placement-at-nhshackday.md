@@ -4,6 +4,8 @@ title: "Why we don’t do product placement at NHS Hack Day"
 date: 2016-04-04 08:00:29 +0000
 comments: false
 categories:
+        - nhshackday
+        - hackdays
 author: David Miller
 author_link: thatdavidmiller
 image: assets/images/posts/nhshd.10.jpg

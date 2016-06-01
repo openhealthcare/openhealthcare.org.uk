@@ -3,7 +3,7 @@ layout: post
 title: "Come join us at UK Health Camp !"
 date: 2015-08-10 09:42:20 +0000
 comments: true
-categories:
+categories: ukhealthcamp
 author: David Miller
 author_link: thatdavidmiller
 image: assets/images/posts/ukhealthcamp.png
@@ -17,8 +17,8 @@ played a part in it. We've seen a wonderful community blossom around [NHS Hack D
 launch in an increasing number of NHS trusts. We've seen open data used to
 demonstrate [huge potential cost savings](http://www.prescribinganalytics.com/) to the NHS - helping to reinforce the
 commitment to transparency and openness throughout the system.
- 
-And those are just the pieces that we've been involved with - there are so many more happening all through the NHS. 
+
+And those are just the pieces that we've been involved with - there are so many more happening all through the NHS.
 
 One of the great strengths of the NHS is its decentralization - although it's a public sector institution, much
 decision making is devolved to a local level - which means that you see pockets of innovation springing up all around
@@ -44,4 +44,3 @@ We haven't released tickets just yet, but we expect them to go fast when we do r
 list to get notified when they do become available.
 
 We look forward to seeing you there!
-

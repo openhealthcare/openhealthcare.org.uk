@@ -4,6 +4,7 @@ title: "How we manage risk when we use open source in health"
 date: 2016-04-06 08:00:29 +0000
 comments: false
 categories:
+        - ohc
 author: David Miller
 author_link: thatdavidmiller
 image: assets/images/posts/some.code.jpg

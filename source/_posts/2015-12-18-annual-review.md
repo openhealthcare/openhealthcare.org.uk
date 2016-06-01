@@ -3,7 +3,7 @@ layout: post
 title: "2015 - Annual review"
 date: 2016-01-18 15:00:29 +0000
 comments: false
-categories:
+categories: annualreview
 author: David Miller
 author_link: thatdavidmiller
 image: assets/images/posts/nhshd9.jpg

@@ -3,7 +3,9 @@ layout: post
 title: "Launching a new Clinical Digital Service for returning travellers"
 date: 2015-10-21 20:00:29 +0000
 comments: false
-categories: 
+categories:
+        - opal
+        - elcid
 author: David Miller
 author_link: thatdavidmiller
 image: assets/images/posts/htd.jpg

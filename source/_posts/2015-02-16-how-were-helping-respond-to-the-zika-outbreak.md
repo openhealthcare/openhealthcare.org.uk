@@ -4,6 +4,8 @@ title: "How we're helping respond to the Zika outbreak"
 date: 2016-02-16 15:00:29 +0000
 comments: false
 categories:
+        - opal
+        - elcid
 author: David Miller
 author_link: thatdavidmiller
 image: assets/images/posts/mosquito.jpg

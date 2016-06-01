@@ -4,6 +4,8 @@ title: "How to make a great hack day pitch"
 date: 2016-03-21 15:00:29 +0000
 comments: false
 categories:
+        - nhshackday
+        - hackdays
 author: David Miller
 author_link: thatdavidmiller
 image: assets/images/posts/nhshd.audience.jpg
