@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Opal | Open Health Care UK - Blog]]></title>
   <link href="http://openhealthcare.org.uk/blog/categories/opal/atom.xml" rel="self"/>
   <link href="http://openhealthcare.org.uk/"/>
-  <updated>2016-06-01T14:57:04+01:00</updated>
+  <updated>2016-06-01T18:19:08+01:00</updated>
   <id>http://openhealthcare.org.uk/</id>
   <author>
     <name><![CDATA[Open Health Care UK]]></name>
@@ -12,6 +12,135 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Happy Birthday to OPAL!]]></title>
+    <link href="http://openhealthcare.org.uk/blog/2016/06/01/happy-birthday-to-opal/"/>
+    <updated>2016-06-01T17:00:55+01:00</updated>
+    <id>http://openhealthcare.org.uk/blog/2016/06/01/happy-birthday-to-opal</id>
+    <content type="html"><![CDATA[Last Saturday 28th May 2016 marked the third birthday of OPAL - the
+[Open Source framework](https://github.com/openhealthcare/opal) we created to help developers
+create high quality clinical applications. We’ve come a long way since the
+[very first commit back in 2013](https://github.com/openhealthcare/opal/commit/63917d2d288faca6201c65d0de6893a59577b75d)
+so to celebrate we thought now would be a great time to take a look back over everything we’ve achieved.
+
+## Early days
+
+For the [first few months](https://github.com/openhealthcare/opal/graphs/contributors?from=2013-05-26&to=2013-07-02&type=c)
+the lead developer on OPAL was the awesome
+[Peter Inglesby](https://twitter.com/inglesp), who made that very first commit, and
+worked with Drs
+[Pollara](https://twitter.com/gpollara),
+[Marks](https://github.com/michaeledwardmarks/) and
+[Noursadeghi](https://twitter.com/mnoursad) to craft a Patient List system for infection patients at UCH. We met each
+week in the old Library room at [HTD](http://www.thehtd.org/) for a show and tell and figured out what the next sprint would look like.
+
+The interface changed almost weekly back then as we tried to figure out how best to replace the menagerie of Word
+documents, T-Cards, Access databases and Excel spreadsheets that the teams were currently using as patient lists.
+As you can see below, even three years on, the Patient List components of OPAL are still recognisable from those first few months!
+
+<div class="post-thumb">
+<center>
+  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/elcidopal.gif" />
+</center>
+</div>
+
+## Making OPAL a Framework not an Application
+
+Even at the beginning we knew that we wanted OPAL to be more of a framework than an application. By
+[October 2013](https://github.com/openhealthcare/elcid/commit/b695828681b27e4b7932dd8eb0c70f5f9c55a8f1) we
+started moving the UCH specific elements out of OPAL, refactoring it for reuse. We set about moving application specific
+business logic into
+[elCID](http://elcid.openhealthcare.org.uk) (the first OPAL application),
+allowing OPAL to be the generic platform for the services we build.
+
+OPAL would provide a sensible robust default configuration along with a
+[core data model](http://opal.openhealthcare.org.uk/docs/v0.6.0/guides/datamodel/),
+[reusable common components](http://opal.openhealthcare.org.uk/docs/v0.6.0/guides/components_overview/), UI
+components, and a clear path for integration with other systems and standards. Meanwhile individual applications built with
+OPAL would provide specialised domain logic for particular tasks, clinical specialties, or customisation for individual
+installations.
+
+## Deployment to an actual NHS Hospital
+
+In January 2014 we were ready to deploy
+[elCID](https://github.com/openhealthcare/elcid) to a real NHS hospital - just eight months after
+starting the project. Since then it has been used to manage inpatients and outpatients for HTD and the Infection and
+Microbiology teams at UCLH.
+
+Digital services are never finished though - and we’ve
+[iterated](http://openhealthcare.org.uk/blog/2016/02/16/how-were-helping-respond-to-the-zika-outbreak/) and
+[improved](http://openhealthcare.org.uk/blog/2015/10/21/launching-a-new-walk-in-service/) both elCID and OPAL frequently. OPAL alone
+has racked up 19 releases and almost 2,500 commits since we began. During that time we’ve worked to turn our vision for a
+robust Open Source framework for building clinical web applications into a reality.
+
+## Taking OPAL to NHS Hack Days
+
+One of the big tests for how far along that path we are is how OPAL has performed as a tool for building projects at
+[NHS Hack Days](http://nhshackday.com/). Hack days are a great way to stress test developer tools. They reward well-thought-out
+APIs and good documentation,
+giving you a great insight into how much they help or hinder developers.
+
+The first OPAL project at a NHS Hack Day was back in
+[May 2014](http://nhshackday.com/previous/events/2014/05/london/) when
+[Dr Gabriele Pollara](https://twitter.com/gpollara) brought a team together to try and
+add some extra features to OPAL and elCID. Even though the changes from
+[their fork of OPAL](https://github.com/mastersplinter/opal) were never merged back into the
+main codebase, it gave us plenty of insight into where we had the coupling wrong between framework and application, and
+places where could improve the APIs or make the documentation clearer.
+
+Four months later when the 8th NHS Hack day rolled around in
+[Leeds](http://nhshackday.com/previous/events/2014/09/leeds/) the codebase had improved significantly - with a project
+to design a
+[handover tool for Renal teams](https://github.com/openhealthcare/opal-renal) coming joint first:
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Renal project team collect T shirts for coming joint first at <a href="https://twitter.com/hashtag/nhshd?src=hash">#nhshd</a> <a href="http://t.co/D6EUkAUDdg">pic.twitter.com/D6EUkAUDdg</a></p>&mdash; Alison Cameron (@allyc375) <a href="https://twitter.com/allyc375/status/516225627423518720">September 28, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+This was the first time we had built a brand new application from scratch using OPAL, and it gave us a clear head
+start over hackday projects that had had to start from nothing.
+
+Over the next year, projects like
+[eCDR](https://github.com/TeamBigPharma/bigpharma) and
+[travelalerts](https://github.com/nhshackday/opal-travelalerts) were a great benchmark of how OPAL was progressing. New developers
+were able to get to grips with it and start building on top of it over the course of just a weekend. The framework was
+obviously maturing.
+
+In the most recent London NHS Hack Day we saw two projects building on top of OPAL - A
+[digital anaesthetic chart](https://github.com/anaesthetic-health-chart) that pulls
+and displays observation data from a anaesthetic monitors, and the eventual winner - a
+[Raspberry Pi based EPR in a box](http://github.com/nhshackday/outbreak).
+
+<center>
+<div class="post-thumb">
+<img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/dacer.png" />
+</div>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hJWTpSH8Bxc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</center>
+
+It was particularly exciting to see two brand new - and completely re-skinned OPAL projects built over one weekend and to
+get lots of feedback from all of our friends in the NHS Hack Day community.
+
+## The last few months
+
+The [last few months](https://github.com/openhealthcare/opal/graphs/contributors?from=2015-07-22&to=2016-05-28&type=c)
+have seen OPAL leap forward in terms of
+[code quality](https://coveralls.io/github/openhealthcare/opal) and depth of features. In large part this is thanks to the hard work of
+[Fred Kingham](https://twitter.com/fredkingham) - who has taken over as lead developer for the project. The upcoming
+[0.6 release](http://opal.openhealthcare.org.uk/docs/v0.6.0/) will see many improvements. We’ve refactored form helpers to make it easy to embed forms. Added new Patient detail views and a new Patient List module to make OPAL even more customisable. We’ve also added in an integration layer for connecting to other hospital systems. All this coupled with even greater performance.
+
+We’re not done yet though! We’re looking forward to improving the
+[documentation](http://opal.openhealthcare.org.uk/docs/v0.6.0/) to make it easier for new developers, we’re updating our core clinical models, improving the way in which we guide users through complex clinical pathways, adding further UI improvements for mobile devices along with much more as we move towards a 1.0 release.
+
+If you want to know more about OPAL, or about the work that we do at Open Health Care building digital tools for clinicians,
+[drop us a line](mailto:hello@openhealthcare.org.uk) - we’d love to hear from you.
+
+<small>
+Photo credits: [Will Clayton](https://www.flickr.com/photos/spool32/)
+</small>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How We're Helping Respond to the Zika Outbreak]]></title>
@@ -270,101 +399,6 @@ You can find out more information about the software on the [elCID website](http
 
 If you&#8217;re interested in seeing how elCID might help at your organisation, or if you&#8217;d
 like a copy of the full paper, don&#8217;t hesitate to drop us a line at [hello@openhealthcare.org.uk](hello@openhealthcare.org.uk)
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How Doctors Get Digital Services They Love]]></title>
-    <link href="http://openhealthcare.org.uk/blog/2015/03/11/how-doctors-get-digital-services-they-love/"/>
-    <updated>2015-03-11T21:12:19+00:00</updated>
-    <id>http://openhealthcare.org.uk/blog/2015/03/11/how-doctors-get-digital-services-they-love</id>
-    <content type="html"><![CDATA[At Open Health Care, we believe in
-[User-centered design](https://www.gov.uk/service-manual/user-centred-design).
-
-Which means that we focus on meeting the needs of our users, and is why we
-always work in close collaboration with them. Whether that comes in the
-form of making sure that our clinical champions are present at every sprint
-meeting, or working hard to get clinical staff and patients along to
-[NHS Hack Day](http://nhshackday.com) we work by putting users first, building
-and testing in small chunks.
-
-Working this way means that generally when we work on a project, we identify
-clinical champion(s) for that project. These are the kind of people who will use the service
-we end up building in their day-to-day work. In order to get them as involved as
-possible, we introduce them to [Agile](https://www.gov.uk/service-manual/agile),
-and we often find ourselves teaching [doctors](https://github.com/GabPoll) to
-[github](https://github.com/michaeledwardmarks). (Yes, that's a verb now).
-
-The great thing about working in multidisciplinary teams, is that *everyone* learns
-new things, all the time. For every medical three letter acronym like say,
-[CAP](http://en.wikipedia.org/wiki/Community-acquired_pneumonia) that gets explained
-to a developer, there's an explanation of what
-[API](http://en.wikipedia.org/wiki/Application_programming_interface) stands for that goes the
-other way.
-
-But it's not just terminology that gets shared - often we try to share our tools. We
-promote online
-[collaborative](http://www.google.co.uk/docs/about/)
-[document](http://hackpad.com/) editing above email attachments and
-[naming conventions](http://thedoghousediaries.com/5964). We encourage users to take
-up better web browsers. We get them to try out modern
-[team communication](https://slack.com/) [tools](http://appear.in), and recommend [Open Source](http://www.rstudio.com/)
-alternatives to the proprietary default incumbents.
-
-### But wait - it gets better
-
-Not only does this help us all understand one another better, which is so vital to delivering
-high quality digital services, but it also often introduces clinicians to tools that reward
-power users with advanced functionality. Once you've learnt
-[markdown](https://help.github.com/articles/github-flavored-markdown/) once, typing information
-into text boxes that will get rendered in a web browser is never quite the same again. You start
-*expecting* that the web based [clinical digital services](http://opal.openhealthcare.org.uk)
-you use in your day job let you [use markdown](https://github.com/openhealthcare/opal/blob/823de649ddee6c13803264d929ece3ae171104c5/opal/static/js/opal/opaldown.js)
-there too.
-
-Possibly the best feature we've implemented that came about this way is the
-[OPAL ](http://opal.openhealthcare.org.uk)
-Macros from
-late last year. Directly inspired by [Github issue mentions](https://github.com/blog/957-introducing-issue-mentions),
-OPAL Macros let the user define blocks of commonly used text, and then insert them with shortcut Macros -
-(names preceded by the # symbol).
-
-For instance, for [Staph](http://en.wikipedia.org/wiki/Staphylococcus_aureus) advice, the user enters #st:
-
-<img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/features/macro.pre.png" alt="" />
-
-&#8230; which then expands to the (institutionally defined) standard advice for this case:
-
-<img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/features/macro.post.png" alt="" />
-
-This is the kind of user need that only even comes up when users are digitally literate enough to
-be able to express it - something along the lines of:
-
-<blockquote class="custom-quote"><p><i class="fa fa-user-md fa-3x"></i>
-As a Doctor <br />
-I want to avoid repeatedly typing out standard advice <br />
-So that I can spend more time with my patients
-</p></blockquote>
-
-The existence of this kind of power-user functionality encourages users to master their tools, by
-offering them time savings and efficiencies but crucially, doesn&#8217;t interfere with the user experience at all if you
-don&#8217;t know it&#8217;s there. As
-[Dr Marks](https://github.com/michaeledwardmarks), who had originally explained the need on
-Github said:
-
-<blockquote class="custom-quote"><p><i class="fa fa-quote-left"></i>
-Absolutely stunning.<br/>
-I would say this is one of the most incredible things I have seen on a piece of NHS software ever.
-</p></blockquote>
-
-If you&#8217;re interested in starting an OPAL project at your institution to take advantage of this kind
-of feature, or in seeing how we can can help you by providing clinical facing digital services,
-don&#8217;t hesitate to [Get in touch](/contact.html)!
-
-<small>
-Photo credits: <br />
-[Jacopo Romei](http://www.flickr.com/photos/jakuza/)<br />
-</small>
 ]]></content>
   </entry>
   
