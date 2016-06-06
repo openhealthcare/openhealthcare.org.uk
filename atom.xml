@@ -4,7 +4,7 @@
   <title><![CDATA[Open Health Care UK - Blog]]></title>
   <link href="http://openhealthcare.org.uk/atom.xml" rel="self"/>
   <link href="http://openhealthcare.org.uk/blog.html"/>
-  <updated>2016-06-01T18:19:08+01:00</updated>
+  <updated>2016-06-06T12:03:30+01:00</updated>
   <id>http://openhealthcare.org.uk/</id>
   <author>
     <name><![CDATA[Open Health Care UK]]></name>
@@ -12,6 +12,119 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Big Problems in Health Tech That Get Us Excited]]></title>
+    <link href="http://openhealthcare.org.uk/blog/2016/06/06/big-problems-in-health-tech-that-get-us-excited/"/>
+    <updated>2016-06-06T12:59:20+01:00</updated>
+    <id>http://openhealthcare.org.uk/blog/2016/06/06/big-problems-in-health-tech-that-get-us-excited</id>
+    <content type="html"><![CDATA[<p>One of the great things about working in health is that there are no shortage of exciting, and potentially impactful problems to
+work on. At Open Health Care, we spend a lot of our time working to ease a couple of the big headaches around usability and
+data that the current state of health care technology gives clinicians.</p>
+
+<h2>Usability</h2>
+
+<p>First is the usability problem.</p>
+
+<p>We’re hardly the first people to suggest that many, if not most of the digital tools that are provided for doctors, nurses and
+other key front line NHS staff struggle with usability. By default these tools tend to be overwhelming and unfriendly. They are
+hard to use, and at times downright dangerous.</p>
+
+<p>At Open Health Care we believe that medicine is important enough to deserve the very best in terms of high quality usable software.
+In an environment where the costs of making mistakes is so high, clinicians deserve tools that help rather than hinder.</p>
+
+<p>The great thing is that technologists understand how to make tools that are highly functional and even delight their users. It
+requires time, focus and a willingness to change the way things are done - but the
+<a href="http://thisisservicedesignthinking.com/">design</a>
+<a href="http://www.usability.gov/what-and-why/user-centered-design.html">and</a>
+<a href="http://www.agilemanifesto.org/">development</a>
+<a href="https://www.gov.uk/service-manual">techniques</a> are
+increasingly widespread and available to us.</p>
+
+<p>There is no reason why we can’t do this for medicine - and indeed, the biggest part of what we do as Open Health Care is
+<a href="http://openhealthcare.org.uk/blog/2016/02/16/how-were-helping-respond-to-the-zika-outbreak/">delivering that</a>.</p>
+
+<p>In the UK, our reality is that we are looking to streamline and improve the efficiency of our clinical services in the name of yes,
+better care but also saving the NHS money. Having usable digital tools that genuinely support the day to day work of those services
+with the capability to be frequently iterated will be a key plank of any successful transformation strategy as we look to re-design
+those services.</p>
+
+<h2>Data</h2>
+
+<p>The second big area that gets us excited is clinical data.</p>
+
+<p>If we get sick, then the people and institutions who care for us know a huge amount about us. But that information is rarely
+available as data. It’s either literally on paper notes, or it’s in electronic systems that may as well be paper - stored in closed
+systems in unstructured formats that we can’t subsequently analyse or do computations over.</p>
+
+<p>The opportunity cost of throwing away this information is huge. The truly revolutionary technologies and techniques that the
+digital age has provided us are fuelled by data. Those techniques work best when you can feed them with structured, high
+quality, granular data. Yet even at many world-renowned institutions in the NHS, the data infrastructure underpinning clinical
+activity is distinctly 20th century.</p>
+
+<p>Access to high quality clinical data by default has a transformative potential for the NHS. Improving patient care and optimising
+our clinical services requires a real understanding of what we’re doing now - and that can only be obtained with data. Without that
+data, we have no idea whether we’re even making things better.</p>
+
+<p>And that’s before we even start with the promise of driving research and science by providing them with easily accessible, high
+quality, computable clinical data.</p>
+
+<h2>How do we help?</h2>
+
+<p>What we’ve found at Open Health Care, is that when you
+<a href="http://openhealthcare.org.uk/blog/2015/03/11/how-doctors-get-digital-services-they-love/">get the usability right</a>
+for the end user - the person caring for a patient,
+you can improve the efficiency and safety of patient care, while also capturing high granularity, research quality data as a part
+of routine clinical care.</p>
+
+<p>This is one of the reasons we created
+<a href="https://github.com/openhealthcare/opal">OPAL</a> - our Open Source platform for building clinical software applications. It pulls together
+the results of years of usability testing with real clinicians, along with all of the hard thinking that we and others like us have
+done about how to build robust digital tools for a health care environment.</p>
+
+<p>Also built in to
+<a href="opal.openhealthcare.org.uk/docs/v0.6.0/">OPAL</a>
+is the ability and the data modelling to collect the granularity of data required to enable us to provide
+high quality data through extracts or Open APIs. We’ve explored how to balance the clinical user need of speed ease of use with
+the system needs of quality data capture. Through a combination of pragmatic design, and frequent iteration, we’ve arrived at a
+range of design patterns that give us the opportunity to design systems that work in the real world yet still enable subsequent
+analysis.</p>
+
+<p>For instance, we’ve built
+<a href="http://elcid.openhealthcare.org.uk/">elCID</a> - the first major application built using OPAL. It’s designed to help manage the care of
+patients with infections, and it has been in use at
+<a href="https://www.uclh.nhs.uk/Pages/Home.aspx">University College Hospital London</a> for the last two and a half years in the
+inpatient and outpatient services they run for patients with infections. It is used by clinicians day to day to manage the care of
+patients, integrating with other hospital systems to pull key data from elsewhere in the trust, and it supports both clinical audit
+and service development.</p>
+
+<p>During that time it has improved the efficiency of clinical practice - saving time every single day by reducing work required in
+the handover process for inpatient teams, and reducing significantly, the time required by Microbiology consultants to run their
+liaison service to other parts of the trust - while providing robust documentation of that process for the first time.</p>
+
+<p>It has supported the development of the
+<a href="http://openhealthcare.org.uk/blog/2015/02/05/elcid-opat-launch/">OPAT service</a>
+- freeing up beds by allowing patients requiring IV antibiotics to be treated
+as outpatients, saving the trust £1m per year. It also allows us to provide clinic managers realtime dashboards and management
+reports about their activity, enabling them to make decisions with data that was previously unavailable to them.</p>
+
+<p>In addition to this, data from the system has supported many clinical audits - making the process of collecting data to analyse
+significantly faster, as well as
+<a href="http://openhealthcare.org.uk/blog/2015/06/10/elcid-journal-of-infectioncontrol/">one published academic paper</a>,
+two more in peer review, and six conference abstracts.</p>
+
+<h2>How does it work?</h2>
+
+<p>Open Health Care provide digital tools to NHS institutions that help clinicians to deliver better care. We charge for support,
+customisation and integration work, but we don’t charge for a license fee - all of our software is Open Source.</p>
+
+<p>We provide either installations of existing products we have developed, or build bespoke solutions for the needs of the individual
+organization we’re working with.</p>
+
+<p>If you are interested in fining out how to get elCID at your organization, or have a project that involves clinical usability and
+data then do <a href="mailto:hello@openhealthcare.org.uk">drop us a line</a> - we’d love to hear from you.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Happy Birthday to OPAL!]]></title>
@@ -620,7 +733,7 @@ of the service so that we can be sure that we’re meeting their needs.</p>
 flexibility and iteration in mind, and be supported by teams who have the capability to iterate them responsively.</p>
 
 <p>If you’d like to know more about how we could help you by delivering services like this, or more about the services we offer,
-do get in touch with us at <a href="mailto:hello@openhealthcare.org.uk"><a href="&#109;&#x61;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#104;&#x65;&#x6c;&#x6c;&#x6f;&#64;&#111;&#x70;&#101;&#110;&#104;&#101;&#x61;&#108;&#116;&#x68;&#99;&#97;&#114;&#x65;&#46;&#x6f;&#x72;&#x67;&#x2e;&#117;&#x6b;">&#104;&#x65;&#108;&#x6c;&#x6f;&#64;&#111;&#112;&#x65;&#x6e;&#104;&#101;&#x61;&#x6c;&#116;&#x68;&#99;&#x61;&#x72;&#101;&#x2e;&#x6f;&#114;&#103;&#x2e;&#x75;&#x6b;</a></a>.</p>
+do get in touch with us at <a href="mailto:hello@openhealthcare.org.uk"><a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#104;&#x65;&#x6c;&#x6c;&#111;&#x40;&#111;&#112;&#101;&#x6e;&#104;&#x65;&#97;&#108;&#116;&#x68;&#x63;&#x61;&#114;&#101;&#46;&#x6f;&#x72;&#103;&#46;&#117;&#x6b;">&#x68;&#101;&#x6c;&#108;&#111;&#64;&#x6f;&#x70;&#101;&#110;&#x68;&#101;&#97;&#108;&#x74;&#x68;&#99;&#x61;&#x72;&#x65;&#x2e;&#111;&#114;&#x67;&#46;&#x75;&#107;</a></a>.</p>
 
 <p><small>
 Photo credits: <a href="https://www.flickr.com/photos/31031835@N08/">John Tan</a>
@@ -731,7 +844,7 @@ of a success with the rest of the team!</p>
 partners, as well as continuing to develop and improve our existing services.</p>
 
 <p>If you&rsquo;ve got a project you think we could help with this year, do drop us a line at
-<a href="mailto:hello@openhealthcare.org.uk"><a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#58;&#104;&#101;&#108;&#x6c;&#111;&#x40;&#x6f;&#x70;&#101;&#110;&#104;&#101;&#x61;&#x6c;&#116;&#x68;&#x63;&#x61;&#114;&#101;&#46;&#111;&#x72;&#x67;&#x2e;&#117;&#x6b;">&#104;&#101;&#x6c;&#108;&#111;&#x40;&#111;&#x70;&#101;&#x6e;&#104;&#x65;&#97;&#108;&#x74;&#104;&#x63;&#97;&#114;&#101;&#x2e;&#x6f;&#114;&#103;&#x2e;&#x75;&#x6b;</a></a> - we&rsquo;d love to
+<a href="mailto:hello@openhealthcare.org.uk"><a href="&#109;&#97;&#x69;&#108;&#x74;&#111;&#x3a;&#x68;&#101;&#x6c;&#x6c;&#x6f;&#x40;&#x6f;&#x70;&#x65;&#110;&#104;&#x65;&#x61;&#x6c;&#x74;&#104;&#99;&#x61;&#114;&#x65;&#46;&#x6f;&#x72;&#103;&#x2e;&#x75;&#x6b;">&#104;&#x65;&#x6c;&#x6c;&#111;&#64;&#111;&#x70;&#x65;&#110;&#x68;&#101;&#x61;&#x6c;&#116;&#104;&#99;&#x61;&#x72;&#101;&#46;&#x6f;&#114;&#x67;&#x2e;&#x75;&#107;</a></a> - we&rsquo;d love to
 hear all about it!</p>
 
 <p><small>
@@ -980,7 +1093,7 @@ You’ll have fun</p>
 
 <ul>
 <li>By attending the event, tickets will be released this evening from <a href="http://nhshackday.com">www.nhshackday.com</a></li>
-<li>By sponsoring the event - email <a href="&#109;&#97;&#x69;&#x6c;&#116;&#x6f;&#58;&#104;&#101;&#x6c;&#108;&#111;&#x40;&#x6f;&#112;&#x65;&#x6e;&#x68;&#x65;&#x61;&#108;&#x74;&#104;&#x63;&#97;&#114;&#101;&#x2e;&#x6f;&#114;&#103;&#x2e;&#117;&#x6b;">&#104;&#101;&#x6c;&#108;&#111;&#x40;&#111;&#112;&#x65;&#x6e;&#104;&#101;&#97;&#x6c;&#x74;&#104;&#99;&#x61;&#x72;&#101;&#46;&#111;&#x72;&#103;&#x2e;&#117;&#107;</a></li>
+<li>By sponsoring the event - email <a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#111;&#58;&#x68;&#101;&#x6c;&#108;&#111;&#x40;&#111;&#112;&#x65;&#x6e;&#x68;&#x65;&#97;&#x6c;&#116;&#104;&#x63;&#97;&#x72;&#x65;&#46;&#111;&#114;&#103;&#x2e;&#117;&#x6b;">&#x68;&#101;&#108;&#x6c;&#x6f;&#64;&#111;&#x70;&#101;&#110;&#104;&#x65;&#x61;&#x6c;&#116;&#104;&#99;&#x61;&#114;&#101;&#x2e;&#111;&#x72;&#103;&#46;&#117;&#107;</a></li>
 <li>By becoming part of our community - joining the <a href="https://groups.google.com/forum/#!forum/nhshackday">mailing list</a>, coming to pre event meet ups or talking to us on <a href="http://twitter.com/nhshackday">Twitter</a></li>
 <li>By spreading the word, tell your friends!</li>
 </ul>
@@ -1456,7 +1569,7 @@ You’ll have fun</p>
 
 <ul>
 <li>By attending the event, tickets will be released this evening from <a href="http://nhshackday.com">www.nhshackday.com</a></li>
-<li>By sponsoring the event - email <a href="&#109;&#x61;&#105;&#x6c;&#x74;&#111;&#x3a;&#104;&#x65;&#108;&#108;&#111;&#64;&#x6f;&#x70;&#101;&#110;&#104;&#x65;&#x61;&#108;&#x74;&#x68;&#99;&#x61;&#x72;&#x65;&#x2e;&#x6f;&#x72;&#x67;&#x2e;&#x75;&#x6b;">&#104;&#101;&#x6c;&#x6c;&#111;&#64;&#111;&#112;&#x65;&#110;&#x68;&#101;&#x61;&#x6c;&#116;&#104;&#99;&#x61;&#x72;&#x65;&#x2e;&#111;&#114;&#103;&#x2e;&#x75;&#x6b;</a></li>
+<li>By sponsoring the event - email <a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#111;&#58;&#x68;&#x65;&#x6c;&#x6c;&#x6f;&#64;&#111;&#x70;&#x65;&#x6e;&#x68;&#x65;&#x61;&#x6c;&#x74;&#104;&#x63;&#97;&#x72;&#101;&#46;&#111;&#x72;&#x67;&#x2e;&#117;&#107;">&#x68;&#101;&#108;&#x6c;&#x6f;&#64;&#x6f;&#112;&#x65;&#x6e;&#x68;&#101;&#x61;&#108;&#x74;&#104;&#x63;&#97;&#x72;&#x65;&#x2e;&#111;&#114;&#x67;&#46;&#117;&#107;</a></li>
 <li>By becoming part of our community - joining the <a href="https://groups.google.com/forum/#!forum/nhshackday">mailing list</a>, coming to pre event meet ups or talking to us on <a href="http://twitter.com/nhshackday">Twitter</a></li>
 <li>By spreading the word, tell your friends!</li>
 </ul>
@@ -1801,52 +1914,6 @@ don&rsquo;t hesitate to <a href="http://openhealthcare.org.uk/contact.html">Get 
 <p><small>
 Photo credits: <br />
 <a href="http://www.flickr.com/photos/jakuza/">Jacopo Romei</a><br />
-</small></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[elCID OPAT Launched at UCLH]]></title>
-    <link href="http://openhealthcare.org.uk/blog/2015/02/05/elcid-opat-launch/"/>
-    <updated>2015-02-05T09:12:19+00:00</updated>
-    <id>http://openhealthcare.org.uk/blog/2015/02/05/elcid-opat-launch</id>
-    <content type="html"><![CDATA[<p>Last week saw us excited to launch our new <a href="http://e-opat.com/">OPAT</a> (Outpatients
-Parenteral Antimicrobial Therapy) service delivered via the <a href="http://elcid.openhealthcare.org.uk">elCID</a>
-platform at UCLH.</p>
-
-<p>This is the first deployment of the specialist OPAT module for <a href="http://opal.openhealthcare.org.uk">OPAL</a> -
-our Open Source framework for building transactional digital services. It covers the whole range of an
-OPAT service - from initial referrals and assessment, through ongoing care, post-treatment follow up and
-review. All of the workflows capture high quality data at the time of use, and allow analysis and extraction,
-both for reporting in line with national guidelines, and individual service audits.</p>
-
-<p>As ever, we worked closely with clinical champions, who were deeply involved in the agile development process,
-weighing in on <a href="https://github.com/openhealthcare/elcid/issues">GitHub</a>, attending sprint meetings, and
-providing their expertise to our development team. The whole project is released under an Open Source (GPL)
-license, and was developed in the open.</p>
-
-<p>This was a project we loved delivering, and not just because of the high praise from Dr Jon Lambourne, UCLH&rsquo;s
-clinical lead on the project, who said:</p>
-
-<blockquote class="custom-quote"><p><i class="fa fa-quote-left"></i>
-The Open Health Care team have been super, the things they can get the OPAL software to do regularly leaves me slack-jawed!
-</p></blockquote>
-
-
-<p>While we like to think that we&rsquo;re pretty good at executing on the technology side of things, it&rsquo;s really the collaboration
-between us and the clinical users, along with our focus on their needs that makes it possible for us to deliver
-new user-focussed digital services into the world.</p>
-
-<p>Accordingly, we&rsquo;d particularly like to thank
-<a href="https://www.uclh.nhs.uk/OurServices/Consultants/Pages/DrSarahLogan.aspx">Dr Sarah Logan</a> (Our consultant sponsor),
-<a href="https://github.com/7575colli">Steve Collins</a> (OPAT Nurse extraordinaire), and
-<a href="https://github.com/jonnylambourne">Dr Jon Lambourne</a> (Clinical lead on the project) for all their efforts.</p>
-
-<p>If you&rsquo;re interested in seeing an OPAL project at your institution, or in seing how we can can
-support running clinical OPAT services, don&rsquo;t hesitate to <a href="http://openhealthcare.org.uk/contact.html">Get in touch</a>!</p>
-
-<p><small>
-Photo Credits: <a href="https://www.flickr.com/photos/lydiashiningbrightly/5922822998">Lydia</a>
 </small></p>
 ]]></content>
   </entry>
