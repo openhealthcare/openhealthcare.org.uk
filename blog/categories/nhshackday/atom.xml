@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Nhshackday | Open Health Care UK - Blog]]></title>
   <link href="http://openhealthcare.org.uk/blog/categories/nhshackday/atom.xml" rel="self"/>
   <link href="http://openhealthcare.org.uk/"/>
-  <updated>2016-06-06T12:03:30+01:00</updated>
+  <updated>2016-10-24T16:32:36+01:00</updated>
   <id>http://openhealthcare.org.uk/</id>
   <author>
     <name><![CDATA[Open Health Care UK]]></name>
@@ -12,6 +12,76 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[NHS Hack Day 14 - Newcastle]]></title>
+    <link href="http://openhealthcare.org.uk/blog/2016/10/24/nhs-hack-day-14-newcastle/"/>
+    <updated>2016-10-24T16:00:29+01:00</updated>
+    <id>http://openhealthcare.org.uk/blog/2016/10/24/nhs-hack-day-14-newcastle</id>
+    <content type="html"><![CDATA[A few weeks ago we were excited as [NHS Hack Day](http://nhshackday.com) visited Newcastle for the very first time.
+
+As ever, we brought clinicians, patients, and other NHS staff together with developers, designers, researchers and others to share experiences, and spend a weekend working on short projects that address some of the frustrations and problems faced by patients and NHS staff every day.
+
+After an initial session pitching potential project ideas to the group, the attendees gradually formed into teams and started work, exploring the spaces around the problems they’d chosen to work on, making new friends, and examining potential ways to address them.
+
+<div class="post-thumb">
+     <center>
+  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/marcus.jpg" alt="" />
+</div><!--//post-thumb-->
+
+
+You can see all of the teams that formed on the [event page](http://nhshackday.com/previous/events/2016/05/newcastle/) of the NHS Hack Day website, but a special mention here goes to a couple of our favourites:
+
+## Recording consent preferences
+
+The &#8220;North Share” team spent much of the weekend exploring the thorny issues around consent, privacy and data sharing in the context of the NHS. Recent experience with a range of national and local projects suggests that there is plenty of work do be done in this area, and contributions in the form of tangible prototypes that help people to tell stories about and think through the issues involved are particularly helpful.
+
+
+<div class="post-thumb">
+     <center>
+  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/northshare.png" alt="" />
+</div><!--//post-thumb-->
+
+
+You can take the [prototype they made](https://blu3id.github.io/gncr-consent/) for a spin yourself and see what you think - try asking questions like:
+
+* do I understand what this means?
+* what do I think this should do?
+* what the consequences would be?
+* how would I change this to make it better?
+
+Managing consent, and doing the right thing around privacy and personal data is something we spend lots of time thinking about at Open Health Care, so it was great to see others in the community engaging with the issues in such a constructive, positive way.
+
+## Locating Community Dentistry
+
+Highlighted on the [NHS Hack Day mailing list](https://groups.google.com/forum/#!topic/nhshackday/2NBscruWFDA) beforehand was how hard it is for people with complex needs to locate appropriate community dental services via the NHS Choices website. (You’re likely to be able to find a general dental surgery, but no information about specialist services for people with complex medical comorbidities, physical disabilities, dementia etc)
+
+Not for the first time, we find a situation where a lack of available complete, canonical data about the Physical NHS (the services on the ground across the country) makes it harder than is acceptable for patients to get the care they need.
+
+At the event the team built a [prototype](https://morning-everglades-40330.herokuapp.com/) of a service that would help people locate dental services appropriate for their situation.
+
+<div class="post-thumb">
+     <center>
+  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/dentalreferrals.png" alt="" />
+</div><!--//post-thumb-->
+
+This prototype allows the team to tell the story of how the world should work for people trying to access dental services even though the data is unavailable (in fact, doesn’t exist).
+
+One of the really interesting classes of hack day projects is the ones that go on to become campaigns on a particular topic - which is exactly what caught the eye with this one. This information is really something that should be rolled into the services developed by NHS Digital like [NHS Choices](http://www.nhs.uk/service-search/Dentists/LocationSearch/3), or the up-coming [NHS.UK](https://beta.nhs.uk/).
+
+Having a (semi) working service to show people makes it much easier to tell the story of why this should exist, and helps to lobby the institutions who should be providing this data.
+
+We’re sure this story isn’t over here and look forward to the time when these services are easy to locate.
+
+## Thanks and the future
+
+Thanks to everyone who turned up over the weekend and helped to make it such a welcoming, friendly event. Particular thanks to the volunteers who helped make things run smoothly, and the sponsors without whom we wouldn’t be able to carry on running these events.
+
+A particularly large thanks goes to [Becky](https://twitter.com/Bexmoxon) for leading the organization and cat-herding this time, and doing by far the lion’s share of dealing with suppliers, venue and sponsors.
+
+If you want to come to a future NHS Hack Day then you can follow us on [Twitter](http://twitter.com/nhshackday), or sign up to our [mailing list](http://nhshackday.com) and we’ll let you know as soon as we schedule the next one - likely early in 2017.
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[NHS Hack Day 13 - London]]></title>
@@ -412,63 +482,6 @@ often dependent on who you are, and what kinds of user needs you&#8217;re lookin
 If you&#8217;re still unsure about how to run your hack day, Open Health Care UK provide strategic and logistical support to organisations in healthcare and
 the wider public sector looking to run great events - so drop us a line at [hello@openhealthcare.org.uk](hello@openhealthcare.org.uk) to see how we
 can help.
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[NHS Hack Day 10 - London]]></title>
-    <link href="http://openhealthcare.org.uk/blog/2015/05/25/nhs-hack-day-10/"/>
-    <updated>2015-05-25T16:00:29+01:00</updated>
-    <id>http://openhealthcare.org.uk/blog/2015/05/25/nhs-hack-day-10</id>
-    <content type="html"><![CDATA[Last weekend saw us reach a milestone as we brought
-[NHS Hack Day back to London](http://nhshackday.com/) in our tenth event in just three years!
-
-NHS Hack Days are weekend events that bring together patients, healthcare and technology
-professionals and other “geeks who love the NHS” under the banner of making NHS IT less bad.
-It's always a pleasure to see so many talented people come together to share their time, skills
-and experience to create something together, and this was no exception.
-
-The event started with clinical staff, patients, and anyone else who felt they had a way to
-make the world a little better pitching ideas that they wanted to work on. Pitches
-[start with a User Need](https://www.gov.uk/service-manual/user-centred-design/user-needs.html)
-- for instance the surgeons who need a way to track their continuing professional development,
-or the doctor who wants quick and easy offline access to formulary information. The attendees
-then pick what project they want to work on, and form teams to try and build a prototype over
-the weekend.
-
-<div class="post-thumb">
-  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/nhshd.10.circle.jpg" alt="" />
-</div><!--//post-thumb-->
-
-At the end of the weekend, we gathered together to share what we&#8217;d learned and what we&#8217;d built
-over the weekend.
-
-Some of the stand-out projects from the weekend were The Locumator - an app which helps hospital schedulers and doctors to fill vacant slots with bank staff, and Take Your Meds - a low-tech phone reminder application that sends a configurable audio message via phone call to a patient, reminding them to use the mouthwash, or take their medication.
-
-<div class="post-thumb">
-  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/nhshd.10.chats.jpg" alt="" />
-</div><!--//post-thumb-->
-
-
-You can see the whole list [here](https://docs.google.com/spreadsheets/d/1-jB5dVPcakZF9HhjXHvqjRtE-vvlkV9NdZ2Qn9II1mc/edit#gid=0).
-
-
-Locumator&#8217;s presentation
-<iframe id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="550" height="400" src="https://prezi.com/embed/2hqtpz0eedmg/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;PARENT_REQUEST_ID=6c9d97d7f3b4b9e3#"></iframe>
-<br /><br />
-More information on Take Your Meds is available from
-[their Github account](https://github.com/open-health-hub/reminder)
-
-This time, our cat-herder in chief was the amazing [@deckofpandas](http://twitter.com/deckofpandas) - and we&#8217;d like to thank her again for all of her hard work in making the event such a great
-experience for everyone involved.
-
-Next time looks like being Manchester in Autumn 2015 - although the venue & exact date are
-yet to be confirmed. We’d love it if you joined us though - so do
-[sign up to the mailing list](http://nhshackday.com/) to be kept in the loop !
-
-<small>
-Photo credits: [Cléon Daniel](https://www.flickr.com/photos/133318877@N06/)
-</small>
 ]]></content>
   </entry>
   
