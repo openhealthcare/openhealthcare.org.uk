@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Data | Open Health Care UK - Blog]]></title>
   <link href="http://openhealthcare.org.uk/blog/categories/data/atom.xml" rel="self"/>
   <link href="http://openhealthcare.org.uk/"/>
-  <updated>2016-11-04T15:04:54+00:00</updated>
+  <updated>2016-11-04T15:06:49+00:00</updated>
   <id>http://openhealthcare.org.uk/</id>
   <author>
     <name><![CDATA[Open Health Care UK]]></name>
@@ -52,8 +52,10 @@ were new to us - like the Royal College of Paediatrics and Child Heath campaign 
 We then gathered these together and built a [single directory website](https://data.england.nhs.uk/datadirectory/) that showcases these projects in one place.
 
 <div class="post-thumb">
-     <center>
+     <a href="https://data.england.nhs.uk/datadirectory/" target="_blank">
   <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/datadirectory.png" alt="" />
+  </a>
+
 </div><!--//post-thumb-->
 
 This directory helps to point people at stories and examples of things that have used open health data - and in doing so, helps to show
