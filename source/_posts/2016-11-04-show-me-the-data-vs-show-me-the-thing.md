@@ -19,8 +19,8 @@ Data however, is **incredibly boring** to most humans. Which makes it really har
 
 Even more so than data in general, **Open Data** is an abstract concept that can be hard to grasp.
 
-For years, [Open Knowledge](http://opendefinition.org/) and the [Open Data Institute](http://theodi.org/data-spectrum) have worked hard to find ways of making
-these concepts **clear** and **accessible**.
+For years, [Open Knowledge](http://opendefinition.org/) and the [Open Data Institute](http://theodi.org/data-spectrum) have worked hard on the valuable work of
+finding ways to make these concepts **clear** and **accessible**.
 
 Our experience at Open Health Care is that clarity often isn’t enough - you need to make
 things **tangible **for people to really understand them. That’s the main reason that we believe in **[Showing The Thing](https://gds.blog.gov.uk/2014/06/03/principles-for-prototyping/)** - that practical demonstrations
