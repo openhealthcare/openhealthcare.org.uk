@@ -49,7 +49,7 @@ We then gathered these together and built a [single directory website](https://d
 </div><!--//post-thumb-->
 
 This directory helps to point people at stories and examples of things that have used open health data - and in doing so, helps to show
-why that data is valuable in a way that they can grapple with and kick the tyres of themselves.
+why that data is valuable in a way that they can grapple with and kick the tyres for themselves.
 
 For instance - one of the great things about the [Open Prescribing](https://openprescribing.net/) project made by our friends at [EBM Data Lab](https://ebmdatalab.net/) is that
 is has **buttons you can press**.
