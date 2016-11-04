@@ -42,8 +42,10 @@ were new to us - like the Royal College of Paediatrics and Child Heath campaign 
 We then gathered these together and built a [single directory website](https://data.england.nhs.uk/datadirectory/) that showcases these projects in one place.
 
 <div class="post-thumb">
-     <center>
+     <a href="https://data.england.nhs.uk/datadirectory/" target="_blank">
   <img class="img-responsive" src="/assets/images/posts/datadirectory.png" alt="" />
+  </a>
+
 </div><!--//post-thumb-->
 
 This directory helps to point people at stories and examples of things that have used open health data - and in doing so, helps to show
