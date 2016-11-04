@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Data | Open Health Care UK - Blog]]></title>
   <link href="http://openhealthcare.org.uk/blog/categories/data/atom.xml" rel="self"/>
   <link href="http://openhealthcare.org.uk/"/>
-  <updated>2016-11-04T14:58:58+00:00</updated>
+  <updated>2016-11-04T15:01:14+00:00</updated>
   <id>http://openhealthcare.org.uk/</id>
   <author>
     <name><![CDATA[Open Health Care UK]]></name>
@@ -22,7 +22,8 @@
 
 A quick trip to Data.gov.uk reveals [1,897 health related datasets](https://data.gov.uk/data/search?theme-primary=Health). At the same time both [NHS England](https://www.england.nhs.uk/statistics/statistical-work-areas/) and [NHS Digital](http://content.digital.nhs.uk/statisticsa-z) publish official National Statistics, not to mention the various data portals ([NHS England](https://data.england.nhs.uk/), [NHS Digital](https://indicators.hscic.gov.uk/webview/), [NHS Digital again](http://content.digital.nhs.uk/searchcatalogue?q=+&area=&size=10&sort=Relevance#top)), and [data published on Gov.uk](https://www.gov.uk/government/publications/phe-data-and-analysis-tools-a-to-z/phe-data-and-analysis-tools-a-to-z).
 
-And this is before we get to stray web pages related to specific pet political projects that contain "Download and take away data", in some obscurantist dialect of almost-but-not quite CSV that doesn’t work with any standard tools. (Yes [MyNHS](https://www.nhs.uk/service-search/Performance/DownloadData), I mean you.)
+And this is before we get to stray web pages related to specific pet political projects that contain "Download and take away data", in some obscurantist dialect of
+almost-but-not quite CSV that doesn’t "just work" with any standard tools. (Yes [MyNHS](https://www.nhs.uk/service-search/Performance/DownloadData), I mean you.)
 
 Data however, is **incredibly boring** to most humans. Which makes it really hard to understand the value of all of that data, by just looking at a list of data.
 
