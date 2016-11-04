@@ -71,10 +71,10 @@
   <div class="row">
     <div id="blog-entry" class="blog-entry section col-md-8 col-sm-8 col-xs-12">
       <article class="post">
-        <h2 class="title">NHS Hack Day 14 - Newcastle</h2>
+        <h2 class="title">Show me the data vs. Show me the things</h2>
         <div class="meta">
           <ul class="meta-list list-inline">
-            <li class="post-time post_date date updated">October 24 2016</li>
+            <li class="post-time post_date date updated">November 04 2016</li>
             <li class="post-author"> by <a href="http://twitter.com/thatdavidmiller">David Miller</a></li>
             <!-- <li class="post-comments-link"> &#8211;>
             <!--   <a href="#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
@@ -83,84 +83,67 @@
         </div><!--meta-->
         
         <div class="post-thumb">
-          <img class="img-responsive" src="/assets/images/posts/nhshd.14.jpg" alt="" />
+          <img class="img-responsive" src="/assets/images/posts/filing.jpg" alt="" />
         </div><!--//post-thumb-->
         
         <div class="content">
-          <p>A few weeks ago we were excited as <a href="http://nhshackday.com">NHS Hack Day</a> visited Newcastle for the very first time.</p>
+          <p>The health system in the UK publishes a <em>lot</em> of data.</p>
 
-<p>As ever, we brought clinicians, patients, and other NHS staff together with developers, designers, researchers and others to share experiences, and spend a weekend working on short projects that address some of the frustrations and problems faced by patients and NHS staff every day.</p>
+<p>A quick trip to Data.gov.uk reveals <a href="https://data.gov.uk/data/search?theme-primary=Health">1,897 health related datasets</a>. At the same time both <a href="https://www.england.nhs.uk/statistics/statistical-work-areas/">NHS England</a> and <a href="http://content.digital.nhs.uk/statisticsa-z">NHS Digital</a> publish official National Statistics, not to mention the various data portals (<a href="https://data.england.nhs.uk/">NHS England</a>, <a href="https://indicators.hscic.gov.uk/webview/">NHS Digital</a>, <a href="http://content.digital.nhs.uk/searchcatalogue?q=+&amp;area=&amp;size=10&amp;sort=Relevance#top">NHS Digital again</a>), and <a href="https://www.gov.uk/government/publications/phe-data-and-analysis-tools-a-to-z/phe-data-and-analysis-tools-a-to-z">data published on Gov.uk</a>.</p>
 
-<p>After an initial session pitching potential project ideas to the group, the attendees gradually formed into teams and started work, exploring the spaces around the problems they’d chosen to work on, making new friends, and examining potential ways to address them.</p>
+<p>And this is before we get to stray web pages related to specific pet political projects that contain &ldquo;Download and take away data&rdquo;, in some obscurantist dialect of almost-but-not quite CSV that doesn’t work with any standard tools. (Yes <a href="https://www.nhs.uk/service-search/Performance/DownloadData">MyNHS</a>, I mean you.)</p>
+
+<p>Data however, is <strong>incredibly boring</strong> to most humans. Which makes it really hard to understand the value of all of that data, by just looking at a list of data.</p>
+
+<p>Even more so than data in general, <strong>Open Data</strong> is an abstract concept that can be hard to grasp.</p>
+
+<p>For years, <a href="http://opendefinition.org/">Open Knowledge</a> and the <a href="http://theodi.org/data-spectrum">Open Data Institute</a> have worked hard to find ways of making
+these concepts <strong>clear</strong> and <strong>accessible</strong>.</p>
+
+<p>Our experience at Open Health Care is that clarity often isn’t enough - you need to make
+things <strong>tangible </strong>for people to really understand them. That’s the main reason that we believe in <strong><a href="https://gds.blog.gov.uk/2014/06/03/principles-for-prototyping/">Showing The Thing</a></strong> - that practical demonstrations
+have vastly more power than descriptions or abstract concepts.</p>
+
+<p>That&rsquo;s why we so often build prototypes of things to help us tell stories about how the world
+could be better, and why we
+encourage communities grappling with digital and data to <a href="http://openhealthcare.org.uk/blog/2016/10/24/nhs-hack-day-14-newcastle/">learn by doing</a>.</p>
+
+<p>Earlier this year, we spent some time with the Open Data team at NHS England working out how we would go about applying <strong><a href="http://transformation.blog.nhs.uk/show-the-thing">Show The Thing</a></strong> to the world of Open Health Data.</p>
+
+<p>We started by doing some desk (Google and Twitter) research collecting examples of interesting projects that had used Open Health Data to build a product or service, to tell a story or start a campaign.</p>
+
+<p>This turned up some old favourites - like our project from a from a few years ago visualising
+issues with the <a href="http://prescribinganalytics.com">prescribing of non-generic Statins</a> - as well as some interesting projects that
+were new to us - like the Royal College of Paediatrics and Child Heath campaign “<a href="http://www.rcpch.ac.uk/news-campaigns/campaigns/why-children-die/why-children-die-rcpch-campaign">Why Children Die</a>”.</p>
+
+<p>We then gathered these together and built a <a href="https://data.england.nhs.uk/datadirectory/">single directory website</a> that showcases these projects in one place.</p>
 
 <div class="post-thumb">
      <center>
-  <img class="img-responsive" src="/assets/images/posts/marcus.jpg" alt="" />
+  <img class="img-responsive" src="/assets/images/posts/datadirectory.png" alt="" />
 </div>
 
 
 <!--//post-thumb-->
 
 
-<p>You can see all of the teams that formed on the <a href="http://nhshackday.com/previous/events/2016/05/newcastle/">event page</a> of the NHS Hack Day website, but a special mention here goes to a couple of our favourites:</p>
+<p>This directory helps to point people at stories and examples of things that have used open health data - and in doing so, helps to show
+why that data is valuable in a way that they can grapple with and kick the tyres of themselves.</p>
 
-<h2>Recording consent preferences</h2>
+<p>For instance - one of the great things about the <a href="https://openprescribing.net/">Open Prescribing</a> project made by our friends at <a href="https://ebmdatalab.net/">EBM Data Lab</a> is that
+is has <strong>buttons you can press</strong>.</p>
 
-<p>The &ldquo;North Share” team spent much of the weekend exploring the thorny issues around consent, privacy and data sharing in the context of the NHS. Recent experience with a range of national and local projects suggests that there is plenty of work do be done in this area, and contributions in the form of tangible prototypes that help people to tell stories about and think through the issues involved are particularly helpful.</p>
+<p>People like pressing buttons.</p>
 
-<div class="post-thumb">
-     <center>
-  <img class="img-responsive" src="/assets/images/posts/northshare.png" alt="" />
-</div>
+<p>We&rsquo;re still looking for more great examples though, so if you’ve worked on a project that uses Open Health Data
+that you think might be suitable for the directory, you can <a href="https://data.england.nhs.uk/datadirectory/add/">submit your project here</a>.</p>
 
+<p>Because it&rsquo;s always great to have more things to show&hellip;</p>
 
-<!--//post-thumb-->
-
-
-<p>You can take the <a href="https://blu3id.github.io/gncr-consent/">prototype they made</a> for a spin yourself and see what you think - try asking questions like:</p>
-
-<ul>
-<li>do I understand what this means?</li>
-<li>what do I think this should do?</li>
-<li>what the consequences would be?</li>
-<li>how would I change this to make it better?</li>
-</ul>
-
-
-<p>Managing consent, and doing the right thing around privacy and personal data is something we spend lots of time thinking about at Open Health Care, so it was great to see others in the community engaging with the issues in such a constructive, positive way.</p>
-
-<h2>Locating Community Dentistry</h2>
-
-<p>Highlighted on the <a href="https://groups.google.com/forum/#!topic/nhshackday/2NBscruWFDA">NHS Hack Day mailing list</a> beforehand was how hard it is for people with complex needs to locate appropriate community dental services via the NHS Choices website. (You’re likely to be able to find a general dental surgery, but no information about specialist services for people with complex medical comorbidities, physical disabilities, dementia etc)</p>
-
-<p>Not for the first time, we find a situation where a lack of available complete, canonical data about the Physical NHS (the services on the ground across the country) makes it harder than is acceptable for patients to get the care they need.</p>
-
-<p>At the event the team built a <a href="https://morning-everglades-40330.herokuapp.com/">prototype</a> of a service that would help people locate dental services appropriate for their situation.</p>
-
-<div class="post-thumb">
-     <center>
-  <img class="img-responsive" src="/assets/images/posts/dentalreferrals.png" alt="" />
-</div>
-
-
-<!--//post-thumb-->
-
-
-<p>This prototype allows the team to tell the story of how the world should work for people trying to access dental services even though the data is unavailable (in fact, doesn’t exist).</p>
-
-<p>One of the really interesting classes of hack day projects is the ones that go on to become campaigns on a particular topic - which is exactly what caught the eye with this one. This information is really something that should be rolled into the services developed by NHS Digital like <a href="http://www.nhs.uk/service-search/Dentists/LocationSearch/3">NHS Choices</a>, or the up-coming <a href="https://beta.nhs.uk/">NHS.UK</a>.</p>
-
-<p>Having a (semi) working service to show people makes it much easier to tell the story of why this should exist, and helps to lobby the institutions who should be providing this data.</p>
-
-<p>We’re sure this story isn’t over here and look forward to the time when these services are easy to locate.</p>
-
-<h2>Thanks and the future</h2>
-
-<p>Thanks to everyone who turned up over the weekend and helped to make it such a welcoming, friendly event. Particular thanks to the volunteers who helped make things run smoothly, and the sponsors without whom we wouldn’t be able to carry on running these events.</p>
-
-<p>A particularly large thanks goes to <a href="https://twitter.com/Bexmoxon">Becky</a> for leading the organization and cat-herding this time, and doing by far the lion’s share of dealing with suppliers, venue and sponsors.</p>
-
-<p>If you want to come to a future NHS Hack Day then you can follow us on <a href="http://twitter.com/nhshackday">Twitter</a>, or sign up to our <a href="http://nhshackday.com">mailing list</a> and we’ll let you know as soon as we schedule the next one - likely early in 2017.</p>
+<p><small>
+Photo credits: <br />
+<a href="https://www.flickr.com/photos/redjar/">Redjar</a>
+</small></p>
 
         </div>
         <div class="content">
@@ -172,10 +155,8 @@
         </div>
         <nav class="post-nav">
         
-        <span class="nav-previous"><a href="/blog/2016/06/06/big-problems-in-health-tech-that-get-us-excited/" rel="prev"><i class="fa fa-long-arrow-left"></i> Big problems in health tech that get us excited</a></span>
+        <span class="nav-previous"><a href="/blog/2016/10/24/nhs-hack-day-14-newcastle/" rel="prev"><i class="fa fa-long-arrow-left"></i> NHS Hack Day 14 - Newcastle</a></span>
         
-        
-        <span class="nav-next"><a href="/blog/2016/11/04/show-me-the-data-vs-show-me-the-thing/" rel="prev">Show me the data vs. Show me the things <i class="fa fa-long-arrow-right"></i></a></span>
         
         </nav><!--//post-nav-->
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Open Health Care UK - Blog]]></title>
   <link href="http://openhealthcare.org.uk/atom.xml" rel="self"/>
   <link href="http://openhealthcare.org.uk/blog.html"/>
-  <updated>2016-10-24T16:32:36+01:00</updated>
+  <updated>2016-11-04T14:58:58+00:00</updated>
   <id>http://openhealthcare.org.uk/</id>
   <author>
     <name><![CDATA[Open Health Care UK]]></name>
@@ -12,6 +12,71 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Show Me the Data vs. Show Me the Things]]></title>
+    <link href="http://openhealthcare.org.uk/blog/2016/11/04/show-me-the-data-vs-show-me-the-thing/"/>
+    <updated>2016-11-04T11:00:29+00:00</updated>
+    <id>http://openhealthcare.org.uk/blog/2016/11/04/show-me-the-data-vs-show-me-the-thing</id>
+    <content type="html"><![CDATA[<p>The health system in the UK publishes a <em>lot</em> of data.</p>
+
+<p>A quick trip to Data.gov.uk reveals <a href="https://data.gov.uk/data/search?theme-primary=Health">1,897 health related datasets</a>. At the same time both <a href="https://www.england.nhs.uk/statistics/statistical-work-areas/">NHS England</a> and <a href="http://content.digital.nhs.uk/statisticsa-z">NHS Digital</a> publish official National Statistics, not to mention the various data portals (<a href="https://data.england.nhs.uk/">NHS England</a>, <a href="https://indicators.hscic.gov.uk/webview/">NHS Digital</a>, <a href="http://content.digital.nhs.uk/searchcatalogue?q=+&amp;area=&amp;size=10&amp;sort=Relevance#top">NHS Digital again</a>), and <a href="https://www.gov.uk/government/publications/phe-data-and-analysis-tools-a-to-z/phe-data-and-analysis-tools-a-to-z">data published on Gov.uk</a>.</p>
+
+<p>And this is before we get to stray web pages related to specific pet political projects that contain &ldquo;Download and take away data&rdquo;, in some obscurantist dialect of almost-but-not quite CSV that doesn’t work with any standard tools. (Yes <a href="https://www.nhs.uk/service-search/Performance/DownloadData">MyNHS</a>, I mean you.)</p>
+
+<p>Data however, is <strong>incredibly boring</strong> to most humans. Which makes it really hard to understand the value of all of that data, by just looking at a list of data.</p>
+
+<p>Even more so than data in general, <strong>Open Data</strong> is an abstract concept that can be hard to grasp.</p>
+
+<p>For years, <a href="http://opendefinition.org/">Open Knowledge</a> and the <a href="http://theodi.org/data-spectrum">Open Data Institute</a> have worked hard to find ways of making
+these concepts <strong>clear</strong> and <strong>accessible</strong>.</p>
+
+<p>Our experience at Open Health Care is that clarity often isn’t enough - you need to make
+things <strong>tangible </strong>for people to really understand them. That’s the main reason that we believe in <strong><a href="https://gds.blog.gov.uk/2014/06/03/principles-for-prototyping/">Showing The Thing</a></strong> - that practical demonstrations
+have vastly more power than descriptions or abstract concepts.</p>
+
+<p>That&rsquo;s why we so often build prototypes of things to help us tell stories about how the world
+could be better, and why we
+encourage communities grappling with digital and data to <a href="http://openhealthcare.org.uk/blog/2016/10/24/nhs-hack-day-14-newcastle/">learn by doing</a>.</p>
+
+<p>Earlier this year, we spent some time with the Open Data team at NHS England working out how we would go about applying <strong><a href="http://transformation.blog.nhs.uk/show-the-thing">Show The Thing</a></strong> to the world of Open Health Data.</p>
+
+<p>We started by doing some desk (Google and Twitter) research collecting examples of interesting projects that had used Open Health Data to build a product or service, to tell a story or start a campaign.</p>
+
+<p>This turned up some old favourites - like our project from a from a few years ago visualising
+issues with the <a href="http://prescribinganalytics.com">prescribing of non-generic Statins</a> - as well as some interesting projects that
+were new to us - like the Royal College of Paediatrics and Child Heath campaign “<a href="http://www.rcpch.ac.uk/news-campaigns/campaigns/why-children-die/why-children-die-rcpch-campaign">Why Children Die</a>”.</p>
+
+<p>We then gathered these together and built a <a href="https://data.england.nhs.uk/datadirectory/">single directory website</a> that showcases these projects in one place.</p>
+
+<div class="post-thumb">
+     <center>
+  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/datadirectory.png" alt="" />
+</div>
+
+
+<!--//post-thumb-->
+
+
+<p>This directory helps to point people at stories and examples of things that have used open health data - and in doing so, helps to show
+why that data is valuable in a way that they can grapple with and kick the tyres of themselves.</p>
+
+<p>For instance - one of the great things about the <a href="https://openprescribing.net/">Open Prescribing</a> project made by our friends at <a href="https://ebmdatalab.net/">EBM Data Lab</a> is that
+is has <strong>buttons you can press</strong>.</p>
+
+<p>People like pressing buttons.</p>
+
+<p>We&rsquo;re still looking for more great examples though, so if you’ve worked on a project that uses Open Health Data
+that you think might be suitable for the directory, you can <a href="https://data.england.nhs.uk/datadirectory/add/">submit your project here</a>.</p>
+
+<p>Because it&rsquo;s always great to have more things to show&hellip;</p>
+
+<p><small>
+Photo credits: <br />
+<a href="https://www.flickr.com/photos/redjar/">Redjar</a>
+</small></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[NHS Hack Day 14 - Newcastle]]></title>
@@ -815,7 +880,7 @@ of the service so that we can be sure that we’re meeting their needs.</p>
 flexibility and iteration in mind, and be supported by teams who have the capability to iterate them responsively.</p>
 
 <p>If you’d like to know more about how we could help you by delivering services like this, or more about the services we offer,
-do get in touch with us at <a href="mailto:hello@openhealthcare.org.uk"><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#x3a;&#104;&#x65;&#x6c;&#x6c;&#111;&#64;&#111;&#x70;&#101;&#110;&#x68;&#101;&#x61;&#x6c;&#116;&#104;&#x63;&#97;&#114;&#101;&#x2e;&#111;&#114;&#x67;&#x2e;&#x75;&#107;">&#104;&#x65;&#x6c;&#x6c;&#111;&#64;&#111;&#x70;&#101;&#x6e;&#x68;&#x65;&#x61;&#108;&#116;&#104;&#x63;&#x61;&#114;&#x65;&#46;&#x6f;&#x72;&#x67;&#46;&#x75;&#x6b;</a></a>.</p>
+do get in touch with us at <a href="mailto:hello@openhealthcare.org.uk"><a href="&#109;&#x61;&#x69;&#x6c;&#116;&#111;&#58;&#x68;&#x65;&#108;&#108;&#111;&#64;&#x6f;&#112;&#101;&#110;&#104;&#101;&#97;&#x6c;&#x74;&#x68;&#99;&#97;&#114;&#101;&#x2e;&#x6f;&#x72;&#x67;&#x2e;&#117;&#x6b;">&#104;&#x65;&#x6c;&#x6c;&#111;&#64;&#x6f;&#112;&#101;&#x6e;&#x68;&#x65;&#97;&#x6c;&#x74;&#104;&#x63;&#97;&#x72;&#101;&#x2e;&#x6f;&#x72;&#x67;&#46;&#117;&#107;</a></a>.</p>
 
 <p><small>
 Photo credits: <a href="https://www.flickr.com/photos/31031835@N08/">John Tan</a>
@@ -926,7 +991,7 @@ of a success with the rest of the team!</p>
 partners, as well as continuing to develop and improve our existing services.</p>
 
 <p>If you&rsquo;ve got a project you think we could help with this year, do drop us a line at
-<a href="mailto:hello@openhealthcare.org.uk"><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#x6f;&#58;&#104;&#x65;&#x6c;&#108;&#111;&#x40;&#111;&#x70;&#x65;&#110;&#104;&#101;&#x61;&#108;&#x74;&#104;&#x63;&#x61;&#x72;&#101;&#x2e;&#x6f;&#x72;&#x67;&#46;&#117;&#107;">&#104;&#101;&#x6c;&#x6c;&#111;&#64;&#111;&#112;&#x65;&#x6e;&#104;&#101;&#97;&#x6c;&#116;&#x68;&#99;&#x61;&#114;&#101;&#46;&#x6f;&#x72;&#103;&#46;&#117;&#x6b;</a></a> - we&rsquo;d love to
+<a href="mailto:hello@openhealthcare.org.uk"><a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#111;&#58;&#104;&#101;&#108;&#x6c;&#111;&#x40;&#x6f;&#x70;&#101;&#110;&#x68;&#101;&#97;&#108;&#116;&#104;&#x63;&#x61;&#114;&#x65;&#46;&#x6f;&#114;&#103;&#x2e;&#x75;&#107;">&#104;&#x65;&#x6c;&#108;&#x6f;&#x40;&#111;&#112;&#x65;&#x6e;&#x68;&#101;&#x61;&#108;&#x74;&#x68;&#99;&#x61;&#x72;&#101;&#x2e;&#x6f;&#114;&#103;&#x2e;&#117;&#107;</a></a> - we&rsquo;d love to
 hear all about it!</p>
 
 <p><small>
@@ -1175,7 +1240,7 @@ You’ll have fun</p>
 
 <ul>
 <li>By attending the event, tickets will be released this evening from <a href="http://nhshackday.com">www.nhshackday.com</a></li>
-<li>By sponsoring the event - email <a href="&#109;&#x61;&#x69;&#108;&#x74;&#111;&#58;&#104;&#101;&#x6c;&#x6c;&#111;&#64;&#111;&#112;&#101;&#x6e;&#x68;&#101;&#x61;&#x6c;&#x74;&#x68;&#x63;&#x61;&#114;&#x65;&#x2e;&#x6f;&#x72;&#x67;&#x2e;&#117;&#x6b;">&#104;&#101;&#x6c;&#108;&#111;&#x40;&#x6f;&#x70;&#x65;&#110;&#x68;&#101;&#97;&#108;&#x74;&#104;&#x63;&#97;&#114;&#101;&#x2e;&#x6f;&#x72;&#x67;&#46;&#117;&#107;</a></li>
+<li>By sponsoring the event - email <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#x6f;&#58;&#x68;&#x65;&#108;&#108;&#111;&#64;&#x6f;&#112;&#x65;&#110;&#104;&#101;&#97;&#108;&#x74;&#104;&#99;&#97;&#x72;&#101;&#46;&#x6f;&#x72;&#103;&#46;&#x75;&#x6b;">&#104;&#101;&#108;&#x6c;&#x6f;&#x40;&#x6f;&#112;&#101;&#110;&#x68;&#101;&#x61;&#x6c;&#x74;&#104;&#x63;&#x61;&#x72;&#101;&#x2e;&#111;&#x72;&#x67;&#46;&#117;&#107;</a></li>
 <li>By becoming part of our community - joining the <a href="https://groups.google.com/forum/#!forum/nhshackday">mailing list</a>, coming to pre event meet ups or talking to us on <a href="http://twitter.com/nhshackday">Twitter</a></li>
 <li>By spreading the word, tell your friends!</li>
 </ul>
@@ -1651,255 +1716,11 @@ You’ll have fun</p>
 
 <ul>
 <li>By attending the event, tickets will be released this evening from <a href="http://nhshackday.com">www.nhshackday.com</a></li>
-<li>By sponsoring the event - email <a href="&#109;&#97;&#105;&#108;&#116;&#x6f;&#x3a;&#104;&#x65;&#108;&#108;&#x6f;&#x40;&#111;&#112;&#x65;&#110;&#x68;&#101;&#97;&#108;&#116;&#104;&#99;&#97;&#114;&#x65;&#46;&#111;&#x72;&#103;&#46;&#x75;&#x6b;">&#x68;&#101;&#108;&#108;&#111;&#64;&#x6f;&#112;&#x65;&#110;&#x68;&#101;&#x61;&#x6c;&#x74;&#104;&#x63;&#x61;&#114;&#101;&#46;&#111;&#114;&#x67;&#46;&#117;&#107;</a></li>
+<li>By sponsoring the event - email <a href="&#109;&#x61;&#105;&#x6c;&#x74;&#111;&#58;&#x68;&#101;&#x6c;&#108;&#x6f;&#64;&#x6f;&#112;&#101;&#110;&#104;&#101;&#x61;&#x6c;&#x74;&#104;&#x63;&#97;&#114;&#101;&#46;&#111;&#x72;&#x67;&#46;&#x75;&#x6b;">&#x68;&#101;&#x6c;&#x6c;&#x6f;&#x40;&#111;&#112;&#x65;&#110;&#x68;&#x65;&#x61;&#x6c;&#x74;&#x68;&#99;&#97;&#x72;&#101;&#x2e;&#x6f;&#114;&#x67;&#x2e;&#117;&#x6b;</a></li>
 <li>By becoming part of our community - joining the <a href="https://groups.google.com/forum/#!forum/nhshackday">mailing list</a>, coming to pre event meet ups or talking to us on <a href="http://twitter.com/nhshackday">Twitter</a></li>
 <li>By spreading the word, tell your friends!</li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Open Politics]]></title>
-    <link href="http://openhealthcare.org.uk/blog/2015/03/12/open-politics/"/>
-    <updated>2015-03-12T15:42:20+00:00</updated>
-    <id>http://openhealthcare.org.uk/blog/2015/03/12/open-politics</id>
-    <content type="html"><![CDATA[<p><i>This is a guest post by <a href="http://ntoll.org">Nicholas Tollervey</a></i></p>
-
-<p>The purpose of this post is to explore openness in government
-technology. I&rsquo;ve been asked to advise on this subject for
-<a href="http://www.england.nhs.uk/">NHS England</a>.
-I shall be directing the civil servants I have been working with to this
-article.</p>
-
-<p>To many people much of this post will be old news. Unfortunately
-we are in the minority. Hence the need for this summary.</p>
-
-<p>As always, feedback and comments are most welcome; in fact, comments
-will be quite useful given the readership will include civil
-servants who can make changes within NHS England. Think of it as an
-unofficial opportunity for engagement with the unelected arm of the
-government.</p>
-
-<p>The moral argument for openness in government is simple: it is a
-fundamental requirement for a democratic society. Without the ability to
-observe what and how the government is doing, how are citizens to
-evaluate politicians come polling day?</p>
-
-<p>Yet openness is too broad a term - in this sense it is perhaps a virtue
-of a good political system. Therefore I will simply state three
-practical embodiments of the virtue of openness:</p>
-
-<ol>
-<li><strong>Open data</strong> - data should be freely available without restrictions of
-copyright, patents or other controls;</li>
-<li><strong>Open media</strong> - data generated by the government should be in a format
-that is accessible to everyone;</li>
-<li><strong>Open processes</strong> - what the government does should be transparent,
-recorded and accountable.</li>
-</ol>
-
-
-<p>The UK Government has been
-<a href="https://www.gov.uk/government/publications/open-data-white-paper-unleashing-the-potential">vocal in the promotion of open data</a>
-(point 1). Yet it is not good enough to simply publish data. The format
-and structure of the data is critical (point 2), as is its provenance
-(point 3).</p>
-
-<p>Regarding point 2: what&rsquo;s the point of publishing data if there&rsquo;s no way
-for people to make use of it? After all, when data is read, analysed and
-interpreted it becomes useful information. Publishing data in a medium
-that only works with a single piece of software (such as releasing
-tabular data that can only be read by Excel) makes it frustratingly
-difficult use. While I welcome the publication of data I&rsquo;d much
-rather it were in a friendly open format (such as <a href="http://data.okfn.org/doc/csv">releasing tabular data
-as a CSV</a>).</p>
-
-<p>Regarding point 3: what&rsquo;s the point of publishing data if there&rsquo;s no way
-to  discover how it was compiled, by whom and with what intention? It
-should be possible to independently check the reports published by
-government through access to the raw data and (crucially) the
-algorithms, processes and pipelines used to aggregate, transform and
-generate the end result. Furthermore, an open process allows people to
-examine, test and improve the methodology involved in generating data.
-It will no longer be the case that compiling some-report-or-other is
-only understood by a couple of government statisticians - this essential
-organisational information would be available to all.</p>
-
-<p>While this sounds like an onerous task for civil servants it is
-important to note that these three practices actually make life easier
-for all involved, including civil servants.</p>
-
-<p>From a technical point of view, it&rsquo;s impossible to work effectively in
-digital walled gardens where opaque solutions don&rsquo;t quite work
-properly and are too expensive to migrate away from. Open standards
-allow anyone (including civil servants) the flexibility to use their own
-choice of tool for the job in hand as illustrated by the diagram
-below.</p>
-
-<p><img
-src="https://assets.digital.cabinet-office.gov.uk/government/uploads/system/uploads/image_data/file/8854/open_formats_standards_960x640.png"/></p>
-
-<p>As the Cabinet Office minister <a href="https://www.gov.uk/government/publications/open-standards-principles/open-standards-principles">Francis Maud states</a>,</p>
-
-<blockquote class="custom-quote"><p><i class="fa fa-quote-left"></i>
-
-Government IT must be open - open to the people and organisations that
-use our services and open to any provider, regardless of their size.
-<br />
-We currently have many small, separate platforms operating across
-disconnected departments and IT that is tied into monolithic contracts.
-We need to have a platform for government that allows us to share
-appropriate data effectively and that gives us flexibility and choice.
-</p></blockquote>
-
-
-<p>Contrast this vision with the incumbant alternative (based on real life
-experiences working with statisticians within NHS England):</p>
-
-<ul>
-<li><p>No-one wants to work in a world where the data they need
-for their report is held within a complex Excel spreadsheet with
-meaningless column names generated by a team who never
-answers email.</p></li>
-<li><p>No-one wants to work with a spreadsheet that is subtly different each
-time it gets published causing doubts about its reliability and
-provenance.</p></li>
-<li><p>No-one wants to work with a spreadsheet hosted on a website created in
-2005 where the only way to get at it is to download a Java applet (the
-technical equivalent of the <a href="http://en.wikipedia.org/wiki/Ozymandias">ruins of Ozymandias</a>
-) and manually press a
-button on a computer logged into the very special VPN that never works
-when you need it to.</p></li>
-</ul>
-
-
-<p>Such a chain of opaque technology comes at great cost in terms of
-time, efficiency and job satisfaction. Highly trained NHS
-statisticians do not enjoy spending hours downloading, revising,
-copying, pasting and re-uploading shonky spreadsheets.</p>
-
-<p>They want to <strong>work with data</strong>, not push it around.</p>
-
-<p>They want to <strong>access the data</strong>, not spend hours clicking buttons.</p>
-
-<p>They want to <strong>understand</strong> their colleagues&#8217; work and know who to contact
-if there&rsquo;s a problem.</p>
-
-<p><img src="http://openhealthcare.org.uk/assets/images/posts/hope.jpg" /></p>
-
-<p>Happily, there are signs of hope.</p>
-
-<p>In the first instance civil servants should be following the
-<a href="https://www.gov.uk/government/publications/open-standards-principles/open-standards-principles">Open Standards Principles</a>
-from the Cabinet Office</p>
-
-<p>It is a simple and easy to understand guide for using open
-standards in government. If you&rsquo;re a civil servant working with data
-you should be following this checklist:</p>
-
-<ol>
-<li>We place the needs of our users at the heart of our standards choices</li>
-<li>Our selected open standards will enable suppliers to compete on alevel playing field</li>
-<li>Our standards choices support flexibility and change</li>
-<li>We adopt open standards that support sustainable cost</li>
-<li>Our decisions about standards selection are well informed</li>
-<li>We select open standards using fair and transparent processes</li>
-<li>We are fair and transparent in the specification and implementation of open standards</li>
-</ol>
-
-
-<p>It is no longer acceptable to say things like, &ldquo;but the needs of our
-legacy system mean you should use &lt;closed technology X&gt;&rdquo;. If you hear
-such a remark, point the perpetrator at the checklist above. If they
-claim it would be too expensive to migrate, explain that it&rsquo;s because it
-is so expensive to migrate that such a system needs changing (such
-expense only ever grows over time, change things sooner rather than
-later). If they assert that it&rsquo;s not organisational policy to use
-open process Y ask them to justify themselves within the framework
-described in the policy document above (that became active on 1st
-November 2012). Cabinet Office advice when
-<a href="https://www.gov.uk/service-manual/making-software/choosing-technology.html">choosing technologies</a>
-is that one should express requirements in terms of user needs and capabilities
-not incumbent institutional needs. Furthermore, when considering the choice
-of technology, they state,</p>
-
-<blockquote class="custom-quote"><p><i class="fa fa-quote-left"></i>
-All things being equal, picking technologies that developers and operations staff like will typically result in improved productivity.
-</blockquote>
-
-
-<p>A second positive is that there appear to be politicians of all
-affiliations who understand and have the political will to promote open
-standards.</p>
-
-<p>Consider the following exchange between myself and Meg Hillier MP:</p>
-
-<blockquote class="twitter-tweet" lang="en"><p>.<a href="https://twitter.com/Meg_HillierMP">@Meg_HillierMP</a>, given ubiquity of closed formats (MS Office etc), will Parliament switch to publish w/open data formats? <a href="https://twitter.com/hashtag/digitaldemocracy?src=hash">#digitaldemocracy</a></p>&mdash; Nicholas Tollervey (@ntoll) <a href="https://twitter.com/ntoll/status/575253094663122944">March 10, 2015</a></blockquote>
-
-
-
-
-<blockquote class="twitter-tweet" data-conversation="none" lang="en"><p>.<a href="https://twitter.com/ntoll">@ntoll</a> yes..that&#39;s the plan. New head of Parliament Digital Service <a href="https://twitter.com/Rob_Greig">@Rob_Greig</a> is already working on this</p>&mdash; MegHillierMP (@Meg_HillierMP) <a href="https://twitter.com/Meg_HillierMP/status/575258270706892800">March 10, 2015</a></blockquote>
-
-
-
-
-<blockquote class="twitter-tweet" lang="en"><p>.<a href="https://twitter.com/Meg_HillierMP">@Meg_HillierMP</a> motivation for my q is current work w/<a href="https://twitter.com/NHSEngland">@NHSEngland</a> stats / data in messy, non-machine readable Excel spreadsheets &amp; PDFs. :-(</p>&mdash; Nicholas Tollervey (@ntoll) <a href="https://twitter.com/ntoll/status/575257864454995969">March 10, 2015</a></blockquote>
-
-
-
-
-<blockquote class="twitter-tweet" data-conversation="none" lang="en"><p><a href="https://twitter.com/ntoll">@ntoll</a> <a href="https://twitter.com/Meg_HillierMP">@Meg_HillierMP</a> <a href="https://twitter.com/NHSEngland">@NHSEngland</a> &quot;non-machine readable Excel spreadsheets&quot; &#8211;&gt; cold shiver in my spine</p>&mdash; Giovanni Idili (@John_Idol) <a href="https://twitter.com/John_Idol/status/575261025395720192">March 10, 2015</a></blockquote>
-
-
-
-
-<blockquote class="twitter-tweet" data-conversation="none" lang="en"><p>.<a href="https://twitter.com/John_Idol">@John_Idol</a> <a href="https://twitter.com/ntoll">@ntoll</a> <a href="https://twitter.com/NHSEngland">@NHSEngland</a> and that&#39;s not the worst of it! sometimes they are not even readable in paper form</p>&mdash; MegHillierMP (@Meg_HillierMP) <a href="https://twitter.com/Meg_HillierMP/status/575261373304803330">March 10, 2015</a></blockquote>
-
-
-
-
-<blockquote class="twitter-tweet" data-conversation="none" lang="en"><p><a href="https://twitter.com/Meg_HillierMP">@Meg_HillierMP</a> <a href="https://twitter.com/John_Idol">@John_Idol</a> <a href="https://twitter.com/NHSEngland">@NHSEngland</a> good point - demonstrates accountability/evidence: confusing data=confused understanding perhaps?</p>&mdash; Nicholas Tollervey (@ntoll) <a href="https://twitter.com/ntoll/status/575261775446306817">March 10, 2015</a></blockquote>
-
-
-
-
-<blockquote class="twitter-tweet" data-conversation="none" lang="en"><p>.<a href="https://twitter.com/ntoll">@ntoll</a> <a href="https://twitter.com/John_Idol">@John_Idol</a> <a href="https://twitter.com/NHSEngland">@NHSEngland</a> yes. We are coming from same place on this issue. Open Up! <a href="https://twitter.com/hashtag/digitaldemocracy?src=hash">#digitaldemocracy</a></p>&mdash; MegHillierMP (@Meg_HillierMP) <a href="https://twitter.com/Meg_HillierMP/status/575262116405460992">March 10, 2015</a></blockquote>
-
-
-
-
-<blockquote class="twitter-tweet" data-conversation="none" lang="en"><p><a href="https://twitter.com/Meg_HillierMP">@Meg_HillierMP</a> <a href="https://twitter.com/John_Idol">@John_Idol</a> <a href="https://twitter.com/NHSEngland">@NHSEngland</a> quite&#8230; so having evidence is one thing - but how does a citizen hold publisher accountable?</p>&mdash; Nicholas Tollervey (@ntoll) <a href="https://twitter.com/ntoll/status/575272422582132736">March 10, 2015</a></blockquote>
-
-
-
-
-<blockquote class="twitter-tweet" data-conversation="none" lang="en"><p>.<a href="https://twitter.com/ntoll">@ntoll</a> <a href="https://twitter.com/John_Idol">@John_Idol</a> <a href="https://twitter.com/NHSEngland">@NHSEngland</a> we need to make it either embarrassing for them or in case of Govt manke it mandatory</p>&mdash; MegHillierMP (@Meg_HillierMP) <a href="https://twitter.com/Meg_HillierMP/status/575301644272996352">March 10, 2015</a></blockquote>
-
-
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<p>Here&rsquo;s hoping NHS England leads the way in open standards. After all,
-they were born from a disparate collection of
-existing governmental organisations, each of whom did things differently. Openness is
-a way for NHS England to integrate, collaborate and work more effectively towards making
-the NHS the world class healthcare system it needs to be.</p>
-
-<p>This is an opportunity that applies to the whole public sector. The cost of inaction would
-be to deny the government tools and processes essential for working effectively in a world
-in constant flux.</p>
-
-<p>Panta rhei!</p>
-
-<p><small>
-Photo credits: <br />
-<a href="http://www.flickr.com/photos/opensourceway/">Opensourceway</a><br />
-<a href="http://www.flickr.com/photos/polsifter/">Pol Sifter</a>
-</small></p>
 ]]></content>
   </entry>
   
