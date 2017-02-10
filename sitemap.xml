@@ -205,91 +205,91 @@
   
   <url>
     <loc>http://openhealthcare.org.uk/about.html</loc>
-    <lastmod>2016-11-04T16:28:34+00:00</lastmod>
+    <lastmod>2017-02-10T17:09:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://openhealthcare.org.uk/blog.html</loc>
-    <lastmod>2016-11-04T16:28:34+00:00</lastmod>
+    <lastmod>2017-02-10T17:09:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://openhealthcare.org.uk/contact.html</loc>
-    <lastmod>2016-11-04T16:28:34+00:00</lastmod>
+    <lastmod>2017-02-10T17:09:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://openhealthcare.org.uk/blog/</loc>
-    <lastmod>2016-11-04T16:28:34+00:00</lastmod>
+    <lastmod>2017-02-10T17:09:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://openhealthcare.org.uk/about/</loc>
-    <lastmod>2016-11-04T16:28:34+00:00</lastmod>
+    <lastmod>2017-02-10T17:09:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://openhealthcare.org.uk/</loc>
-    <lastmod>2016-11-04T16:28:34+00:00</lastmod>
+    <lastmod>2017-02-10T17:09:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>http://openhealthcare.org.uk/blog/archives/</loc>
-    <lastmod>2016-11-04T16:28:34+00:00</lastmod>
+    <loc>http://openhealthcare.org.uk/case-studies/returning-travellers/</loc>
+    <lastmod>2017-02-10T17:09:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://openhealthcare.org.uk/data/</loc>
-    <lastmod>2016-11-04T16:28:34+00:00</lastmod>
+    <lastmod>2017-02-10T17:09:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://openhealthcare.org.uk/case-studies/returning-travellers/</loc>
-    <lastmod>2016-11-04T16:28:34+00:00</lastmod>
+    <loc>http://openhealthcare.org.uk/blog/archives/</loc>
+    <lastmod>2017-02-10T17:09:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://openhealthcare.org.uk/opal.html</loc>
-    <lastmod>2016-11-04T16:28:34+00:00</lastmod>
+    <lastmod>2017-02-10T17:09:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://openhealthcare.org.uk/products.html</loc>
-    <lastmod>2016-11-04T16:28:34+00:00</lastmod>
+    <lastmod>2017-02-10T17:09:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://openhealthcare.org.uk/services.html</loc>
-    <lastmod>2016-11-04T16:28:34+00:00</lastmod>
+    <lastmod>2017-02-10T17:09:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://openhealthcare.org.uk/team.html</loc>
-    <lastmod>2016-11-04T16:28:34+00:00</lastmod>
+    <lastmod>2017-02-10T17:09:39+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -341,6 +341,12 @@
   <url>
     <loc>http://openhealthcare.org.uk/oldindex.html</loc>
     <lastmod>2015-12-23T23:33:54Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://openhealthcare.org.uk/supporting-users-of-health-open-data/index.html</loc>
+    <lastmod>2017-02-10T17:08:46Z</lastmod>
     <priority>0.6</priority>
   </url>
   
