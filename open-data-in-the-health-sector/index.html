@@ -2651,8 +2651,15 @@
     });
 
     var shiftWindow = function() { scrollBy(0, -120) };
-    if (location.hash) shiftWindow();
     window.addEventListener("hashchange", shiftWindow);
+
+    $(document).ready(function(){
+    setTimeout(function(){
+    if (location.hash) {
+          shiftWindow();
+        }
+    }, 500)
+    })
 
     $(document).scroll(function() {
     var y = $(this).scrollTop();
