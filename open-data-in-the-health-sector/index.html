@@ -161,6 +161,7 @@
         padding: 12px 24px;
         margin-left: 48px;
         }
+
 </style>
 
 </head>
@@ -2656,7 +2657,7 @@
 
     $(document).scroll(function() {
     var y = $(this).scrollTop();
-    if (y > 360) {
+    if (y > 360 && $(window).width() > 768) {
     $('#banner').fadeIn();
     } else {
     $('#banner').fadeOut();
