@@ -32,7 +32,7 @@ we can help - [do get in touch](mailto:hello@openhealthcare.org.uk).
 
 It was fascinating to hear stories from a wide range of people who use open health data. Many of their
 experiences mirrored what we found when working on projects such as
-[Prescribing Analytics](http://prescribinganalytics.com) and
+[Prescribing Analytics](http://www.prescribinganalytics.com) and
 what we hear from people working on open data projects at [NHS Hack Day](http://nhshackday.com).
 
 Although some specific datasets or teams are excellent, many issues remain with the quality of data
