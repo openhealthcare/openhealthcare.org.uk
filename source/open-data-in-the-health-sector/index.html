@@ -1,3 +1,6 @@
+---
+layout: fullpage
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -114,7 +117,7 @@
         }
 
         body {
-        font-family: 'Montserrat', sans-serif;
+        font-family: Montserrat, sans-serif;
         }
         h1, h2{
         font-family: Merriweather, Serif;
@@ -161,6 +164,12 @@
         padding: 12px 24px;
         margin-left: 48px;
         }
+        .footer {
+           background-color: #6dbd63;
+           color: white;
+        }
+        .footer h3{ color: black; font-weight: normal; text-decoration: underline; }
+        .footer a{ color: black; }
 
 </style>
 
@@ -2628,6 +2637,8 @@
 
     </div> <!-- row -->
   </div>   <!-- container -->
+
+ {% include end_footer.html %}
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
