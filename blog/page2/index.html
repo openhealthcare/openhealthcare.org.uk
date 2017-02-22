@@ -72,158 +72,6 @@
       
       <article class="post blog-entry">
         <div class="content">
-          <h2 class="post-title"><a href="/blog/2016/06/01/happy-birthday-to-opal/">Happy Birthday to OPAL!</a></h2>
-          <div class="meta">
-            <ul class="meta-list list-inline">                                       
-              <li class="post-time post_date date updated">June 01, 2016</li>
-              <li class="post-author"> by <a href="http://twitter.com/thatdavidmiller">David Miller</a></li>
-              <!-- <li class="post-comments-link"> &#8211;>
-              <!--   <a href="blog-single.html#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
-              <!-- </li> &#8211;>
-            </ul><!--//meta-list-->                           	
-          </div><!--meta-->
-          
-        <div class="post-thumb">
-          <img class="img-responsive" src="/assets/images/posts/birthday.jpg" alt="" />
-        </div><!--//post-thumb-->
-        
-          <div class="post-entry">
-            <p>Last Saturday 28th May 2016 marked the third birthday of OPAL - the
-<a href="https://github.com/openhealthcare/opal">Open Source framework</a> we created to help developers
-create high quality clinical applications. We’ve come a long way since the
-<a href="https://github.com/openhealthcare/opal/commit/63917d2d288faca6201c65d0de6893a59577b75d">very first commit back in 2013</a>
-so to celebrate we thought now would be a great time to take a look back over everything we’ve achieved.</p>
-
-<h2>Early days</h2>
-
-<p>For the <a href="https://github.com/openhealthcare/opal/graphs/contributors?from=2013-05-26&amp;to=2013-07-02&amp;type=c">first few months</a>
-the lead developer on OPAL was the awesome
-<a href="https://twitter.com/inglesp">Peter Inglesby</a>, who made that very first commit, and
-worked with Drs
-<a href="https://twitter.com/gpollara">Pollara</a>,
-<a href="https://github.com/michaeledwardmarks/">Marks</a> and
-<a href="https://twitter.com/mnoursad">Noursadeghi</a> to craft a Patient List system for infection patients at UCH. We met each
-week in the old Library room at <a href="http://www.thehtd.org/">HTD</a> for a show and tell and figured out what the next sprint would look like.</p>
-
-<p>The interface changed almost weekly back then as we tried to figure out how best to replace the menagerie of Word
-documents, T-Cards, Access databases and Excel spreadsheets that the teams were currently using as patient lists.
-As you can see below, even three years on, the Patient List components of OPAL are still recognisable from those first few months!</p>
-
-<div class="post-thumb">
-<center>
-  <img class="img-responsive" src="/assets/images/posts/elcidopal.gif" />
-</center>
-</div>
-
-
-<h2>Making OPAL a Framework not an Application</h2>
-
-<p>Even at the beginning we knew that we wanted OPAL to be more of a framework than an application. By
-<a href="https://github.com/openhealthcare/elcid/commit/b695828681b27e4b7932dd8eb0c70f5f9c55a8f1">October 2013</a> we
-started moving the UCH specific elements out of OPAL, refactoring it for reuse. We set about moving application specific
-business logic into
-<a href="http://elcid.openhealthcare.org.uk">elCID</a> (the first OPAL application),
-allowing OPAL to be the generic platform for the services we build.</p>
-
-<p>OPAL would provide a sensible robust default configuration along with a
-<a href="http://opal.openhealthcare.org.uk/docs/v0.6.0/guides/datamodel/">core data model</a>,
-<a href="http://opal.openhealthcare.org.uk/docs/v0.6.0/guides/components_overview/">reusable common components</a>, UI
-components, and a clear path for integration with other systems and standards. Meanwhile individual applications built with
-OPAL would provide specialised domain logic for particular tasks, clinical specialties, or customisation for individual
-installations.</p>
-
-<h2>Deployment to an actual NHS Hospital</h2>
-
-<p>In January 2014 we were ready to deploy
-<a href="https://github.com/openhealthcare/elcid">elCID</a> to a real NHS hospital - just eight months after
-starting the project. Since then it has been used to manage inpatients and outpatients for HTD and the Infection and
-Microbiology teams at UCLH.</p>
-
-<p>Digital services are never finished though - and we’ve
-<a href="http://openhealthcare.org.uk/blog/2016/02/16/how-were-helping-respond-to-the-zika-outbreak/">iterated</a> and
-<a href="http://openhealthcare.org.uk/blog/2015/10/21/launching-a-new-walk-in-service/">improved</a> both elCID and OPAL frequently. OPAL alone
-has racked up 19 releases and almost 2,500 commits since we began. During that time we’ve worked to turn our vision for a
-robust Open Source framework for building clinical web applications into a reality.</p>
-
-<h2>Taking OPAL to NHS Hack Days</h2>
-
-<p>One of the big tests for how far along that path we are is how OPAL has performed as a tool for building projects at
-<a href="http://nhshackday.com/">NHS Hack Days</a>. Hack days are a great way to stress test developer tools. They reward well-thought-out
-APIs and good documentation,
-giving you a great insight into how much they help or hinder developers.</p>
-
-<p>The first OPAL project at a NHS Hack Day was back in
-<a href="http://nhshackday.com/previous/events/2014/05/london/">May 2014</a> when
-<a href="https://twitter.com/gpollara">Dr Gabriele Pollara</a> brought a team together to try and
-add some extra features to OPAL and elCID. Even though the changes from
-<a href="https://github.com/mastersplinter/opal">their fork of OPAL</a> were never merged back into the
-main codebase, it gave us plenty of insight into where we had the coupling wrong between framework and application, and
-places where could improve the APIs or make the documentation clearer.</p>
-
-<p>Four months later when the 8th NHS Hack day rolled around in
-<a href="http://nhshackday.com/previous/events/2014/09/leeds/">Leeds</a> the codebase had improved significantly - with a project
-to design a
-<a href="https://github.com/openhealthcare/opal-renal">handover tool for Renal teams</a> coming joint first:</p>
-
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Renal project team collect T shirts for coming joint first at <a href="https://twitter.com/hashtag/nhshd?src=hash">#nhshd</a> <a href="http://t.co/D6EUkAUDdg">pic.twitter.com/D6EUkAUDdg</a></p>&mdash; Alison Cameron (@allyc375) <a href="https://twitter.com/allyc375/status/516225627423518720">September 28, 2014</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<p>This was the first time we had built a brand new application from scratch using OPAL, and it gave us a clear head
-start over hackday projects that had had to start from nothing.</p>
-
-<p>Over the next year, projects like
-<a href="https://github.com/TeamBigPharma/bigpharma">eCDR</a> and
-<a href="https://github.com/nhshackday/opal-travelalerts">travelalerts</a> were a great benchmark of how OPAL was progressing. New developers
-were able to get to grips with it and start building on top of it over the course of just a weekend. The framework was
-obviously maturing.</p>
-
-<p>In the most recent London NHS Hack Day we saw two projects building on top of OPAL - A
-<a href="https://github.com/anaesthetic-health-chart">digital anaesthetic chart</a> that pulls
-and displays observation data from a anaesthetic monitors, and the eventual winner - a
-<a href="http://github.com/nhshackday/outbreak">Raspberry Pi based EPR in a box</a>.</p>
-
-<center>
-<div class="post-thumb">
-<img class="img-responsive" src="/assets/images/posts/dacer.png" />
-</div>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hJWTpSH8Bxc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-</center>
-
-
-<p>It was particularly exciting to see two brand new - and completely re-skinned OPAL projects built over one weekend and to
-get lots of feedback from all of our friends in the NHS Hack Day community.</p>
-
-<h2>The last few months</h2>
-
-<p>The <a href="https://github.com/openhealthcare/opal/graphs/contributors?from=2015-07-22&amp;to=2016-05-28&amp;type=c">last few months</a>
-have seen OPAL leap forward in terms of
-<a href="https://coveralls.io/github/openhealthcare/opal">code quality</a> and depth of features. In large part this is thanks to the hard work of
-<a href="https://twitter.com/fredkingham">Fred Kingham</a> - who has taken over as lead developer for the project. The upcoming
-<a href="http://opal.openhealthcare.org.uk/docs/v0.6.0/">0.6 release</a> will see many improvements. We’ve refactored form helpers to make it easy to embed forms. Added new Patient detail views and a new Patient List module to make OPAL even more customisable. We’ve also added in an integration layer for connecting to other hospital systems. All this coupled with even greater performance.</p>
-
-<p>We’re not done yet though! We’re looking forward to improving the
-<a href="http://opal.openhealthcare.org.uk/docs/v0.6.0/">documentation</a> to make it easier for new developers, we’re updating our core clinical models, improving the way in which we guide users through complex clinical pathways, adding further UI improvements for mobile devices along with much more as we move towards a 1.0 release.</p>
-
-<p>If you want to know more about OPAL, or about the work that we do at Open Health Care building digital tools for clinicians,
-<a href="mailto:hello@openhealthcare.org.uk">drop us a line</a> - we’d love to hear from you.</p>
-
-<p><small>
-Photo credits: <a href="https://www.flickr.com/photos/spool32/">Will Clayton</a>
-</small></p>
-
-            <a class="read-more" href="/blog/2016/06/01/happy-birthday-to-opal/">
-              Read more <i class="fa fa-long-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-      </article><!--//post-->
-      
-      <article class="post blog-entry">
-        <div class="content">
           <h2 class="post-title"><a href="/blog/2016/05/20/nhs-hack-day-13/">NHS Hack Day 13 - London</a></h2>
           <div class="meta">
             <ul class="meta-list list-inline">                                       
@@ -699,6 +547,100 @@ Photo credits: <a href="https://secure.flickr.com/photos/paul_clarke/">Paul Clar
         </div>
       </article><!--//post-->
       
+      <article class="post blog-entry">
+        <div class="content">
+          <h2 class="post-title"><a href="/blog/2016/02/16/how-were-helping-respond-to-the-zika-outbreak/">How we&#8217;re helping respond to the Zika outbreak</a></h2>
+          <div class="meta">
+            <ul class="meta-list list-inline">                                       
+              <li class="post-time post_date date updated">February 16, 2016</li>
+              <li class="post-author"> by <a href="http://twitter.com/thatdavidmiller">David Miller</a></li>
+              <!-- <li class="post-comments-link"> &#8211;>
+              <!--   <a href="blog-single.html#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
+              <!-- </li> &#8211;>
+            </ul><!--//meta-list-->                           	
+          </div><!--meta-->
+          
+        <div class="post-thumb">
+          <img class="img-responsive" src="/assets/images/posts/mosquito.jpg" alt="" />
+        </div><!--//post-thumb-->
+        
+          <div class="post-entry">
+            <p>The last few months have seen an explosive spread of the
+<a href="http://www.theguardian.com/world/2016/jan/28/zika-virus-spreading-explosively-says-world-health-organisation">Zika virus</a>,
+which has been potentially linked to thousands of birth defects in Latin America. The Zika virus is a
+<a href="http://www.nytimes.com/interactive/2016/health/what-is-zika-virus.html">mosquito-transmitted infection</a>
+that was previously sporadically reported in Africa and the Pacific, but has recently started spreading rapidly
+in South America. Patients usually have a mild flu-like illness consisting of a low fever, headache, muscle and joint pain,
+red eyes and rash.</p>
+
+<p>In the UK, many patients who exhibit symptoms related to Zika and have recently travelled are referred to the specialist
+<a href="http://www.thehtd.org/">Hospital for Tropical Diseases</a> in London, which has resulted in a large increase in their
+workload.</p>
+
+<p>The Hospital for Tropical Diseases uses our <a href="http://elcid.openhealthcare.org.uk/">elCID</a> software to manage their clinical
+workflow, so as soon as we heard this,
+we tried to understand what we could do to help. At Open Health Care we believe the digital tools clinicians use to do their
+jobs need to be iterated and improved on a frequent basis. That means we deliver services that are flexible enough to adapt
+to changing clinical needs, and we’re on hand to help make those improvements.</p>
+
+<div class="post-thumb">
+  <img class="img-responsive" src="/assets/images/posts/zika.top.png" alt="" style="border: 1px solid black;"/>
+</div>
+
+
+<!--//post-thumb-->
+
+
+<p>Working closely with clinicians from HTD, we quickly developed a prototype Zika “pathway”. This enables users to record extra
+information of particular importance to patients they were treating for Zika, as well as extra quick ways to enter the very
+specific set of tests that are most relevant to such patients.</p>
+
+<p>Because we have an electronic clinical pathway specific to the particular condition being treated, we were able to provide
+lots of contextually relevant information and notes for its treatment. This guidance was written by the local consultants,
+and helps to make sure that every patient is given the very best care possible.</p>
+
+<div class="post-thumb">
+  <img class="img-responsive" src="/assets/images/posts/zika.bottom.png" alt="" style="border: 1px solid black;" />
+</div>
+
+
+<!--//post-thumb-->
+
+
+<p>All the information about patients that gets entered on <a href="http://elcid.openhealthcare.org.uk/">elCID</a> is stored as high quality
+structured data. That means that we
+are also able to generate a summary of their interaction with the patient at the click of a button, complete with
+symptoms, travel history, investigations and results, and the specific extra Zika information we are now recording.</p>
+
+<p>Documenting clinical activity in this way - on digital tools that understand the clinical domain -  means that it is also
+available subsequently for audit and analysis purposes. Extracting data on the management of Zika patients at the hospital
+is now something that can be done in a few clicks, rather than requiring a laborious manual review of clinical documentation.</p>
+
+<p>In many ways this is one of the real opportunities of the NHS’ move to paperless working - when you move to using tools that
+allow you to analyse and learn from data generated by routine clinical work. We look forward to finding out what the team
+learn about their response to the Zika outbreak.</p>
+
+<p>Crucially, this new module involved just a couple of days prototyping, iterating and testing the new Zika pathway, before
+deploying to the live system. Over the next few weeks we’ll be checking back regularly to gather feedback from the users
+of the service so that we can be sure that we’re meeting their needs.</p>
+
+<p>Updating the systems that underpin the delivery of care should be this simple all the time - they should be designed with
+flexibility and iteration in mind, and be supported by teams who have the capability to iterate them responsively.</p>
+
+<p>If you’d like to know more about how we could help you by delivering services like this, or more about the services we offer,
+do get in touch with us at <a href="mailto:hello@openhealthcare.org.uk"><a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#111;&#x3a;&#104;&#x65;&#x6c;&#x6c;&#111;&#x40;&#x6f;&#x70;&#101;&#110;&#104;&#x65;&#x61;&#108;&#x74;&#104;&#x63;&#97;&#x72;&#101;&#x2e;&#x6f;&#x72;&#x67;&#46;&#x75;&#x6b;">&#104;&#101;&#x6c;&#x6c;&#111;&#x40;&#111;&#112;&#x65;&#x6e;&#x68;&#x65;&#x61;&#108;&#x74;&#x68;&#x63;&#x61;&#114;&#x65;&#x2e;&#111;&#114;&#x67;&#x2e;&#117;&#107;</a></a>.</p>
+
+<p><small>
+Photo credits: <a href="https://www.flickr.com/photos/31031835@N08/">John Tan</a>
+</small></p>
+
+            <a class="read-more" href="/blog/2016/02/16/how-were-helping-respond-to-the-zika-outbreak/">
+              Read more <i class="fa fa-long-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </article><!--//post-->
+      
 
       <h3>More Posts: </h3>
       
@@ -730,12 +672,12 @@ Photo credits: <a href="https://secure.flickr.com/photos/paul_clarke/">Paul Clar
               October 24, 2016
           </span></li>
           
-          <li><a href="/blog/2016/07/08/what-is-open-governance/">What does Open Governance look like?</a><br /><span class="date">
-              July 08, 2016
-          </span></li>
-          
           <li><a href="/blog/2016/06/06/big-problems-in-health-tech-that-get-us-excited/">Big problems in health tech that get us excited</a><br /><span class="date">
               June 06, 2016
+          </span></li>
+          
+          <li><a href="/blog/2016/06/01/happy-birthday-to-opal/">Happy Birthday to OPAL!</a><br /><span class="date">
+              June 01, 2016
           </span></li>
           
           <li><a href="/atom.xml"><i class="fa fa-rss-square"></i> RSS</a></li>

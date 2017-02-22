@@ -4,7 +4,7 @@
   <title><![CDATA[Open Health Care UK - Blog]]></title>
   <link href="http://openhealthcare.org.uk/atom.xml" rel="self"/>
   <link href="http://openhealthcare.org.uk/blog.html"/>
-  <updated>2017-02-22T12:03:36+00:00</updated>
+  <updated>2017-02-22T12:05:44+00:00</updated>
   <id>http://openhealthcare.org.uk/</id>
   <author>
     <name><![CDATA[Open Health Care UK]]></name>
@@ -45,7 +45,7 @@ we can help - <a href="mailto:hello@openhealthcare.org.uk">do get in touch</a>.<
 
 <p>It was fascinating to hear stories from a wide range of people who use open health data. Many of their
 experiences mirrored what we found when working on projects such as
-<a href="http://prescribinganalytics.com">Prescribing Analytics</a> and
+<a href="http://www.prescribinganalytics.com">Prescribing Analytics</a> and
 what we hear from people working on open data projects at <a href="http://nhshackday.com">NHS Hack Day</a>.</p>
 
 <p>Although some specific datasets or teams are excellent, many issues remain with the quality of data
@@ -227,18 +227,6 @@ Photo credits: <br />
 <p>A particularly large thanks goes to <a href="https://twitter.com/Bexmoxon">Becky</a> for leading the organization and cat-herding this time, and doing by far the lion’s share of dealing with suppliers, venue and sponsors.</p>
 
 <p>If you want to come to a future NHS Hack Day then you can follow us on <a href="http://twitter.com/nhshackday">Twitter</a>, or sign up to our <a href="http://nhshackday.com">mailing list</a> and we’ll let you know as soon as we schedule the next one - likely early in 2017.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[What Does Open Governance Look Like?]]></title>
-    <link href="http://openhealthcare.org.uk/blog/2016/07/08/what-is-open-governance/"/>
-    <updated>2016-07-08T21:42:20+01:00</updated>
-    <id>http://openhealthcare.org.uk/blog/2016/07/08/what-is-open-governance</id>
-    <content type="html"><![CDATA[<p>We believe that when you make things open, it <a href="https://www.gov.uk/design-principles#tenth">makes things better</a>.</p>
-
-<p>That&rsquo;s why our software projects are <a href="https://github.com/openhealthcare/opal">Open Source</a> -
-it&rsquo;s why we work on <a href="https://data.england.nhs.uk">Open Data</a> projects</p>
 ]]></content>
   </entry>
   
@@ -962,31 +950,10 @@ of the service so that we can be sure that we’re meeting their needs.</p>
 flexibility and iteration in mind, and be supported by teams who have the capability to iterate them responsively.</p>
 
 <p>If you’d like to know more about how we could help you by delivering services like this, or more about the services we offer,
-do get in touch with us at <a href="mailto:hello@openhealthcare.org.uk"><a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#111;&#58;&#104;&#101;&#108;&#108;&#x6f;&#64;&#x6f;&#112;&#101;&#x6e;&#104;&#101;&#97;&#108;&#116;&#x68;&#99;&#x61;&#x72;&#x65;&#x2e;&#x6f;&#x72;&#x67;&#46;&#x75;&#107;">&#x68;&#101;&#108;&#x6c;&#111;&#64;&#x6f;&#112;&#101;&#x6e;&#x68;&#101;&#x61;&#x6c;&#x74;&#104;&#x63;&#x61;&#114;&#101;&#x2e;&#111;&#114;&#103;&#x2e;&#x75;&#x6b;</a></a>.</p>
+do get in touch with us at <a href="mailto:hello@openhealthcare.org.uk"><a href="&#109;&#97;&#105;&#x6c;&#116;&#111;&#x3a;&#x68;&#x65;&#108;&#x6c;&#x6f;&#x40;&#x6f;&#112;&#101;&#110;&#104;&#101;&#x61;&#108;&#x74;&#x68;&#x63;&#97;&#x72;&#101;&#46;&#111;&#114;&#103;&#x2e;&#117;&#107;">&#104;&#x65;&#x6c;&#x6c;&#111;&#64;&#x6f;&#112;&#x65;&#x6e;&#x68;&#x65;&#x61;&#x6c;&#116;&#x68;&#x63;&#97;&#x72;&#101;&#x2e;&#x6f;&#114;&#x67;&#x2e;&#117;&#x6b;</a></a>.</p>
 
 <p><small>
 Photo credits: <a href="https://www.flickr.com/photos/31031835@N08/">John Tan</a>
-</small></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Why We Open All the Things.]]></title>
-    <link href="http://openhealthcare.org.uk/blog/2016/02/15/why-we-open-source/"/>
-    <updated>2016-02-15T15:00:29+00:00</updated>
-    <id>http://openhealthcare.org.uk/blog/2016/02/15/why-we-open-source</id>
-    <content type="html"><![CDATA[<p>Here at Open Health Care, we&rsquo;re firm believers in openness. Just like our friends
-at the <a href="https://www.gov.uk/design-principles#tenth">Government Digital Service</a>,
-we&rsquo;ve seen that when you make things open, it makes them better.</p>
-
-<h2>Working with small teams, focussed on user needs</h2>
-
-<p>Unfortunately, the lived experience of many front line NHS staff is that the digital
-tools they use to do their jobs</p>
-
-<p><small>
-Photo credits: <br />
-<a href="http://www.flickr.com/photos/opensourceway/">Opensourceway</a><br />
 </small></p>
 ]]></content>
   </entry>
@@ -1094,37 +1061,8 @@ of a success with the rest of the team!</p>
 partners, as well as continuing to develop and improve our existing services.</p>
 
 <p>If you&rsquo;ve got a project you think we could help with this year, do drop us a line at
-<a href="mailto:hello@openhealthcare.org.uk"><a href="&#109;&#x61;&#x69;&#x6c;&#116;&#111;&#58;&#104;&#101;&#x6c;&#x6c;&#x6f;&#64;&#x6f;&#112;&#x65;&#110;&#104;&#x65;&#97;&#108;&#116;&#104;&#x63;&#x61;&#114;&#x65;&#x2e;&#111;&#114;&#x67;&#46;&#x75;&#107;">&#x68;&#101;&#108;&#x6c;&#111;&#64;&#x6f;&#x70;&#101;&#x6e;&#104;&#101;&#x61;&#108;&#x74;&#104;&#x63;&#x61;&#x72;&#x65;&#46;&#111;&#x72;&#x67;&#46;&#117;&#x6b;</a></a> - we&rsquo;d love to
+<a href="mailto:hello@openhealthcare.org.uk"><a href="&#109;&#x61;&#105;&#108;&#116;&#x6f;&#58;&#104;&#101;&#108;&#108;&#111;&#64;&#111;&#112;&#x65;&#110;&#x68;&#101;&#97;&#108;&#x74;&#104;&#x63;&#97;&#x72;&#101;&#x2e;&#x6f;&#x72;&#103;&#46;&#x75;&#107;">&#104;&#x65;&#x6c;&#x6c;&#x6f;&#64;&#x6f;&#x70;&#101;&#110;&#x68;&#101;&#x61;&#x6c;&#x74;&#x68;&#x63;&#x61;&#114;&#x65;&#x2e;&#x6f;&#x72;&#x67;&#46;&#117;&#107;</a></a> - we&rsquo;d love to
 hear all about it!</p>
-
-<p><small>
-Photo credits: <a href="https://secure.flickr.com/photos/paul_clarke/">Paul Clarke</a>
-</small></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[So That's UK Health Camp Then]]></title>
-    <link href="http://openhealthcare.org.uk/blog/2015/12/02/2015-12-02-so-thats-health-camp-then/"/>
-    <updated>2015-12-02T18:00:29+00:00</updated>
-    <id>http://openhealthcare.org.uk/blog/2015/12/02/2015-12-02-so-thats-health-camp-then</id>
-    <content type="html"><![CDATA[<p>Last weekend saw the first <a href="http://ukhealthcamp.com/">Health Camp</a> in the UK for six years - and the first that we’ve been involved in.
-It was a great event, and we enjoyed it hugely. We made tons of new friends, spent time asking the hard questions and
-finding new allies as we work towards a health and care system that is truly of the internet age!</p>
-
-<p>There were more sessions than we could get to - although <a href="https://twitter.com/nxtstop1">https://twitter.com/nxtstop1</a> made an excellent storify summarising
-the day <a href="https://storify.com/nxtstop1/the-fascinating-uk-healthcare-unconference-london-">https://storify.com/nxtstop1/the-fascinating-uk-healthcare-unconference-london-</a></p>
-
-<p>We enjoyed the Fix my hospital session - reminiscent of this nhshackday project from four years ago
-<a href="https://github.com/openhealthcare/nhsbugs">https://github.com/openhealthcare/nhsbugs</a>
-but proving that the problem has not gone away yet.</p>
-
-<p>Hospital systems need feedback loops, they need a focus on user needs, they need multidisciplinary teams that iterate
-frequently.</p>
-
-<p>We enjoyed the open source sustainability session</p>
-
-<p>You can make sustainable open source projects in healthcare. We do it with OPAL and elCID.</p>
 
 <p><small>
 Photo credits: <a href="https://secure.flickr.com/photos/paul_clarke/">Paul Clarke</a>
@@ -1372,7 +1310,7 @@ You’ll have fun</p>
 
 <ul>
 <li>By attending the event, tickets will be released this evening from <a href="http://nhshackday.com">www.nhshackday.com</a></li>
-<li>By sponsoring the event - email <a href="&#109;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#104;&#x65;&#x6c;&#108;&#111;&#x40;&#x6f;&#x70;&#x65;&#110;&#104;&#x65;&#x61;&#108;&#116;&#x68;&#99;&#x61;&#114;&#101;&#x2e;&#111;&#x72;&#x67;&#46;&#x75;&#x6b;">&#x68;&#101;&#108;&#x6c;&#111;&#x40;&#111;&#x70;&#x65;&#110;&#104;&#101;&#x61;&#x6c;&#x74;&#104;&#99;&#x61;&#114;&#x65;&#x2e;&#111;&#x72;&#x67;&#x2e;&#x75;&#107;</a></li>
+<li>By sponsoring the event - email <a href="&#x6d;&#97;&#105;&#108;&#x74;&#x6f;&#x3a;&#x68;&#x65;&#x6c;&#108;&#x6f;&#x40;&#111;&#112;&#x65;&#x6e;&#104;&#101;&#97;&#108;&#116;&#x68;&#99;&#97;&#x72;&#x65;&#x2e;&#x6f;&#x72;&#x67;&#x2e;&#x75;&#x6b;">&#x68;&#101;&#x6c;&#108;&#111;&#64;&#111;&#112;&#101;&#x6e;&#104;&#101;&#97;&#108;&#116;&#104;&#99;&#97;&#114;&#x65;&#x2e;&#111;&#114;&#103;&#46;&#117;&#107;</a></li>
 <li>By becoming part of our community - joining the <a href="https://groups.google.com/forum/#!forum/nhshackday">mailing list</a>, coming to pre event meet ups or talking to us on <a href="http://twitter.com/nhshackday">Twitter</a></li>
 <li>By spreading the word, tell your friends!</li>
 </ul>
@@ -1538,6 +1476,281 @@ You can find out more information about the software on the <a href="http://elci
 
 <p>If you&rsquo;re interested in seeing how elCID might help at your organisation, or if you&rsquo;d
 like a copy of the full paper, don&rsquo;t hesitate to drop us a line at <a href="hello@openhealthcare.org.uk">hello@openhealthcare.org.uk</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[NHS Hack Day 10 - London]]></title>
+    <link href="http://openhealthcare.org.uk/blog/2015/05/25/nhs-hack-day-10/"/>
+    <updated>2015-05-25T16:00:29+01:00</updated>
+    <id>http://openhealthcare.org.uk/blog/2015/05/25/nhs-hack-day-10</id>
+    <content type="html"><![CDATA[<p>Last weekend saw us reach a milestone as we brought
+<a href="http://nhshackday.com/">NHS Hack Day back to London</a> in our tenth event in just three years!</p>
+
+<p>NHS Hack Days are weekend events that bring together patients, healthcare and technology
+professionals and other “geeks who love the NHS” under the banner of making NHS IT less bad.
+It&rsquo;s always a pleasure to see so many talented people come together to share their time, skills
+and experience to create something together, and this was no exception.</p>
+
+<p>The event started with clinical staff, patients, and anyone else who felt they had a way to
+make the world a little better pitching ideas that they wanted to work on. Pitches
+<a href="https://www.gov.uk/service-manual/user-centred-design/user-needs.html">start with a User Need</a>
+- for instance the surgeons who need a way to track their continuing professional development,
+or the doctor who wants quick and easy offline access to formulary information. The attendees
+then pick what project they want to work on, and form teams to try and build a prototype over
+the weekend.</p>
+
+<div class="post-thumb">
+  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/nhshd.10.circle.jpg" alt="" />
+</div>
+
+
+<!--//post-thumb-->
+
+
+<p>At the end of the weekend, we gathered together to share what we&rsquo;d learned and what we&rsquo;d built
+over the weekend.</p>
+
+<p>Some of the stand-out projects from the weekend were The Locumator - an app which helps hospital schedulers and doctors to fill vacant slots with bank staff, and Take Your Meds - a low-tech phone reminder application that sends a configurable audio message via phone call to a patient, reminding them to use the mouthwash, or take their medication.</p>
+
+<div class="post-thumb">
+  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/nhshd.10.chats.jpg" alt="" />
+</div>
+
+
+<!--//post-thumb-->
+
+
+<p>You can see the whole list <a href="https://docs.google.com/spreadsheets/d/1-jB5dVPcakZF9HhjXHvqjRtE-vvlkV9NdZ2Qn9II1mc/edit#gid=0">here</a>.</p>
+
+<p>Locumator&rsquo;s presentation</p>
+
+<iframe id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="550" height="400" src="https://prezi.com/embed/2hqtpz0eedmg/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;PARENT_REQUEST_ID=6c9d97d7f3b4b9e3#"></iframe>
+
+
+<p><br /><br />
+More information on Take Your Meds is available from
+<a href="https://github.com/open-health-hub/reminder">their Github account</a></p>
+
+<p>This time, our cat-herder in chief was the amazing <a href="http://twitter.com/deckofpandas">@deckofpandas</a> - and we&rsquo;d like to thank her again for all of her hard work in making the event such a great
+experience for everyone involved.</p>
+
+<p>Next time looks like being Manchester in Autumn 2015 - although the venue &amp; exact date are
+yet to be confirmed. We’d love it if you joined us though - so do
+<a href="http://nhshackday.com/">sign up to the mailing list</a> to be kept in the loop !</p>
+
+<p><small>
+Photo credits: <a href="https://www.flickr.com/photos/133318877@N06/">Cléon Daniel</a>
+</small></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[What Is the Most Cited Retracted Paper?]]></title>
+    <link href="http://openhealthcare.org.uk/blog/2015/04/16/which-retracted-paper-has-the-most-citations/"/>
+    <updated>2015-04-16T16:11:56+01:00</updated>
+    <id>http://openhealthcare.org.uk/blog/2015/04/16/which-retracted-paper-has-the-most-citations</id>
+    <content type="html"><![CDATA[<p>At Open Health Care we believe in
+<a href="http://en.wikipedia.org/wiki/Evidence-based_medicine">Evidence Based Medicine</a>.</p>
+
+<p>Which is why we create digital health <a href="https://github.com/openhealthcare/opal-research">services that support research</a>.</p>
+
+<p>Unfortunately the current infrastructure supporting evidence based medicine has some shortcomings. One of these is that
+when a research paper is retracted because, for example, <a href="http://en.wikipedia.org/wiki/Hwang_Woo-suk">the author</a>
+<a href="http://en.wikipedia.org/wiki/Scientific_misconduct">made up the results</a>, there is little or no means
+to propogate this update in the wider medical literature.</p>
+
+<p>Supposing, as a doctor, I look to a systematic review on the management of heart attacks to inform how I treat my patient,
+I sadly have no assurance that the systematic review does not rely on research papers that have been retracted. This is suboptimal.</p>
+
+<p>Open access, post-publication peer review, and better version control would be three useful features that a modern scientific
+publishing model optimized to enable good science should support.</p>
+
+<p>In the meantime, inspired by a lunchtime conversation with our friend and director Ben Goldacre (it was all his idea),
+we pondered the question:</p>
+
+<blockquote class="custom-quote"><p><i class="fa fa-question fa-3x"></i>
+What is the most cited retracted paper?
+</p></blockquote>
+
+
+<p>It turns out <a href="http://www.pubmed.gov">PubMed</a> already has a nice API that can return a
+<a href="http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&amp;retmode=json&amp;retmax=10000&amp;term=%22retracted%20publication%22">list</a>
+of PubMed ids for papers that have been retracted. Next we needed a means of knowing how many times each retracted paper was cited.
+There are a few ways of doing this but we went with using google scholar after Alf Eaton told us about it on
+<a href="https://twitter.com/invisiblecomma/status/582904870644113408">twitter</a>. It&rsquo;s possible to search google scholar for the articles
+citing a particular pubmed id, here&rsquo;s an <a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/19336536">example</a>.</p>
+
+<p>Finally, we used wget to download all of the google scholar search results.  This infamous
+<a href="http://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2897%2911096-0/abstract">paper</a> &lsquo;Ileal-lymphoid-nodular hyperplasia,
+non-specific colitis, and pervasive developmental disorder in children.&rsquo; was the winner with
+2070 <a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/9500320">citations</a>!</p>
+
+<p>Here&rsquo;s the top ten:</p>
+
+<table class="table table-striped">
+<tbody><tr><td>Citations</td>
+<td colspan="2">Title</td>
+<td>Author</td>
+<td>Journal</td>
+<td>Pubdate</td>
+</tr>
+<tr><td>2070</td>
+<td colspan="2"><a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/9500320">
+Ileal-lymphoid-nodular hyperplasia, non-specific colitis, and pervasive developmental disorder in children.
+</a>
+</td>
+<td>Wakefield AJ</td>
+<td>Lancet</td>
+<td>28/02/1998</td>
+</tr>
+<tr><td>2050</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/15604363">
+Visfatin: a protein secreted by visceral fat that mimics the effects of insulin.
+</a>
+</td>
+<td>Fukuhara A</td>
+<td>Science (New York, N.Y.)</td>
+<td>21/01/2005</td>
+</tr>
+<tr><td>1550</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/11675329">
+Purification and ex vivo expansion of postnatal human marrow mesodermal progenitor cells.
+</a>
+</td>
+<td>Reyes M</td>
+<td>Blood</td>
+<td>01/11/2001</td>
+</tr>
+<tr><td>1250</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/12531578">
+Combination treatment of angiotensin-II receptor blocker and angiotensin-converting-enzyme inhibitor in non-diabetic renal disease (COOPERATE): a randomised controlled trial.
+</a>
+</td>
+<td>Nakao N</td>
+<td>Lancet</td>
+<td>11/01/2003</td>
+</tr>
+<tr><td>1040</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/15833829">
+Spontaneous human adult stem cell transformation.
+</a>
+</td>
+<td>Rubio D</td>
+<td>Cancer research</td>
+<td>15/04/2005</td>
+</tr>
+<tr><td>825</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/10700237">
+Regression of human metastatic renal cell carcinoma after vaccination with tumor cell-dendritic cell hybrids.
+</a>
+</td>
+<td>Kugler A</td>
+<td>Nature medicine</td>
+<td>01/03/2000</td>
+</tr>
+<tr><td>805</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/14963337">
+Evidence of a pluripotent human embryonic stem cell line derived from a cloned blastocyst.
+</a>
+</td>
+<td>Hwang WS</td>
+<td>Science (New York, N.Y.)</td>
+<td>12/03/2004</td>
+</tr>
+<tr><td>755</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/12176951">
+Multiple atherosclerotic plaque rupture in acute coronary syndrome: a three-vessel intravascular ultrasound study.
+</a>
+</td>
+<td>Rioufol G</td>
+<td>Circulation</td>
+<td>13/08/2002</td>
+</tr>
+<tr><td>732</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/11546864">
+Structure of MsbA from E. coli: a homolog of the multidrug resistance ATP binding cassette (ABC) transporters.
+<a/>
+</td>
+<td>Chang G</td>
+<td>Science (New York, N.Y.)</td>
+<td>07/09/2001</td>
+</tr>
+<tr><td>616</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/8633243">
+Synergistic activation of estrogen receptor with combinations of environmental chemicals.
+</a>
+</td>
+<td>Arnold SF</td>
+<td>Science (New York, N.Y.)</td>
+<td>07/06/1996</td>
+</tr>
+<tr><td>607</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/12351674">
+Contribution of human alpha-defensin 1, 2, and 3 to the anti-HIV-1 activity of CD8 antiviral factor.
+</a>
+</td>
+<td>Zhang L</td>
+<td>Science (New York, N.Y.)</td>
+<td>01/11/2002</td>
+</tr>
+</tbody></table>
+
+
+<p>You can reproduce our results or view our workings <a href="https://github.com/drcjar/retractshons">over on Github</a>.</p>
+
+<p>There are of course many reasons other than the author making up the results for a paper to be retracted. There are also many circumstances
+in which citing a retracted paper is legitimate. For a more nuanced discussion of retractions there&rsquo;s a nice <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0044118">Comprehensive Survey of
+Retracted Articles from the Scholarly Literature</a> in PLOS and the
+excellent <a href="http://retractionwatch.com/">Retraction Watch</a> covers the details of individual retractions as they happen.</p>
+
+<p>Anyway, it was fun to examine retractions. We&rsquo;d love to explore this further so if we can be of service to you do get in touch.</p>
+
+<p>Perhaps a project for <a href="http://www.nhshackday.com">NHS Hack Day</a>?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[London NHS Hack Day Meet Up]]></title>
+    <link href="http://openhealthcare.org.uk/blog/2015/04/01/london-nhs-hack-day-meet-up/"/>
+    <updated>2015-04-01T11:39:55+01:00</updated>
+    <id>http://openhealthcare.org.uk/blog/2015/04/01/london-nhs-hack-day-meet-up</id>
+    <content type="html"><![CDATA[<p>Calling all friends of <a href="http://nhshackday.com">NHS Hack Day</a>:</p>
+
+<p>We&rsquo;re<a href="https://attending.io/events/nhshd-10-meetup-times"> having a meet up</a> on Thursday 16 April, and we&rsquo;d love to see you there !</p>
+
+<p>We&rsquo;re going to be in the George Inn near London Bridge from 18:00, and
+we&rsquo;d love to talk to people about not just the
+<a href="http://openhealthcare.org.uk/blog/2015/03/17/nhs-hack-day-10/">upcoming NHS Hack day</a>,
+but also any of the other ways that technology and data can make the NHS better,
+make new friends, &amp; even start planning how to make some of those ideas a reality!</p>
+
+<p><b>Where:</b> <a href="https://attending.io/events/nhshd-10-meetup-times#map">The George Inn</a></p>
+
+<p><b>When:</b>  Thu 16 April 2015 18:00-21:00</p>
+
+<p><b>Who:</b> Anyone &amp; everyone ! All welcome, no specialist skills or knowledge required&hellip;</p>
+
+<p><b>How:</b> Just turning up is fine, but you can also add yourself to our <a href="https://attending.io/events/nhshd-10-meetup-times">event page</a>.</p>
+
+<p>If you&rsquo;re thinking of attending NHS Hack day, have a good NHS related problem that you want to
+see solved, or are just curious as to what all this is about, this is
+a great event for you! We&rsquo;ll have the <a href="http://twitter.com/nhshackday">@NHSHackDay</a> team on
+hand, and we&rsquo;re excited to hear your great ideas ahead of the event next month!</p>
+
+<p><small>
+Photo credits: <a href="https://www.flickr.com/photos/andrewasmith/">Andrew Smith</a>
+</small></p>
 ]]></content>
   </entry>
   
