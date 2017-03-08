@@ -4,7 +4,7 @@ body_class: blog-page
 name: about
 ---
 
-<!-- ******BLOG LIST****** --> 
+<!-- ******BLOG LIST****** -->
 <div class="blog container">
   <div class="row">
     <div id="blog-list" class="blog-list section col-md-8 col-sm-8 col-xs-12">
@@ -13,13 +13,13 @@ name: about
         <div class="content">
           <h2 class="post-title"><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h2>
           <div class="meta">
-            <ul class="meta-list list-inline">                                       
+            <ul class="meta-list list-inline">
               <li class="post-time post_date date updated">{{ post.date | date: '%B %d, %Y' }}</li>
               <li class="post-author"> by <a href="http://twitter.com/{{ post.author_link }}">{{ post.author }}</a></li>
               <!-- <li class="post-comments-link"> -->
               <!--   <a href="blog-single.html#comment-area"><i class="fa fa-comments"></i>8 Comments</a> -->
               <!-- </li> -->
-            </ul><!--//meta-list-->                           	
+            </ul><!--//meta-list-->
           </div><!--meta-->
           {% if post.image %}
         <div class="post-thumb">
@@ -27,7 +27,7 @@ name: about
         </div><!--//post-thumb-->
         {% endif %}
           <div class="post-entry">
-            {{ post.excerpt }}
+            {{ post.content }}
             <a class="read-more" href="{{ root_url }}{{ post.url }}">
               Read more <i class="fa fa-long-arrow-right"></i>
             </a>
@@ -37,7 +37,7 @@ name: about
       {% endfor %}
 
       <h3>More Posts: </h3>
-      
+
       <ul class="pagination">
         {% if paginator.previous_page %}
         <li><a href="{{paginator.previous_page_path}}">< Previous Page ({{ paginator.previous_page }} / {{ paginator.total_pages }}) </a></li>
@@ -47,10 +47,10 @@ name: about
         {% endif %}
       </ul><!--//pagination-->
     </div><!--//blog-list-->
-    
+
     <aside id="blog-sidebar" class="blog-sidebar col-md-3 col-sm-3 col-xs-12 col-md-offset-1 col-sm-offset-1 col-xs-offset-0">
 
-      <section class="widget recent-posts">                  
+      <section class="widget recent-posts">
         <h3 class="title">Recent Posts</h3>
         <ul class="list-unstyled">
           {% for post in site.posts limit: site.recent_posts %}
@@ -61,9 +61,7 @@ name: about
           <li><a href="/atom.xml"><i class="fa fa-rss-square"></i> RSS</a></li>
         </ul>
       </section><!--//widget-->
-    </aside><!--//blog-side-bar-->               
+    </aside><!--//blog-side-bar-->
 
   </div>  <!-- Row -->
 </div>      <!-- Blog container -->
-
-
