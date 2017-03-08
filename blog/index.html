@@ -65,22 +65,143 @@
 </header><!--//header-->
 
 
-      <!-- ******BLOG LIST****** --> 
+      <!-- ******BLOG LIST****** -->
 <div class="blog container">
   <div class="row">
     <div id="blog-list" class="blog-list section col-md-8 col-sm-8 col-xs-12">
       
       <article class="post blog-entry">
         <div class="content">
+          <h2 class="post-title"><a href="/blog/2017/03/08/opal-08-released/">Opal 0.8 released</a></h2>
+          <div class="meta">
+            <ul class="meta-list list-inline">
+              <li class="post-time post_date date updated">March 08, 2017</li>
+              <li class="post-author"> by <a href="http://twitter.com/thatdavidmiller">David Miller</a></li>
+              <!-- <li class="post-comments-link"> &#8211;>
+              <!--   <a href="blog-single.html#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
+              <!-- </li> &#8211;>
+            </ul><!--//meta-list-->
+          </div><!--meta-->
+          
+        <div class="post-thumb">
+          <img class="img-responsive" src="/assets/images/posts/8.jpg" alt="" />
+        </div><!--//post-thumb-->
+        
+          <div class="post-entry">
+            <p>A few weeks ago now we released <a href="http://opal.openhealthcare.org.uk">Opal</a> 0.8. It’s quite a large release, so we thought we’d
+walk you through some of the highlights.</p>
+
+<h3>Forms - now with added sugar</h3>
+
+<p>We’ve been spending lots of time working to make forms easier to work with. Sometimes it seems that 95% of designing services is making
+forms that aren&rsquo;t frustrating and difficult to use
+- and having good tools to quickly build and iterate the forms you’re working with can make that process much easier.</p>
+
+<p>We made sure that some of the features from Django models, like choices and defaults now flow through seamlessly by default to our form
+widgets, and that the client side Angular code will use these by default without you having to do anything. This was all possible before,
+but required more typing. Nobody likes extra typing.</p>
+
+<p>For instance, if we had the following model:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">TableClothPreference</span><span class="p">(</span><span class="n">EpisodeSubrecord</span><span class="p">):</span>
+        <span class="n">COLOUR_CHOICES</span> <span class="o">=</span> <span class="p">(</span>
+          <span class="p">(</span><span class="s">&#39;P&#39;</span><span class="p">,</span> <span class="s">&#39;Purple&#39;</span><span class="p">),</span>
+          <span class="p">(</span><span class="s">&#39;R&#39;</span><span class="p">,</span> <span class="s">&#39;Red&#39;</span><span class="p">),</span>
+        <span class="p">)</span>
+        <span class="n">favourite_colour</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span>
+                                            <span class="n">default</span><span class="o">=</span><span class="s">&#39;Purple&#39;</span><span class="p">,</span>
+                                            <span class="n">choices</span><span class="o">=</span><span class="n">COLOUR_CHOICES</span><span class="p">)</span></code></pre></div>
+
+
+<p>We would be able to render a dropdown widget for the field that used the default and restricted the choices by simply using the
+following in our code:</p>
+
+<div class="highlight"><pre><code class="language-jinja" data-lang="jinja"><span class="x">{ % select field=&quot;TableClothPreference.favourite_colour&quot; % }</span></code></pre></div>
+
+
+<p>We’ve also spent time making sure that form validation is much easier to work with. By default we
+now validate forms on submission - making sure that we respect max length of form fields for instance.</p>
+
+<p>As well as the improvements to forms in Opal itself, we’ve also been working hard on the Opal
+<a href="https://github.com/openhealthcare/opal-pathway">Pathway library</a>. This library makes it significantly easier to work with
+complex forms - particularly ones that need to save data to many different models. Although Pathway is still considered alpha software,
+we fully anticipate that we’ll be incorporating it into Opal itself as the recommended way to build forms in Opal applications later this year.</p>
+
+<h3>Python 3 support</h3>
+
+<p>Responding to an issue raised on the mailing list, we’ve refactored Opal to work on Python 3. Thanks to the hard work and excellent tooling in the
+Python community this was a relatively painless task, but hopefully it puts us in a good position to move towards Python 3 deployments moving forwards.</p>
+
+<h3>Common patterns for customising Patient Lists</h3>
+
+<p>We’ve made it much easier to implement some of the common patterns we see when working with patient lists, by explicitly adding APIs.</p>
+
+<p>You can now <a href="http://opal.openhealthcare.org.uk/docs/v0.8.0/guides/list_views/#customising-sort-order-of-episodes">customise the ordering</a>
+of patients on a list-by-list basis using the comparator_service attribute of PatientList classes.
+A comparator service is an Angular service that returns a list of comparator functions that are used in order to determine how
+we should compare and sort two episodes - for instance:</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;opal.services&#39;</span><span class="p">)</span>
+        <span class="p">.</span><span class="nx">factory</span><span class="p">(</span><span class="s1">&#39;MyComparatorService&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+            <span class="s2">&quot;use strict&quot;</span><span class="p">;</span>
+            <span class="k">return</span> <span class="p">[</span>
+                <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span> <span class="k">return</span> <span class="nx">e</span><span class="p">.</span><span class="nx">category_name</span> <span class="p">},</span>
+                <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span> <span class="k">return</span> <span class="nx">e</span><span class="p">.</span><span class="nx">id</span> <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">});</span></code></pre></div>
+
+
+<p>We also introduced an easy way for you to
+<a href="http://opal.openhealthcare.org.uk/docs/v0.8.0/guides/list_views/#grouping-related-patient-lists">group lists into tabs</a>
+that display in the default template.</p>
+
+<h3>Goodbye Angular-Strap</h3>
+
+<p>Until Opal 0.8 we had not one, but two UI libraries which wrapped Bootstrap components in Angular compatible code.
+We’ve been uncomfortable about that for a while - it’s confusing to have to remember which widget comes from which
+library! As of Opal 0.8 however we’ve picked a winner - <a href="http://angular-ui.github.io/bootstrap/versioned-docs/0.14.3/">UI Bootstrap</a>,
+and we removed all references to Angular Strap completely, both in Opal and in all the applications and plugins we could find on
+Github.</p>
+
+<p>We&rsquo;re planning to update the UI Bootstrap library to a more recent version in the next couple of releases, but the re-naming of
+their modal component could potentially make this transition slightly tricky, so we&rsquo;re waiting to make sure we can do so as
+smoothly as possible.</p>
+
+<h3>Finding out more</h3>
+
+<p>If you’d like to find out more about Opal, then you might like to try the
+<a href="http://opal.openhealthcare.org.uk/docs/">documentation</a> or the
+<a href="https://groups.google.com/forum/?ohc-dev#!forum/ohc-opal">mailing list</a>.
+There are more details about some of the other smaller features and bugfixes in 0.8 in the
+<a href="https://github.com/openhealthcare/opal/releases/tag/0.8.0">release notes</a>,
+and you
+can also read about how to <a href="http://opal.openhealthcare.org.uk/docs/v0.8.0/reference/upgrading/#071-080">upgrade from 0.7.x</a>
+in the documentation.</p>
+
+<p>If you have a project that you think might be suited to Opal, please do <a href="mailto:hello@openhealthcare.org.uk">get in touch</a> - we’d love to hear from you.</p>
+
+<p><small>
+Photo credits: <a href="https://www.flickr.com/photos/thejaymo/">Jay Springett</a>
+</small></p>
+
+            <a class="read-more" href="/blog/2017/03/08/opal-08-released/">
+              Read more <i class="fa fa-long-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </article><!--//post-->
+      
+      <article class="post blog-entry">
+        <div class="content">
           <h2 class="post-title"><a href="/blog/2017/02/22/open-data-in-health/">Our report on open data in health</a></h2>
           <div class="meta">
-            <ul class="meta-list list-inline">                                       
+            <ul class="meta-list list-inline">
               <li class="post-time post_date date updated">February 22, 2017</li>
               <li class="post-author"> by <a href="http://twitter.com/thatdavidmiller">David Miller</a></li>
               <!-- <li class="post-comments-link"> &#8211;>
               <!--   <a href="blog-single.html#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
               <!-- </li> &#8211;>
-            </ul><!--//meta-list-->                           	
+            </ul><!--//meta-list-->
           </div><!--meta-->
           
         <div class="post-thumb">
@@ -159,13 +280,13 @@ this report - conducting interviews, and analysing the common issues.</p>
         <div class="content">
           <h2 class="post-title"><a href="/blog/2016/11/04/show-me-the-data-vs-show-me-the-thing/">Show me the data vs. Show me the things</a></h2>
           <div class="meta">
-            <ul class="meta-list list-inline">                                       
+            <ul class="meta-list list-inline">
               <li class="post-time post_date date updated">November 04, 2016</li>
               <li class="post-author"> by <a href="http://twitter.com/thatdavidmiller">David Miller</a></li>
               <!-- <li class="post-comments-link"> &#8211;>
               <!--   <a href="blog-single.html#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
               <!-- </li> &#8211;>
-            </ul><!--//meta-list-->                           	
+            </ul><!--//meta-list-->
           </div><!--meta-->
           
         <div class="post-thumb">
@@ -245,13 +366,13 @@ Photo credits: <br />
         <div class="content">
           <h2 class="post-title"><a href="/blog/2016/10/24/nhs-hack-day-14-newcastle/">NHS Hack Day 14 - Newcastle</a></h2>
           <div class="meta">
-            <ul class="meta-list list-inline">                                       
+            <ul class="meta-list list-inline">
               <li class="post-time post_date date updated">October 24, 2016</li>
               <li class="post-author"> by <a href="http://twitter.com/thatdavidmiller">David Miller</a></li>
               <!-- <li class="post-comments-link"> &#8211;>
               <!--   <a href="blog-single.html#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
               <!-- </li> &#8211;>
-            </ul><!--//meta-list-->                           	
+            </ul><!--//meta-list-->
           </div><!--meta-->
           
         <div class="post-thumb">
@@ -345,13 +466,13 @@ Photo credits: <br />
         <div class="content">
           <h2 class="post-title"><a href="/blog/2016/06/06/big-problems-in-health-tech-that-get-us-excited/">Big problems in health tech that get us excited</a></h2>
           <div class="meta">
-            <ul class="meta-list list-inline">                                       
+            <ul class="meta-list list-inline">
               <li class="post-time post_date date updated">June 06, 2016</li>
               <li class="post-author"> by <a href="http://twitter.com/thatdavidmiller">David Miller</a></li>
               <!-- <li class="post-comments-link"> &#8211;>
               <!--   <a href="blog-single.html#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
               <!-- </li> &#8211;>
-            </ul><!--//meta-list-->                           	
+            </ul><!--//meta-list-->
           </div><!--meta-->
           
         <div class="post-thumb">
@@ -472,161 +593,9 @@ data then do <a href="mailto:hello@openhealthcare.org.uk">drop us a line</a> - w
         </div>
       </article><!--//post-->
       
-      <article class="post blog-entry">
-        <div class="content">
-          <h2 class="post-title"><a href="/blog/2016/06/01/happy-birthday-to-opal/">Happy Birthday to OPAL!</a></h2>
-          <div class="meta">
-            <ul class="meta-list list-inline">                                       
-              <li class="post-time post_date date updated">June 01, 2016</li>
-              <li class="post-author"> by <a href="http://twitter.com/thatdavidmiller">David Miller</a></li>
-              <!-- <li class="post-comments-link"> &#8211;>
-              <!--   <a href="blog-single.html#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
-              <!-- </li> &#8211;>
-            </ul><!--//meta-list-->                           	
-          </div><!--meta-->
-          
-        <div class="post-thumb">
-          <img class="img-responsive" src="/assets/images/posts/birthday.jpg" alt="" />
-        </div><!--//post-thumb-->
-        
-          <div class="post-entry">
-            <p>Last Saturday 28th May 2016 marked the third birthday of OPAL - the
-<a href="https://github.com/openhealthcare/opal">Open Source framework</a> we created to help developers
-create high quality clinical applications. We’ve come a long way since the
-<a href="https://github.com/openhealthcare/opal/commit/63917d2d288faca6201c65d0de6893a59577b75d">very first commit back in 2013</a>
-so to celebrate we thought now would be a great time to take a look back over everything we’ve achieved.</p>
-
-<h2>Early days</h2>
-
-<p>For the <a href="https://github.com/openhealthcare/opal/graphs/contributors?from=2013-05-26&amp;to=2013-07-02&amp;type=c">first few months</a>
-the lead developer on OPAL was the awesome
-<a href="https://twitter.com/inglesp">Peter Inglesby</a>, who made that very first commit, and
-worked with Drs
-<a href="https://twitter.com/gpollara">Pollara</a>,
-<a href="https://github.com/michaeledwardmarks/">Marks</a> and
-<a href="https://twitter.com/mnoursad">Noursadeghi</a> to craft a Patient List system for infection patients at UCH. We met each
-week in the old Library room at <a href="http://www.thehtd.org/">HTD</a> for a show and tell and figured out what the next sprint would look like.</p>
-
-<p>The interface changed almost weekly back then as we tried to figure out how best to replace the menagerie of Word
-documents, T-Cards, Access databases and Excel spreadsheets that the teams were currently using as patient lists.
-As you can see below, even three years on, the Patient List components of OPAL are still recognisable from those first few months!</p>
-
-<div class="post-thumb">
-<center>
-  <img class="img-responsive" src="/assets/images/posts/elcidopal.gif" />
-</center>
-</div>
-
-
-<h2>Making OPAL a Framework not an Application</h2>
-
-<p>Even at the beginning we knew that we wanted OPAL to be more of a framework than an application. By
-<a href="https://github.com/openhealthcare/elcid/commit/b695828681b27e4b7932dd8eb0c70f5f9c55a8f1">October 2013</a> we
-started moving the UCH specific elements out of OPAL, refactoring it for reuse. We set about moving application specific
-business logic into
-<a href="http://elcid.openhealthcare.org.uk">elCID</a> (the first OPAL application),
-allowing OPAL to be the generic platform for the services we build.</p>
-
-<p>OPAL would provide a sensible robust default configuration along with a
-<a href="http://opal.openhealthcare.org.uk/docs/v0.6.0/guides/datamodel/">core data model</a>,
-<a href="http://opal.openhealthcare.org.uk/docs/v0.6.0/guides/components_overview/">reusable common components</a>, UI
-components, and a clear path for integration with other systems and standards. Meanwhile individual applications built with
-OPAL would provide specialised domain logic for particular tasks, clinical specialties, or customisation for individual
-installations.</p>
-
-<h2>Deployment to an actual NHS Hospital</h2>
-
-<p>In January 2014 we were ready to deploy
-<a href="https://github.com/openhealthcare/elcid">elCID</a> to a real NHS hospital - just eight months after
-starting the project. Since then it has been used to manage inpatients and outpatients for HTD and the Infection and
-Microbiology teams at UCLH.</p>
-
-<p>Digital services are never finished though - and we’ve
-<a href="http://openhealthcare.org.uk/blog/2016/02/16/how-were-helping-respond-to-the-zika-outbreak/">iterated</a> and
-<a href="http://openhealthcare.org.uk/blog/2015/10/21/launching-a-new-walk-in-service/">improved</a> both elCID and OPAL frequently. OPAL alone
-has racked up 19 releases and almost 2,500 commits since we began. During that time we’ve worked to turn our vision for a
-robust Open Source framework for building clinical web applications into a reality.</p>
-
-<h2>Taking OPAL to NHS Hack Days</h2>
-
-<p>One of the big tests for how far along that path we are is how OPAL has performed as a tool for building projects at
-<a href="http://nhshackday.com/">NHS Hack Days</a>. Hack days are a great way to stress test developer tools. They reward well-thought-out
-APIs and good documentation,
-giving you a great insight into how much they help or hinder developers.</p>
-
-<p>The first OPAL project at a NHS Hack Day was back in
-<a href="http://nhshackday.com/previous/events/2014/05/london/">May 2014</a> when
-<a href="https://twitter.com/gpollara">Dr Gabriele Pollara</a> brought a team together to try and
-add some extra features to OPAL and elCID. Even though the changes from
-<a href="https://github.com/mastersplinter/opal">their fork of OPAL</a> were never merged back into the
-main codebase, it gave us plenty of insight into where we had the coupling wrong between framework and application, and
-places where could improve the APIs or make the documentation clearer.</p>
-
-<p>Four months later when the 8th NHS Hack day rolled around in
-<a href="http://nhshackday.com/previous/events/2014/09/leeds/">Leeds</a> the codebase had improved significantly - with a project
-to design a
-<a href="https://github.com/openhealthcare/opal-renal">handover tool for Renal teams</a> coming joint first:</p>
-
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Renal project team collect T shirts for coming joint first at <a href="https://twitter.com/hashtag/nhshd?src=hash">#nhshd</a> <a href="http://t.co/D6EUkAUDdg">pic.twitter.com/D6EUkAUDdg</a></p>&mdash; Alison Cameron (@allyc375) <a href="https://twitter.com/allyc375/status/516225627423518720">September 28, 2014</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<p>This was the first time we had built a brand new application from scratch using OPAL, and it gave us a clear head
-start over hackday projects that had had to start from nothing.</p>
-
-<p>Over the next year, projects like
-<a href="https://github.com/TeamBigPharma/bigpharma">eCDR</a> and
-<a href="https://github.com/nhshackday/opal-travelalerts">travelalerts</a> were a great benchmark of how OPAL was progressing. New developers
-were able to get to grips with it and start building on top of it over the course of just a weekend. The framework was
-obviously maturing.</p>
-
-<p>In the most recent London NHS Hack Day we saw two projects building on top of OPAL - A
-<a href="https://github.com/anaesthetic-health-chart">digital anaesthetic chart</a> that pulls
-and displays observation data from a anaesthetic monitors, and the eventual winner - a
-<a href="http://github.com/nhshackday/outbreak">Raspberry Pi based EPR in a box</a>.</p>
-
-<center>
-<div class="post-thumb">
-<img class="img-responsive" src="/assets/images/posts/dacer.png" />
-</div>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hJWTpSH8Bxc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-</center>
-
-
-<p>It was particularly exciting to see two brand new - and completely re-skinned OPAL projects built over one weekend and to
-get lots of feedback from all of our friends in the NHS Hack Day community.</p>
-
-<h2>The last few months</h2>
-
-<p>The <a href="https://github.com/openhealthcare/opal/graphs/contributors?from=2015-07-22&amp;to=2016-05-28&amp;type=c">last few months</a>
-have seen OPAL leap forward in terms of
-<a href="https://coveralls.io/github/openhealthcare/opal">code quality</a> and depth of features. In large part this is thanks to the hard work of
-<a href="https://twitter.com/fredkingham">Fred Kingham</a> - who has taken over as lead developer for the project. The upcoming
-<a href="http://opal.openhealthcare.org.uk/docs/v0.6.0/">0.6 release</a> will see many improvements. We’ve refactored form helpers to make it easy to embed forms. Added new Patient detail views and a new Patient List module to make OPAL even more customisable. We’ve also added in an integration layer for connecting to other hospital systems. All this coupled with even greater performance.</p>
-
-<p>We’re not done yet though! We’re looking forward to improving the
-<a href="http://opal.openhealthcare.org.uk/docs/v0.6.0/">documentation</a> to make it easier for new developers, we’re updating our core clinical models, improving the way in which we guide users through complex clinical pathways, adding further UI improvements for mobile devices along with much more as we move towards a 1.0 release.</p>
-
-<p>If you want to know more about OPAL, or about the work that we do at Open Health Care building digital tools for clinicians,
-<a href="mailto:hello@openhealthcare.org.uk">drop us a line</a> - we’d love to hear from you.</p>
-
-<p><small>
-Photo credits: <a href="https://www.flickr.com/photos/spool32/">Will Clayton</a>
-</small></p>
-
-            <a class="read-more" href="/blog/2016/06/01/happy-birthday-to-opal/">
-              Read more <i class="fa fa-long-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-      </article><!--//post-->
-      
 
       <h3>More Posts: </h3>
-      
+
       <ul class="pagination">
         
         
@@ -634,12 +603,16 @@ Photo credits: <a href="https://www.flickr.com/photos/spool32/">Will Clayton</a>
         
       </ul><!--//pagination-->
     </div><!--//blog-list-->
-    
+
     <aside id="blog-sidebar" class="blog-sidebar col-md-3 col-sm-3 col-xs-12 col-md-offset-1 col-sm-offset-1 col-xs-offset-0">
 
-      <section class="widget recent-posts">                  
+      <section class="widget recent-posts">
         <h3 class="title">Recent Posts</h3>
         <ul class="list-unstyled">
+          
+          <li><a href="/blog/2017/03/08/opal-08-released/">Opal 0.8 released</a><br /><span class="date">
+              March 08, 2017
+          </span></li>
           
           <li><a href="/blog/2017/02/22/open-data-in-health/">Our report on open data in health</a><br /><span class="date">
               February 22, 2017
@@ -657,19 +630,13 @@ Photo credits: <a href="https://www.flickr.com/photos/spool32/">Will Clayton</a>
               June 06, 2016
           </span></li>
           
-          <li><a href="/blog/2016/06/01/happy-birthday-to-opal/">Happy Birthday to OPAL!</a><br /><span class="date">
-              June 01, 2016
-          </span></li>
-          
           <li><a href="/atom.xml"><i class="fa fa-rss-square"></i> RSS</a></li>
         </ul>
       </section><!--//widget-->
-    </aside><!--//blog-side-bar-->               
+    </aside><!--//blog-side-bar-->
 
   </div>  <!-- Row -->
 </div>      <!-- Blog container -->
-
-
 
             
     </div><!--//wrapper-->

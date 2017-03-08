@@ -71,10 +71,10 @@
   <div class="row">
     <div id="blog-entry" class="blog-entry section col-md-8 col-sm-8 col-xs-12">
       <article class="post">
-        <h2 class="title">Why we don’t do product placement at NHS Hack Day</h2>
+        <h2 class="title">Opal 0.8 released</h2>
         <div class="meta">
           <ul class="meta-list list-inline">
-            <li class="post-time post_date date updated">April 04 2016</li>
+            <li class="post-time post_date date updated">March 08 2017</li>
             <li class="post-author"> by <a href="http://twitter.com/thatdavidmiller">David Miller</a></li>
             <!-- <li class="post-comments-link"> &#8211;>
             <!--   <a href="#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
@@ -83,41 +83,104 @@
         </div><!--meta-->
         
         <div class="post-thumb">
-          <img class="img-responsive" src="/assets/images/posts/nhshd.10.jpg" alt="" />
+          <img class="img-responsive" src="/assets/images/posts/8.jpg" alt="" />
         </div><!--//post-thumb-->
         
         <div class="content">
-          <p>This next <a href="http://nhshackday.com/">NHS Hack Day</a> in London will be our 13th. We’ve been to London, Cardiff, Leeds, Liverpool, Manchester and Oxford, we’ve seen thousands of people come through the doors to collaborate on projects to help make the NHS just a little better.</p>
+          <p>A few weeks ago now we released <a href="http://opal.openhealthcare.org.uk">Opal</a> 0.8. It’s quite a large release, so we thought we’d
+walk you through some of the highlights.</p>
 
-<p>Throughout that time, we’ve been approached by a number of projects and institutions who have wanted to come to NHS Hack Day, and pitch their particular programme, platform, car boot sale, et cetera. Or perhaps to ask us to steer the projects on the day down one particular technical route. We’ve always politely turned those offers down. Mostly not because we think that the people approaching us aren’t coming with great projects, but because we think it’s important that NHS Hack Day remains a neutral space that concentrates on making connections and the experience of the people who show up. It’s for the same reason that we don’t let sponsors of NHS Hack Day do product pitches on the day.</p>
+<h3>Forms - now with added sugar</h3>
 
-<p>Because we get asked about it so often, we thought we’d explain why we do this.</p>
+<p>We’ve been spending lots of time working to make forms easier to work with. Sometimes it seems that 95% of designing services is making
+forms that aren&rsquo;t frustrating and difficult to use
+- and having good tools to quickly build and iterate the forms you’re working with can make that process much easier.</p>
 
-<p>Stepping back from just NHS Hack Day for a second, the real reason that I, and Open Health Care are doing work in this space, is that we’re incredibly excited about the opportunity for digital tools to transform the delivery of health care and deliver better outcomes for patients and society generally.</p>
+<p>We made sure that some of the features from Django models, like choices and defaults now flow through seamlessly by default to our form
+widgets, and that the client side Angular code will use these by default without you having to do anything. This was all possible before,
+but required more typing. Nobody likes extra typing.</p>
 
-<p>We can do that by <a href="http://opal.openhealthcare.org.uk/">providing tools</a> that help people on the front lines to care for patients, and by leveraging high quality data about the way we work. That said, we can’t just build tools and expect the world to change. The <strong>tools are useless without adoption</strong> - and adoption requires a change in the way people think about digital, in the way they understand it, and the expectations it has. And often, the hard work of winning hearts and minds includes advocacy for specific tools, standards and platforms.</p>
+<p>For instance, if we had the following model:</p>
 
-<p>Open Health Care, and NHS Hack Day come right out of the wider <a href="http://theconversation.com/explainer-what-is-the-open-movement-10308">Open Movement</a>. That means that we are totally bought into having high quality open standards, and the role that they can play in making people&rsquo;s lives better. But much like for instance, open data - we’re not particularly excited about them in the abstract. They&rsquo;re a
-<strong>means not an end</strong> in and of themselves.</p>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">TableClothPreference</span><span class="p">(</span><span class="n">EpisodeSubrecord</span><span class="p">):</span>
+        <span class="n">COLOUR_CHOICES</span> <span class="o">=</span> <span class="p">(</span>
+          <span class="p">(</span><span class="s">&#39;P&#39;</span><span class="p">,</span> <span class="s">&#39;Purple&#39;</span><span class="p">),</span>
+          <span class="p">(</span><span class="s">&#39;R&#39;</span><span class="p">,</span> <span class="s">&#39;Red&#39;</span><span class="p">),</span>
+        <span class="p">)</span>
+        <span class="n">favourite_colour</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span>
+                                            <span class="n">default</span><span class="o">=</span><span class="s">&#39;Purple&#39;</span><span class="p">,</span>
+                                            <span class="n">choices</span><span class="o">=</span><span class="n">COLOUR_CHOICES</span><span class="p">)</span></code></pre></div>
 
-<p>That means that while for instance, &ldquo;promoting standards for interoperability&rdquo; is something that we care deeply about, our main focus is always on delivering <strong>services that meet people&rsquo;s needs in the messy, complicated real world</strong>.</p>
 
-<p>In the context of NHS Hack Day, that means that our strategic goals tend to be on building communities of people who are excited about the practical power of digital transformation. About showcasing user centred design and lifting the lid on the applied process of iteratively making inclusive software that doesn&rsquo;t suck.</p>
+<p>We would be able to render a dropdown widget for the field that used the default and restricted the choices by simply using the
+following in our code:</p>
 
-<p>We also introduce people whenever it&rsquo;s appropriate, to Open All The Things. That means Source, Governance, Data, Science, APIs, Policy and Standards - because they&rsquo;re all crucial tools. But that’s not the main reason we’re here, and it’s not the real value we bring.</p>
+<div class="highlight"><pre><code class="language-jinja" data-lang="jinja"><span class="x">{ % select field=&quot;TableClothPreference.favourite_colour&quot; % }</span></code></pre></div>
 
-<p>Particularly in the context of a Hack Day, we tend not to institutionally advocate particular tools, standards, licences et cetera. It&rsquo;s a time-pressured environment, and people want to use tools they know to build a thing rather than tools with better philosophical justifications to almost build a thing!</p>
 
-<p>(That said - if your tool/standard/platform/et cetera is good enough and useful enough, then people will vote with their keyboards and use it anyway because it <strong>makes their lives easier</strong>.)</p>
+<p>We’ve also spent time making sure that form validation is much easier to work with. By default we
+now validate forms on submission - making sure that we respect max length of form fields for instance.</p>
 
-<p>We don’t expect people to come out of a NHS Hack Day project and immediately give up their day jobs to start companies. What we do expect is to forge connections between the Open Movement, and the digital world, with people who live at the sharp end of health and care in the NHS. We expect to show people a glimpse of a world in which digital transforms their lives for the better, quickly and humanely.</p>
+<p>As well as the improvements to forms in Opal itself, we’ve also been working hard on the Opal
+<a href="https://github.com/openhealthcare/opal-pathway">Pathway library</a>. This library makes it significantly easier to work with
+complex forms - particularly ones that need to save data to many different models. Although Pathway is still considered alpha software,
+we fully anticipate that we’ll be incorporating it into Opal itself as the recommended way to build forms in Opal applications later this year.</p>
 
-<p>Sometimes, projects that come out of NHS Hack Day have precisely the right mix of participants with spare time and looking for a challenge, and they really do want to take their projects forwards. We’re always delighted when that happens - and we provide support and advice to those teams wherever we can. That includes introducing them to support and funding programmes, as well as offering practical advice, and sometimes logistical support. We’re not optimising for generating health tech startups though. We’re optimising for building a genuinely sustainable movement of people within the system to demand an NHS that is fit for purpose in the digital age.</p>
+<h3>Python 3 support</h3>
 
-<p>If that sounds like something you’d like to experience yourself, you still have time to sign up for <a href="http://nhshackday.com/">NHS Hack Day 13</a> - which is rapidly approaching, and will happen in London on the 14th and 15th of May 2016.</p>
+<p>Responding to an issue raised on the mailing list, we’ve refactored Opal to work on Python 3. Thanks to the hard work and excellent tooling in the
+Python community this was a relatively painless task, but hopefully it puts us in a good position to move towards Python 3 deployments moving forwards.</p>
+
+<h3>Common patterns for customising Patient Lists</h3>
+
+<p>We’ve made it much easier to implement some of the common patterns we see when working with patient lists, by explicitly adding APIs.</p>
+
+<p>You can now <a href="http://opal.openhealthcare.org.uk/docs/v0.8.0/guides/list_views/#customising-sort-order-of-episodes">customise the ordering</a>
+of patients on a list-by-list basis using the comparator_service attribute of PatientList classes.
+A comparator service is an Angular service that returns a list of comparator functions that are used in order to determine how
+we should compare and sort two episodes - for instance:</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;opal.services&#39;</span><span class="p">)</span>
+        <span class="p">.</span><span class="nx">factory</span><span class="p">(</span><span class="s1">&#39;MyComparatorService&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+            <span class="s2">&quot;use strict&quot;</span><span class="p">;</span>
+            <span class="k">return</span> <span class="p">[</span>
+                <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span> <span class="k">return</span> <span class="nx">e</span><span class="p">.</span><span class="nx">category_name</span> <span class="p">},</span>
+                <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span> <span class="k">return</span> <span class="nx">e</span><span class="p">.</span><span class="nx">id</span> <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">});</span></code></pre></div>
+
+
+<p>We also introduced an easy way for you to
+<a href="http://opal.openhealthcare.org.uk/docs/v0.8.0/guides/list_views/#grouping-related-patient-lists">group lists into tabs</a>
+that display in the default template.</p>
+
+<h3>Goodbye Angular-Strap</h3>
+
+<p>Until Opal 0.8 we had not one, but two UI libraries which wrapped Bootstrap components in Angular compatible code.
+We’ve been uncomfortable about that for a while - it’s confusing to have to remember which widget comes from which
+library! As of Opal 0.8 however we’ve picked a winner - <a href="http://angular-ui.github.io/bootstrap/versioned-docs/0.14.3/">UI Bootstrap</a>,
+and we removed all references to Angular Strap completely, both in Opal and in all the applications and plugins we could find on
+Github.</p>
+
+<p>We&rsquo;re planning to update the UI Bootstrap library to a more recent version in the next couple of releases, but the re-naming of
+their modal component could potentially make this transition slightly tricky, so we&rsquo;re waiting to make sure we can do so as
+smoothly as possible.</p>
+
+<h3>Finding out more</h3>
+
+<p>If you’d like to find out more about Opal, then you might like to try the
+<a href="http://opal.openhealthcare.org.uk/docs/">documentation</a> or the
+<a href="https://groups.google.com/forum/?ohc-dev#!forum/ohc-opal">mailing list</a>.
+There are more details about some of the other smaller features and bugfixes in 0.8 in the
+<a href="https://github.com/openhealthcare/opal/releases/tag/0.8.0">release notes</a>,
+and you
+can also read about how to <a href="http://opal.openhealthcare.org.uk/docs/v0.8.0/reference/upgrading/#071-080">upgrade from 0.7.x</a>
+in the documentation.</p>
+
+<p>If you have a project that you think might be suited to Opal, please do <a href="mailto:hello@openhealthcare.org.uk">get in touch</a> - we’d love to hear from you.</p>
 
 <p><small>
-Photo credits: <a href="https://www.flickr.com/photos/133318877@N06/">Cléon Daniel</a>
+Photo credits: <a href="https://www.flickr.com/photos/thejaymo/">Jay Springett</a>
 </small></p>
 
         </div>
@@ -130,10 +193,8 @@ Photo credits: <a href="https://www.flickr.com/photos/133318877@N06/">Cléon Dan
         </div>
         <nav class="post-nav">
         
-        <span class="nav-previous"><a href="/blog/2016/03/21/how-to-pitch-at-a-hackday/" rel="prev"><i class="fa fa-long-arrow-left"></i> How to make a great hack day pitch</a></span>
+        <span class="nav-previous"><a href="/blog/2017/02/22/open-data-in-health/" rel="prev"><i class="fa fa-long-arrow-left"></i> Our report on open data in health</a></span>
         
-        
-        <span class="nav-next"><a href="/blog/2016/04/06/how-we-manage-risk-when-we-use-open-source-in-health/" rel="prev">How we manage risk when we use open source in health <i class="fa fa-long-arrow-right"></i></a></span>
         
         </nav><!--//post-nav-->
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Opal | Open Health Care UK - Blog]]></title>
   <link href="http://openhealthcare.org.uk/blog/categories/opal/atom.xml" rel="self"/>
   <link href="http://openhealthcare.org.uk/"/>
-  <updated>2017-02-24T12:14:43+00:00</updated>
+  <updated>2017-03-08T15:37:11+00:00</updated>
   <id>http://openhealthcare.org.uk/</id>
   <author>
     <name><![CDATA[Open Health Care UK]]></name>
@@ -12,6 +12,106 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Opal 0.8 Released]]></title>
+    <link href="http://openhealthcare.org.uk/blog/2017/03/08/opal-08-released/"/>
+    <updated>2017-03-08T14:00:29+00:00</updated>
+    <id>http://openhealthcare.org.uk/blog/2017/03/08/opal-08-released</id>
+    <content type="html"><![CDATA[A few weeks ago now we released [Opal](http://opal.openhealthcare.org.uk) 0.8. It’s quite a large release, so we thought we’d
+walk you through some of the highlights.
+
+### Forms - now with added sugar
+
+We’ve been spending lots of time working to make forms easier to work with. Sometimes it seems that 95% of designing services is making
+forms that aren't frustrating and difficult to use
+- and having good tools to quickly build and iterate the forms you’re working with can make that process much easier.
+
+We made sure that some of the features from Django models, like choices and defaults now flow through seamlessly by default to our form
+widgets, and that the client side Angular code will use these by default without you having to do anything. This was all possible before,
+but required more typing. Nobody likes extra typing.
+
+For instance, if we had the following model:
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">TableClothPreference</span><span class="p">(</span><span class="n">EpisodeSubrecord</span><span class="p">):</span>
+        <span class="n">COLOUR_CHOICES</span> <span class="o">=</span> <span class="p">(</span>
+          <span class="p">(</span><span class="s">&#39;P&#39;</span><span class="p">,</span> <span class="s">&#39;Purple&#39;</span><span class="p">),</span>
+          <span class="p">(</span><span class="s">&#39;R&#39;</span><span class="p">,</span> <span class="s">&#39;Red&#39;</span><span class="p">),</span>
+        <span class="p">)</span>
+        <span class="n">favourite_colour</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span>
+                                            <span class="n">default</span><span class="o">=</span><span class="s">&#39;Purple&#39;</span><span class="p">,</span>
+                                            <span class="n">choices</span><span class="o">=</span><span class="n">COLOUR_CHOICES</span><span class="p">)</span></code></pre></div>
+
+We would be able to render a dropdown widget for the field that used the default and restricted the choices by simply using the
+following in our code:
+
+<div class="highlight"><pre><code class="language-jinja" data-lang="jinja"><span class="x">{ % select field=&quot;TableClothPreference.favourite_colour&quot; % }</span></code></pre></div>
+
+We’ve also spent time making sure that form validation is much easier to work with. By default we
+now validate forms on submission - making sure that we respect max length of form fields for instance.
+
+As well as the improvements to forms in Opal itself, we’ve also been working hard on the Opal
+[Pathway library](https://github.com/openhealthcare/opal-pathway). This library makes it significantly easier to work with
+complex forms - particularly ones that need to save data to many different models. Although Pathway is still considered alpha software,
+we fully anticipate that we’ll be incorporating it into Opal itself as the recommended way to build forms in Opal applications later this year.
+
+### Python 3 support
+
+Responding to an issue raised on the mailing list, we’ve refactored Opal to work on Python 3. Thanks to the hard work and excellent tooling in the
+Python community this was a relatively painless task, but hopefully it puts us in a good position to move towards Python 3 deployments moving forwards.
+
+### Common patterns for customising Patient Lists
+
+We’ve made it much easier to implement some of the common patterns we see when working with patient lists, by explicitly adding APIs.
+
+You can now [customise the ordering](http://opal.openhealthcare.org.uk/docs/v0.8.0/guides/list_views/#customising-sort-order-of-episodes)
+of patients on a list-by-list basis using the comparator_service attribute of PatientList classes.
+A comparator service is an Angular service that returns a list of comparator functions that are used in order to determine how
+we should compare and sort two episodes - for instance:
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;opal.services&#39;</span><span class="p">)</span>
+        <span class="p">.</span><span class="nx">factory</span><span class="p">(</span><span class="s1">&#39;MyComparatorService&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+            <span class="s2">&quot;use strict&quot;</span><span class="p">;</span>
+            <span class="k">return</span> <span class="p">[</span>
+                <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span> <span class="k">return</span> <span class="nx">e</span><span class="p">.</span><span class="nx">category_name</span> <span class="p">},</span>
+                <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span> <span class="k">return</span> <span class="nx">e</span><span class="p">.</span><span class="nx">id</span> <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">});</span></code></pre></div>
+
+We also introduced an easy way for you to
+[group lists into tabs](http://opal.openhealthcare.org.uk/docs/v0.8.0/guides/list_views/#grouping-related-patient-lists)
+that display in the default template.
+
+### Goodbye Angular-Strap
+
+Until Opal 0.8 we had not one, but two UI libraries which wrapped Bootstrap components in Angular compatible code.
+We’ve been uncomfortable about that for a while - it’s confusing to have to remember which widget comes from which
+library! As of Opal 0.8 however we’ve picked a winner - [UI Bootstrap](http://angular-ui.github.io/bootstrap/versioned-docs/0.14.3/),
+and we removed all references to Angular Strap completely, both in Opal and in all the applications and plugins we could find on
+Github.
+
+We&#8217;re planning to update the UI Bootstrap library to a more recent version in the next couple of releases, but the re-naming of
+their modal component could potentially make this transition slightly tricky, so we&#8217;re waiting to make sure we can do so as
+smoothly as possible.
+
+### Finding out more
+
+If you’d like to find out more about Opal, then you might like to try the
+[documentation](http://opal.openhealthcare.org.uk/docs/) or the
+[mailing list](https://groups.google.com/forum/?ohc-dev#!forum/ohc-opal).
+There are more details about some of the other smaller features and bugfixes in 0.8 in the
+[release notes](https://github.com/openhealthcare/opal/releases/tag/0.8.0),
+and you
+can also read about how to [upgrade from 0.7.x](http://opal.openhealthcare.org.uk/docs/v0.8.0/reference/upgrading/#071-080)
+in the documentation.
+
+If you have a project that you think might be suited to Opal, please do [get in touch](mailto:hello@openhealthcare.org.uk) - we’d love to hear from you.
+
+<small>
+Photo credits: [Jay Springett](https://www.flickr.com/photos/thejaymo/)
+</small>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Happy Birthday to OPAL!]]></title>
@@ -358,47 +458,6 @@ services they use in their personal lives.
 <div class="post-thumb">
   <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/walkin.advice.png" alt="" style="border: 2px solid black;" />
 </div><!--//post-thumb-->
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[elCID in the Journal of Infection]]></title>
-    <link href="http://openhealthcare.org.uk/blog/2015/06/10/elcid-journal-of-infectioncontrol/"/>
-    <updated>2015-06-10T21:00:29+01:00</updated>
-    <id>http://openhealthcare.org.uk/blog/2015/06/10/elcid-journal-of-infectioncontrol</id>
-    <content type="html"><![CDATA[For the past couple of years, Open Health Care has been working in collaboration
-with [UCLH](https://www.uclh.nhs.uk/Pages/home.aspx) and the [Hospital for Tropical Diseases](http://www.thehtd.org/)
-on [elCID](http://elcid.openhealthcare.org.uk/) (the
-electronic Clinical Infection Database) - an Open Source
-clinical Digital service for managing inpatients and outpatients with infections.
-
-elCID solves two key clinical problems - first it provides an interface for recording day-to-day
-clinical care. We've developed this interface in close collaboration with clinicians with a strong focus on usability,
-using [user centred design](https://www.gov.uk/service-manual/user-centred-design) techniques, and
-frequent iterations, to make sure that we meet the real needs of our users.
-
-Second, elCID captures structured data about clinical activity, and features advanced
-interrogation and extract capabilities. This enables data driven feedback loops in the
-design of clinical services, by enabling high quality audits to be conducted much faster
-than was ever possible before.
-
-Working with some of the academics who've been instrumental in developing the
-project, we recently published an analysis of the early findings from this process in the
-<a href="http://www.journalofinfection.com/article/S0163-4453(15)00100-0/abstract">Journal of Infection</a>.
-
-As the paper outlines:
-
-<blockquote class="custom-quote"><p><i class="fa fa-quote-left"></i>
-elCID brings together disparate silos of clinical data collection into a single, rapidly searchable database resource permitting unprecedented interrogation of our clinical practice. <br />
-However, the benefits of the system go further, having vastly improved the quality and transparency of communication between the Division’s teams, audits of day-to-day clinical practice are now rapidly and routinely performed using high quality prospectively collected data, and research study data collection can be conducted within the main database, facilitating improved integration of the clinical and academic arms of the Division.
-</p></blockquote>
-
-elCID is an Open Source, Open Governance project built on the Open Source [OPAL](http://opal.openhealthcare.org.uk/)
-framework. It is available to infection services and comes with full support and customisation from Open Health Care.
-You can find out more information about the software on the [elCID website](http://elcid.openhealthcare.org.uk/).
-
-If you&#8217;re interested in seeing how elCID might help at your organisation, or if you&#8217;d
-like a copy of the full paper, don&#8217;t hesitate to drop us a line at [hello@openhealthcare.org.uk](hello@openhealthcare.org.uk)
 ]]></content>
   </entry>
   
