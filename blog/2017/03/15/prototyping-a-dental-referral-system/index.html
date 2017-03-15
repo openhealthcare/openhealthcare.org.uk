@@ -71,10 +71,10 @@
   <div class="row">
     <div id="blog-entry" class="blog-entry section col-md-8 col-sm-8 col-xs-12">
       <article class="post">
-        <h2 class="title">It&#8217;s time for NHS Hack Day 10</h2>
+        <h2 class="title">Building a better dental referral process</h2>
         <div class="meta">
           <ul class="meta-list list-inline">
-            <li class="post-time post_date date updated">March 17 2015</li>
+            <li class="post-time post_date date updated">March 15 2017</li>
             <li class="post-author"> by <a href="http://twitter.com/thatdavidmiller">David Miller</a></li>
             <!-- <li class="post-comments-link"> &#8211;>
             <!--   <a href="#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
@@ -83,42 +83,131 @@
         </div><!--meta-->
         
         <div class="post-thumb">
-          <img class="img-responsive" src="/assets/images/posts/nhshd1.jpg" alt="" />
+          <img class="img-responsive" src="/assets/images/posts/dentist.waiting.room.jpg" alt="" />
         </div><!--//post-thumb-->
         
         <div class="content">
-          <p><a href="http://nhshackday.com">NHS Hack Days</a> are weekend events that bring together &ldquo;geeks who love the NHS&rdquo; to have fun, build community, and work on digital projects that promote health.</p>
+          <p>Our friends at <a href="http://openodonto.org/">Open Odonto</a> are working to make sure that NHS dentistry gets to take advantage of the internet era.</p>
 
-<p>NHS Hack Day began in 2012 when Carl (a doctor) complained to his friend Tom (a developer) that things were really very broken in NHS IT. Tom who’d recently had a good experience at a Cabinet Office GDS Hack Day said the NHS should have a hack day. So we did.</p>
+<p>They are <strong>demanding</strong> better digital services, processes and data, fit for the Internet era as well as <strong>building communities</strong> of practice that help to raise the expectations of clinicians and patients, and conducting user research to help <strong>understand the needs</strong> of people receiving and delivering care.</p>
 
-<p>The format is that we begin on a saturday morning with people pitching real-world problems they’ve encountered in the NHS or in health care generally. Anyone can pitch. We end on Sunday afternoon with a competition for the best solutions made over the weekend. In between people pick projects to work on, work on them, and have lunch (provided).</p>
+<p>One of the areas that they’ve discovered is particularly painful is dental referrals.</p>
 
-<p>Previous NHS Hack Days have looked something like this:</p>
+<h2>What are dental referrals?</h2>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3NnfMmKKvBk" frameborder="0" allowfullscreen></iframe>
+<p>Sometimes patients who go to see a high street dentist need specialist care. That might be because they need a procedure that the high street dentist isn’t able to deliver, or because they have particular needs requiring specialist training, expertise or equipment - for instance patients with reduced mobility, chronic dental phobias, or other complex health conditions. Those patients are referred to a specialist dental service appropriate for their needs.</p>
+
+<p>In theory, that sounds simple enough - you simply need to book a patient an appointment with the right clinic, and make sure that the clinic has the patient’s notes and x-rays.</p>
+
+<div class="post-thumb">
+  <img class="img-responsive" src="/assets/images/posts/fax.typewriter.jpg" alt="" />
+</div>
 
 
-<p>Do check out some of the <a href="http://nhshackday.com/previous/projects/">projects that have come fom the event</a> and
-read our summary of the <a href="http://openhealthcare.org.uk/blog/2015/01/31/nhs-hack-day-cardiff/">previous NHS Hack Day</a></p>
+<!--//post-thumb-->
 
-<h3>Why should I come to NHS Hack Day?</h3>
 
-<p>You’ll meet bright people from different disciplines you wouldn’t usually meet
-You’ll play a part in making NHS IT less bad
-You’ll have fun</p>
+<p>In practice however, dental referrals are often anything but simple. We post and fax partially completed, badly designed forms around, and then frequently rely on nursing staff to spend time phoning around trying to find the additional information they need in order to even understand if they are able to help the patient. At the end of all this the patient is sent a letter in the post informing them that of the date and time of their appointment.</p>
 
-<p>We especially want people who aren’t sure if this is for them to come, a lot of the value of the event comes from the diversity of the participants, we need you!
-<a href="http://nhshackday.com/faqs/#inclusivity">Imposters are welcome</a></p>
+<p>This referral process is slow frustrating for everyone involved, and can leave patients waiting around for weeks without any update at all - because we haven’t managed to iterate on the information infrastructure that underpins our health system.</p>
 
-<h3>How do I get involved?</h3>
+<p>In 2017 we shouldn’t be having to wait around for a letter in the post that is delayed because we’re phoning someone up about information that was missing in the fax where they wrote basic information about patients by hand.</p>
 
-<ul>
-<li>By attending the event, tickets will be released this evening from <a href="http://nhshackday.com">www.nhshackday.com</a></li>
-<li>By sponsoring the event - email <a href="&#109;&#x61;&#x69;&#108;&#x74;&#x6f;&#58;&#104;&#101;&#x6c;&#x6c;&#111;&#64;&#x6f;&#112;&#101;&#110;&#104;&#x65;&#97;&#108;&#x74;&#x68;&#x63;&#97;&#114;&#101;&#46;&#111;&#x72;&#103;&#46;&#x75;&#x6b;">&#104;&#101;&#108;&#x6c;&#111;&#64;&#111;&#x70;&#x65;&#110;&#104;&#x65;&#97;&#x6c;&#x74;&#x68;&#x63;&#x61;&#114;&#101;&#x2e;&#x6f;&#114;&#x67;&#x2e;&#117;&#x6b;</a></li>
-<li>By becoming part of our community - joining the <a href="https://groups.google.com/forum/#!forum/nhshackday">mailing list</a>, coming to pre event meet ups or talking to us on <a href="http://twitter.com/nhshackday">Twitter</a></li>
-<li>By spreading the word, tell your friends!</li>
-</ul>
+<h2>Making things better</h2>
 
+<p>As part of their work, Open Odonto have been researching how they might transform the dental referral process so that it worked better for patients and clinicians.</p>
+
+<p>Earlier this year we spent some time working with their team to build a <a href="https://github.com/odonto/odonto-rms">prototype</a> referral service that would reflect this research. Building prototypes like this helps people to imagine a future where the world is better and realise that it is possible for us to get there. It also helps to validate ideas and designs with potential users and make sure that our ideas <strong>might actually work</strong> and that we’re working towards a future which is <strong>actually better, not just digital</strong>.</p>
+
+<div class="post-thumb">
+  <center>
+    <img class="img-responsive bordered" src="/assets/images/posts/odonto.menu.png" alt="" />
+  </center>
+</div>
+
+
+<!--//post-thumb-->
+
+
+<p>In our initial prototype we’ve focussed on referrals of patients who require Special Care Dentistry - the kinds of patients who have complex health issues which require specialist equipment or training. This approach allows us to <strong>design for the furthest first</strong> - a referral system that can work for the complex cases seen by Special Care Dentistry is more likely to have the capacity to work for everybody.</p>
+
+<p>We started with a referral form - where a dentist would enter details of the person who they were referring to another service.</p>
+
+<div class="post-thumb bordered">
+  <img class="img-responsive" src="/assets/images/posts/odonto.referral.png" alt="" />
+</div>
+
+
+<!--//post-thumb-->
+
+
+<p>In line with recent commissioning guidance on how to manage dental referrals from NHS England, we designed for a system which includes a central hub that triages referrals to decide where the patient can be helped best.</p>
+
+<p>That meant that in our prototype a different user can review the details of a referral, and has the ability to add or update information, before making a decision about where to refer them.</p>
+
+<div class="post-thumb bordered">
+  <img class="img-responsive" src="/assets/images/posts/odonto.detail.png" alt="" />
+</div>
+
+
+<!--//post-thumb-->
+
+
+<p>One of the major issues with the current processes is that it is almost entirely opaque - once a referral has been sent it’s impossible to understand what is happening to it until a letter eventually arrives on the doormat of the patient.</p>
+
+<p>We wanted to ensure that there was transparency throughout the system of referrals in progress, and completed. This means that when patients call up their high street dentist asking for an update on when they might get help for their painful tooth, they might get an answer better than “I have no idea”.</p>
+
+<div class="post-thumb bordered">
+  <img class="img-responsive" src="/assets/images/posts/odonto.progress.png" alt="" />
+</div>
+
+
+<!--//post-thumb-->
+
+
+<p>Although we didn’t explore it in this project, managing referrals in a joined-up manner would make it trivial to send notifications or text messages to patients informing them in real time when there was progress on their referral.</p>
+
+<p>There has been positive feedback from users in the initial user research sessions with the prototype referral service.</p>
+
+<blockquote>
+    <p class="lead">
+    It’s really good - when can we have it?
+    </p>
+</blockquote>
+
+
+
+
+<blockquote>
+    <p class="lead">
+    I’d much rather do this than pen and paper
+    </p>
+</blockquote>
+
+
+
+
+<blockquote>
+    <p class="lead">
+    I would like this!
+    </p>
+</blockquote>
+
+
+<h2>What next?</h2>
+
+<p>After the research and prototyping we’ve done on this project, we’re more convinced than ever that there is a need for a better dental referral process, and that we can build digital tools that support that better future.</p>
+
+<p>We still need to conduct some more research, test and iterate our prototypes further with more users before we look to build a working service that can be used to replace the faxes and paper forms, but we’re excited to do that work and move to a world where patients aren’t left in the dark about their care, and NHS staff don’t waste their time plugging gaps in broken processes instead of caring for patients.</p>
+
+<p>If you would be interested in working with us or <a href="http://openodonto.org/">Open Odonto</a> on a better dental referral system, or finding out more about the prototyping work we do at Open Health Care, do
+<a href="mailto:hello@openhealthcare.org.uk">get in touch</a>.</p>
+
+<p><small>
+Photo Credits:
+<a href="http://www.geograph.org.uk/profile/8272">Bob Harvey</a> &amp;
+<a href="https://www.flickr.com/photos/mattjiggins/4009310821/">Matt Jiggins</a>
+</small></p>
 
         </div>
         <div class="content">
@@ -130,10 +219,8 @@ You’ll have fun</p>
         </div>
         <nav class="post-nav">
         
-        <span class="nav-previous"><a href="/blog/2015/03/12/open-politics/" rel="prev"><i class="fa fa-long-arrow-left"></i> Open Politics</a></span>
+        <span class="nav-previous"><a href="/blog/2017/03/08/opal-08-released/" rel="prev"><i class="fa fa-long-arrow-left"></i> Opal 0.8 released</a></span>
         
-        
-        <span class="nav-next"><a href="/blog/2015/04/01/london-nhs-hack-day-meet-up/" rel="prev">London NHS Hack Day Meet Up <i class="fa fa-long-arrow-right"></i></a></span>
         
         </nav><!--//post-nav-->
 

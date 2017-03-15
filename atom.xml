@@ -4,7 +4,7 @@
   <title><![CDATA[Open Health Care UK - Blog]]></title>
   <link href="http://openhealthcare.org.uk/atom.xml" rel="self"/>
   <link href="http://openhealthcare.org.uk/blog.html"/>
-  <updated>2017-03-08T15:37:11+00:00</updated>
+  <updated>2017-03-15T08:59:15+00:00</updated>
   <id>http://openhealthcare.org.uk/</id>
   <author>
     <name><![CDATA[Open Health Care UK]]></name>
@@ -12,6 +12,135 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Building a Better Dental Referral Process]]></title>
+    <link href="http://openhealthcare.org.uk/blog/2017/03/15/prototyping-a-dental-referral-system/"/>
+    <updated>2017-03-15T09:12:19+00:00</updated>
+    <id>http://openhealthcare.org.uk/blog/2017/03/15/prototyping-a-dental-referral-system</id>
+    <content type="html"><![CDATA[<p>Our friends at <a href="http://openodonto.org/">Open Odonto</a> are working to make sure that NHS dentistry gets to take advantage of the internet era.</p>
+
+<p>They are <strong>demanding</strong> better digital services, processes and data, fit for the Internet era as well as <strong>building communities</strong> of practice that help to raise the expectations of clinicians and patients, and conducting user research to help <strong>understand the needs</strong> of people receiving and delivering care.</p>
+
+<p>One of the areas that they’ve discovered is particularly painful is dental referrals.</p>
+
+<h2>What are dental referrals?</h2>
+
+<p>Sometimes patients who go to see a high street dentist need specialist care. That might be because they need a procedure that the high street dentist isn’t able to deliver, or because they have particular needs requiring specialist training, expertise or equipment - for instance patients with reduced mobility, chronic dental phobias, or other complex health conditions. Those patients are referred to a specialist dental service appropriate for their needs.</p>
+
+<p>In theory, that sounds simple enough - you simply need to book a patient an appointment with the right clinic, and make sure that the clinic has the patient’s notes and x-rays.</p>
+
+<div class="post-thumb">
+  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/fax.typewriter.jpg" alt="" />
+</div>
+
+
+<!--//post-thumb-->
+
+
+<p>In practice however, dental referrals are often anything but simple. We post and fax partially completed, badly designed forms around, and then frequently rely on nursing staff to spend time phoning around trying to find the additional information they need in order to even understand if they are able to help the patient. At the end of all this the patient is sent a letter in the post informing them that of the date and time of their appointment.</p>
+
+<p>This referral process is slow frustrating for everyone involved, and can leave patients waiting around for weeks without any update at all - because we haven’t managed to iterate on the information infrastructure that underpins our health system.</p>
+
+<p>In 2017 we shouldn’t be having to wait around for a letter in the post that is delayed because we’re phoning someone up about information that was missing in the fax where they wrote basic information about patients by hand.</p>
+
+<h2>Making things better</h2>
+
+<p>As part of their work, Open Odonto have been researching how they might transform the dental referral process so that it worked better for patients and clinicians.</p>
+
+<p>Earlier this year we spent some time working with their team to build a <a href="https://github.com/odonto/odonto-rms">prototype</a> referral service that would reflect this research. Building prototypes like this helps people to imagine a future where the world is better and realise that it is possible for us to get there. It also helps to validate ideas and designs with potential users and make sure that our ideas <strong>might actually work</strong> and that we’re working towards a future which is <strong>actually better, not just digital</strong>.</p>
+
+<div class="post-thumb">
+  <center>
+    <img class="img-responsive bordered" src="http://openhealthcare.org.uk/assets/images/posts/odonto.menu.png" alt="" />
+  </center>
+</div>
+
+
+<!--//post-thumb-->
+
+
+<p>In our initial prototype we’ve focussed on referrals of patients who require Special Care Dentistry - the kinds of patients who have complex health issues which require specialist equipment or training. This approach allows us to <strong>design for the furthest first</strong> - a referral system that can work for the complex cases seen by Special Care Dentistry is more likely to have the capacity to work for everybody.</p>
+
+<p>We started with a referral form - where a dentist would enter details of the person who they were referring to another service.</p>
+
+<div class="post-thumb bordered">
+  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/odonto.referral.png" alt="" />
+</div>
+
+
+<!--//post-thumb-->
+
+
+<p>In line with recent commissioning guidance on how to manage dental referrals from NHS England, we designed for a system which includes a central hub that triages referrals to decide where the patient can be helped best.</p>
+
+<p>That meant that in our prototype a different user can review the details of a referral, and has the ability to add or update information, before making a decision about where to refer them.</p>
+
+<div class="post-thumb bordered">
+  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/odonto.detail.png" alt="" />
+</div>
+
+
+<!--//post-thumb-->
+
+
+<p>One of the major issues with the current processes is that it is almost entirely opaque - once a referral has been sent it’s impossible to understand what is happening to it until a letter eventually arrives on the doormat of the patient.</p>
+
+<p>We wanted to ensure that there was transparency throughout the system of referrals in progress, and completed. This means that when patients call up their high street dentist asking for an update on when they might get help for their painful tooth, they might get an answer better than “I have no idea”.</p>
+
+<div class="post-thumb bordered">
+  <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/odonto.progress.png" alt="" />
+</div>
+
+
+<!--//post-thumb-->
+
+
+<p>Although we didn’t explore it in this project, managing referrals in a joined-up manner would make it trivial to send notifications or text messages to patients informing them in real time when there was progress on their referral.</p>
+
+<p>There has been positive feedback from users in the initial user research sessions with the prototype referral service.</p>
+
+<blockquote>
+    <p class="lead">
+    It’s really good - when can we have it?
+    </p>
+</blockquote>
+
+
+
+
+<blockquote>
+    <p class="lead">
+    I’d much rather do this than pen and paper
+    </p>
+</blockquote>
+
+
+
+
+<blockquote>
+    <p class="lead">
+    I would like this!
+    </p>
+</blockquote>
+
+
+<h2>What next?</h2>
+
+<p>After the research and prototyping we’ve done on this project, we’re more convinced than ever that there is a need for a better dental referral process, and that we can build digital tools that support that better future.</p>
+
+<p>We still need to conduct some more research, test and iterate our prototypes further with more users before we look to build a working service that can be used to replace the faxes and paper forms, but we’re excited to do that work and move to a world where patients aren’t left in the dark about their care, and NHS staff don’t waste their time plugging gaps in broken processes instead of caring for patients.</p>
+
+<p>If you would be interested in working with us or <a href="http://openodonto.org/">Open Odonto</a> on a better dental referral system, or finding out more about the prototyping work we do at Open Health Care, do
+<a href="mailto:hello@openhealthcare.org.uk">get in touch</a>.</p>
+
+<p><small>
+Photo Credits:
+<a href="http://www.geograph.org.uk/profile/8272">Bob Harvey</a> &amp;
+<a href="https://www.flickr.com/photos/mattjiggins/4009310821/">Matt Jiggins</a>
+</small></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Opal 0.8 Released]]></title>
@@ -1053,7 +1182,7 @@ of the service so that we can be sure that we’re meeting their needs.</p>
 flexibility and iteration in mind, and be supported by teams who have the capability to iterate them responsively.</p>
 
 <p>If you’d like to know more about how we could help you by delivering services like this, or more about the services we offer,
-do get in touch with us at <a href="mailto:hello@openhealthcare.org.uk"><a href="&#x6d;&#97;&#105;&#108;&#116;&#x6f;&#x3a;&#104;&#101;&#x6c;&#108;&#x6f;&#64;&#x6f;&#112;&#x65;&#x6e;&#x68;&#101;&#x61;&#x6c;&#x74;&#104;&#x63;&#97;&#x72;&#x65;&#x2e;&#x6f;&#x72;&#x67;&#46;&#x75;&#107;">&#x68;&#x65;&#x6c;&#108;&#111;&#x40;&#x6f;&#112;&#101;&#x6e;&#104;&#101;&#x61;&#x6c;&#116;&#x68;&#99;&#x61;&#114;&#x65;&#46;&#111;&#114;&#103;&#x2e;&#117;&#x6b;</a></a>.</p>
+do get in touch with us at <a href="mailto:hello@openhealthcare.org.uk"><a href="&#109;&#97;&#105;&#x6c;&#116;&#111;&#58;&#x68;&#x65;&#108;&#108;&#x6f;&#x40;&#111;&#112;&#x65;&#110;&#x68;&#x65;&#97;&#108;&#x74;&#104;&#99;&#97;&#x72;&#101;&#46;&#111;&#x72;&#x67;&#46;&#x75;&#x6b;">&#104;&#x65;&#x6c;&#108;&#111;&#x40;&#x6f;&#112;&#101;&#110;&#x68;&#101;&#x61;&#x6c;&#116;&#104;&#x63;&#97;&#x72;&#101;&#46;&#x6f;&#x72;&#103;&#x2e;&#x75;&#x6b;</a></a>.</p>
 
 <p><small>
 Photo credits: <a href="https://www.flickr.com/photos/31031835@N08/">John Tan</a>
@@ -1164,7 +1293,7 @@ of a success with the rest of the team!</p>
 partners, as well as continuing to develop and improve our existing services.</p>
 
 <p>If you&rsquo;ve got a project you think we could help with this year, do drop us a line at
-<a href="mailto:hello@openhealthcare.org.uk"><a href="&#x6d;&#97;&#105;&#x6c;&#116;&#111;&#58;&#104;&#101;&#108;&#x6c;&#x6f;&#64;&#x6f;&#112;&#x65;&#x6e;&#104;&#x65;&#x61;&#108;&#x74;&#104;&#x63;&#97;&#114;&#101;&#46;&#x6f;&#114;&#103;&#x2e;&#117;&#107;">&#104;&#101;&#108;&#108;&#x6f;&#64;&#111;&#112;&#x65;&#110;&#x68;&#101;&#97;&#108;&#116;&#x68;&#x63;&#97;&#x72;&#x65;&#x2e;&#x6f;&#114;&#x67;&#46;&#x75;&#107;</a></a> - we&rsquo;d love to
+<a href="mailto:hello@openhealthcare.org.uk"><a href="&#109;&#x61;&#x69;&#108;&#x74;&#x6f;&#x3a;&#x68;&#x65;&#x6c;&#108;&#111;&#x40;&#x6f;&#x70;&#101;&#110;&#104;&#x65;&#x61;&#x6c;&#116;&#x68;&#x63;&#97;&#x72;&#101;&#46;&#111;&#114;&#103;&#46;&#x75;&#x6b;">&#104;&#101;&#x6c;&#108;&#x6f;&#64;&#x6f;&#112;&#x65;&#110;&#x68;&#101;&#97;&#108;&#116;&#104;&#x63;&#x61;&#114;&#x65;&#x2e;&#x6f;&#114;&#x67;&#x2e;&#117;&#x6b;</a></a> - we&rsquo;d love to
 hear all about it!</p>
 
 <p><small>
@@ -1413,7 +1542,7 @@ You’ll have fun</p>
 
 <ul>
 <li>By attending the event, tickets will be released this evening from <a href="http://nhshackday.com">www.nhshackday.com</a></li>
-<li>By sponsoring the event - email <a href="&#109;&#x61;&#105;&#108;&#x74;&#x6f;&#x3a;&#x68;&#x65;&#108;&#108;&#111;&#x40;&#111;&#x70;&#101;&#110;&#104;&#x65;&#97;&#x6c;&#x74;&#104;&#99;&#97;&#x72;&#101;&#x2e;&#111;&#x72;&#103;&#x2e;&#x75;&#107;">&#x68;&#101;&#108;&#108;&#x6f;&#x40;&#111;&#x70;&#x65;&#x6e;&#104;&#101;&#97;&#108;&#116;&#x68;&#x63;&#x61;&#114;&#x65;&#46;&#111;&#114;&#103;&#x2e;&#117;&#107;</a></li>
+<li>By sponsoring the event - email <a href="&#109;&#x61;&#105;&#108;&#x74;&#x6f;&#58;&#104;&#x65;&#x6c;&#108;&#111;&#x40;&#111;&#112;&#101;&#x6e;&#x68;&#x65;&#97;&#x6c;&#116;&#104;&#x63;&#97;&#114;&#101;&#x2e;&#111;&#114;&#x67;&#x2e;&#x75;&#x6b;">&#x68;&#101;&#108;&#108;&#111;&#x40;&#x6f;&#112;&#101;&#110;&#x68;&#101;&#x61;&#108;&#116;&#104;&#99;&#x61;&#114;&#x65;&#46;&#111;&#x72;&#103;&#x2e;&#x75;&#107;</a></li>
 <li>By becoming part of our community - joining the <a href="https://groups.google.com/forum/#!forum/nhshackday">mailing list</a>, coming to pre event meet ups or talking to us on <a href="http://twitter.com/nhshackday">Twitter</a></li>
 <li>By spreading the word, tell your friends!</li>
 </ul>
@@ -1645,181 +1774,6 @@ yet to be confirmed. We’d love it if you joined us though - so do
 <p><small>
 Photo credits: <a href="https://www.flickr.com/photos/133318877@N06/">Cléon Daniel</a>
 </small></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[What Is the Most Cited Retracted Paper?]]></title>
-    <link href="http://openhealthcare.org.uk/blog/2015/04/16/which-retracted-paper-has-the-most-citations/"/>
-    <updated>2015-04-16T16:11:56+01:00</updated>
-    <id>http://openhealthcare.org.uk/blog/2015/04/16/which-retracted-paper-has-the-most-citations</id>
-    <content type="html"><![CDATA[<p>At Open Health Care we believe in
-<a href="http://en.wikipedia.org/wiki/Evidence-based_medicine">Evidence Based Medicine</a>.</p>
-
-<p>Which is why we create digital health <a href="https://github.com/openhealthcare/opal-research">services that support research</a>.</p>
-
-<p>Unfortunately the current infrastructure supporting evidence based medicine has some shortcomings. One of these is that
-when a research paper is retracted because, for example, <a href="http://en.wikipedia.org/wiki/Hwang_Woo-suk">the author</a>
-<a href="http://en.wikipedia.org/wiki/Scientific_misconduct">made up the results</a>, there is little or no means
-to propogate this update in the wider medical literature.</p>
-
-<p>Supposing, as a doctor, I look to a systematic review on the management of heart attacks to inform how I treat my patient,
-I sadly have no assurance that the systematic review does not rely on research papers that have been retracted. This is suboptimal.</p>
-
-<p>Open access, post-publication peer review, and better version control would be three useful features that a modern scientific
-publishing model optimized to enable good science should support.</p>
-
-<p>In the meantime, inspired by a lunchtime conversation with our friend and director Ben Goldacre (it was all his idea),
-we pondered the question:</p>
-
-<blockquote class="custom-quote"><p><i class="fa fa-question fa-3x"></i>
-What is the most cited retracted paper?
-</p></blockquote>
-
-
-<p>It turns out <a href="http://www.pubmed.gov">PubMed</a> already has a nice API that can return a
-<a href="http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&amp;retmode=json&amp;retmax=10000&amp;term=%22retracted%20publication%22">list</a>
-of PubMed ids for papers that have been retracted. Next we needed a means of knowing how many times each retracted paper was cited.
-There are a few ways of doing this but we went with using google scholar after Alf Eaton told us about it on
-<a href="https://twitter.com/invisiblecomma/status/582904870644113408">twitter</a>. It&rsquo;s possible to search google scholar for the articles
-citing a particular pubmed id, here&rsquo;s an <a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/19336536">example</a>.</p>
-
-<p>Finally, we used wget to download all of the google scholar search results.  This infamous
-<a href="http://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2897%2911096-0/abstract">paper</a> &lsquo;Ileal-lymphoid-nodular hyperplasia,
-non-specific colitis, and pervasive developmental disorder in children.&rsquo; was the winner with
-2070 <a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/9500320">citations</a>!</p>
-
-<p>Here&rsquo;s the top ten:</p>
-
-<table class="table table-striped">
-<tbody><tr><td>Citations</td>
-<td colspan="2">Title</td>
-<td>Author</td>
-<td>Journal</td>
-<td>Pubdate</td>
-</tr>
-<tr><td>2070</td>
-<td colspan="2"><a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/9500320">
-Ileal-lymphoid-nodular hyperplasia, non-specific colitis, and pervasive developmental disorder in children.
-</a>
-</td>
-<td>Wakefield AJ</td>
-<td>Lancet</td>
-<td>28/02/1998</td>
-</tr>
-<tr><td>2050</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/15604363">
-Visfatin: a protein secreted by visceral fat that mimics the effects of insulin.
-</a>
-</td>
-<td>Fukuhara A</td>
-<td>Science (New York, N.Y.)</td>
-<td>21/01/2005</td>
-</tr>
-<tr><td>1550</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/11675329">
-Purification and ex vivo expansion of postnatal human marrow mesodermal progenitor cells.
-</a>
-</td>
-<td>Reyes M</td>
-<td>Blood</td>
-<td>01/11/2001</td>
-</tr>
-<tr><td>1250</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/12531578">
-Combination treatment of angiotensin-II receptor blocker and angiotensin-converting-enzyme inhibitor in non-diabetic renal disease (COOPERATE): a randomised controlled trial.
-</a>
-</td>
-<td>Nakao N</td>
-<td>Lancet</td>
-<td>11/01/2003</td>
-</tr>
-<tr><td>1040</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/15833829">
-Spontaneous human adult stem cell transformation.
-</a>
-</td>
-<td>Rubio D</td>
-<td>Cancer research</td>
-<td>15/04/2005</td>
-</tr>
-<tr><td>825</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/10700237">
-Regression of human metastatic renal cell carcinoma after vaccination with tumor cell-dendritic cell hybrids.
-</a>
-</td>
-<td>Kugler A</td>
-<td>Nature medicine</td>
-<td>01/03/2000</td>
-</tr>
-<tr><td>805</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/14963337">
-Evidence of a pluripotent human embryonic stem cell line derived from a cloned blastocyst.
-</a>
-</td>
-<td>Hwang WS</td>
-<td>Science (New York, N.Y.)</td>
-<td>12/03/2004</td>
-</tr>
-<tr><td>755</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/12176951">
-Multiple atherosclerotic plaque rupture in acute coronary syndrome: a three-vessel intravascular ultrasound study.
-</a>
-</td>
-<td>Rioufol G</td>
-<td>Circulation</td>
-<td>13/08/2002</td>
-</tr>
-<tr><td>732</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/11546864">
-Structure of MsbA from E. coli: a homolog of the multidrug resistance ATP binding cassette (ABC) transporters.
-<a/>
-</td>
-<td>Chang G</td>
-<td>Science (New York, N.Y.)</td>
-<td>07/09/2001</td>
-</tr>
-<tr><td>616</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/8633243">
-Synergistic activation of estrogen receptor with combinations of environmental chemicals.
-</a>
-</td>
-<td>Arnold SF</td>
-<td>Science (New York, N.Y.)</td>
-<td>07/06/1996</td>
-</tr>
-<tr><td>607</td>
-<td colspan="2">
-<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/12351674">
-Contribution of human alpha-defensin 1, 2, and 3 to the anti-HIV-1 activity of CD8 antiviral factor.
-</a>
-</td>
-<td>Zhang L</td>
-<td>Science (New York, N.Y.)</td>
-<td>01/11/2002</td>
-</tr>
-</tbody></table>
-
-
-<p>You can reproduce our results or view our workings <a href="https://github.com/drcjar/retractshons">over on Github</a>.</p>
-
-<p>There are of course many reasons other than the author making up the results for a paper to be retracted. There are also many circumstances
-in which citing a retracted paper is legitimate. For a more nuanced discussion of retractions there&rsquo;s a nice <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0044118">Comprehensive Survey of
-Retracted Articles from the Scholarly Literature</a> in PLOS and the
-excellent <a href="http://retractionwatch.com/">Retraction Watch</a> covers the details of individual retractions as they happen.</p>
-
-<p>Anyway, it was fun to examine retractions. We&rsquo;d love to explore this further so if we can be of service to you do get in touch.</p>
-
-<p>Perhaps a project for <a href="http://www.nhshackday.com">NHS Hack Day</a>?</p>
 ]]></content>
   </entry>
   

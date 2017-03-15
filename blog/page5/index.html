@@ -72,6 +72,199 @@
       
       <article class="post blog-entry">
         <div class="content">
+          <h2 class="post-title"><a href="/blog/2015/04/16/which-retracted-paper-has-the-most-citations/">What is the most cited retracted paper?</a></h2>
+          <div class="meta">
+            <ul class="meta-list list-inline">
+              <li class="post-time post_date date updated">April 16, 2015</li>
+              <li class="post-author"> by <a href="http://twitter.com/drcjar">Carl</a></li>
+              <!-- <li class="post-comments-link"> &#8211;>
+              <!--   <a href="blog-single.html#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
+              <!-- </li> &#8211;>
+            </ul><!--//meta-list-->
+          </div><!--meta-->
+          
+        <div class="post-thumb">
+          <img class="img-responsive" src="/assets/images/posts/retraction.jpg" alt="" />
+        </div><!--//post-thumb-->
+        
+          <div class="post-entry">
+            <p>At Open Health Care we believe in
+<a href="http://en.wikipedia.org/wiki/Evidence-based_medicine">Evidence Based Medicine</a>.</p>
+
+<p>Which is why we create digital health <a href="https://github.com/openhealthcare/opal-research">services that support research</a>.</p>
+
+<p>Unfortunately the current infrastructure supporting evidence based medicine has some shortcomings. One of these is that
+when a research paper is retracted because, for example, <a href="http://en.wikipedia.org/wiki/Hwang_Woo-suk">the author</a>
+<a href="http://en.wikipedia.org/wiki/Scientific_misconduct">made up the results</a>, there is little or no means
+to propogate this update in the wider medical literature.</p>
+
+<p>Supposing, as a doctor, I look to a systematic review on the management of heart attacks to inform how I treat my patient,
+I sadly have no assurance that the systematic review does not rely on research papers that have been retracted. This is suboptimal.</p>
+
+<p>Open access, post-publication peer review, and better version control would be three useful features that a modern scientific
+publishing model optimized to enable good science should support.</p>
+
+<p>In the meantime, inspired by a lunchtime conversation with our friend and director Ben Goldacre (it was all his idea),
+we pondered the question:</p>
+
+<blockquote class="custom-quote"><p><i class="fa fa-question fa-3x"></i>
+What is the most cited retracted paper?
+</p></blockquote>
+
+
+<p>It turns out <a href="http://www.pubmed.gov">PubMed</a> already has a nice API that can return a
+<a href="http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&amp;retmode=json&amp;retmax=10000&amp;term=%22retracted%20publication%22">list</a>
+of PubMed ids for papers that have been retracted. Next we needed a means of knowing how many times each retracted paper was cited.
+There are a few ways of doing this but we went with using google scholar after Alf Eaton told us about it on
+<a href="https://twitter.com/invisiblecomma/status/582904870644113408">twitter</a>. It&rsquo;s possible to search google scholar for the articles
+citing a particular pubmed id, here&rsquo;s an <a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/19336536">example</a>.</p>
+
+<p>Finally, we used wget to download all of the google scholar search results.  This infamous
+<a href="http://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2897%2911096-0/abstract">paper</a> &lsquo;Ileal-lymphoid-nodular hyperplasia,
+non-specific colitis, and pervasive developmental disorder in children.&rsquo; was the winner with
+2070 <a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/9500320">citations</a>!</p>
+
+<p>Here&rsquo;s the top ten:</p>
+
+<table class="table table-striped">
+<tbody><tr><td>Citations</td>
+<td colspan="2">Title</td>
+<td>Author</td>
+<td>Journal</td>
+<td>Pubdate</td>
+</tr>
+<tr><td>2070</td>
+<td colspan="2"><a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/9500320">
+Ileal-lymphoid-nodular hyperplasia, non-specific colitis, and pervasive developmental disorder in children.
+</a>
+</td>
+<td>Wakefield AJ</td>
+<td>Lancet</td>
+<td>28/02/1998</td>
+</tr>
+<tr><td>2050</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/15604363">
+Visfatin: a protein secreted by visceral fat that mimics the effects of insulin.
+</a>
+</td>
+<td>Fukuhara A</td>
+<td>Science (New York, N.Y.)</td>
+<td>21/01/2005</td>
+</tr>
+<tr><td>1550</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/11675329">
+Purification and ex vivo expansion of postnatal human marrow mesodermal progenitor cells.
+</a>
+</td>
+<td>Reyes M</td>
+<td>Blood</td>
+<td>01/11/2001</td>
+</tr>
+<tr><td>1250</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/12531578">
+Combination treatment of angiotensin-II receptor blocker and angiotensin-converting-enzyme inhibitor in non-diabetic renal disease (COOPERATE): a randomised controlled trial.
+</a>
+</td>
+<td>Nakao N</td>
+<td>Lancet</td>
+<td>11/01/2003</td>
+</tr>
+<tr><td>1040</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/15833829">
+Spontaneous human adult stem cell transformation.
+</a>
+</td>
+<td>Rubio D</td>
+<td>Cancer research</td>
+<td>15/04/2005</td>
+</tr>
+<tr><td>825</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/10700237">
+Regression of human metastatic renal cell carcinoma after vaccination with tumor cell-dendritic cell hybrids.
+</a>
+</td>
+<td>Kugler A</td>
+<td>Nature medicine</td>
+<td>01/03/2000</td>
+</tr>
+<tr><td>805</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/14963337">
+Evidence of a pluripotent human embryonic stem cell line derived from a cloned blastocyst.
+</a>
+</td>
+<td>Hwang WS</td>
+<td>Science (New York, N.Y.)</td>
+<td>12/03/2004</td>
+</tr>
+<tr><td>755</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/12176951">
+Multiple atherosclerotic plaque rupture in acute coronary syndrome: a three-vessel intravascular ultrasound study.
+</a>
+</td>
+<td>Rioufol G</td>
+<td>Circulation</td>
+<td>13/08/2002</td>
+</tr>
+<tr><td>732</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/11546864">
+Structure of MsbA from E. coli: a homolog of the multidrug resistance ATP binding cassette (ABC) transporters.
+<a/>
+</td>
+<td>Chang G</td>
+<td>Science (New York, N.Y.)</td>
+<td>07/09/2001</td>
+</tr>
+<tr><td>616</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/8633243">
+Synergistic activation of estrogen receptor with combinations of environmental chemicals.
+</a>
+</td>
+<td>Arnold SF</td>
+<td>Science (New York, N.Y.)</td>
+<td>07/06/1996</td>
+</tr>
+<tr><td>607</td>
+<td colspan="2">
+<a href="https://scholar.google.com/scholar?cites=http://www.ncbi.nlm.nih.gov/pubmed/12351674">
+Contribution of human alpha-defensin 1, 2, and 3 to the anti-HIV-1 activity of CD8 antiviral factor.
+</a>
+</td>
+<td>Zhang L</td>
+<td>Science (New York, N.Y.)</td>
+<td>01/11/2002</td>
+</tr>
+</tbody></table>
+
+
+<p>You can reproduce our results or view our workings <a href="https://github.com/drcjar/retractshons">over on Github</a>.</p>
+
+<p>There are of course many reasons other than the author making up the results for a paper to be retracted. There are also many circumstances
+in which citing a retracted paper is legitimate. For a more nuanced discussion of retractions there&rsquo;s a nice <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0044118">Comprehensive Survey of
+Retracted Articles from the Scholarly Literature</a> in PLOS and the
+excellent <a href="http://retractionwatch.com/">Retraction Watch</a> covers the details of individual retractions as they happen.</p>
+
+<p>Anyway, it was fun to examine retractions. We&rsquo;d love to explore this further so if we can be of service to you do get in touch.</p>
+
+<p>Perhaps a project for <a href="http://www.nhshackday.com">NHS Hack Day</a>?</p>
+
+            <a class="read-more" href="/blog/2015/04/16/which-retracted-paper-has-the-most-citations/">
+              Read more <i class="fa fa-long-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </article><!--//post-->
+      
+      <article class="post blog-entry">
+        <div class="content">
           <h2 class="post-title"><a href="/blog/2015/04/01/london-nhs-hack-day-meet-up/">London NHS Hack Day Meet Up</a></h2>
           <div class="meta">
             <ul class="meta-list list-inline">
@@ -167,7 +360,7 @@ You’ll have fun</p>
 
 <ul>
 <li>By attending the event, tickets will be released this evening from <a href="http://nhshackday.com">www.nhshackday.com</a></li>
-<li>By sponsoring the event - email <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#58;&#104;&#101;&#108;&#x6c;&#111;&#64;&#x6f;&#112;&#x65;&#110;&#104;&#101;&#97;&#x6c;&#116;&#x68;&#99;&#x61;&#x72;&#x65;&#46;&#111;&#x72;&#x67;&#x2e;&#117;&#107;">&#x68;&#x65;&#108;&#x6c;&#x6f;&#64;&#111;&#112;&#101;&#110;&#104;&#101;&#x61;&#108;&#116;&#104;&#99;&#x61;&#114;&#101;&#46;&#111;&#x72;&#x67;&#46;&#117;&#107;</a></li>
+<li>By sponsoring the event - email <a href="&#109;&#x61;&#x69;&#108;&#x74;&#x6f;&#58;&#104;&#101;&#x6c;&#x6c;&#111;&#64;&#x6f;&#112;&#101;&#110;&#104;&#x65;&#97;&#108;&#x74;&#x68;&#x63;&#97;&#114;&#101;&#46;&#111;&#x72;&#103;&#46;&#x75;&#x6b;">&#104;&#101;&#108;&#x6c;&#111;&#64;&#111;&#x70;&#x65;&#110;&#104;&#x65;&#97;&#x6c;&#x74;&#x68;&#x63;&#x61;&#114;&#101;&#x2e;&#x6f;&#114;&#x67;&#x2e;&#117;&#x6b;</a></li>
 <li>By becoming part of our community - joining the <a href="https://groups.google.com/forum/#!forum/nhshackday">mailing list</a>, coming to pre event meet ups or talking to us on <a href="http://twitter.com/nhshackday">Twitter</a></li>
 <li>By spreading the word, tell your friends!</li>
 </ul>
@@ -557,70 +750,6 @@ Photo credits: <br />
         </div>
       </article><!--//post-->
       
-      <article class="post blog-entry">
-        <div class="content">
-          <h2 class="post-title"><a href="/blog/2015/02/05/elcid-opat-launch/">elCID OPAT launched at UCLH</a></h2>
-          <div class="meta">
-            <ul class="meta-list list-inline">
-              <li class="post-time post_date date updated">February 05, 2015</li>
-              <li class="post-author"> by <a href="http://twitter.com/thatdavidmiller">David Miller</a></li>
-              <!-- <li class="post-comments-link"> &#8211;>
-              <!--   <a href="blog-single.html#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
-              <!-- </li> &#8211;>
-            </ul><!--//meta-list-->
-          </div><!--meta-->
-          
-        <div class="post-thumb">
-          <img class="img-responsive" src="/assets/images/posts/outpatients.jpg" alt="" />
-        </div><!--//post-thumb-->
-        
-          <div class="post-entry">
-            <p>Last week saw us excited to launch our new <a href="http://e-opat.com/">OPAT</a> (Outpatients
-Parenteral Antimicrobial Therapy) service delivered via the <a href="http://elcid.openhealthcare.org.uk">elCID</a>
-platform at UCLH.</p>
-
-<p>This is the first deployment of the specialist OPAT module for <a href="http://opal.openhealthcare.org.uk">OPAL</a> -
-our Open Source framework for building transactional digital services. It covers the whole range of an
-OPAT service - from initial referrals and assessment, through ongoing care, post-treatment follow up and
-review. All of the workflows capture high quality data at the time of use, and allow analysis and extraction,
-both for reporting in line with national guidelines, and individual service audits.</p>
-
-<p>As ever, we worked closely with clinical champions, who were deeply involved in the agile development process,
-weighing in on <a href="https://github.com/openhealthcare/elcid/issues">GitHub</a>, attending sprint meetings, and
-providing their expertise to our development team. The whole project is released under an Open Source (GPL)
-license, and was developed in the open.</p>
-
-<p>This was a project we loved delivering, and not just because of the high praise from Dr Jon Lambourne, UCLH&rsquo;s
-clinical lead on the project, who said:</p>
-
-<blockquote class="custom-quote"><p><i class="fa fa-quote-left"></i>
-The Open Health Care team have been super, the things they can get the OPAL software to do regularly leaves me slack-jawed!
-</p></blockquote>
-
-
-<p>While we like to think that we&rsquo;re pretty good at executing on the technology side of things, it&rsquo;s really the collaboration
-between us and the clinical users, along with our focus on their needs that makes it possible for us to deliver
-new user-focussed digital services into the world.</p>
-
-<p>Accordingly, we&rsquo;d particularly like to thank
-<a href="https://www.uclh.nhs.uk/OurServices/Consultants/Pages/DrSarahLogan.aspx">Dr Sarah Logan</a> (Our consultant sponsor),
-<a href="https://github.com/7575colli">Steve Collins</a> (OPAT Nurse extraordinaire), and
-<a href="https://github.com/jonnylambourne">Dr Jon Lambourne</a> (Clinical lead on the project) for all their efforts.</p>
-
-<p>If you&rsquo;re interested in seeing an OPAL project at your institution, or in seing how we can can
-support running clinical OPAT services, don&rsquo;t hesitate to <a href="/contact.html">Get in touch</a>!</p>
-
-<p><small>
-Photo Credits: <a href="https://www.flickr.com/photos/lydiashiningbrightly/5922822998">Lydia</a>
-</small></p>
-
-            <a class="read-more" href="/blog/2015/02/05/elcid-opat-launch/">
-              Read more <i class="fa fa-long-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-      </article><!--//post-->
-      
 
       <h3>More Posts: </h3>
 
@@ -640,6 +769,10 @@ Photo Credits: <a href="https://www.flickr.com/photos/lydiashiningbrightly/59228
         <h3 class="title">Recent Posts</h3>
         <ul class="list-unstyled">
           
+          <li><a href="/blog/2017/03/15/prototyping-a-dental-referral-system/">Building a better dental referral process</a><br /><span class="date">
+              March 15, 2017
+          </span></li>
+          
           <li><a href="/blog/2017/03/08/opal-08-released/">Opal 0.8 released</a><br /><span class="date">
               March 08, 2017
           </span></li>
@@ -654,10 +787,6 @@ Photo Credits: <a href="https://www.flickr.com/photos/lydiashiningbrightly/59228
           
           <li><a href="/blog/2016/10/24/nhs-hack-day-14-newcastle/">NHS Hack Day 14 - Newcastle</a><br /><span class="date">
               October 24, 2016
-          </span></li>
-          
-          <li><a href="/blog/2016/06/06/big-problems-in-health-tech-that-get-us-excited/">Big problems in health tech that get us excited</a><br /><span class="date">
-              June 06, 2016
           </span></li>
           
           <li><a href="/atom.xml"><i class="fa fa-rss-square"></i> RSS</a></li>
