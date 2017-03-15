@@ -53,7 +53,7 @@ We started with a referral form - where a dentist would enter details of the per
   <img class="img-responsive" src="/assets/images/posts/odonto.referral.png" alt="" />
 </div><!--//post-thumb-->
 
-In line with recent commissioning guidance on how to manage dental referrals from NHS England, we designed for a system which includes a central hub that triages referrals to decide where the patient can be helped best.
+In line with recent commissioning guidance on how to manage dental referrals from NHS England, we designed for a system which includes a regional hub that triages referrals to decide where the patient can be helped best.
 
 That meant that in our prototype a different user can review the details of a referral, and has the ability to add or update information, before making a decision about where to refer them.
 
