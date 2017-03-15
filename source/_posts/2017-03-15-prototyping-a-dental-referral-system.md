@@ -35,7 +35,7 @@ In 2017 we shouldn’t be having to wait around for a letter in the post that is
 
 As part of their work, Open Odonto have been researching how they might transform the dental referral process so that it worked better for patients and clinicians.
 
-Earlier this year we spent some time working with their team to build a prototype referral service that would reflect this research. Building prototypes like this helps people to imagine a future where the world is better and realise that it is possible for us to get there. It also helps to validate ideas and designs with potential users and make sure that our ideas **might actually work** and that we’re working towards a future which is **actually better, not just digital**.
+Earlier this year we spent some time working with their team to build a [prototype](https://github.com/odonto/odonto-rms) referral service that would reflect this research. Building prototypes like this helps people to imagine a future where the world is better and realise that it is possible for us to get there. It also helps to validate ideas and designs with potential users and make sure that our ideas **might actually work** and that we’re working towards a future which is **actually better, not just digital**.
 
 
 <div class="post-thumb">
@@ -96,7 +96,7 @@ After the research and prototyping we’ve done on this project, we’re more co
 
 We still need to conduct some more research, test and iterate our prototypes further with more users before we look to build a working service that can be used to replace the faxes and paper forms, but we’re excited to do that work and move to a world where patients aren’t left in the dark about their care, and NHS staff don’t waste their time plugging gaps in broken processes instead of caring for patients.
 
-If you would be interested in working with us on a better dental referral system, or finding out more about the prototyping work we do at Open Health Care, do
+If you would be interested in working with us or [Open Odonto](http://openodonto.org/) on a better dental referral system, or finding out more about the prototyping work we do at Open Health Care, do
 [get in touch](mailto:hello@openhealthcare.org.uk).
 
 
