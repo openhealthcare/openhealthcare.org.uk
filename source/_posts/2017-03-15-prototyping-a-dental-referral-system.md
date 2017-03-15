@@ -93,7 +93,7 @@ There has been positive feedback from users in the initial user research session
 
 This has been a hugely enjoyable project - many thanks to the people without whom it
 wouldn't have been possible:
-[Becky Wassall](https://twitter.com/Bexmoxonhttps://twitter.com/Bexmoxon) and
+[Becky Wassall](https://twitter.com/Bexmoxon) and
 [Lucille Valentine](https://twitter.com/lucillevalentin) for their expertise and domain knowledge, Newcastle University
 who provided funding for the work, and
 [Fred Kingham](https://twitter.com/fredkingham) who wrote the code.
