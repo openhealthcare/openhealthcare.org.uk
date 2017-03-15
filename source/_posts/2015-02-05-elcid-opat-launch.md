@@ -4,7 +4,7 @@ title: "elCID OPAT launched at UCLH"
 date: 2015-02-05 09:12:19 +0000
 comments: false
 categories:
-        - OPAL
+        - Opal
         - elCID
 author: David Miller
 author_link: thatdavidmiller
