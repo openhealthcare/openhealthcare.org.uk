@@ -25,7 +25,8 @@ In theory, that sounds simple enough - you simply need to book a patient an appo
   <img class="img-responsive" src="/assets/images/posts/fax.typewriter.jpg" alt="" />
 </div><!--//post-thumb-->
 
-In practice however, dental referrals are often anything but simple. We post and fax partially completed, badly designed forms around, and then frequently rely on nursing staff to spend time phoning around trying to find the additional information they need in order to even understand if they are able to help the patient. At the end of all this the patient is sent a letter in the post informing them that of the date and time of their appointment.
+In practice however, dental referrals are often anything but simple. We post and fax partially completed, badly designed forms around, and then frequently rely on nursing staff to spend time phoning around trying to find the additional information they need in order to even understand if they are able to help the patient. At the end of all this the patient is sent a letter in the
+post informing them of the date and time of their appointment. That letter is the first time they will have had any update, often during a period they've been in pain, sometimes taking weeks.
 
 This referral process is slow frustrating for everyone involved, and can leave patients waiting around for weeks without any update at all - because we haven’t managed to iterate on the information infrastructure that underpins our health system.
 
