@@ -71,10 +71,10 @@
   <div class="row">
     <div id="blog-entry" class="blog-entry section col-md-8 col-sm-8 col-xs-12">
       <article class="post">
-        <h2 class="title">Big problems in health tech that get us excited</h2>
+        <h2 class="title">Opal 0.10.0 released</h2>
         <div class="meta">
           <ul class="meta-list list-inline">
-            <li class="post-time post_date date updated">June 06 2016</li>
+            <li class="post-time post_date date updated">April 07 2018</li>
             <li class="post-author"> by <a href="http://twitter.com/thatdavidmiller">David Miller</a></li>
             <!-- <li class="post-comments-link"> &#8211;>
             <!--   <a href="#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
@@ -83,115 +83,93 @@
         </div><!--meta-->
         
         <div class="post-thumb">
-          <img class="img-responsive" src="/assets/images/posts/nhshd9.diagram.jpg" alt="" />
+          <img class="img-responsive" src="/assets/images/posts/release.butterfly.jpg" alt="" />
         </div><!--//post-thumb-->
         
         <div class="content">
-          <p>One of the great things about working in health is that there are no shortage of exciting, and potentially impactful problems to
-work on. At Open Health Care, we spend a lot of our time working to ease a couple of the big headaches around usability and
-data that the current state of health care technology gives clinicians.</p>
+          <p>We’re excited to announce that we’ve just released
+<a href="http://opal.openhealthcare.org.uk">Opal</a> 0.10.0.</p>
 
-<h2>Usability</h2>
+<p>With more than 450 commits from 8 authors, what’s new in this version?</p>
 
-<p>First is the usability problem.</p>
+<h2>Windows support</h2>
 
-<p>We’re hardly the first people to suggest that many, if not most of the digital tools that are provided for doctors, nurses and
-other key front line NHS staff struggle with usability. By default these tools tend to be overwhelming and unfriendly. They are
-hard to use, and at times downright dangerous.</p>
+<p>This is the first Opal release to officially provide Windows support (more
+details to follow) which we hope will be particularly helpful to developers
+within the NHS looking to use Opal at work.</p>
 
-<p>At Open Health Care we believe that medicine is important enough to deserve the very best in terms of high quality usable software.
-In an environment where the costs of making mistakes is so high, clinicians deserve tools that help rather than hinder.</p>
+<p>Although we don&rsquo;t actively develop Opal applications on the Windows platform,
+we&rsquo;re now running all of our tests on Windows as a Pull Request
+<a href="https://help.github.com/articles/about-required-status-checks/">status check</a>.
+This gives us a minimum level of assurance going forwards that we&rsquo;re not
+introducing things that cause issues, and a strong basis to investigate any
+platform specific bugs that may get reported.</p>
 
-<p>The great thing is that technologists understand how to make tools that are highly functional and even delight their users. It
-requires time, focus and a willingness to change the way things are done - but the
-<a href="http://thisisservicedesignthinking.com/">design</a>
-<a href="http://www.usability.gov/what-and-why/user-centered-design.html">and</a>
-<a href="http://www.agilemanifesto.org/">development</a>
-<a href="https://www.gov.uk/service-manual">techniques</a> are
-increasingly widespread and available to us.</p>
+<p>Particular thanks goes to the NHS Digital Innovation Fund for supporting
+this work.</p>
 
-<p>There is no reason why we can’t do this for medicine - and indeed, the biggest part of what we do as Open Health Care is
-<a href="http://openhealthcare.org.uk/blog/2016/02/16/how-were-helping-respond-to-the-zika-outbreak/">delivering that</a>.</p>
+<h2>Default reference data</h2>
 
-<p>In the UK, our reality is that we are looking to streamline and improve the efficiency of our clinical services in the name of yes,
-better care but also saving the NHS money. Having usable digital tools that genuinely support the day to day work of those services
-with the capability to be frequently iterated will be a key plank of any successful transformation strategy as we look to re-design
-those services.</p>
+<p>As an Opal maintainer, one of the interesting things about attending
+<a href="http://nhshackday.com">NHS Hack Day</a> events is that it’s highly likely
+that at least one team will be building their project on top of Opal.
+That means that we frequently get to observe developers starting a journey
+with Opal. Mostly they&rsquo;re creating new Opal applications and battle-testing
+our project scaffolding, often they&rsquo;re also using the platform in anger for
+the first time.</p>
 
-<h2>Data</h2>
+<p>One of the things we’ve observed is that the step of importing or creating
+clinical reference data for a new application is something that hasn’t always
+been as slick as we’d like. (Until recently the
+<a href="http://opal.openhealthcare.org.uk/docs/tutorial/">tutorial</a> suggested running
+<code>wget</code> on a bit of JSON on the internet and then feeding it into a database.)</p>
 
-<p>The second big area that gets us excited is clinical data.</p>
+<p>This clashes with our batteries included design philosophy of optimising for
+programmer happiness. With our wrappers around the Django <code>startproject</code> command
+we try very hard to make the first hour of development exceptionally
+productive — and this was obviously somewhere we could do better.</p>
 
-<p>If we get sick, then the people and institutions who care for us know a huge amount about us. But that information is rarely
-available as data. It’s either literally on paper notes, or it’s in electronic systems that may as well be paper - stored in closed
-systems in unstructured formats that we can’t subsequently analyse or do computations over.</p>
+<p>Starting withthis release, new Opal applications come with the module
+<code>opal.core.referencedata</code> installed by default. This means for instance, that when
+you open an ‘Ethnicity’ dropdown in a freshly scaffolded application, rather than
+being an empty dropdown, you get the list of ethnicities from the
+<a href="https://www.datadictionary.nhs.uk/data_dictionary/attributes/e/end/ethnic_category_code_de.asp">NHS Data Dictionary</a>.</p>
 
-<p>The opportunity cost of throwing away this information is huge. The truly revolutionary technologies and techniques that the
-digital age has provided us are fuelled by data. Those techniques work best when you can feed them with structured, high
-quality, granular data. Yet even at many world-renowned institutions in the NHS, the data infrastructure underpinning clinical
-activity is distinctly 20th century.</p>
+<h2>API enhancements</h2>
 
-<p>Access to high quality clinical data by default has a transformative potential for the NHS. Improving patient care and optimising
-our clinical services requires a real understanding of what we’re doing now - and that can only be obtained with data. Without that
-data, we have no idea whether we’re even making things better.</p>
+<p>Most of the work that went into Opal 0.10.0 was focussed on enhancing the programming
+API for building applications. New helper functions, new commandline options, and
+other enhancements to improve the developer experience.</p>
 
-<p>And that’s before we even start with the promise of driving research and science by providing them with easily accessible, high
-quality, computable clinical data.</p>
+<p>There are also lots of enhancements and expansions to our documentation to help
+you along your way. You can read the
+<a href="https://github.com/openhealthcare/opal/blob/v0.10.0/CHANGELOG.md">full change log</a>
+to get further details.</p>
 
-<h2>How do we help?</h2>
+<h2>What next ?</h2>
 
-<p>What we’ve found at Open Health Care, is that when you
-<a href="http://openhealthcare.org.uk/blog/2015/03/11/how-doctors-get-digital-services-they-love/">get the usability right</a>
-for the end user - the person caring for a patient,
-you can improve the efficiency and safety of patient care, while also capturing high granularity, research quality data as a part
-of routine clinical care.</p>
+<p>If you already have an Opal application we’d recommend you upgrade as soon as
+you can. This release also requires an upgrade to a number of our upstream
+dependencies and some Opal migrations. You can
+<a href="http://opal.openhealthcare.org.uk/docs/reference/upgrading/#091-0100">read our upgrade guide here</a>,
+and feel free to <a href="https://groups.google.com/forum/?ohc-dev#!forum/ohc-opal">post to the mailing list</a>
+if you run into issues with your upgrade.</p>
 
-<p>This is one of the reasons we created
-<a href="https://github.com/openhealthcare/opal">OPAL</a> - our Open Source platform for building clinical software applications. It pulls together
-the results of years of usability testing with real clinicians, along with all of the hard thinking that we and others like us have
-done about how to build robust digital tools for a health care environment.</p>
+<p>Many thanks to the following people for their contributions to this release:</p>
 
-<p>Also built in to
-<a href="opal.openhealthcare.org.uk/docs/v0.6.0/">OPAL</a>
-is the ability and the data modelling to collect the granularity of data required to enable us to provide
-high quality data through extracts or Open APIs. We’ve explored how to balance the clinical user need of speed ease of use with
-the system needs of quality data capture. Through a combination of pragmatic design, and frequent iteration, we’ve arrived at a
-range of design patterns that give us the opportunity to design systems that work in the real world yet still enable subsequent
-analysis.</p>
+<ul>
+<li><a href="https://twitter.com/drcjar">Carl Reynolds</a></li>
+<li><a href="https://twitter.com/lolamby">Chris Lamb</a></li>
+<li><a href="https://twitter.com/thatdavidmiller">David Miller</a></li>
+<li><a href="https://twitter.com/fredkingham">Fred Kingham</a></li>
+<li><a href="https://twitter.com/ghickman">George Hickman</a></li>
+<li><a href="https://twitter.com/marcus_baw">Marcus Baw</a></li>
+<li><a href="https://twitter.com/mattstibbs">Matt Stibbs</a></li>
+<li><a href="https://twitter.com/AppiJumbo">Tom Ormiston</a></li>
+</ul>
 
-<p>For instance, we’ve built
-<a href="http://elcid.openhealthcare.org.uk/">elCID</a> - the first major application built using OPAL. It’s designed to help manage the care of
-patients with infections, and it has been in use at
-<a href="https://www.uclh.nhs.uk/Pages/Home.aspx">University College Hospital London</a> for the last two and a half years in the
-inpatient and outpatient services they run for patients with infections. It is used by clinicians day to day to manage the care of
-patients, integrating with other hospital systems to pull key data from elsewhere in the trust, and it supports both clinical audit
-and service development.</p>
 
-<p>During that time it has improved the efficiency of clinical practice - saving time every single day by reducing work required in
-the handover process for inpatient teams, and reducing significantly, the time required by Microbiology consultants to run their
-liaison service to other parts of the trust - while providing robust documentation of that process for the first time.</p>
-
-<p>It has supported the development of the
-<a href="http://openhealthcare.org.uk/blog/2015/02/05/elcid-opat-launch/">OPAT service</a>
-- freeing up beds by allowing patients requiring IV antibiotics to be treated
-as outpatients, saving the trust £1m per year. It also allows us to provide clinic managers realtime dashboards and management
-reports about their activity, enabling them to make decisions with data that was previously unavailable to them.</p>
-
-<p>In addition to this, data from the system has supported many clinical audits - making the process of collecting data to analyse
-significantly faster, as well as
-<a href="http://openhealthcare.org.uk/blog/2015/06/10/elcid-journal-of-infectioncontrol/">one published academic paper</a>,
-two more in peer review, and six conference abstracts.</p>
-
-<h2>How does it work?</h2>
-
-<p>Open Health Care provide digital tools to NHS institutions that help clinicians to deliver better care. We charge for support,
-customisation and integration work, but we don’t charge for a license fee - all of our software is Open Source.</p>
-
-<p>We provide either installations of existing products we have developed, or build bespoke solutions for the needs of the individual
-organization we’re working with.</p>
-
-<p>If you are interested in fining out how to get elCID at your organization, or have a project that involves clinical usability and
-data then do <a href="mailto:hello@openhealthcare.org.uk">drop us a line</a> - we’d love to hear from you.</p>
+<p><a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@danielcgold?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Dan Gold"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Dan Gold</span></a></p>
 
         </div>
         <div class="content">
@@ -203,10 +181,8 @@ data then do <a href="mailto:hello@openhealthcare.org.uk">drop us a line</a> - w
         </div>
         <nav class="post-nav">
         
-        <span class="nav-previous"><a href="/blog/2016/06/01/happy-birthday-to-opal/" rel="prev"><i class="fa fa-long-arrow-left"></i> Happy Birthday to OPAL!</a></span>
+        <span class="nav-previous"><a href="/blog/2017/03/15/prototyping-a-dental-referral-system/" rel="prev"><i class="fa fa-long-arrow-left"></i> Building a better dental referral process</a></span>
         
-        
-        <span class="nav-next"><a href="/blog/2016/10/24/nhs-hack-day-14-newcastle/" rel="prev">NHS Hack Day 14 - Newcastle <i class="fa fa-long-arrow-right"></i></a></span>
         
         </nav><!--//post-nav-->
 

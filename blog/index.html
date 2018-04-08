@@ -72,6 +72,115 @@
       
       <article class="post blog-entry">
         <div class="content">
+          <h2 class="post-title"><a href="/blog/2018/04/07/opal-10/">Opal 0.10.0 released</a></h2>
+          <div class="meta">
+            <ul class="meta-list list-inline">
+              <li class="post-time post_date date updated">April 07, 2018</li>
+              <li class="post-author"> by <a href="http://twitter.com/thatdavidmiller">David Miller</a></li>
+              <!-- <li class="post-comments-link"> &#8211;>
+              <!--   <a href="blog-single.html#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
+              <!-- </li> &#8211;>
+            </ul><!--//meta-list-->
+          </div><!--meta-->
+          
+        <div class="post-thumb">
+          <img class="img-responsive" src="/assets/images/posts/release.butterfly.jpg" alt="" />
+        </div><!--//post-thumb-->
+        
+          <div class="post-entry">
+            <p>We’re excited to announce that we’ve just released
+<a href="http://opal.openhealthcare.org.uk">Opal</a> 0.10.0.</p>
+
+<p>With more than 450 commits from 8 authors, what’s new in this version?</p>
+
+<h2>Windows support</h2>
+
+<p>This is the first Opal release to officially provide Windows support (more
+details to follow) which we hope will be particularly helpful to developers
+within the NHS looking to use Opal at work.</p>
+
+<p>Although we don&rsquo;t actively develop Opal applications on the Windows platform,
+we&rsquo;re now running all of our tests on Windows as a Pull Request
+<a href="https://help.github.com/articles/about-required-status-checks/">status check</a>.
+This gives us a minimum level of assurance going forwards that we&rsquo;re not
+introducing things that cause issues, and a strong basis to investigate any
+platform specific bugs that may get reported.</p>
+
+<p>Particular thanks goes to the NHS Digital Innovation Fund for supporting
+this work.</p>
+
+<h2>Default reference data</h2>
+
+<p>As an Opal maintainer, one of the interesting things about attending
+<a href="http://nhshackday.com">NHS Hack Day</a> events is that it’s highly likely
+that at least one team will be building their project on top of Opal.
+That means that we frequently get to observe developers starting a journey
+with Opal. Mostly they&rsquo;re creating new Opal applications and battle-testing
+our project scaffolding, often they&rsquo;re also using the platform in anger for
+the first time.</p>
+
+<p>One of the things we’ve observed is that the step of importing or creating
+clinical reference data for a new application is something that hasn’t always
+been as slick as we’d like. (Until recently the
+<a href="http://opal.openhealthcare.org.uk/docs/tutorial/">tutorial</a> suggested running
+<code>wget</code> on a bit of JSON on the internet and then feeding it into a database.)</p>
+
+<p>This clashes with our batteries included design philosophy of optimising for
+programmer happiness. With our wrappers around the Django <code>startproject</code> command
+we try very hard to make the first hour of development exceptionally
+productive — and this was obviously somewhere we could do better.</p>
+
+<p>Starting withthis release, new Opal applications come with the module
+<code>opal.core.referencedata</code> installed by default. This means for instance, that when
+you open an ‘Ethnicity’ dropdown in a freshly scaffolded application, rather than
+being an empty dropdown, you get the list of ethnicities from the
+<a href="https://www.datadictionary.nhs.uk/data_dictionary/attributes/e/end/ethnic_category_code_de.asp">NHS Data Dictionary</a>.</p>
+
+<h2>API enhancements</h2>
+
+<p>Most of the work that went into Opal 0.10.0 was focussed on enhancing the programming
+API for building applications. New helper functions, new commandline options, and
+other enhancements to improve the developer experience.</p>
+
+<p>There are also lots of enhancements and expansions to our documentation to help
+you along your way. You can read the
+<a href="https://github.com/openhealthcare/opal/blob/v0.10.0/CHANGELOG.md">full change log</a>
+to get further details.</p>
+
+<h2>What next ?</h2>
+
+<p>If you already have an Opal application we’d recommend you upgrade as soon as
+you can. This release also requires an upgrade to a number of our upstream
+dependencies and some Opal migrations. You can
+<a href="http://opal.openhealthcare.org.uk/docs/reference/upgrading/#091-0100">read our upgrade guide here</a>,
+and feel free to <a href="https://groups.google.com/forum/?ohc-dev#!forum/ohc-opal">post to the mailing list</a>
+if you run into issues with your upgrade.</p>
+
+<p>Many thanks to the following people for their contributions to this release:</p>
+
+<ul>
+<li><a href="https://twitter.com/drcjar">Carl Reynolds</a></li>
+<li><a href="https://twitter.com/lolamby">Chris Lamb</a></li>
+<li><a href="https://twitter.com/thatdavidmiller">David Miller</a></li>
+<li><a href="https://twitter.com/fredkingham">Fred Kingham</a></li>
+<li><a href="https://twitter.com/ghickman">George Hickman</a></li>
+<li><a href="https://twitter.com/marcus_baw">Marcus Baw</a></li>
+<li><a href="https://twitter.com/mattstibbs">Matt Stibbs</a></li>
+<li><a href="https://twitter.com/AppiJumbo">Tom Ormiston</a></li>
+</ul>
+
+
+<p><a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@danielcgold?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Dan Gold"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Dan Gold</span></a></p>
+
+            <a class="read-more" href="/blog/2018/04/07/opal-10/">
+              Read more <i class="fa fa-long-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </article><!--//post-->
+      
+      <article class="post blog-entry">
+        <div class="content">
           <h2 class="post-title"><a href="/blog/2017/03/15/prototyping-a-dental-referral-system/">Building a better dental referral process</a></h2>
           <div class="meta">
             <ul class="meta-list list-inline">
@@ -517,106 +626,6 @@ Photo credits: <br />
         </div>
       </article><!--//post-->
       
-      <article class="post blog-entry">
-        <div class="content">
-          <h2 class="post-title"><a href="/blog/2016/10/24/nhs-hack-day-14-newcastle/">NHS Hack Day 14 - Newcastle</a></h2>
-          <div class="meta">
-            <ul class="meta-list list-inline">
-              <li class="post-time post_date date updated">October 24, 2016</li>
-              <li class="post-author"> by <a href="http://twitter.com/thatdavidmiller">David Miller</a></li>
-              <!-- <li class="post-comments-link"> &#8211;>
-              <!--   <a href="blog-single.html#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
-              <!-- </li> &#8211;>
-            </ul><!--//meta-list-->
-          </div><!--meta-->
-          
-        <div class="post-thumb">
-          <img class="img-responsive" src="/assets/images/posts/nhshd.14.jpg" alt="" />
-        </div><!--//post-thumb-->
-        
-          <div class="post-entry">
-            <p>A few weeks ago we were excited as <a href="http://nhshackday.com">NHS Hack Day</a> visited Newcastle for the very first time.</p>
-
-<p>As ever, we brought clinicians, patients, and other NHS staff together with developers, designers, researchers and others to share experiences, and spend a weekend working on short projects that address some of the frustrations and problems faced by patients and NHS staff every day.</p>
-
-<p>After an initial session pitching potential project ideas to the group, the attendees gradually formed into teams and started work, exploring the spaces around the problems they’d chosen to work on, making new friends, and examining potential ways to address them.</p>
-
-<div class="post-thumb">
-     <center>
-  <img class="img-responsive" src="/assets/images/posts/marcus.jpg" alt="" />
-</div>
-
-
-<!--//post-thumb-->
-
-
-<p>You can see all of the teams that formed on the <a href="http://nhshackday.com/previous/events/2016/05/newcastle/">event page</a> of the NHS Hack Day website, but a special mention here goes to a couple of our favourites:</p>
-
-<h2>Recording consent preferences</h2>
-
-<p>The &ldquo;North Share” team spent much of the weekend exploring the thorny issues around consent, privacy and data sharing in the context of the NHS. Recent experience with a range of national and local projects suggests that there is plenty of work do be done in this area, and contributions in the form of tangible prototypes that help people to tell stories about and think through the issues involved are particularly helpful.</p>
-
-<div class="post-thumb">
-     <center>
-  <img class="img-responsive" src="/assets/images/posts/northshare.png" alt="" />
-</div>
-
-
-<!--//post-thumb-->
-
-
-<p>You can take the <a href="https://blu3id.github.io/gncr-consent/">prototype they made</a> for a spin yourself and see what you think - try asking questions like:</p>
-
-<ul>
-<li>do I understand what this means?</li>
-<li>what do I think this should do?</li>
-<li>what the consequences would be?</li>
-<li>how would I change this to make it better?</li>
-</ul>
-
-
-<p>Managing consent, and doing the right thing around privacy and personal data is something we spend lots of time thinking about at Open Health Care, so it was great to see others in the community engaging with the issues in such a constructive, positive way.</p>
-
-<h2>Locating Community Dentistry</h2>
-
-<p>Highlighted on the <a href="https://groups.google.com/forum/#!topic/nhshackday/2NBscruWFDA">NHS Hack Day mailing list</a> beforehand was how hard it is for people with complex needs to locate appropriate community dental services via the NHS Choices website. (You’re likely to be able to find a general dental surgery, but no information about specialist services for people with complex medical comorbidities, physical disabilities, dementia etc)</p>
-
-<p>Not for the first time, we find a situation where a lack of available complete, canonical data about the Physical NHS (the services on the ground across the country) makes it harder than is acceptable for patients to get the care they need.</p>
-
-<p>At the event the team built a <a href="https://morning-everglades-40330.herokuapp.com/">prototype</a> of a service that would help people locate dental services appropriate for their situation.</p>
-
-<div class="post-thumb">
-     <center>
-  <img class="img-responsive" src="/assets/images/posts/dentalreferrals.png" alt="" />
-</div>
-
-
-<!--//post-thumb-->
-
-
-<p>This prototype allows the team to tell the story of how the world should work for people trying to access dental services even though the data is unavailable (in fact, doesn’t exist).</p>
-
-<p>One of the really interesting classes of hack day projects is the ones that go on to become campaigns on a particular topic - which is exactly what caught the eye with this one. This information is really something that should be rolled into the services developed by NHS Digital like <a href="http://www.nhs.uk/service-search/Dentists/LocationSearch/3">NHS Choices</a>, or the up-coming <a href="https://beta.nhs.uk/">NHS.UK</a>.</p>
-
-<p>Having a (semi) working service to show people makes it much easier to tell the story of why this should exist, and helps to lobby the institutions who should be providing this data.</p>
-
-<p>We’re sure this story isn’t over here and look forward to the time when these services are easy to locate.</p>
-
-<h2>Thanks and the future</h2>
-
-<p>Thanks to everyone who turned up over the weekend and helped to make it such a welcoming, friendly event. Particular thanks to the volunteers who helped make things run smoothly, and the sponsors without whom we wouldn’t be able to carry on running these events.</p>
-
-<p>A particularly large thanks goes to <a href="https://twitter.com/Bexmoxon">Becky</a> for leading the organization and cat-herding this time, and doing by far the lion’s share of dealing with suppliers, venue and sponsors.</p>
-
-<p>If you want to come to a future NHS Hack Day then you can follow us on <a href="http://twitter.com/nhshackday">Twitter</a>, or sign up to our <a href="http://nhshackday.com">mailing list</a> and we’ll let you know as soon as we schedule the next one - likely early in 2017.</p>
-
-            <a class="read-more" href="/blog/2016/10/24/nhs-hack-day-14-newcastle/">
-              Read more <i class="fa fa-long-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-      </article><!--//post-->
-      
 
       <h3>More Posts: </h3>
 
@@ -634,6 +643,10 @@ Photo credits: <br />
         <h3 class="title">Recent Posts</h3>
         <ul class="list-unstyled">
           
+          <li><a href="/blog/2018/04/07/opal-10/">Opal 0.10.0 released</a><br /><span class="date">
+              April 07, 2018
+          </span></li>
+          
           <li><a href="/blog/2017/03/15/prototyping-a-dental-referral-system/">Building a better dental referral process</a><br /><span class="date">
               March 15, 2017
           </span></li>
@@ -648,10 +661,6 @@ Photo credits: <br />
           
           <li><a href="/blog/2016/11/04/show-me-the-data-vs-show-me-the-thing/">Show me the data vs. Show me the things</a><br /><span class="date">
               November 04, 2016
-          </span></li>
-          
-          <li><a href="/blog/2016/10/24/nhs-hack-day-14-newcastle/">NHS Hack Day 14 - Newcastle</a><br /><span class="date">
-              October 24, 2016
           </span></li>
           
           <li><a href="/atom.xml"><i class="fa fa-rss-square"></i> RSS</a></li>

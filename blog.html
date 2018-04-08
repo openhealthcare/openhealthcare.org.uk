@@ -73,6 +73,115 @@
       
       <article class="post blog-entry">
         <div class="content">
+          <h2 class="post-title"><a href="/blog/2018/04/07/opal-10/">Opal 0.10.0 released</a></h2>
+          <div class="meta">
+            <ul class="meta-list list-inline">
+              <li class="post-time post_date date updated">April 07, 2018</li>
+              <li class="post-author"> by <a href="http://twitter.com/thatdavidmiller">David Miller</a></li>
+              <!-- <li class="post-comments-link"> &#8211;>
+              <!--   <a href="blog-single.html#comment-area"><i class="fa fa-comments"></i>8 Comments</a> &#8211;>
+              <!-- </li> &#8211;>
+            </ul><!--//meta-list-->
+          </div><!--meta-->
+          
+        <div class="post-thumb">
+          <img class="img-responsive" src="/assets/images/posts/release.butterfly.jpg" alt="" />
+        </div><!--//post-thumb-->
+        
+          <div class="post-entry">
+            <p>We’re excited to announce that we’ve just released
+<a href="http://opal.openhealthcare.org.uk">Opal</a> 0.10.0.</p>
+
+<p>With more than 450 commits from 8 authors, what’s new in this version?</p>
+
+<h2>Windows support</h2>
+
+<p>This is the first Opal release to officially provide Windows support (more
+details to follow) which we hope will be particularly helpful to developers
+within the NHS looking to use Opal at work.</p>
+
+<p>Although we don&rsquo;t actively develop Opal applications on the Windows platform,
+we&rsquo;re now running all of our tests on Windows as a Pull Request
+<a href="https://help.github.com/articles/about-required-status-checks/">status check</a>.
+This gives us a minimum level of assurance going forwards that we&rsquo;re not
+introducing things that cause issues, and a strong basis to investigate any
+platform specific bugs that may get reported.</p>
+
+<p>Particular thanks goes to the NHS Digital Innovation Fund for supporting
+this work.</p>
+
+<h2>Default reference data</h2>
+
+<p>As an Opal maintainer, one of the interesting things about attending
+<a href="http://nhshackday.com">NHS Hack Day</a> events is that it’s highly likely
+that at least one team will be building their project on top of Opal.
+That means that we frequently get to observe developers starting a journey
+with Opal. Mostly they&rsquo;re creating new Opal applications and battle-testing
+our project scaffolding, often they&rsquo;re also using the platform in anger for
+the first time.</p>
+
+<p>One of the things we’ve observed is that the step of importing or creating
+clinical reference data for a new application is something that hasn’t always
+been as slick as we’d like. (Until recently the
+<a href="http://opal.openhealthcare.org.uk/docs/tutorial/">tutorial</a> suggested running
+<code>wget</code> on a bit of JSON on the internet and then feeding it into a database.)</p>
+
+<p>This clashes with our batteries included design philosophy of optimising for
+programmer happiness. With our wrappers around the Django <code>startproject</code> command
+we try very hard to make the first hour of development exceptionally
+productive — and this was obviously somewhere we could do better.</p>
+
+<p>Starting withthis release, new Opal applications come with the module
+<code>opal.core.referencedata</code> installed by default. This means for instance, that when
+you open an ‘Ethnicity’ dropdown in a freshly scaffolded application, rather than
+being an empty dropdown, you get the list of ethnicities from the
+<a href="https://www.datadictionary.nhs.uk/data_dictionary/attributes/e/end/ethnic_category_code_de.asp">NHS Data Dictionary</a>.</p>
+
+<h2>API enhancements</h2>
+
+<p>Most of the work that went into Opal 0.10.0 was focussed on enhancing the programming
+API for building applications. New helper functions, new commandline options, and
+other enhancements to improve the developer experience.</p>
+
+<p>There are also lots of enhancements and expansions to our documentation to help
+you along your way. You can read the
+<a href="https://github.com/openhealthcare/opal/blob/v0.10.0/CHANGELOG.md">full change log</a>
+to get further details.</p>
+
+<h2>What next ?</h2>
+
+<p>If you already have an Opal application we’d recommend you upgrade as soon as
+you can. This release also requires an upgrade to a number of our upstream
+dependencies and some Opal migrations. You can
+<a href="http://opal.openhealthcare.org.uk/docs/reference/upgrading/#091-0100">read our upgrade guide here</a>,
+and feel free to <a href="https://groups.google.com/forum/?ohc-dev#!forum/ohc-opal">post to the mailing list</a>
+if you run into issues with your upgrade.</p>
+
+<p>Many thanks to the following people for their contributions to this release:</p>
+
+<ul>
+<li><a href="https://twitter.com/drcjar">Carl Reynolds</a></li>
+<li><a href="https://twitter.com/lolamby">Chris Lamb</a></li>
+<li><a href="https://twitter.com/thatdavidmiller">David Miller</a></li>
+<li><a href="https://twitter.com/fredkingham">Fred Kingham</a></li>
+<li><a href="https://twitter.com/ghickman">George Hickman</a></li>
+<li><a href="https://twitter.com/marcus_baw">Marcus Baw</a></li>
+<li><a href="https://twitter.com/mattstibbs">Matt Stibbs</a></li>
+<li><a href="https://twitter.com/AppiJumbo">Tom Ormiston</a></li>
+</ul>
+
+
+<p><a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@danielcgold?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Dan Gold"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Dan Gold</span></a></p>
+
+            <a class="read-more" href="/blog/2018/04/07/opal-10/">
+              Read more <i class="fa fa-long-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </article><!--//post-->
+      
+      <article class="post blog-entry">
+        <div class="content">
           <h2 class="post-title"><a href="/blog/2017/03/15/prototyping-a-dental-referral-system/">Building a better dental referral process</a></h2>
           <div class="meta">
             <ul class="meta-list list-inline">
@@ -1459,7 +1568,7 @@ of the service so that we can be sure that we’re meeting their needs.</p>
 flexibility and iteration in mind, and be supported by teams who have the capability to iterate them responsively.</p>
 
 <p>If you’d like to know more about how we could help you by delivering services like this, or more about the services we offer,
-do get in touch with us at <a href="mailto:hello@openhealthcare.org.uk"><a href="&#x6d;&#x61;&#105;&#108;&#x74;&#111;&#x3a;&#x68;&#101;&#108;&#x6c;&#111;&#64;&#x6f;&#112;&#x65;&#x6e;&#x68;&#x65;&#97;&#108;&#116;&#104;&#x63;&#97;&#114;&#x65;&#46;&#x6f;&#x72;&#103;&#46;&#117;&#107;">&#x68;&#x65;&#108;&#108;&#111;&#64;&#111;&#112;&#101;&#110;&#x68;&#101;&#x61;&#108;&#116;&#x68;&#x63;&#97;&#x72;&#x65;&#x2e;&#x6f;&#x72;&#103;&#x2e;&#117;&#x6b;</a></a>.</p>
+do get in touch with us at <a href="mailto:hello@openhealthcare.org.uk"><a href="&#109;&#x61;&#x69;&#108;&#116;&#x6f;&#58;&#104;&#x65;&#x6c;&#x6c;&#111;&#x40;&#x6f;&#112;&#x65;&#x6e;&#104;&#101;&#97;&#108;&#116;&#104;&#x63;&#x61;&#x72;&#x65;&#x2e;&#x6f;&#x72;&#103;&#x2e;&#117;&#107;">&#104;&#101;&#x6c;&#108;&#111;&#64;&#x6f;&#x70;&#101;&#x6e;&#x68;&#x65;&#97;&#108;&#x74;&#104;&#x63;&#x61;&#114;&#x65;&#46;&#x6f;&#114;&#x67;&#46;&#x75;&#107;</a></a>.</p>
 
 <p><small>
 Photo credits: <a href="https://www.flickr.com/photos/31031835@N08/">John Tan</a>
@@ -1588,7 +1697,7 @@ of a success with the rest of the team!</p>
 partners, as well as continuing to develop and improve our existing services.</p>
 
 <p>If you&rsquo;ve got a project you think we could help with this year, do drop us a line at
-<a href="mailto:hello@openhealthcare.org.uk"><a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#111;&#x3a;&#x68;&#x65;&#108;&#x6c;&#x6f;&#64;&#111;&#x70;&#101;&#110;&#104;&#101;&#97;&#x6c;&#116;&#x68;&#99;&#x61;&#x72;&#101;&#46;&#111;&#x72;&#x67;&#46;&#117;&#107;">&#104;&#x65;&#x6c;&#108;&#111;&#64;&#111;&#x70;&#x65;&#110;&#x68;&#101;&#x61;&#108;&#116;&#x68;&#99;&#97;&#x72;&#101;&#46;&#x6f;&#x72;&#x67;&#x2e;&#x75;&#107;</a></a> - we&rsquo;d love to
+<a href="mailto:hello@openhealthcare.org.uk"><a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#58;&#104;&#x65;&#108;&#108;&#111;&#64;&#111;&#112;&#x65;&#x6e;&#x68;&#101;&#97;&#108;&#x74;&#104;&#99;&#97;&#x72;&#101;&#x2e;&#111;&#x72;&#103;&#46;&#117;&#x6b;">&#x68;&#101;&#x6c;&#x6c;&#111;&#64;&#111;&#112;&#x65;&#110;&#x68;&#x65;&#x61;&#108;&#x74;&#104;&#99;&#x61;&#x72;&#101;&#x2e;&#x6f;&#x72;&#103;&#46;&#117;&#x6b;</a></a> - we&rsquo;d love to
 hear all about it!</p>
 
 <p><small>
@@ -1905,7 +2014,7 @@ You’ll have fun</p>
 
 <ul>
 <li>By attending the event, tickets will be released this evening from <a href="http://nhshackday.com">www.nhshackday.com</a></li>
-<li>By sponsoring the event - email <a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#x6f;&#58;&#x68;&#x65;&#x6c;&#108;&#x6f;&#64;&#111;&#x70;&#x65;&#x6e;&#104;&#101;&#97;&#x6c;&#116;&#x68;&#99;&#97;&#114;&#101;&#46;&#111;&#114;&#103;&#46;&#x75;&#x6b;">&#x68;&#x65;&#108;&#x6c;&#111;&#64;&#111;&#112;&#x65;&#110;&#104;&#x65;&#x61;&#108;&#x74;&#104;&#99;&#x61;&#114;&#x65;&#x2e;&#x6f;&#x72;&#x67;&#x2e;&#117;&#107;</a></li>
+<li>By sponsoring the event - email <a href="&#109;&#97;&#x69;&#108;&#116;&#111;&#x3a;&#104;&#x65;&#108;&#108;&#x6f;&#64;&#x6f;&#x70;&#101;&#110;&#x68;&#x65;&#97;&#108;&#x74;&#x68;&#x63;&#97;&#114;&#101;&#46;&#111;&#114;&#x67;&#46;&#x75;&#107;">&#104;&#x65;&#x6c;&#x6c;&#x6f;&#64;&#x6f;&#x70;&#101;&#x6e;&#x68;&#x65;&#97;&#x6c;&#116;&#x68;&#99;&#x61;&#114;&#x65;&#46;&#111;&#114;&#x67;&#x2e;&#117;&#x6b;</a></li>
 <li>By becoming part of our community - joining the <a href="https://groups.google.com/forum/#!forum/nhshackday">mailing list</a>, coming to pre event meet ups or talking to us on <a href="http://twitter.com/nhshackday">Twitter</a></li>
 <li>By spreading the word, tell your friends!</li>
 </ul>
@@ -2489,7 +2598,7 @@ You’ll have fun</p>
 
 <ul>
 <li>By attending the event, tickets will be released this evening from <a href="http://nhshackday.com">www.nhshackday.com</a></li>
-<li>By sponsoring the event - email <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#x6f;&#x3a;&#104;&#x65;&#x6c;&#x6c;&#111;&#x40;&#111;&#112;&#101;&#110;&#x68;&#101;&#x61;&#x6c;&#x74;&#x68;&#99;&#97;&#114;&#x65;&#46;&#111;&#114;&#103;&#x2e;&#117;&#107;">&#104;&#x65;&#108;&#x6c;&#111;&#x40;&#x6f;&#x70;&#x65;&#110;&#104;&#101;&#x61;&#108;&#x74;&#x68;&#99;&#97;&#114;&#x65;&#46;&#111;&#114;&#x67;&#46;&#117;&#x6b;</a></li>
+<li>By sponsoring the event - email <a href="&#109;&#97;&#x69;&#x6c;&#116;&#111;&#58;&#104;&#x65;&#x6c;&#108;&#111;&#x40;&#x6f;&#x70;&#101;&#110;&#x68;&#x65;&#97;&#108;&#x74;&#104;&#x63;&#x61;&#114;&#x65;&#46;&#111;&#x72;&#103;&#x2e;&#117;&#107;">&#104;&#101;&#108;&#108;&#111;&#x40;&#x6f;&#112;&#x65;&#x6e;&#x68;&#101;&#x61;&#x6c;&#x74;&#104;&#99;&#97;&#x72;&#101;&#x2e;&#111;&#114;&#103;&#x2e;&#117;&#107;</a></li>
 <li>By becoming part of our community - joining the <a href="https://groups.google.com/forum/#!forum/nhshackday">mailing list</a>, coming to pre event meet ups or talking to us on <a href="http://twitter.com/nhshackday">Twitter</a></li>
 <li>By spreading the word, tell your friends!</li>
 </ul>
@@ -3113,6 +3222,10 @@ Photo credits: <a href="https://secure.flickr.com/photos/paul_clarke/">Paul Clar
         <h3 class="title">Recent Posts</h3>
         <ul class="list-unstyled">
           
+          <li><a href="/blog/2018/04/07/opal-10/">Opal 0.10.0 released</a><br /><span class="date">
+              April 07, 2018
+          </span></li>
+          
           <li><a href="/blog/2017/03/15/prototyping-a-dental-referral-system/">Building a better dental referral process</a><br /><span class="date">
               March 15, 2017
           </span></li>
@@ -3127,10 +3240,6 @@ Photo credits: <a href="https://secure.flickr.com/photos/paul_clarke/">Paul Clar
           
           <li><a href="/blog/2016/11/04/show-me-the-data-vs-show-me-the-thing/">Show me the data vs. Show me the things</a><br /><span class="date">
               November 04, 2016
-          </span></li>
-          
-          <li><a href="/blog/2016/10/24/nhs-hack-day-14-newcastle/">NHS Hack Day 14 - Newcastle</a><br /><span class="date">
-              October 24, 2016
           </span></li>
           
           <li><a href="/atom.xml"><i class="fa fa-rss-square"></i> RSS</a></li>

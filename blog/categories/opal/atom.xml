@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Opal | Open Health Care UK - Blog]]></title>
   <link href="http://openhealthcare.org.uk/blog/categories/opal/atom.xml" rel="self"/>
   <link href="http://openhealthcare.org.uk/"/>
-  <updated>2018-03-23T11:28:58+00:00</updated>
+  <updated>2018-04-08T08:38:45+01:00</updated>
   <id>http://openhealthcare.org.uk/</id>
   <author>
     <name><![CDATA[Open Health Care UK]]></name>
@@ -12,6 +12,95 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Opal 0.10.0 Released]]></title>
+    <link href="http://openhealthcare.org.uk/blog/2018/04/07/opal-10/"/>
+    <updated>2018-04-07T10:12:19+01:00</updated>
+    <id>http://openhealthcare.org.uk/blog/2018/04/07/opal-10</id>
+    <content type="html"><![CDATA[We’re excited to announce that we’ve just released
+[Opal](http://opal.openhealthcare.org.uk) 0.10.0.
+
+With more than 450 commits from 8 authors, what’s new in this version?
+
+## Windows support
+
+This is the first Opal release to officially provide Windows support (more
+details to follow) which we hope will be particularly helpful to developers
+within the NHS looking to use Opal at work.
+
+Although we don't actively develop Opal applications on the Windows platform,
+we're now running all of our tests on Windows as a Pull Request
+[status check](https://help.github.com/articles/about-required-status-checks/).
+This gives us a minimum level of assurance going forwards that we're not
+introducing things that cause issues, and a strong basis to investigate any
+platform specific bugs that may get reported.
+
+Particular thanks goes to the NHS Digital Innovation Fund for supporting
+this work.
+
+## Default reference data
+
+As an Opal maintainer, one of the interesting things about attending
+[NHS Hack Day](http://nhshackday.com) events is that it’s highly likely
+that at least one team will be building their project on top of Opal.
+That means that we frequently get to observe developers starting a journey
+with Opal. Mostly they're creating new Opal applications and battle-testing
+our project scaffolding, often they're also using the platform in anger for
+the first time.
+
+One of the things we’ve observed is that the step of importing or creating
+clinical reference data for a new application is something that hasn’t always
+been as slick as we’d like. (Until recently the
+[tutorial](http://opal.openhealthcare.org.uk/docs/tutorial/) suggested running
+`wget` on a bit of JSON on the internet and then feeding it into a database.)
+
+This clashes with our batteries included design philosophy of optimising for
+programmer happiness. With our wrappers around the Django `startproject` command
+we try very hard to make the first hour of development exceptionally
+productive — and this was obviously somewhere we could do better.
+
+Starting withthis release, new Opal applications come with the module
+`opal.core.referencedata` installed by default. This means for instance, that when
+you open an ‘Ethnicity’ dropdown in a freshly scaffolded application, rather than
+being an empty dropdown, you get the list of ethnicities from the
+[NHS Data Dictionary](https://www.datadictionary.nhs.uk/data_dictionary/attributes/e/end/ethnic_category_code_de.asp).
+
+## API enhancements
+
+Most of the work that went into Opal 0.10.0 was focussed on enhancing the programming
+API for building applications. New helper functions, new commandline options, and
+other enhancements to improve the developer experience.
+
+There are also lots of enhancements and expansions to our documentation to help
+you along your way. You can read the
+[full change log](https://github.com/openhealthcare/opal/blob/v0.10.0/CHANGELOG.md)
+to get further details.
+
+## What next ?
+
+If you already have an Opal application we’d recommend you upgrade as soon as
+you can. This release also requires an upgrade to a number of our upstream
+dependencies and some Opal migrations. You can
+[read our upgrade guide here](http://opal.openhealthcare.org.uk/docs/reference/upgrading/#091-0100),
+and feel free to [post to the mailing list](https://groups.google.com/forum/?ohc-dev#!forum/ohc-opal)
+if you run into issues with your upgrade.
+
+Many thanks to the following people for their contributions to this release:
+
+* [Carl Reynolds](https://twitter.com/drcjar)
+* [Chris Lamb](https://twitter.com/lolamby)
+* [David Miller](https://twitter.com/thatdavidmiller)
+* [Fred Kingham](https://twitter.com/fredkingham)
+* [George Hickman](https://twitter.com/ghickman)
+* [Marcus Baw](https://twitter.com/marcus_baw)
+* [Matt Stibbs](https://twitter.com/mattstibbs)
+* [Tom Ormiston](https://twitter.com/AppiJumbo)
+
+
+<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@danielcgold?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Dan Gold"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Dan Gold</span></a>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Building a Better Dental Referral Process]]></title>
@@ -419,85 +508,6 @@ do get in touch with us at <a href="mailto:hello@openhealthcare.org.uk">hello@op
 <small>
 Photo credits: [John Tan](https://www.flickr.com/photos/31031835@N08/)
 </small>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[OPAL 0.5 Released]]></title>
-    <link href="http://openhealthcare.org.uk/blog/2015/11/13/opal-05-released/"/>
-    <updated>2015-11-13T16:00:55+00:00</updated>
-    <id>http://openhealthcare.org.uk/blog/2015/11/13/opal-05-released</id>
-    <content type="html"><![CDATA[We're happy to announce that we've just released a new version of [OPAL](http://opal.openhealthcare.org.uk/docs/) -
-our framework for building clinical facing digital services.
-
-So - what's new in this release?
-
-## Search
-
-We've completely re-designed our search pages to help clinicians find
-the patients they're interested in more easily. We also default to
-having a search box in the navigation of every page.
-
-![](https://raw.githubusercontent.com/openhealthcare/openhealthcare.org.uk/master/source/assets/images/posts/search.results.png)
-
-In addition, we've been working hard to make search backends pluggable,
-so that in the future you'll be able to drop in alternative backends of
-your choice as your application scales.
-
-## Patient List view
-
-We spent a lot of time over the past few months collating feedback from users and
-doing research to understand how we could improve the core Patient List
-views. As a response to that we've updated the list interface - making it clearer
-which patient is currently active, and removing some of the features that weren't
-actually helping our users to care for patients.
-
-![](https://raw.githubusercontent.com/openhealthcare/openhealthcare.org.uk/master/source/assets/images/posts/list.view.png)
-
-## Subrecord metadata
-
-We added four new utility fields to
-[Patient and Episode subrecords](http://opal.openhealthcare.org.uk/docs/guides/datamodel/)
- - created_by, updated_by, created, updated. This gives developers easier
-programatic access to high level audit trail information, without having
-to navigate the [low level Django Reversion
-API](https://github.com/etianen/django-reversion/blob/master/docs/api.rst)
-- which is still there for when you need more detailed audit trail
-information.
-
-## Select2 and List fields
-
-This release introduces
-[Select2](https://github.com/angular-ui/ui-select) to OPAL - which
-provides us some nicer widgets - particularly for fields associated with
-[lookuplists](http://opal.openhealthcare.org.uk/docs/guides/lookup_lists/),
-and has also enabled the development of list types as
-Subrecord fields. For example this means that your travel can be to a
-list of countries when you take a backpacking trip through Southeast
-Asia!
-
-## What's Next?
-
-Just because this release is out, we're not resting on our laurels - in
-fact we're already gearing up for the next releases. We're planning to
-look at the information architecture of Episode detail views, including
-a new Notes view that's currently being tested by some users of the
-[elCID](http://elcid.openhealthcare.org.uk) project.
-
-We also plan to refactor some of the core data models back into OPAL to provide
-them there by default rather than implemented over and over again in
-individual applications.
-
-As ever, because OPAL is an Open Governance [Open Source](http://github.com/openhealthcare/opal) project, you can
-follow our progress over on
-[our public Waffle board](https://waffle.io/openhealthcare/opal-ideas) where we'll be
-organising our work.
-
-## More about OPAL
-
-If you want to find out more about OPAL or how Open Health Care can help
-you to run high quality digital services for doctors in your institution
-then do get in touch!
 ]]></content>
   </entry>
   
