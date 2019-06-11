@@ -1,365 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2018/04/07/opal-10/</loc>
-    
-    <lastmod>2018-04-07T10:12:19+01:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2017/03/15/prototyping-a-dental-referral-system/</loc>
-    
-    <lastmod>2017-03-15T09:12:19+00:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2017/03/08/opal-08-released/</loc>
-    
-    <lastmod>2017-03-08T14:00:29+00:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2017/02/22/open-data-in-health/</loc>
-    
-    <lastmod>2017-02-22T00:05:29+00:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2016/11/04/show-me-the-data-vs-show-me-the-thing/</loc>
-    
-    <lastmod>2016-11-04T11:00:29+00:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2016/10/24/nhs-hack-day-14-newcastle/</loc>
-    
-    <lastmod>2016-10-24T16:00:29+01:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2016/06/06/big-problems-in-health-tech-that-get-us-excited/</loc>
-    
-    <lastmod>2016-06-06T12:59:20+01:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2016/06/01/happy-birthday-to-opal/</loc>
-    
-    <lastmod>2016-06-01T17:00:55+01:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2016/05/20/nhs-hack-day-13/</loc>
-    
-    <lastmod>2016-05-20T16:00:29+01:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2016/04/06/how-we-manage-risk-when-we-use-open-source-in-health/</loc>
-    
-    <lastmod>2016-04-06T09:00:29+01:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2016/04/04/why-we-dont-do-product-placement-at-nhshackday/</loc>
-    
-    <lastmod>2016-04-04T09:00:29+01:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2016/03/21/how-to-pitch-at-a-hackday/</loc>
-    
-    <lastmod>2016-03-21T15:00:29+00:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2016/02/16/how-were-helping-respond-to-the-zika-outbreak/</loc>
-    
-    <lastmod>2016-02-16T15:00:29+00:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2016/01/18/annual-review/</loc>
-    
-    <lastmod>2016-01-18T15:00:29+00:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2015/11/13/opal-05-released/</loc>
-    
-    <lastmod>2015-11-13T16:00:55+00:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2015/10/21/launching-a-new-walk-in-service/</loc>
-    
-    <lastmod>2015-10-21T21:00:29+01:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2015/08/10/come-join-us-at-ukhealthcamp/</loc>
-    
-    <lastmod>2015-08-10T10:42:20+01:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2015/07/08/announcing-nhs-hack-day-11/</loc>
-    
-    <lastmod>2015-07-08T21:42:20+01:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2015/06/18/how-to-run-a-hackday/</loc>
-    
-    <lastmod>2015-06-18T09:00:29+01:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2015/06/10/elcid-journal-of-infectioncontrol/</loc>
-    
-    <lastmod>2015-06-10T21:00:29+01:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2015/05/25/nhs-hack-day-10/</loc>
-    
-    <lastmod>2015-05-25T16:00:29+01:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2015/04/16/which-retracted-paper-has-the-most-citations/</loc>
-    
-    <lastmod>2015-04-16T16:11:56+01:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2015/04/01/london-nhs-hack-day-meet-up/</loc>
-    
-    <lastmod>2015-04-01T11:39:55+01:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2015/03/17/nhs-hack-day-10/</loc>
-    
-    <lastmod>2015-03-17T20:42:20+00:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2015/03/12/open-politics/</loc>
-    
-    <lastmod>2015-03-12T15:42:20+00:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2015/03/11/how-doctors-get-digital-services-they-love/</loc>
-    
-    <lastmod>2015-03-11T21:12:19+00:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2015/02/05/elcid-opat-launch/</loc>
-    
-    <lastmod>2015-02-05T09:12:19+00:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2015/01/31/nhs-hack-day-cardiff/</loc>
-    
-    <lastmod>2015-01-31T20:02:19+00:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/2015/01/19/annual-review/</loc>
-    
-    <lastmod>2015-01-19T15:00:29+00:00</lastmod>
-    
-    <priority>0.8</priority>
-  </url>
-  
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog.html</loc>
-    <lastmod>2018-04-08T08:38:45+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/contact.html</loc>
-    <lastmod>2018-04-08T08:38:45+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/</loc>
-    <lastmod>2018-04-08T08:38:45+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/case-studies/returning-travellers/</loc>
-    <lastmod>2018-04-08T08:38:45+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/about/</loc>
-    <lastmod>2018-04-08T08:38:45+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/open-data-in-the-health-sector/</loc>
-    <lastmod>2018-04-08T08:38:45+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/blog/archives/</loc>
-    <lastmod>2018-04-08T08:38:45+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/data/</loc>
-    <lastmod>2018-04-08T08:38:45+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/</loc>
-    <lastmod>2018-04-08T08:38:45+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/products.html</loc>
-    <lastmod>2018-04-08T08:38:45+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/services.html</loc>
-    <lastmod>2018-04-08T08:38:45+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/assets/plugins/jquery-inview/test/index.html</loc>
-    <lastmod>2014-10-02T13:16:51Z</lastmod>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/assets/plugins/jquery-inview/example/advanced.html</loc>
-    <lastmod>2014-10-02T13:16:51Z</lastmod>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/assets/plugins/jquery-inview/example/live_event.html</loc>
-    <lastmod>2014-10-02T13:16:51Z</lastmod>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/assets/plugins/jquery-inview/example/simple_example.html</loc>
-    <lastmod>2014-10-02T13:16:51Z</lastmod>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/assets/plugins/jquery-placeholder/tests/index.html</loc>
-    <lastmod>2014-10-02T13:16:51Z</lastmod>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/assets/plugins/jquery-placeholder/demo.html</loc>
-    <lastmod>2014-10-02T13:16:51Z</lastmod>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/assets/plugins/FitVids/tests.html</loc>
-    <lastmod>2014-10-02T13:16:51Z</lastmod>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://openhealthcare.org.uk/oldindex.html</loc>
-    <lastmod>2015-12-23T23:33:54Z</lastmod>
-    <priority>0.6</priority>
-  </url>
-  
+<url>
+<loc>http://openhealthcare.org.uk/blog/2018/04/07/opal-10/</loc>
+<lastmod>2018-04-07T10:12:19+01:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2017/03/15/prototyping-a-dental-referral-system/</loc>
+<lastmod>2017-03-15T09:12:19+00:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2017/03/08/opal-08-released/</loc>
+<lastmod>2017-03-08T14:00:29+00:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2017/02/22/open-data-in-health/</loc>
+<lastmod>2017-02-22T00:05:29+00:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2016/11/04/show-me-the-data-vs-show-me-the-thing/</loc>
+<lastmod>2016-11-04T11:00:29+00:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2016/10/24/nhs-hack-day-14-newcastle/</loc>
+<lastmod>2016-10-24T16:00:29+01:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2016/06/06/big-problems-in-health-tech-that-get-us-excited/</loc>
+<lastmod>2016-06-06T12:59:20+01:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2016/06/01/happy-birthday-to-opal/</loc>
+<lastmod>2016-06-01T17:00:55+01:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2016/05/20/nhs-hack-day-13/</loc>
+<lastmod>2016-05-20T16:00:29+01:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2016/04/06/how-we-manage-risk-when-we-use-open-source-in-health/</loc>
+<lastmod>2016-04-06T09:00:29+01:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2016/04/04/why-we-dont-do-product-placement-at-nhshackday/</loc>
+<lastmod>2016-04-04T09:00:29+01:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2016/03/21/how-to-pitch-at-a-hackday/</loc>
+<lastmod>2016-03-21T15:00:29+00:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2016/02/16/how-were-helping-respond-to-the-zika-outbreak/</loc>
+<lastmod>2016-02-16T15:00:29+00:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2016/01/18/annual-review/</loc>
+<lastmod>2016-01-18T15:00:29+00:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2015/11/13/opal-05-released/</loc>
+<lastmod>2015-11-13T16:00:55+00:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2015/10/21/launching-a-new-walk-in-service/</loc>
+<lastmod>2015-10-21T21:00:29+01:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2015/08/10/come-join-us-at-ukhealthcamp/</loc>
+<lastmod>2015-08-10T10:42:20+01:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2015/07/08/announcing-nhs-hack-day-11/</loc>
+<lastmod>2015-07-08T21:42:20+01:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2015/06/18/how-to-run-a-hackday/</loc>
+<lastmod>2015-06-18T09:00:29+01:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2015/06/10/elcid-journal-of-infectioncontrol/</loc>
+<lastmod>2015-06-10T21:00:29+01:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2015/05/25/nhs-hack-day-10/</loc>
+<lastmod>2015-05-25T16:00:29+01:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2015/04/16/which-retracted-paper-has-the-most-citations/</loc>
+<lastmod>2015-04-16T16:11:56+01:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2015/04/01/london-nhs-hack-day-meet-up/</loc>
+<lastmod>2015-04-01T11:39:55+01:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2015/03/17/nhs-hack-day-10/</loc>
+<lastmod>2015-03-17T20:42:20+00:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2015/03/12/open-politics/</loc>
+<lastmod>2015-03-12T15:42:20+00:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2015/03/11/how-doctors-get-digital-services-they-love/</loc>
+<lastmod>2015-03-11T21:12:19+00:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2015/02/05/elcid-opat-launch/</loc>
+<lastmod>2015-02-05T09:12:19+00:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2015/01/31/nhs-hack-day-cardiff/</loc>
+<lastmod>2015-01-31T20:02:19+00:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/2015/01/19/annual-review/</loc>
+<lastmod>2015-01-19T15:00:29+00:00</lastmod>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog.html</loc>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/contact.html</loc>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/about/</loc>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/case-studies/returning-travellers/</loc>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/archives/</loc>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/open-data-in-the-health-sector/</loc>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/blog/</loc>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/data/</loc>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/</loc>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/products.html</loc>
+</url>
+<url>
+<loc>http://openhealthcare.org.uk/services.html</loc>
+</url>
 </urlset>

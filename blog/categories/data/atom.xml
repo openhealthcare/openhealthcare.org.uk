@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Data | Open Health Care UK - Blog]]></title>
   <link href="http://openhealthcare.org.uk/blog/categories/data/atom.xml" rel="self"/>
   <link href="http://openhealthcare.org.uk/"/>
-  <updated>2018-04-08T08:38:45+01:00</updated>
+  <updated>2019-06-11T11:38:11+01:00</updated>
   <id>http://openhealthcare.org.uk/</id>
   <author>
     <name><![CDATA[Open Health Care UK]]></name>
@@ -18,63 +18,66 @@
     <link href="http://openhealthcare.org.uk/blog/2016/11/04/show-me-the-data-vs-show-me-the-thing/"/>
     <updated>2016-11-04T11:00:29+00:00</updated>
     <id>http://openhealthcare.org.uk/blog/2016/11/04/show-me-the-data-vs-show-me-the-thing</id>
-    <content type="html"><![CDATA[The health system in the UK publishes a *lot* of data.
+    <content type="html"><![CDATA[<p>The health system in the UK publishes a <em>lot</em> of data.</p>
 
-A quick trip to Data.gov.uk reveals [1,897 health related datasets](https://data.gov.uk/data/search?theme-primary=Health). At the same time both [NHS England](https://www.england.nhs.uk/statistics/statistical-work-areas/) and [NHS Digital](http://content.digital.nhs.uk/statisticsa-z) publish official National Statistics, not to mention the various data portals ([NHS England](https://data.england.nhs.uk/), [NHS Digital](https://indicators.hscic.gov.uk/webview/), [NHS Digital again](http://content.digital.nhs.uk/searchcatalogue?q=+&area=&size=10&sort=Relevance#top)), and [data published on Gov.uk](https://www.gov.uk/government/publications/phe-data-and-analysis-tools-a-to-z/phe-data-and-analysis-tools-a-to-z).
+<p>A quick trip to Data.gov.uk reveals <a href="https://data.gov.uk/data/search?theme-primary=Health">1,897 health related datasets</a>. At the same time both <a href="https://www.england.nhs.uk/statistics/statistical-work-areas/">NHS England</a> and <a href="http://content.digital.nhs.uk/statisticsa-z">NHS Digital</a> publish official National Statistics, not to mention the various data portals (<a href="https://data.england.nhs.uk/">NHS England</a>, <a href="https://indicators.hscic.gov.uk/webview/">NHS Digital</a>, <a href="http://content.digital.nhs.uk/searchcatalogue?q=+&amp;area=&amp;size=10&amp;sort=Relevance#top">NHS Digital again</a>), and <a href="https://www.gov.uk/government/publications/phe-data-and-analysis-tools-a-to-z/phe-data-and-analysis-tools-a-to-z">data published on Gov.uk</a>.</p>
 
-And this is before we get to stray web pages related to specific pet political projects that contain "Download and take away data", in some obscurantist dialect of
-almost-but-not quite CSV that doesn’t "just work" with any standard tools. (Yes [MyNHS](https://www.nhs.uk/service-search/Performance/DownloadData), I mean you.)
+<p>And this is before we get to stray web pages related to specific pet political projects that contain &ldquo;Download and take away data&rdquo;, in some obscurantist dialect of
+almost-but-not quite CSV that doesn’t &ldquo;just work&rdquo; with any standard tools. (Yes <a href="https://www.nhs.uk/service-search/Performance/DownloadData">MyNHS</a>, I mean you.)</p>
 
-Data however, is **incredibly boring** to most humans. Which makes it really hard to understand the value of all of that data, by just looking at a list of data.
+<p>Data however, is <strong>incredibly boring</strong> to most humans. Which makes it really hard to understand the value of all of that data, by just looking at a list of data.</p>
 
-Even more so than data in general, **Open Data** is an abstract concept that can be hard to grasp.
+<p>Even more so than data in general, <strong>Open Data</strong> is an abstract concept that can be hard to grasp.</p>
 
-For years, [Open Knowledge](http://opendefinition.org/) and the [Open Data Institute](http://theodi.org/data-spectrum) (and others) have worked hard on the valuable job of
-finding ways to make these concepts **clear** and **accessible**.
+<p>For years, <a href="http://opendefinition.org/">Open Knowledge</a> and the <a href="http://theodi.org/data-spectrum">Open Data Institute</a> (and others) have worked hard on the valuable job of
+finding ways to make these concepts <strong>clear</strong> and <strong>accessible</strong>.</p>
 
-Our experience at Open Health Care is that clarity often isn’t enough - you need to make
-things **tangible **for people to really understand them. That’s the main reason that we believe in **[Showing The Thing](https://gds.blog.gov.uk/2014/06/03/principles-for-prototyping/)** - that practical demonstrations
-have vastly more power than descriptions or abstract concepts.
+<p>Our experience at Open Health Care is that clarity often isn’t enough - you need to make
+things <strong>tangible </strong>for people to really understand them. That’s the main reason that we believe in <strong><a href="https://gds.blog.gov.uk/2014/06/03/principles-for-prototyping/">Showing The Thing</a></strong> - that practical demonstrations
+have vastly more power than descriptions or abstract concepts.</p>
 
-That's why we so often build prototypes of things to help us tell stories about how the world
+<p>That&rsquo;s why we so often build prototypes of things to help us tell stories about how the world
 could be better, and why we
-encourage communities grappling with digital and data to [learn by doing](http://openhealthcare.org.uk/blog/2016/10/24/nhs-hack-day-14-newcastle/).
+encourage communities grappling with digital and data to <a href="http://openhealthcare.org.uk/blog/2016/10/24/nhs-hack-day-14-newcastle/">learn by doing</a>.</p>
 
-Earlier this year, we spent some time with the Open Data team at NHS England working out how we would go about applying **[Show The Thing](http://transformation.blog.nhs.uk/show-the-thing)** to the world of Open Health Data.
+<p>Earlier this year, we spent some time with the Open Data team at NHS England working out how we would go about applying <strong><a href="http://transformation.blog.nhs.uk/show-the-thing">Show The Thing</a></strong> to the world of Open Health Data.</p>
 
-We started by doing some desk (Google and Twitter) research collecting examples of interesting projects that had used Open Health Data to build a product or service, to tell a story or start a campaign.
+<p>We started by doing some desk (Google and Twitter) research collecting examples of interesting projects that had used Open Health Data to build a product or service, to tell a story or start a campaign.</p>
 
-This turned up some old favourites - like our project from a from a few years ago visualising
-issues with the [prescribing of non-generic Statins](http://prescribinganalytics.com) - as well as some interesting projects that
-were new to us - like the Royal College of Paediatrics and Child Heath campaign “[Why Children Die](http://www.rcpch.ac.uk/news-campaigns/campaigns/why-children-die/why-children-die-rcpch-campaign)”.
+<p>This turned up some old favourites - like our project from a from a few years ago visualising
+issues with the <a href="http://prescribinganalytics.com">prescribing of non-generic Statins</a> - as well as some interesting projects that
+were new to us - like the Royal College of Paediatrics and Child Heath campaign “<a href="http://www.rcpch.ac.uk/news-campaigns/campaigns/why-children-die/why-children-die-rcpch-campaign">Why Children Die</a>”.</p>
 
-
-We then gathered these together and built a [single directory website](https://data.england.nhs.uk/datadirectory/) that showcases these projects in one place.
+<p>We then gathered these together and built a <a href="https://data.england.nhs.uk/datadirectory/">single directory website</a> that showcases these projects in one place.</p>
 
 <div class="post-thumb">
      <a href="https://data.england.nhs.uk/datadirectory/" target="_blank">
   <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/datadirectory.png" alt="" />
   </a>
 
-</div><!--//post-thumb-->
+</div>
 
-This directory helps to point people at stories and examples of things that have used open health data - and in doing so, helps to show
-why that data is valuable in a way that they can grapple with and kick the tyres for themselves.
 
-For instance - one of the great things about the [Open Prescribing](https://openprescribing.net/) project made by our friends at [EBM Data Lab](https://ebmdatalab.net/) is that
-is has **buttons you can press**.
+<!--//post-thumb-->
 
-People like pressing buttons.
 
-We&#8217;re still looking for more great examples though, so if you’ve worked on a project that uses Open Health Data
-that you think might be suitable for the directory, you can [submit your project here](https://data.england.nhs.uk/datadirectory/add/).
+<p>This directory helps to point people at stories and examples of things that have used open health data - and in doing so, helps to show
+why that data is valuable in a way that they can grapple with and kick the tyres for themselves.</p>
 
-Because it&#8217;s always great to have more things to show&#8230;
+<p>For instance - one of the great things about the <a href="https://openprescribing.net/">Open Prescribing</a> project made by our friends at <a href="https://ebmdatalab.net/">EBM Data Lab</a> is that
+is has <strong>buttons you can press</strong>.</p>
 
-<small>
+<p>People like pressing buttons.</p>
+
+<p>We&rsquo;re still looking for more great examples though, so if you’ve worked on a project that uses Open Health Data
+that you think might be suitable for the directory, you can <a href="https://data.england.nhs.uk/datadirectory/add/">submit your project here</a>.</p>
+
+<p>Because it&rsquo;s always great to have more things to show&hellip;</p>
+
+<p><small>
 Photo credits: <br />
-[Redjar](https://www.flickr.com/photos/redjar/)
-</small>
+<a href="https://www.flickr.com/photos/redjar/">Redjar</a>
+</small></p>
 ]]></content>
   </entry>
   

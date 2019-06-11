@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Opal | Open Health Care UK - Blog]]></title>
   <link href="http://openhealthcare.org.uk/blog/categories/opal/atom.xml" rel="self"/>
   <link href="http://openhealthcare.org.uk/"/>
-  <updated>2018-04-08T08:38:45+01:00</updated>
+  <updated>2019-06-11T11:38:11+01:00</updated>
   <id>http://openhealthcare.org.uk/</id>
   <author>
     <name><![CDATA[Open Health Care UK]]></name>
@@ -18,87 +18,89 @@
     <link href="http://openhealthcare.org.uk/blog/2018/04/07/opal-10/"/>
     <updated>2018-04-07T10:12:19+01:00</updated>
     <id>http://openhealthcare.org.uk/blog/2018/04/07/opal-10</id>
-    <content type="html"><![CDATA[We’re excited to announce that we’ve just released
-[Opal](http://opal.openhealthcare.org.uk) 0.10.0.
+    <content type="html"><![CDATA[<p>We’re excited to announce that we’ve just released
+<a href="http://opal.openhealthcare.org.uk">Opal</a> 0.10.0.</p>
 
-With more than 450 commits from 8 authors, what’s new in this version?
+<p>With more than 450 commits from 8 authors, what’s new in this version?</p>
 
-## Windows support
+<h2>Windows support</h2>
 
-This is the first Opal release to officially provide Windows support (more
+<p>This is the first Opal release to officially provide Windows support (more
 details to follow) which we hope will be particularly helpful to developers
-within the NHS looking to use Opal at work.
+within the NHS looking to use Opal at work.</p>
 
-Although we don't actively develop Opal applications on the Windows platform,
-we're now running all of our tests on Windows as a Pull Request
-[status check](https://help.github.com/articles/about-required-status-checks/).
-This gives us a minimum level of assurance going forwards that we're not
+<p>Although we don&rsquo;t actively develop Opal applications on the Windows platform,
+we&rsquo;re now running all of our tests on Windows as a Pull Request
+<a href="https://help.github.com/articles/about-required-status-checks/">status check</a>.
+This gives us a minimum level of assurance going forwards that we&rsquo;re not
 introducing things that cause issues, and a strong basis to investigate any
-platform specific bugs that may get reported.
+platform specific bugs that may get reported.</p>
 
-Particular thanks goes to the NHS Digital Innovation Fund for supporting
-this work.
+<p>Particular thanks goes to the NHS Digital Innovation Fund for supporting
+this work.</p>
 
-## Default reference data
+<h2>Default reference data</h2>
 
-As an Opal maintainer, one of the interesting things about attending
-[NHS Hack Day](http://nhshackday.com) events is that it’s highly likely
+<p>As an Opal maintainer, one of the interesting things about attending
+<a href="http://nhshackday.com">NHS Hack Day</a> events is that it’s highly likely
 that at least one team will be building their project on top of Opal.
 That means that we frequently get to observe developers starting a journey
-with Opal. Mostly they're creating new Opal applications and battle-testing
-our project scaffolding, often they're also using the platform in anger for
-the first time.
+with Opal. Mostly they&rsquo;re creating new Opal applications and battle-testing
+our project scaffolding, often they&rsquo;re also using the platform in anger for
+the first time.</p>
 
-One of the things we’ve observed is that the step of importing or creating
+<p>One of the things we’ve observed is that the step of importing or creating
 clinical reference data for a new application is something that hasn’t always
 been as slick as we’d like. (Until recently the
-[tutorial](http://opal.openhealthcare.org.uk/docs/tutorial/) suggested running
-`wget` on a bit of JSON on the internet and then feeding it into a database.)
+<a href="http://opal.openhealthcare.org.uk/docs/tutorial/">tutorial</a> suggested running
+<code>wget</code> on a bit of JSON on the internet and then feeding it into a database.)</p>
 
-This clashes with our batteries included design philosophy of optimising for
-programmer happiness. With our wrappers around the Django `startproject` command
+<p>This clashes with our batteries included design philosophy of optimising for
+programmer happiness. With our wrappers around the Django <code>startproject</code> command
 we try very hard to make the first hour of development exceptionally
-productive — and this was obviously somewhere we could do better.
+productive — and this was obviously somewhere we could do better.</p>
 
-Starting withthis release, new Opal applications come with the module
-`opal.core.referencedata` installed by default. This means for instance, that when
+<p>Starting withthis release, new Opal applications come with the module
+<code>opal.core.referencedata</code> installed by default. This means for instance, that when
 you open an ‘Ethnicity’ dropdown in a freshly scaffolded application, rather than
 being an empty dropdown, you get the list of ethnicities from the
-[NHS Data Dictionary](https://www.datadictionary.nhs.uk/data_dictionary/attributes/e/end/ethnic_category_code_de.asp).
+<a href="https://www.datadictionary.nhs.uk/data_dictionary/attributes/e/end/ethnic_category_code_de.asp">NHS Data Dictionary</a>.</p>
 
-## API enhancements
+<h2>API enhancements</h2>
 
-Most of the work that went into Opal 0.10.0 was focussed on enhancing the programming
+<p>Most of the work that went into Opal 0.10.0 was focussed on enhancing the programming
 API for building applications. New helper functions, new commandline options, and
-other enhancements to improve the developer experience.
+other enhancements to improve the developer experience.</p>
 
-There are also lots of enhancements and expansions to our documentation to help
+<p>There are also lots of enhancements and expansions to our documentation to help
 you along your way. You can read the
-[full change log](https://github.com/openhealthcare/opal/blob/v0.10.0/CHANGELOG.md)
-to get further details.
+<a href="https://github.com/openhealthcare/opal/blob/v0.10.0/CHANGELOG.md">full change log</a>
+to get further details.</p>
 
-## What next ?
+<h2>What next ?</h2>
 
-If you already have an Opal application we’d recommend you upgrade as soon as
+<p>If you already have an Opal application we’d recommend you upgrade as soon as
 you can. This release also requires an upgrade to a number of our upstream
 dependencies and some Opal migrations. You can
-[read our upgrade guide here](http://opal.openhealthcare.org.uk/docs/reference/upgrading/#091-0100),
-and feel free to [post to the mailing list](https://groups.google.com/forum/?ohc-dev#!forum/ohc-opal)
-if you run into issues with your upgrade.
+<a href="http://opal.openhealthcare.org.uk/docs/reference/upgrading/#091-0100">read our upgrade guide here</a>,
+and feel free to <a href="https://groups.google.com/forum/?ohc-dev#!forum/ohc-opal">post to the mailing list</a>
+if you run into issues with your upgrade.</p>
 
-Many thanks to the following people for their contributions to this release:
+<p>Many thanks to the following people for their contributions to this release:</p>
 
-* [Carl Reynolds](https://twitter.com/drcjar)
-* [Chris Lamb](https://twitter.com/lolamby)
-* [David Miller](https://twitter.com/thatdavidmiller)
-* [Fred Kingham](https://twitter.com/fredkingham)
-* [George Hickman](https://twitter.com/ghickman)
-* [Marcus Baw](https://twitter.com/marcus_baw)
-* [Matt Stibbs](https://twitter.com/mattstibbs)
-* [Tom Ormiston](https://twitter.com/AppiJumbo)
+<ul>
+<li><a href="https://twitter.com/drcjar">Carl Reynolds</a></li>
+<li><a href="https://twitter.com/lolamby">Chris Lamb</a></li>
+<li><a href="https://twitter.com/thatdavidmiller">David Miller</a></li>
+<li><a href="https://twitter.com/fredkingham">Fred Kingham</a></li>
+<li><a href="https://twitter.com/ghickman">George Hickman</a></li>
+<li><a href="https://twitter.com/marcus_baw">Marcus Baw</a></li>
+<li><a href="https://twitter.com/mattstibbs">Matt Stibbs</a></li>
+<li><a href="https://twitter.com/AppiJumbo">Tom Ormiston</a></li>
+</ul>
 
 
-<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@danielcgold?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Dan Gold"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Dan Gold</span></a>
+<p><a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@danielcgold?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Dan Gold"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Dan Gold</span></a></p>
 ]]></content>
   </entry>
   
@@ -107,69 +109,88 @@ Many thanks to the following people for their contributions to this release:
     <link href="http://openhealthcare.org.uk/blog/2017/03/15/prototyping-a-dental-referral-system/"/>
     <updated>2017-03-15T09:12:19+00:00</updated>
     <id>http://openhealthcare.org.uk/blog/2017/03/15/prototyping-a-dental-referral-system</id>
-    <content type="html"><![CDATA[Our friends at [Open Odonto](http://openodonto.org/) are working to make sure that NHS dentistry gets to take advantage of the internet era.
+    <content type="html"><![CDATA[<p>Our friends at <a href="http://openodonto.org/">Open Odonto</a> are working to make sure that NHS dentistry gets to take advantage of the internet era.</p>
 
-They are **demanding** better digital services, processes and data, fit for the Internet era as well as **building communities** of practice that help to raise the expectations of clinicians and patients, and conducting user research to help **understand the needs** of people receiving and delivering care.
+<p>They are <strong>demanding</strong> better digital services, processes and data, fit for the Internet era as well as <strong>building communities</strong> of practice that help to raise the expectations of clinicians and patients, and conducting user research to help <strong>understand the needs</strong> of people receiving and delivering care.</p>
 
-One of the areas that they’ve discovered is particularly painful is dental referrals.
+<p>One of the areas that they’ve discovered is particularly painful is dental referrals.</p>
 
-## What are dental referrals?
+<h2>What are dental referrals?</h2>
 
-Sometimes patients who go to see a high street dentist need specialist care. That might be because they need a procedure that the high street dentist isn’t able to deliver, or because they have particular needs requiring specialist training, expertise or equipment - for instance patients with reduced mobility, chronic dental phobias, or other complex health conditions. Those patients are referred to a specialist dental service appropriate for their needs.
+<p>Sometimes patients who go to see a high street dentist need specialist care. That might be because they need a procedure that the high street dentist isn’t able to deliver, or because they have particular needs requiring specialist training, expertise or equipment - for instance patients with reduced mobility, chronic dental phobias, or other complex health conditions. Those patients are referred to a specialist dental service appropriate for their needs.</p>
 
-In theory, that sounds simple enough - you simply need to book a patient an appointment with the right clinic, and make sure that the clinic has the patient’s notes and x-rays.
+<p>In theory, that sounds simple enough - you simply need to book a patient an appointment with the right clinic, and make sure that the clinic has the patient’s notes and x-rays.</p>
 
 <div class="post-thumb">
   <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/fax.typewriter.jpg" alt="" />
-</div><!--//post-thumb-->
+</div>
 
-In practice however, dental referrals are often anything but simple. We post and fax partially completed, badly designed forms around, and then frequently rely on nursing staff to spend time phoning around trying to find the additional information they need in order to even understand if they are able to help the patient. At the end of all this the patient is sent a letter in the
-post informing them of the date and time of their appointment.
 
-This referral process is slow frustrating for everyone involved, and can leave patients waiting around for weeks without any update at all - because we haven’t managed to iterate on the information infrastructure that underpins our health system.
+<!--//post-thumb-->
 
-In 2017 we shouldn’t be having to wait around for a letter in the post that is delayed because we’re phoning someone up about information that was missing in the fax where they wrote basic information about patients by hand.
 
-## Making things better
+<p>In practice however, dental referrals are often anything but simple. We post and fax partially completed, badly designed forms around, and then frequently rely on nursing staff to spend time phoning around trying to find the additional information they need in order to even understand if they are able to help the patient. At the end of all this the patient is sent a letter in the
+post informing them of the date and time of their appointment.</p>
 
-As part of their work, Open Odonto have been researching how they might transform the dental referral process so that it worked better for patients and clinicians.
+<p>This referral process is slow frustrating for everyone involved, and can leave patients waiting around for weeks without any update at all - because we haven’t managed to iterate on the information infrastructure that underpins our health system.</p>
 
-Earlier this year we spent some time working with their team to build a [prototype](https://github.com/odonto/odonto-rms) referral service that would reflect this research. Building prototypes like this helps people to imagine a future where the world is better and realise that it is possible for us to get there. It also helps to validate ideas and designs with potential users and make sure that our ideas **might actually work** and that we’re working towards a future which is **actually better, not just digital**.
+<p>In 2017 we shouldn’t be having to wait around for a letter in the post that is delayed because we’re phoning someone up about information that was missing in the fax where they wrote basic information about patients by hand.</p>
 
+<h2>Making things better</h2>
+
+<p>As part of their work, Open Odonto have been researching how they might transform the dental referral process so that it worked better for patients and clinicians.</p>
+
+<p>Earlier this year we spent some time working with their team to build a <a href="https://github.com/odonto/odonto-rms">prototype</a> referral service that would reflect this research. Building prototypes like this helps people to imagine a future where the world is better and realise that it is possible for us to get there. It also helps to validate ideas and designs with potential users and make sure that our ideas <strong>might actually work</strong> and that we’re working towards a future which is <strong>actually better, not just digital</strong>.</p>
 
 <div class="post-thumb">
   <center>
     <img class="img-responsive bordered" src="http://openhealthcare.org.uk/assets/images/posts/odonto.menu.png" alt="" />
   </center>
-</div><!--//post-thumb-->
+</div>
 
-In our initial prototype we’ve focussed on referrals of patients who require Special Care Dentistry - the kinds of patients who have complex health issues which require specialist equipment or training. This approach allows us to **design for the furthest first** - a referral system that can work for the complex cases seen by Special Care Dentistry is more likely to have the capacity to work for everybody.
 
-We started with a referral form - where a dentist would enter details of the person who they were referring to another service.
+<!--//post-thumb-->
+
+
+<p>In our initial prototype we’ve focussed on referrals of patients who require Special Care Dentistry - the kinds of patients who have complex health issues which require specialist equipment or training. This approach allows us to <strong>design for the furthest first</strong> - a referral system that can work for the complex cases seen by Special Care Dentistry is more likely to have the capacity to work for everybody.</p>
+
+<p>We started with a referral form - where a dentist would enter details of the person who they were referring to another service.</p>
 
 <div class="post-thumb bordered">
   <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/odonto.referral.png" alt="" />
-</div><!--//post-thumb-->
+</div>
 
-In line with recent commissioning guidance on how to manage dental referrals from NHS England, we designed for a system which includes a regional hub that triages referrals to decide where the patient can be helped best.
 
-That meant that in our prototype a different user can review the details of a referral, and has the ability to add or update information, before making a decision about where to refer them.
+<!--//post-thumb-->
+
+
+<p>In line with recent commissioning guidance on how to manage dental referrals from NHS England, we designed for a system which includes a regional hub that triages referrals to decide where the patient can be helped best.</p>
+
+<p>That meant that in our prototype a different user can review the details of a referral, and has the ability to add or update information, before making a decision about where to refer them.</p>
 
 <div class="post-thumb bordered">
   <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/odonto.detail.png" alt="" />
-</div><!--//post-thumb-->
+</div>
 
-One of the major issues with the current processes is that it is almost entirely opaque - once a referral has been sent it’s impossible to understand what is happening to it until a letter eventually arrives on the doormat of the patient.
 
-We wanted to ensure that there was transparency throughout the system of referrals in progress, and completed. This means that when patients call up their high street dentist asking for an update on when they might get help for their painful tooth, they might get an answer better than “I have no idea”.
+<!--//post-thumb-->
+
+
+<p>One of the major issues with the current processes is that it is almost entirely opaque - once a referral has been sent it’s impossible to understand what is happening to it until a letter eventually arrives on the doormat of the patient.</p>
+
+<p>We wanted to ensure that there was transparency throughout the system of referrals in progress, and completed. This means that when patients call up their high street dentist asking for an update on when they might get help for their painful tooth, they might get an answer better than “I have no idea”.</p>
 
 <div class="post-thumb bordered">
   <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/odonto.progress.png" alt="" />
-</div><!--//post-thumb-->
+</div>
 
-Although we didn’t explore it in this project, managing referrals in a joined-up manner would make it trivial to send notifications or text messages to patients informing them in real time when there was progress on their referral.
 
-There has been positive feedback from users in the initial user research sessions with the prototype referral service.
+<!--//post-thumb-->
+
+
+<p>Although we didn’t explore it in this project, managing referrals in a joined-up manner would make it trivial to send notifications or text messages to patients informing them in real time when there was progress on their referral.</p>
+
+<p>There has been positive feedback from users in the initial user research sessions with the prototype referral service.</p>
 
 <blockquote>
     <p class="lead">
@@ -177,11 +198,17 @@ There has been positive feedback from users in the initial user research session
     </p>
 </blockquote>
 
+
+
+
 <blockquote>
     <p class="lead">
     I’d much rather do this than pen and paper
     </p>
 </blockquote>
+
+
+
 
 <blockquote>
     <p class="lead">
@@ -189,28 +216,28 @@ There has been positive feedback from users in the initial user research session
     </p>
 </blockquote>
 
-This has been a hugely enjoyable project - many thanks to the people without whom it
-wouldn&#8217;t have been possible:
-[Becky Wassall](https://twitter.com/Bexmoxon) and
-[Lucille Valentine](https://twitter.com/lucillevalentin) for their expertise and domain knowledge, Newcastle University
+
+<p>This has been a hugely enjoyable project - many thanks to the people without whom it
+wouldn&rsquo;t have been possible:
+<a href="https://twitter.com/Bexmoxon">Becky Wassall</a> and
+<a href="https://twitter.com/lucillevalentin">Lucille Valentine</a> for their expertise and domain knowledge, Newcastle University
 who provided funding for the work, and
-[Fred Kingham](https://twitter.com/fredkingham) who wrote the code.
+<a href="https://twitter.com/fredkingham">Fred Kingham</a> who wrote the code.</p>
 
-## What next?
+<h2>What next?</h2>
 
-After the research and prototyping we’ve done on this project, we’re more convinced than ever that there is a need for a better dental referral process, and that we can build digital tools that support that better future.
+<p>After the research and prototyping we’ve done on this project, we’re more convinced than ever that there is a need for a better dental referral process, and that we can build digital tools that support that better future.</p>
 
-We still need to conduct some more research, test and iterate our prototypes further with more users before we look to build a working service that can be used to replace the faxes and paper forms, but we’re excited to do that work and move to a world where patients aren’t left in the dark about their care, and NHS staff don’t waste their time plugging gaps in broken processes instead of caring for patients.
+<p>We still need to conduct some more research, test and iterate our prototypes further with more users before we look to build a working service that can be used to replace the faxes and paper forms, but we’re excited to do that work and move to a world where patients aren’t left in the dark about their care, and NHS staff don’t waste their time plugging gaps in broken processes instead of caring for patients.</p>
 
-If you would be interested in working with us or [Open Odonto](http://openodonto.org/) on a better dental referral system, or finding out more about the prototyping work we do at Open Health Care, do
-[get in touch](mailto:hello@openhealthcare.org.uk).
+<p>If you would be interested in working with us or <a href="http://openodonto.org/">Open Odonto</a> on a better dental referral system, or finding out more about the prototyping work we do at Open Health Care, do
+<a href="mailto:hello@openhealthcare.org.uk">get in touch</a>.</p>
 
-
-<small>
+<p><small>
 Photo Credits:
-[Bob Harvey](http://www.geograph.org.uk/profile/8272) &
-[Matt Jiggins](https://www.flickr.com/photos/mattjiggins/4009310821/)
-</small>
+<a href="http://www.geograph.org.uk/profile/8272">Bob Harvey</a> &amp;
+<a href="https://www.flickr.com/photos/mattjiggins/4009310821/">Matt Jiggins</a>
+</small></p>
 ]]></content>
   </entry>
   
@@ -219,20 +246,20 @@ Photo Credits:
     <link href="http://openhealthcare.org.uk/blog/2017/03/08/opal-08-released/"/>
     <updated>2017-03-08T14:00:29+00:00</updated>
     <id>http://openhealthcare.org.uk/blog/2017/03/08/opal-08-released</id>
-    <content type="html"><![CDATA[A few weeks ago now we released [Opal](http://opal.openhealthcare.org.uk) 0.8. It’s quite a large release, so we thought we’d
-walk you through some of the highlights.
+    <content type="html"><![CDATA[<p>A few weeks ago now we released <a href="http://opal.openhealthcare.org.uk">Opal</a> 0.8. It’s quite a large release, so we thought we’d
+walk you through some of the highlights.</p>
 
-### Forms - now with added sugar
+<h3>Forms - now with added sugar</h3>
 
-We’ve been spending lots of time working to make forms easier to work with. Sometimes it seems that 95% of designing services is making
-forms that aren't frustrating and difficult to use
-- and having good tools to quickly build and iterate the forms you’re working with can make that process much easier.
+<p>We’ve been spending lots of time working to make forms easier to work with. Sometimes it seems that 95% of designing services is making
+forms that aren&rsquo;t frustrating and difficult to use
+- and having good tools to quickly build and iterate the forms you’re working with can make that process much easier.</p>
 
-We made sure that some of the features from Django models, like choices and defaults now flow through seamlessly by default to our form
+<p>We made sure that some of the features from Django models, like choices and defaults now flow through seamlessly by default to our form
 widgets, and that the client side Angular code will use these by default without you having to do anything. This was all possible before,
-but required more typing. Nobody likes extra typing.
+but required more typing. Nobody likes extra typing.</p>
 
-For instance, if we had the following model:
+<p>For instance, if we had the following model:</p>
 
 <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">TableClothPreference</span><span class="p">(</span><span class="n">EpisodeSubrecord</span><span class="p">):</span>
         <span class="n">COLOUR_CHOICES</span> <span class="o">=</span> <span class="p">(</span>
@@ -243,32 +270,34 @@ For instance, if we had the following model:
                                             <span class="n">default</span><span class="o">=</span><span class="s">&#39;Purple&#39;</span><span class="p">,</span>
                                             <span class="n">choices</span><span class="o">=</span><span class="n">COLOUR_CHOICES</span><span class="p">)</span></code></pre></div>
 
-We would be able to render a dropdown widget for the field that used the default and restricted the choices by simply using the
-following in our code:
+
+<p>We would be able to render a dropdown widget for the field that used the default and restricted the choices by simply using the
+following in our code:</p>
 
 <div class="highlight"><pre><code class="language-jinja" data-lang="jinja"><span class="x">{ % select field=&quot;TableClothPreference.favourite_colour&quot; % }</span></code></pre></div>
 
-We’ve also spent time making sure that form validation is much easier to work with. By default we
-now validate forms on submission - making sure that we respect max length of form fields for instance.
 
-As well as the improvements to forms in Opal itself, we’ve also been working hard on the Opal
-[Pathway library](https://github.com/openhealthcare/opal-pathway). This library makes it significantly easier to work with
+<p>We’ve also spent time making sure that form validation is much easier to work with. By default we
+now validate forms on submission - making sure that we respect max length of form fields for instance.</p>
+
+<p>As well as the improvements to forms in Opal itself, we’ve also been working hard on the Opal
+<a href="https://github.com/openhealthcare/opal-pathway">Pathway library</a>. This library makes it significantly easier to work with
 complex forms - particularly ones that need to save data to many different models. Although Pathway is still considered alpha software,
-we fully anticipate that we’ll be incorporating it into Opal itself as the recommended way to build forms in Opal applications later this year.
+we fully anticipate that we’ll be incorporating it into Opal itself as the recommended way to build forms in Opal applications later this year.</p>
 
-### Python 3 support
+<h3>Python 3 support</h3>
 
-Responding to an issue raised on the mailing list, we’ve refactored Opal to work on Python 3. Thanks to the hard work and excellent tooling in the
-Python community this was a relatively painless task, but hopefully it puts us in a good position to move towards Python 3 deployments moving forwards.
+<p>Responding to an issue raised on the mailing list, we’ve refactored Opal to work on Python 3. Thanks to the hard work and excellent tooling in the
+Python community this was a relatively painless task, but hopefully it puts us in a good position to move towards Python 3 deployments moving forwards.</p>
 
-### Common patterns for customising Patient Lists
+<h3>Common patterns for customising Patient Lists</h3>
 
-We’ve made it much easier to implement some of the common patterns we see when working with patient lists, by explicitly adding APIs.
+<p>We’ve made it much easier to implement some of the common patterns we see when working with patient lists, by explicitly adding APIs.</p>
 
-You can now [customise the ordering](http://opal.openhealthcare.org.uk/docs/v0.8.0/guides/list_views/#customising-sort-order-of-episodes)
+<p>You can now <a href="http://opal.openhealthcare.org.uk/docs/v0.8.0/guides/list_views/#customising-sort-order-of-episodes">customise the ordering</a>
 of patients on a list-by-list basis using the comparator_service attribute of PatientList classes.
 A comparator service is an Angular service that returns a list of comparator functions that are used in order to determine how
-we should compare and sort two episodes - for instance:
+we should compare and sort two episodes - for instance:</p>
 
 <div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;opal.services&#39;</span><span class="p">)</span>
         <span class="p">.</span><span class="nx">factory</span><span class="p">(</span><span class="s1">&#39;MyComparatorService&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
@@ -279,38 +308,39 @@ we should compare and sort two episodes - for instance:
             <span class="p">]</span>
         <span class="p">});</span></code></pre></div>
 
-We also introduced an easy way for you to
-[group lists into tabs](http://opal.openhealthcare.org.uk/docs/v0.8.0/guides/list_views/#grouping-related-patient-lists)
-that display in the default template.
 
-### Goodbye Angular-Strap
+<p>We also introduced an easy way for you to
+<a href="http://opal.openhealthcare.org.uk/docs/v0.8.0/guides/list_views/#grouping-related-patient-lists">group lists into tabs</a>
+that display in the default template.</p>
 
-Until Opal 0.8 we had not one, but two UI libraries which wrapped Bootstrap components in Angular compatible code.
+<h3>Goodbye Angular-Strap</h3>
+
+<p>Until Opal 0.8 we had not one, but two UI libraries which wrapped Bootstrap components in Angular compatible code.
 We’ve been uncomfortable about that for a while - it’s confusing to have to remember which widget comes from which
-library! As of Opal 0.8 however we’ve picked a winner - [UI Bootstrap](http://angular-ui.github.io/bootstrap/versioned-docs/0.14.3/),
+library! As of Opal 0.8 however we’ve picked a winner - <a href="http://angular-ui.github.io/bootstrap/versioned-docs/0.14.3/">UI Bootstrap</a>,
 and we removed all references to Angular Strap completely, both in Opal and in all the applications and plugins we could find on
-Github.
+Github.</p>
 
-We&#8217;re planning to update the UI Bootstrap library to a more recent version in the next couple of releases, but the re-naming of
-their modal component could potentially make this transition slightly tricky, so we&#8217;re waiting to make sure we can do so as
-smoothly as possible.
+<p>We&rsquo;re planning to update the UI Bootstrap library to a more recent version in the next couple of releases, but the re-naming of
+their modal component could potentially make this transition slightly tricky, so we&rsquo;re waiting to make sure we can do so as
+smoothly as possible.</p>
 
-### Finding out more
+<h3>Finding out more</h3>
 
-If you’d like to find out more about Opal, then you might like to try the
-[documentation](http://opal.openhealthcare.org.uk/docs/) or the
-[mailing list](https://groups.google.com/forum/?ohc-dev#!forum/ohc-opal).
+<p>If you’d like to find out more about Opal, then you might like to try the
+<a href="http://opal.openhealthcare.org.uk/docs/">documentation</a> or the
+<a href="https://groups.google.com/forum/?ohc-dev#!forum/ohc-opal">mailing list</a>.
 There are more details about some of the other smaller features and bugfixes in 0.8 in the
-[release notes](https://github.com/openhealthcare/opal/releases/tag/0.8.0),
+<a href="https://github.com/openhealthcare/opal/releases/tag/0.8.0">release notes</a>,
 and you
-can also read about how to [upgrade from 0.7.x](http://opal.openhealthcare.org.uk/docs/v0.8.0/reference/upgrading/#071-080)
-in the documentation.
+can also read about how to <a href="http://opal.openhealthcare.org.uk/docs/v0.8.0/reference/upgrading/#071-080">upgrade from 0.7.x</a>
+in the documentation.</p>
 
-If you have a project that you think might be suited to Opal, please do [get in touch](mailto:hello@openhealthcare.org.uk) - we’d love to hear from you.
+<p>If you have a project that you think might be suited to Opal, please do <a href="mailto:hello@openhealthcare.org.uk">get in touch</a> - we’d love to hear from you.</p>
 
-<small>
-Photo credits: [Jay Springett](https://www.flickr.com/photos/thejaymo/)
-</small>
+<p><small>
+Photo credits: <a href="https://www.flickr.com/photos/thejaymo/">Jay Springett</a>
+</small></p>
 ]]></content>
   </entry>
   
@@ -319,26 +349,26 @@ Photo credits: [Jay Springett](https://www.flickr.com/photos/thejaymo/)
     <link href="http://openhealthcare.org.uk/blog/2016/06/01/happy-birthday-to-opal/"/>
     <updated>2016-06-01T17:00:55+01:00</updated>
     <id>http://openhealthcare.org.uk/blog/2016/06/01/happy-birthday-to-opal</id>
-    <content type="html"><![CDATA[Last Saturday 28th May 2016 marked the third birthday of OPAL - the
-[Open Source framework](https://github.com/openhealthcare/opal) we created to help developers
+    <content type="html"><![CDATA[<p>Last Saturday 28th May 2016 marked the third birthday of OPAL - the
+<a href="https://github.com/openhealthcare/opal">Open Source framework</a> we created to help developers
 create high quality clinical applications. We’ve come a long way since the
-[very first commit back in 2013](https://github.com/openhealthcare/opal/commit/63917d2d288faca6201c65d0de6893a59577b75d)
-so to celebrate we thought now would be a great time to take a look back over everything we’ve achieved.
+<a href="https://github.com/openhealthcare/opal/commit/63917d2d288faca6201c65d0de6893a59577b75d">very first commit back in 2013</a>
+so to celebrate we thought now would be a great time to take a look back over everything we’ve achieved.</p>
 
-## Early days
+<h2>Early days</h2>
 
-For the [first few months](https://github.com/openhealthcare/opal/graphs/contributors?from=2013-05-26&to=2013-07-02&type=c)
+<p>For the <a href="https://github.com/openhealthcare/opal/graphs/contributors?from=2013-05-26&amp;to=2013-07-02&amp;type=c">first few months</a>
 the lead developer on OPAL was the awesome
-[Peter Inglesby](https://twitter.com/inglesp), who made that very first commit, and
+<a href="https://twitter.com/inglesp">Peter Inglesby</a>, who made that very first commit, and
 worked with Drs
-[Pollara](https://twitter.com/gpollara),
-[Marks](https://github.com/michaeledwardmarks/) and
-[Noursadeghi](https://twitter.com/mnoursad) to craft a Patient List system for infection patients at UCH. We met each
-week in the old Library room at [HTD](http://www.thehtd.org/) for a show and tell and figured out what the next sprint would look like.
+<a href="https://twitter.com/gpollara">Pollara</a>,
+<a href="https://github.com/michaeledwardmarks/">Marks</a> and
+<a href="https://twitter.com/mnoursad">Noursadeghi</a> to craft a Patient List system for infection patients at UCH. We met each
+week in the old Library room at <a href="http://www.thehtd.org/">HTD</a> for a show and tell and figured out what the next sprint would look like.</p>
 
-The interface changed almost weekly back then as we tried to figure out how best to replace the menagerie of Word
+<p>The interface changed almost weekly back then as we tried to figure out how best to replace the menagerie of Word
 documents, T-Cards, Access databases and Excel spreadsheets that the teams were currently using as patient lists.
-As you can see below, even three years on, the Patient List components of OPAL are still recognisable from those first few months!
+As you can see below, even three years on, the Patient List components of OPAL are still recognisable from those first few months!</p>
 
 <div class="post-thumb">
 <center>
@@ -346,71 +376,75 @@ As you can see below, even three years on, the Patient List components of OPAL a
 </center>
 </div>
 
-## Making OPAL a Framework not an Application
 
-Even at the beginning we knew that we wanted OPAL to be more of a framework than an application. By
-[October 2013](https://github.com/openhealthcare/elcid/commit/b695828681b27e4b7932dd8eb0c70f5f9c55a8f1) we
+<h2>Making OPAL a Framework not an Application</h2>
+
+<p>Even at the beginning we knew that we wanted OPAL to be more of a framework than an application. By
+<a href="https://github.com/openhealthcare/elcid/commit/b695828681b27e4b7932dd8eb0c70f5f9c55a8f1">October 2013</a> we
 started moving the UCH specific elements out of OPAL, refactoring it for reuse. We set about moving application specific
 business logic into
-[elCID](http://elcid.openhealthcare.org.uk) (the first OPAL application),
-allowing OPAL to be the generic platform for the services we build.
+<a href="http://elcid.openhealthcare.org.uk">elCID</a> (the first OPAL application),
+allowing OPAL to be the generic platform for the services we build.</p>
 
-OPAL would provide a sensible robust default configuration along with a
-[core data model](http://opal.openhealthcare.org.uk/docs/v0.6.0/guides/datamodel/),
-[reusable common components](http://opal.openhealthcare.org.uk/docs/v0.6.0/guides/components_overview/), UI
+<p>OPAL would provide a sensible robust default configuration along with a
+<a href="http://opal.openhealthcare.org.uk/docs/v0.6.0/guides/datamodel/">core data model</a>,
+<a href="http://opal.openhealthcare.org.uk/docs/v0.6.0/guides/components_overview/">reusable common components</a>, UI
 components, and a clear path for integration with other systems and standards. Meanwhile individual applications built with
 OPAL would provide specialised domain logic for particular tasks, clinical specialties, or customisation for individual
-installations.
+installations.</p>
 
-## Deployment to an actual NHS Hospital
+<h2>Deployment to an actual NHS Hospital</h2>
 
-In January 2014 we were ready to deploy
-[elCID](https://github.com/openhealthcare/elcid) to a real NHS hospital - just eight months after
+<p>In January 2014 we were ready to deploy
+<a href="https://github.com/openhealthcare/elcid">elCID</a> to a real NHS hospital - just eight months after
 starting the project. Since then it has been used to manage inpatients and outpatients for HTD and the Infection and
-Microbiology teams at UCLH.
+Microbiology teams at UCLH.</p>
 
-Digital services are never finished though - and we’ve
-[iterated](http://openhealthcare.org.uk/blog/2016/02/16/how-were-helping-respond-to-the-zika-outbreak/) and
-[improved](http://openhealthcare.org.uk/blog/2015/10/21/launching-a-new-walk-in-service/) both elCID and OPAL frequently. OPAL alone
+<p>Digital services are never finished though - and we’ve
+<a href="http://openhealthcare.org.uk/blog/2016/02/16/how-were-helping-respond-to-the-zika-outbreak/">iterated</a> and
+<a href="http://openhealthcare.org.uk/blog/2015/10/21/launching-a-new-walk-in-service/">improved</a> both elCID and OPAL frequently. OPAL alone
 has racked up 19 releases and almost 2,500 commits since we began. During that time we’ve worked to turn our vision for a
-robust Open Source framework for building clinical web applications into a reality.
+robust Open Source framework for building clinical web applications into a reality.</p>
 
-## Taking OPAL to NHS Hack Days
+<h2>Taking OPAL to NHS Hack Days</h2>
 
-One of the big tests for how far along that path we are is how OPAL has performed as a tool for building projects at
-[NHS Hack Days](http://nhshackday.com/). Hack days are a great way to stress test developer tools. They reward well-thought-out
+<p>One of the big tests for how far along that path we are is how OPAL has performed as a tool for building projects at
+<a href="http://nhshackday.com/">NHS Hack Days</a>. Hack days are a great way to stress test developer tools. They reward well-thought-out
 APIs and good documentation,
-giving you a great insight into how much they help or hinder developers.
+giving you a great insight into how much they help or hinder developers.</p>
 
-The first OPAL project at a NHS Hack Day was back in
-[May 2014](http://nhshackday.com/previous/events/2014/05/london/) when
-[Dr Gabriele Pollara](https://twitter.com/gpollara) brought a team together to try and
+<p>The first OPAL project at a NHS Hack Day was back in
+<a href="http://nhshackday.com/previous/events/2014/05/london/">May 2014</a> when
+<a href="https://twitter.com/gpollara">Dr Gabriele Pollara</a> brought a team together to try and
 add some extra features to OPAL and elCID. Even though the changes from
-[their fork of OPAL](https://github.com/mastersplinter/opal) were never merged back into the
+<a href="https://github.com/mastersplinter/opal">their fork of OPAL</a> were never merged back into the
 main codebase, it gave us plenty of insight into where we had the coupling wrong between framework and application, and
-places where could improve the APIs or make the documentation clearer.
+places where could improve the APIs or make the documentation clearer.</p>
 
-Four months later when the 8th NHS Hack day rolled around in
-[Leeds](http://nhshackday.com/previous/events/2014/09/leeds/) the codebase had improved significantly - with a project
+<p>Four months later when the 8th NHS Hack day rolled around in
+<a href="http://nhshackday.com/previous/events/2014/09/leeds/">Leeds</a> the codebase had improved significantly - with a project
 to design a
-[handover tool for Renal teams](https://github.com/openhealthcare/opal-renal) coming joint first:
+<a href="https://github.com/openhealthcare/opal-renal">handover tool for Renal teams</a> coming joint first:</p>
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Renal project team collect T shirts for coming joint first at <a href="https://twitter.com/hashtag/nhshd?src=hash">#nhshd</a> <a href="http://t.co/D6EUkAUDdg">pic.twitter.com/D6EUkAUDdg</a></p>&mdash; Alison Cameron (@allyc375) <a href="https://twitter.com/allyc375/status/516225627423518720">September 28, 2014</a></blockquote>
+
+
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-This was the first time we had built a brand new application from scratch using OPAL, and it gave us a clear head
-start over hackday projects that had had to start from nothing.
 
-Over the next year, projects like
-[eCDR](https://github.com/TeamBigPharma/bigpharma) and
-[travelalerts](https://github.com/nhshackday/opal-travelalerts) were a great benchmark of how OPAL was progressing. New developers
+<p>This was the first time we had built a brand new application from scratch using OPAL, and it gave us a clear head
+start over hackday projects that had had to start from nothing.</p>
+
+<p>Over the next year, projects like
+<a href="https://github.com/TeamBigPharma/bigpharma">eCDR</a> and
+<a href="https://github.com/nhshackday/opal-travelalerts">travelalerts</a> were a great benchmark of how OPAL was progressing. New developers
 were able to get to grips with it and start building on top of it over the course of just a weekend. The framework was
-obviously maturing.
+obviously maturing.</p>
 
-In the most recent London NHS Hack Day we saw two projects building on top of OPAL - A
-[digital anaesthetic chart](https://github.com/anaesthetic-health-chart) that pulls
+<p>In the most recent London NHS Hack Day we saw two projects building on top of OPAL - A
+<a href="https://github.com/anaesthetic-health-chart">digital anaesthetic chart</a> that pulls
 and displays observation data from a anaesthetic monitors, and the eventual winner - a
-[Raspberry Pi based EPR in a box](http://github.com/nhshackday/outbreak).
+<a href="http://github.com/nhshackday/outbreak">Raspberry Pi based EPR in a box</a>.</p>
 
 <center>
 <div class="post-thumb">
@@ -420,26 +454,27 @@ and displays observation data from a anaesthetic monitors, and the eventual winn
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hJWTpSH8Bxc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 </center>
 
-It was particularly exciting to see two brand new - and completely re-skinned OPAL projects built over one weekend and to
-get lots of feedback from all of our friends in the NHS Hack Day community.
 
-## The last few months
+<p>It was particularly exciting to see two brand new - and completely re-skinned OPAL projects built over one weekend and to
+get lots of feedback from all of our friends in the NHS Hack Day community.</p>
 
-The [last few months](https://github.com/openhealthcare/opal/graphs/contributors?from=2015-07-22&to=2016-05-28&type=c)
+<h2>The last few months</h2>
+
+<p>The <a href="https://github.com/openhealthcare/opal/graphs/contributors?from=2015-07-22&amp;to=2016-05-28&amp;type=c">last few months</a>
 have seen OPAL leap forward in terms of
-[code quality](https://coveralls.io/github/openhealthcare/opal) and depth of features. In large part this is thanks to the hard work of
-[Fred Kingham](https://twitter.com/fredkingham) - who has taken over as lead developer for the project. The upcoming
-[0.6 release](http://opal.openhealthcare.org.uk/docs/v0.6.0/) will see many improvements. We’ve refactored form helpers to make it easy to embed forms. Added new Patient detail views and a new Patient List module to make OPAL even more customisable. We’ve also added in an integration layer for connecting to other hospital systems. All this coupled with even greater performance.
+<a href="https://coveralls.io/github/openhealthcare/opal">code quality</a> and depth of features. In large part this is thanks to the hard work of
+<a href="https://twitter.com/fredkingham">Fred Kingham</a> - who has taken over as lead developer for the project. The upcoming
+<a href="http://opal.openhealthcare.org.uk/docs/v0.6.0/">0.6 release</a> will see many improvements. We’ve refactored form helpers to make it easy to embed forms. Added new Patient detail views and a new Patient List module to make OPAL even more customisable. We’ve also added in an integration layer for connecting to other hospital systems. All this coupled with even greater performance.</p>
 
-We’re not done yet though! We’re looking forward to improving the
-[documentation](http://opal.openhealthcare.org.uk/docs/v0.6.0/) to make it easier for new developers, we’re updating our core clinical models, improving the way in which we guide users through complex clinical pathways, adding further UI improvements for mobile devices along with much more as we move towards a 1.0 release.
+<p>We’re not done yet though! We’re looking forward to improving the
+<a href="http://opal.openhealthcare.org.uk/docs/v0.6.0/">documentation</a> to make it easier for new developers, we’re updating our core clinical models, improving the way in which we guide users through complex clinical pathways, adding further UI improvements for mobile devices along with much more as we move towards a 1.0 release.</p>
 
-If you want to know more about OPAL, or about the work that we do at Open Health Care building digital tools for clinicians,
-[drop us a line](mailto:hello@openhealthcare.org.uk) - we’d love to hear from you.
+<p>If you want to know more about OPAL, or about the work that we do at Open Health Care building digital tools for clinicians,
+<a href="mailto:hello@openhealthcare.org.uk">drop us a line</a> - we’d love to hear from you.</p>
 
-<small>
-Photo credits: [Will Clayton](https://www.flickr.com/photos/spool32/)
-</small>
+<p><small>
+Photo credits: <a href="https://www.flickr.com/photos/spool32/">Will Clayton</a>
+</small></p>
 ]]></content>
   </entry>
   
@@ -448,66 +483,74 @@ Photo credits: [Will Clayton](https://www.flickr.com/photos/spool32/)
     <link href="http://openhealthcare.org.uk/blog/2016/02/16/how-were-helping-respond-to-the-zika-outbreak/"/>
     <updated>2016-02-16T15:00:29+00:00</updated>
     <id>http://openhealthcare.org.uk/blog/2016/02/16/how-were-helping-respond-to-the-zika-outbreak</id>
-    <content type="html"><![CDATA[The last few months have seen an explosive spread of the
-[Zika virus](http://www.theguardian.com/world/2016/jan/28/zika-virus-spreading-explosively-says-world-health-organisation),
+    <content type="html"><![CDATA[<p>The last few months have seen an explosive spread of the
+<a href="http://www.theguardian.com/world/2016/jan/28/zika-virus-spreading-explosively-says-world-health-organisation">Zika virus</a>,
 which has been potentially linked to thousands of birth defects in Latin America. The Zika virus is a
-[mosquito-transmitted infection](http://www.nytimes.com/interactive/2016/health/what-is-zika-virus.html)
+<a href="http://www.nytimes.com/interactive/2016/health/what-is-zika-virus.html">mosquito-transmitted infection</a>
 that was previously sporadically reported in Africa and the Pacific, but has recently started spreading rapidly
 in South America. Patients usually have a mild flu-like illness consisting of a low fever, headache, muscle and joint pain,
-red eyes and rash.
+red eyes and rash.</p>
 
-In the UK, many patients who exhibit symptoms related to Zika and have recently travelled are referred to the specialist
-[Hospital for Tropical Diseases](http://www.thehtd.org/) in London, which has resulted in a large increase in their
-workload.
+<p>In the UK, many patients who exhibit symptoms related to Zika and have recently travelled are referred to the specialist
+<a href="http://www.thehtd.org/">Hospital for Tropical Diseases</a> in London, which has resulted in a large increase in their
+workload.</p>
 
-The Hospital for Tropical Diseases uses our [elCID](http://elcid.openhealthcare.org.uk/) software to manage their clinical
+<p>The Hospital for Tropical Diseases uses our <a href="http://elcid.openhealthcare.org.uk/">elCID</a> software to manage their clinical
 workflow, so as soon as we heard this,
 we tried to understand what we could do to help. At Open Health Care we believe the digital tools clinicians use to do their
 jobs need to be iterated and improved on a frequent basis. That means we deliver services that are flexible enough to adapt
-to changing clinical needs, and we’re on hand to help make those improvements.
+to changing clinical needs, and we’re on hand to help make those improvements.</p>
 
 <div class="post-thumb">
   <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/zika.top.png" alt="" style="border: 1px solid black;"/>
-</div><!--//post-thumb-->
+</div>
 
-Working closely with clinicians from HTD, we quickly developed a prototype Zika “pathway”. This enables users to record extra
+
+<!--//post-thumb-->
+
+
+<p>Working closely with clinicians from HTD, we quickly developed a prototype Zika “pathway”. This enables users to record extra
 information of particular importance to patients they were treating for Zika, as well as extra quick ways to enter the very
-specific set of tests that are most relevant to such patients.
+specific set of tests that are most relevant to such patients.</p>
 
-Because we have an electronic clinical pathway specific to the particular condition being treated, we were able to provide
+<p>Because we have an electronic clinical pathway specific to the particular condition being treated, we were able to provide
 lots of contextually relevant information and notes for its treatment. This guidance was written by the local consultants,
-and helps to make sure that every patient is given the very best care possible.
+and helps to make sure that every patient is given the very best care possible.</p>
 
 <div class="post-thumb">
   <img class="img-responsive" src="http://openhealthcare.org.uk/assets/images/posts/zika.bottom.png" alt="" style="border: 1px solid black;" />
-</div><!--//post-thumb-->
+</div>
 
-All the information about patients that gets entered on [elCID](http://elcid.openhealthcare.org.uk/) is stored as high quality
+
+<!--//post-thumb-->
+
+
+<p>All the information about patients that gets entered on <a href="http://elcid.openhealthcare.org.uk/">elCID</a> is stored as high quality
 structured data. That means that we
 are also able to generate a summary of their interaction with the patient at the click of a button, complete with
-symptoms, travel history, investigations and results, and the specific extra Zika information we are now recording.
+symptoms, travel history, investigations and results, and the specific extra Zika information we are now recording.</p>
 
-Documenting clinical activity in this way - on digital tools that understand the clinical domain -  means that it is also
+<p>Documenting clinical activity in this way - on digital tools that understand the clinical domain -  means that it is also
 available subsequently for audit and analysis purposes. Extracting data on the management of Zika patients at the hospital
-is now something that can be done in a few clicks, rather than requiring a laborious manual review of clinical documentation.
+is now something that can be done in a few clicks, rather than requiring a laborious manual review of clinical documentation.</p>
 
-In many ways this is one of the real opportunities of the NHS’ move to paperless working - when you move to using tools that
+<p>In many ways this is one of the real opportunities of the NHS’ move to paperless working - when you move to using tools that
 allow you to analyse and learn from data generated by routine clinical work. We look forward to finding out what the team
-learn about their response to the Zika outbreak.
+learn about their response to the Zika outbreak.</p>
 
-Crucially, this new module involved just a couple of days prototyping, iterating and testing the new Zika pathway, before
+<p>Crucially, this new module involved just a couple of days prototyping, iterating and testing the new Zika pathway, before
 deploying to the live system. Over the next few weeks we’ll be checking back regularly to gather feedback from the users
-of the service so that we can be sure that we’re meeting their needs.
+of the service so that we can be sure that we’re meeting their needs.</p>
 
-Updating the systems that underpin the delivery of care should be this simple all the time - they should be designed with
-flexibility and iteration in mind, and be supported by teams who have the capability to iterate them responsively.
+<p>Updating the systems that underpin the delivery of care should be this simple all the time - they should be designed with
+flexibility and iteration in mind, and be supported by teams who have the capability to iterate them responsively.</p>
 
-If you’d like to know more about how we could help you by delivering services like this, or more about the services we offer,
-do get in touch with us at <a href="mailto:hello@openhealthcare.org.uk">hello@openhealthcare.org.uk</a>.
+<p>If you’d like to know more about how we could help you by delivering services like this, or more about the services we offer,
+do get in touch with us at <a href="mailto:hello@openhealthcare.org.uk"><a href="&#109;&#x61;&#x69;&#108;&#x74;&#x6f;&#x3a;&#104;&#x65;&#108;&#108;&#x6f;&#x40;&#111;&#112;&#x65;&#110;&#x68;&#x65;&#x61;&#108;&#x74;&#104;&#x63;&#x61;&#x72;&#101;&#x2e;&#x6f;&#x72;&#x67;&#x2e;&#117;&#107;">&#104;&#101;&#x6c;&#x6c;&#111;&#x40;&#111;&#x70;&#101;&#x6e;&#x68;&#101;&#97;&#x6c;&#116;&#x68;&#99;&#97;&#x72;&#101;&#x2e;&#111;&#114;&#x67;&#x2e;&#x75;&#107;</a></a>.</p>
 
-<small>
-Photo credits: [John Tan](https://www.flickr.com/photos/31031835@N08/)
-</small>
+<p><small>
+Photo credits: <a href="https://www.flickr.com/photos/31031835@N08/">John Tan</a>
+</small></p>
 ]]></content>
   </entry>
   
